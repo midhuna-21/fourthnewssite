@@ -15,19 +15,20 @@ interface Props {
     data:NewsData;
 }
 
-const HorizontalNewsCard:React.FC<Props>=({data})=>{
+const TopHorizontalCard:React.FC<Props>=({data})=>{
   return (
     <div className="flex max-w-md">
       {/* Image */}
       <div className="flex-shrink-0">
-        <Image
-          src={data.image}
-          alt="Five Signs of a Highly Intelligent Person"
-          width={120}
-          height={120}
-          className="w-25 h-25 object-cover"
-        />
-      </div>
+  <Image
+    src={data.image}
+    alt={data.title}
+    width={160}   // increased from 120
+    height={160}  // increased from 120
+    className="w-45 h-30 object-cover" // w-40 = 10rem = 160px
+  />
+</div>
+
 
       {/* Text */}
       <div className="ml-3 flex flex-col justify-center">
@@ -43,4 +44,4 @@ const HorizontalNewsCard:React.FC<Props>=({data})=>{
   );
 }
 
-export default HorizontalNewsCard;
+export default TopHorizontalCard;

@@ -16,7 +16,7 @@ interface Props {
 
 const RecipeCard: React.FC<Props> = ({ data }) => {
   return (
-<div className="flex flex-col sm:flex-row w-full border-b border-gray-200 pb-3">
+<div className="flex flex-col sm:flex-row w-full border-b border-gray-200">
   {/* Image */}
   <div className="relative w-full sm:w-2/5 h-36 sm:h-auto">
     <Image
@@ -37,7 +37,7 @@ const RecipeCard: React.FC<Props> = ({ data }) => {
       {data.title}
     </h2>
     <p
-      className="text-xs sm:text-sm mt-1"
+      className="text-xs sm:text-sm mt-1 line-clamp-2"
       style={{ color: "#7A7A7A", fontWeight: 400 }}
     >
       {data.shortdescription}

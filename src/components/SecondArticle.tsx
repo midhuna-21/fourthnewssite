@@ -16,7 +16,7 @@ interface Props {
 
 const SecondArticle: React.FC<Props> = ({ data }) => {
   return (
-    <div className="flex flex-col md:flex-row border-r border-b border-gray-700 max-w-6xl mx-auto">
+    <div className="flex flex-col md:flex-row border-r border-b border-[#454545] max-w-6xl mx-auto mt-4">
       {/* Left Image */}
       <div className="md:w-8/15 w-full">
         {/* Slightly shorter ratio */}

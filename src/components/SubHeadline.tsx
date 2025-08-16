@@ -1,6 +1,6 @@
 
-interface Props{
-    title:string;
+interface Props {
+  title: string;
 }
 const SubHeadline: React.FC<Props> = ({ title }) => {
   return (
@@ -8,7 +8,9 @@ const SubHeadline: React.FC<Props> = ({ title }) => {
       <h2 className="font-[oswald] text-[20px] uppercase tracking-wide" style={{ fontWeight: 600 }}>
         {title}
       </h2>
-      <div className="flex-1 h-[1px] bg-black ml-2"></div>
+      <div
+        className="flex-1 h-[1px] ml-2 mt-4 bg-[#454545]"
+      ></div>
     </div>
   );
 };

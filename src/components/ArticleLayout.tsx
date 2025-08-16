@@ -18,7 +18,7 @@ interface Props {
 
 const ArticleLayout: React.FC<Props> = ({ data }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-12 gap-6 container mx-auto px-4 mt-6">
+    <div className="grid grid-cols-1 md:grid-cols-12 gap-6 container mx-auto px-4 mt-12">
       {/* Left Section (9/12 width) */}
       <div className="md:col-span-9">
         <SecondArticle data={data[0]} />
@@ -33,6 +33,6 @@ const ArticleLayout: React.FC<Props> = ({ data }) => {
       </div>
     </div>
   );
-};
+};  
 
 export default ArticleLayout;

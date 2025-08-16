@@ -15,7 +15,7 @@ interface Props {
 
 const LargeImageSection: React.FC<Props> = ({ data }) => {
   return (
-    <div className="relative w-full h-full border-r pr-4 mt-4">
+    <div className="relative w-[100%] h-[95%] border-r border-gray-400 pr-4 mt-4 mx-auto">
       {/* Image */}
       <img
         src={data.image}
@@ -29,12 +29,13 @@ const LargeImageSection: React.FC<Props> = ({ data }) => {
       </div>
 
       {/* Bottom Overlay */}
-      <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70">
+      <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-3 rounded-b-lg">
         <h2 className="text-3xl font-extrabold">{data.title}</h2>
-        <p className="text-sm mt-1 text-gray-200">{data.shortdescription}</p>
+        <p className="text-sm mt-1" style={{color:'#838383'}}>{data.shortdescription}</p>
       </div>
     </div>
   );
 };
+
 
 export default LargeImageSection;

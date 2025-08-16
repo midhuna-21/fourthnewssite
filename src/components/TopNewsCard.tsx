@@ -27,7 +27,7 @@ const TopNewsCard: React.FC<Props> = ({ data }) => {
       />
 
       <div className="mt-1">
-        <p className="text-gray-500 text-sm">
+        <p className="text-sm" style={{color:'#838383'}}>
           <span className="">{data.category}</span>{" "}
           <span className="ml-1">{data.date}</span>
         </p>

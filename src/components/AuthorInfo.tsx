@@ -1,0 +1,39 @@
+"use client";
+import React from "react";
+import Image from "next/image";
+
+interface AuthorProps {
+  name: string;
+  role?: string;
+  date: string;
+  image: string;
+}
+
+const AuthorInfo: React.FC<AuthorProps> = ({ name, role = "Staff", date, image }) => {
+  return (
+    <div className="flex items-center space-x-3 mt-6">
+      {/* Author Image */}
+      <div className="w-12 h-12 relative rounded-full overflow-hidden">
+      <Image
+  src=""
+  alt="Author"
+  width={48}
+  height={48}
+/>
+
+      </div>
+
+      {/* Author Details */}
+      <div className="flex flex-col">
+        <p className="text-sm"style={{ color: '#838383' }}>
+          By <span className="font-semibold">{name}</span>
+        </p>
+        <p className="text-sm"style={{ color: '#838383' }}>
+          Published <span className="font-medium">{date}</span>
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default AuthorInfo;

@@ -2,37 +2,34 @@ import Image from "next/image";
 
 
 interface NewsData {
-    slug:string;
-    title:string;
-    category:string;
-    shortdescription:string;
-    description:string;
-    date:string;
-    image:string;
+  slug: string;
+  title: string;
+  category: string;
+  shortdescription: string;
+  description: string;
+  date: string;
+  image: string;
 }
 
 interface Props {
-    data:NewsData;
+  data: NewsData;
 }
 
-const TopHorizontalCard:React.FC<Props>=({data})=>{
+const TopHorizontalCard: React.FC<Props> = ({ data }) => {
   return (
     <div className="flex max-w-md">
-      {/* Image */}
       <div className="flex-shrink-0">
-  <Image
-    src={data.image}
-    alt={data.title}
-    width={160}   // increased from 120
-    height={160}  // increased from 120
-    className="w-45 h-30 object-cover" // w-40 = 10rem = 160px
-  />
-</div>
+        <Image
+          src={data.image}
+          alt={data.title}
+          width={160}
+          height={160}
+          className="w-45 h-30 object-cover"
+        />
+      </div>
 
-
-      {/* Text */}
       <div className="ml-3 flex flex-col justify-center">
-        <p className="text-gray-500 text-sm">
+        <p className="text-sm" style={{ color: '#838383' }}>
           <span className="font-semibold">{data.category}</span>{" "}
           <span className="ml-1">{data.date}</span>
         </p>

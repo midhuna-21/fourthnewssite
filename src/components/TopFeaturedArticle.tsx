@@ -19,7 +19,7 @@ const TopFeaturedArticle: React.FC<Props> = ({ data }) => {
         <div className="flex flex-col md:flex-row border-b border-gray-400 max-w-6xl mx-auto">
             {/* Left Text Content */}
             <div className="md:w-1/2 w-full p-4 md:p-6 flex flex-col justify-center">
-                <p className="text-gray-500 text-sm">
+                <p className="text-sm" style={{color:'#838383'}}>
                     <span className="font-semibold">{data.category}</span>{" "}
                     <span className="ml-1">{data.date}</span>
                 </p>
@@ -31,8 +31,8 @@ const TopFeaturedArticle: React.FC<Props> = ({ data }) => {
                     {data.title}
                 </p>
                 <p
-                    className="mt-2 text-gray-600 text-[16px] line-clamp-3"
-                    style={{ fontWeight: 400 }}
+                    className="mt-2 text-[16px] line-clamp-3"
+                    style={{ fontWeight: 400,color:"#838383" }}
                 >
                     {data.shortdescription}
                 </p>

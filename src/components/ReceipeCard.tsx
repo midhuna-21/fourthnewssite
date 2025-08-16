@@ -29,16 +29,16 @@ const RecipeCard: React.FC<Props> = ({ data }) => {
 
   {/* Text Content */}
   <div className="flex flex-col justify-center px-3 sm:px-5 py-2 sm:py-0 w-full sm:w-3/5">
-    <p className="font-oswald text-sm sm:text-base font-semibold">
+    <p className="font-oswald text-sm sm:text-base font-semibold" style={{color:'#838383'}}>
       {data.category}{" "}
-      <span className="text-gray-500 font-normal">{data.date}</span>
+      <span className=" font-normal">{data.date}</span>
     </p>
     <h2 className="font-[oswald] text-lg sm:text-xl font-bold leading-snug mt-1">
       {data.title}
     </h2>
     <p
       className="text-xs sm:text-sm mt-1 line-clamp-2"
-      style={{ color: "#7A7A7A", fontWeight: 400 }}
+      style={{ color: "#838383", fontWeight: 400 }}
     >
       {data.shortdescription}
     </p>

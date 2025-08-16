@@ -8,7 +8,7 @@ const SubHeadlineTwo: React.FC<Props> = ({ title }) => {
       <h2 className="font-[oswald] text-[20px] uppercase tracking-wide" style={{ fontWeight: 600 }}>
         {title}
       </h2>
-      <div className="flex-1 h-[0.1px] bg-gray-100 ml-2"></div>
+      <div className="flex-1 h-[0.1px] bg-gray-400 ml-2"></div>
     </div>
   );
 };

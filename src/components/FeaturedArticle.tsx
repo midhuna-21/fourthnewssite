@@ -18,16 +18,16 @@ interface Props {
 const FeaturedArticle:React.FC<Props>=({data})=>{
   return (
     <div className="max-w-4xl mx-auto">
-      <p className="text-gray-500 text-sm">
+      <p className=" text-sm" style={{color:'#838383'}}>
         <span className="text-[18px]" style={{fontWeight:700, fontFamily:'Roboto, sans-serif'}}>Politics</span>{" "}
-        <span className="ml-1">{data.date}</span>
+        <span className="ml-1 text-[12px]"style={{fontFamily:'Roboto, sans-serif'}}>{data.date}</span>
       </p>
 
-      <h1 className="font-[oswald] text-3xl sm:text-4xl font-bold leading-tight">
+      <h1 className="font-[oswald] font-bold leading-tight text-[36px]"style={{fontWeight:700}}>
         {data.title}
       </h1>
 
-      <p className=" text-gray-600 text-base sm:text-lg font-[oswald]">
+      <p className="text-[16px]" style={{color:'#B0B0B0',fontWeight:400,fontFamily:'Roboto, sans-serif'}}>
         {data.shortdescription}
       </p>
 

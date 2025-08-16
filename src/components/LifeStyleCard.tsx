@@ -40,7 +40,7 @@ const LifestyleCard: React.FC<Props> = ({ data }) => {
         </h1>
 
         {/* Short description */}
-        <p className="text-white text-xs sm:text-sm md:text-base mt-2 max-w-2xl">
+        <p className="text-xs sm:text-sm md:text-base mt-2 max-w-2xl" style={{color:'#B0B0B0'}}>
           {data.shortdescription}
         </p>
       </div>

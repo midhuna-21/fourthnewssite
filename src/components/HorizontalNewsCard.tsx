@@ -31,11 +31,11 @@ const HorizontalNewsCard:React.FC<Props>=({data})=>{
 
       {/* Text */}
       <div className="ml-3 flex flex-col justify-center">
-        <p className="text-gray-500 text-sm">
-          <span className="font-semibold">{data.category}</span>{" "}
-          <span className="ml-1">{data.date}</span>
-        </p>
-        <h3 className="mt-1 font-[oswald] text-[17px] font-bold leading-snug line-clamp-3">
+       <p style={{ color: '#838383' }}>
+            <span className="text-[14px]" style={{fontWeight:700,fontFamily:'Roboto, sans-serif'}}>{data.category}</span>{" "}
+            <span className="ml-1 text-[11px]"style={{fontFamily:'Roboto, sans-serif'}}>{data.date}</span>
+          </p>
+        <h3 className="mt-1 font-[oswald] text-[17px] leading-snug line-clamp-3"style={{fontWeight:700}}>
           {data.title}
         </h3>
       </div>

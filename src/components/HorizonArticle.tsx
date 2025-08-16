@@ -29,7 +29,7 @@ const HorizonArticle: React.FC<Props> = ({data}) => {
 
       {/* Text */}
       <div className="mt-3">
-        <p className="text-sm font-semibold text-gray-700">
+        <p className="text-sm font-semibold" style={{color:'#838383'}}>
           {data.category}
           <span className="text-gray-500 font-normal ml-2">{data.date}</span>
         </p>

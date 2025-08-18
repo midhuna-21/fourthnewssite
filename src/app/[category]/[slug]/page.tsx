@@ -16,6 +16,7 @@ import ArticleParagraph from '@/components/ArticleParagraph';
 import CommentForm from '@/components/CommentForm';
 import RelatedNews from '@/components/RelatedNews';
 import HorizontalNewsCard from '@/components/HorizontalNewsCard';
+import DetailSection from '@/components/DetailSection';
 
 export async function generateStaticParams() {
     const allData = [
@@ -85,46 +86,8 @@ export default async function DetailPage({ params }: DetailPageProps) {
         <div>
             <Navbar />
 
-            <div className="container mx-auto px-4 py-8">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <div className="lg:col-span-2">
-                        <ArticleDetail data={article} />
+            <DetailSection article={article} otherArticles={otherArticles} data={data} />
 
-                        <AuthorInfo
-                            name="Vibenews Staff"
-                            role="Editor"
-                            date="June 7, 2022"
-                            image=""
-                        />
-
-                        <ArticleParagraph data={article} />
-
-                        <CommentForm />
-
-                        <RelatedNews data={otherArticles} />
-                    </div>
-
-                    {/* Right Section (Popular Posts) */}
-                    <div className="lg:col-span-1">
-                        <h2 className="text-xl font-bold mb-4">POPULAR POSTS</h2>
-                        <div className="divide-y divide-gray-300">
-                            <div className="py-3">
-                                <HorizontalNewsCard data={data[9]} />
-                            </div>
-                            <div className="py-3">
-                                <HorizontalNewsCard data={data[10]} />
-                            </div>
-                            <div className="py-3">
-                                <HorizontalNewsCard data={data[11]} />
-                            </div>
-                            <div className="py-3">
-                                <HorizontalNewsCard data={data[12]} />
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
         </div>
 
 

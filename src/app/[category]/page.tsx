@@ -11,6 +11,7 @@ import CategoryHeader from '@/components/CategoryHeader';
 import Navbar from '@/components/Navbar';
 import CategoryLeftSection from '@/components/CategoryLeftSection';
 import HorizontalNewsCard from '@/components/HorizontalNewsCard';
+import CategorySection from '@/components/CategorySection';
 
 interface NewsItem {
   category: string;
@@ -56,42 +57,13 @@ export default async function CategoryPage({
   }
 
   return (
- <>
+  <>
       <Navbar />
       <div className="container mx-auto px-4 py-8">
-        {/* Breadcrumb + Title */}
-        <CategoryHeader category="Media" />
+        <CategoryHeader category={category} />
 
-        {/* Main Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-6">
-          {/* Left Section (Articles) */}
-          <div className="lg:col-span-2 space-y-6">
-            <CategoryLeftSection
-              data={[data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8]]}
-            />
-          </div>
-
-          {/* Right Section (Popular Posts) */}
-        <div className="lg:col-span-1">
-  <h2 className="text-xl font-bold mb-4">POPULAR POSTS</h2>
-  <div className="divide-y divide-gray-300">
-    <div className="py-3">
-      <HorizontalNewsCard data={data[9]} />
-    </div>
-    <div className="py-3">
-      <HorizontalNewsCard data={data[10]} />
-    </div>
-    <div className="py-3">
-      <HorizontalNewsCard data={data[11]} />
-    </div>
-    <div className="py-3">
-      <HorizontalNewsCard data={data[12]} />
-    </div>
-  </div>
-</div>
-
-        </div>
+       <CategorySection data={data} />
       </div>
-      </>
+    </>
   );
 }

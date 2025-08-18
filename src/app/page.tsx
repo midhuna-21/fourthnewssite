@@ -32,8 +32,12 @@ export default function Home() {
       <MoreTopHeadlines data={[sportsData[0], sportsData[1], sportsData[2], sportsData[3], sportsData[4], sportsData[5], sportsData[6], sportsData[7], sportsData[8], sportsData[9], sportsData[10]]} />
       <ExclusiveClips data={[technologyData[0], technologyData[1], technologyData[2], technologyData[3], technologyData[4], technologyData[5], technologyData[6], technologyData[7], technologyData[8], technologyData[9], technologyData[10]]} />
       <MainLayout data={[educationData[20], educationData[19], educationData[18], educationData[17], educationData[16], educationData[16]]} />
-      <EntertainmentSection  data={[healthData[0], healthData[1], healthData[2], healthData[3],sportsData[3]]} />
-   <ScrollLayout data={[technologyData[0], technologyData[1], technologyData[2], technologyData[3], technologyData[4], technologyData[5], technologyData[6], technologyData[7], technologyData[8], technologyData[9], educationData[1]]} />
+      <EntertainmentSection data={[healthData[0], healthData[1], healthData[2], healthData[3], sportsData[3]]} />
+      <ScrollLayout data={[technologyData[0], technologyData[1], technologyData[2], technologyData[3], technologyData[4], technologyData[5], technologyData[6], technologyData[7], technologyData[8], technologyData[9], educationData[1]]} />
     </div>
   );
 }
+
+
+
+

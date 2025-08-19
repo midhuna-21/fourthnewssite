@@ -9,7 +9,7 @@ const SubHeadline: React.FC<Props> = ({ title }) => {
         {title}
       </h2>
       <div
-        className="flex-1 h-[1px] ml-2 mt-4 bg-[#454545]"
+        className="flex-1 h-[0.5px] ml-2 mt-4 bg-[#646464]"
       ></div>
     </div>
   );

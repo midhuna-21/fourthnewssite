@@ -24,7 +24,7 @@ const ArticleParagraphWith = ({ data }: ArticleParagraphProps) => {
             {paragraphs.map((text, index) => (
                 <p
                     key={index}
-                    className="font-roboto text-[17px] font-normal leading-relaxed mb-5 text-justify"
+                    className="text-[17px] leading-tight mb-5 text-justify"style={{fontWeight:400,fontFamily:'Roboto, sans-serif'}}
                 >
                     {text}
                 </p>

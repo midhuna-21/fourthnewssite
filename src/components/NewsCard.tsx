@@ -38,9 +38,9 @@ const NewsCard: React.FC<Props> = ({ data }) => {
             <span className="text-[14px]" style={{fontWeight:700,fontFamily:'Roboto, sans-serif'}}>{data.category}</span>{" "}
             <span className="ml-1 text-[11px]"style={{fontFamily:'Roboto, sans-serif'}}>{data.date}</span>
           </p>
-          <h3 className="font-[oswald] text-[24px] leading-tight line-clamp-2"style={{fontWeight:700}}>
+          <p className="font-[oswald] text-[24px] leading-tight line-clamp-2"style={{fontWeight:700}}>
             {data.title}
-          </h3>
+          </p>
         </div>
       </Link>
     </div>

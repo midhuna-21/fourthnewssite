@@ -28,18 +28,18 @@ const MoreTopHeadlines: React.FC<Props> = ({ data }) => {
       <SubHeadline title="More Top Headlines" />
 
       {/* Content grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-4">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-4">
         {/* LEFT */}
         <div className="lg:col-span-3 space-y-3">
           <OverlayArticleCard data={data[0]} />
-         <div className="border-r">
-          <div className="border-b pb-2 pr-3">
+         <div className="border-r border-[#313030]">
+          <div className="border-b border-[#313030] pb-2 pr-3">
                <HorizontalNewsCard data={data[1]} />
           </div>
-          <div className="border-b pb-2 pt-2 pr-3">
+          <div className="border-b border-[#313030] pb-2 pt-2 pr-3">
                <HorizontalNewsCard data={data[1]} />
           </div>
-           <div className="border-b pb-2 pt-2 pr-3">
+           <div className="border-b border-[#313030] pb-2 pt-2 pr-3">
                <HorizontalNewsCard data={data[1]} />
           </div>
            <div className="pt-2 pr-3">
@@ -55,9 +55,15 @@ const MoreTopHeadlines: React.FC<Props> = ({ data }) => {
           <MoreFeaturedArticle data={data[8]} />
 
           {/* Three cards in one row */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 border-b border-[#313030]">
+           <div className="border-r border-[#313030] pb-7 pr-4">
+
             <NewsCard data={data[3]} />
+           </div>
+            <div className="border-r border-[#313030] pr-4">
+
             <NewsCard data={data[4]} />
+            </div>
             <NewsCard data={data[5]} />
           </div>
         </div>

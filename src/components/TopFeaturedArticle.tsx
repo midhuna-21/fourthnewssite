@@ -16,41 +16,51 @@ interface Props {
 
 const TopFeaturedArticle: React.FC<Props> = ({ data }) => {
     return (
-        <div className="flex flex-col md:flex-row border-b border-gray-400 max-w-6xl mx-auto">
+        <div className="flex flex-col md:flex-row border-b border-[#313030] max-w-6xl mx-auto h-80">
+
             {/* Left Text Content */}
-            <div className="md:w-1/2 w-full p-4 md:p-6 flex flex-col justify-center">
-                <p className="text-sm" style={{color:'#838383'}}>
-                    <span className="font-semibold">{data.category}</span>{" "}
-                    <span className="ml-1">{data.date}</span>
+            <div className="md:w-6/12 w-full flex flex-col justify-center pr-4">
+                <p style={{ color: "#838383" }}>
+                    <span
+                        className="text-[18px]"
+                        style={{ fontWeight: 700, fontFamily: "Roboto, sans-serif" }}
+                    >
+                        {data.category}
+                    </span>{" "}
+                    <span
+                        className="ml-1 text-[12px]"
+                        style={{ fontFamily: "Roboto, sans-serif" }}
+                    >
+                        {data.date}
+                    </span>
                 </p>
 
                 <p
-                    className="mt-1 font-[oswald] text-[36px] leading-tight line-clamp-2"
+                    className="mt-2 font-[oswald] text-[36px] leading-tight line-clamp-3"
                     style={{ fontWeight: 700 }}
                 >
                     {data.title}
                 </p>
                 <p
-                    className="mt-2 text-[16px] line-clamp-3"
-                    style={{ fontWeight: 400,color:"#838383" }}
+                    className="mt-3 text-[16px] leading-tight line-clamp-3"
+                    style={{ fontWeight: 400, color: "#b0b0b0" }}
                 >
                     {data.shortdescription}
                 </p>
             </div>
 
-            {/* Right Image Section */}
-            <div className="md:w-1/2 w-full">
-                <div className="w-full aspect-[4/2.4]">
-                    <Image
-                        src={data.image}
-                        alt={data.title}
-                        width={800}
-                        height={400}
-                        className="w-full h-full object-cover"
-                    />
-                </div>
+            {/* Right Image */}
+            <div className="md:w-6/12 w-full">
+                <Image
+                    src={data.image}
+                    alt={data.title}
+                    width={900}
+                    height={700}
+                    className="w-full h-full object-cover"
+                />
             </div>
         </div>
+
 
     );
 };

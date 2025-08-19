@@ -1,4 +1,5 @@
 import LifestyleCard from "./LifeStyleCard";
+import SubHeadline from "./SubHeadline";
 
 interface NewsData {
     slug: string;
@@ -17,7 +18,8 @@ interface Props {
 const LatestNewsSection: React.FC<Props> = ({ data }) => {
     return (
     <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col sm:flex-row gap-4 conatiner">
+        <SubHeadline title="Latest News" />
+        <div className="flex flex-col sm:flex-row gap-8 conatiner mt-5">
             <LifestyleCard data={data[0]} />
             <LifestyleCard data={data[1]} />
         </div>

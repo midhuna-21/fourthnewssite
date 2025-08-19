@@ -82,14 +82,11 @@ export default async function DetailPage({ params }: DetailPageProps) {
     const otherArticles = data.filter(item => item.slug !== slug);
 
     return (
-
         <div>
-            <Navbar />
-
+            <div className="hidden lg:block">
+                <Navbar />
+            </div>
             <DetailSection article={article} otherArticles={otherArticles} data={data} />
-
         </div>
-
-
     );
 }

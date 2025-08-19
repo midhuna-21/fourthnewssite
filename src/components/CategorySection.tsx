@@ -37,7 +37,7 @@ export default function CategorySection({ data }: Props) {
   }, []);
 
   return (
-  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-6">
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
   {/* Left Section */}
   <div className="lg:col-span-2 space-y-6">
     <CategoryLeftSection data={data.slice(0, 9)} />
@@ -45,9 +45,9 @@ export default function CategorySection({ data }: Props) {
 
   {/* Right Section */}
   <div className="lg:col-span-1">
-    <div className="sticky top-20">
-      <h2 className="text-xl font-bold mb-4">POPULAR POSTS</h2>
-      <div className="divide-y divide-gray-300">
+    <div className="sticky top-10">
+      <h2 className="text-[24px] font-[oswald] uppercase mb-4" style={{fontWeight:700}}>Trending News</h2>
+      <div className="divide-y divide-gray-[#313030]]">
         {data.slice(9, 13).map((item, idx) => (
           <div key={idx} className="py-3">
             <HorizontalNewsCard data={item} />

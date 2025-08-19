@@ -23,15 +23,15 @@ const TopNewsCard: React.FC<Props> = ({ data }) => {
         alt="Worrying Sign In Covid Numbers"
         width={400}
         height={300}
-        className="w-full h-[260px] object-cover"
+        className="w-full h-[160px] object-cover"
       />
 
       <div className="mt-1">
-        <p className="text-sm" style={{color:'#838383'}}>
-          <span className="">{data.category}</span>{" "}
-          <span className="ml-1">{data.date}</span>
-        </p>
-        <h3 className="font-[oswald] text-[24px] font-bold leading-tight">
+       <p style={{ color: '#838383' }}>
+            <span className="text-[14px]" style={{fontWeight:700,fontFamily:'Roboto, sans-serif'}}>{data.category}</span>{" "}
+            <span className="ml-1 text-[11px]"style={{fontFamily:'Roboto, sans-serif'}}>{data.date}</span>
+          </p>
+        <h3 className="font-[oswald] text-[24px] leading-tight" style={{fontWeight:700}}>
           {data.title}
         </h3>
       </div>

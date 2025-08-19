@@ -24,23 +24,23 @@ const LifestyleCard: React.FC<Props> = ({ data }) => {
         className="object-cover"
         priority
       />
-      <div className="absolute inset-0 flex flex-col justify-end px-3 py-4 sm:px-4 sm:py-6 md:px-8 md:py-8 bg-gradient-to-t from-black/70 via-black/30 to-transparent">
+      <div className="absolute inset-0 flex flex-col justify-end px-3 py-4 sm:px-4 md:px-8  bg-gradient-to-t from-black/70 via-black/30 to-transparent">
         {/* Category and date */}
-        <p className="text-white text-xs sm:text-sm md:text-base font-medium">
-          <span className="font-semibold">{data.category}</span>{" "}
-          <span className="opacity-80 text-xs">{data.date}</span>
-        </p>
+       <p>
+            <span className="text-[18px]" style={{fontWeight:700,fontFamily:'Roboto, sans-serif'}}>{data.category}</span>{" "}
+            <span className="ml-1 text-[12px]"style={{fontFamily:'Roboto, sans-serif'}}>{data.date}</span>
+          </p>
 
         {/* Title */}
         <h1
-          className="text-white font-[oswald] text-lg sm:text-xl md:text-[36px] leading-tight"
+          className="text-white font-[oswald] text-lg sm:text-xl md:text-[36px] leading-tight line-clamp-2"
           style={{ fontWeight: 700 }}
         >
           {data.title}
         </h1>
 
         {/* Short description */}
-        <p className="text-xs sm:text-sm md:text-base mt-2 max-w-2xl" style={{color:'#B0B0B0'}}>
+        <p className="text-xs sm:text-sm md:text-base mt-2 max-w-2xl leading-tight" style={{color:'#B0B0B0',fontWeight:400}}>
           {data.shortdescription}
         </p>
       </div>

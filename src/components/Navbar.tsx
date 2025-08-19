@@ -15,8 +15,8 @@ const categories = [
 
 export default function Navbar() {
   return (
-    <nav className="w-full border-b border-gray-200 dark:border-gray-800">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-4">
+    <nav className="w-full border-b border-[#646464] p-2">
+      <div className="max-w-7xl mx-auto flex items-center justify-between container px-1">
         <ul className="flex items-center space-x-2">
           {categories.map((item) => (
             <li key={item.category} className="relative group">
@@ -31,10 +31,6 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-
-        <button className="text-gray-400 hover:text-gray-200 p-2">
-          <User size={28} strokeWidth={1.5} />
-        </button>
       </div>
     </nav>
   );

@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import { ThemeProvider } from "next-themes";
 // In your app/layout.js (App Router) or pages/_app.js (Pages Router)
 import { Providers } from '@/components/ThemeProvider'
+import Footer from "@/components/Footer";
 
 
 const geistSans = Geist({
@@ -41,6 +42,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

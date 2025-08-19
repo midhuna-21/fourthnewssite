@@ -24,14 +24,14 @@ const MainLayout: React.FC<Props> = ({ data }) => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 mt-24">
       {/* Full Height Black Background */}
       <div className="h-screen bg-black text-white p-6">
         <div className="flex h-full gap-6">
 
           {/* Left Section: Large Image */}
           {/* Left Section: Large Image */}
-          <div className="flex-[2] flex flex-col border-b border-gray-400">
+          <div className="flex-[2] flex flex-col border-b pb-5 border-[#313030]">
             <SubHeadlineTwo title="News" />
             <div className="flex-1 overflow-hidden">
               <LargeImageSection data={data[0]} />

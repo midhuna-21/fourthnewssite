@@ -6,6 +6,7 @@ import ArticleParagraph from '@/components/ArticleParagraph';
 import CommentForm from '@/components/CommentForm';
 import RelatedNews from '@/components/RelatedNews';
 import HorizontalNewsCard from '@/components/HorizontalNewsCard';
+import PromoNews from './PromoNews';
 
 interface NewsItem {
   category: string;
@@ -63,6 +64,7 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
           <ArticleParagraph data={article} />
 
           <div ref={stopRef}>
+                 <PromoNews />
             <CommentForm />
             <RelatedNews data={otherArticles} />
           </div>
@@ -75,7 +77,7 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
             className={`${rightPosition === 'sticky' ? 'sticky top-20' : 'absolute bottom-0'} transition-all duration-500`}
           >
             <h2 className="text-xl font-bold mb-4">POPULAR POSTS</h2>
-            <div className="divide-y divide-gray-300">
+            <div className="divide-y divide-[#313030]">
               {data.slice(0, 4).map((item, index) => (
                 <div key={index} className="py-3">
                   <HorizontalNewsCard data={item} />

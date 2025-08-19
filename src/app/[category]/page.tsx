@@ -12,6 +12,7 @@ import Navbar from '@/components/Navbar';
 import CategoryLeftSection from '@/components/CategoryLeftSection';
 import HorizontalNewsCard from '@/components/HorizontalNewsCard';
 import CategorySection from '@/components/CategorySection';
+import Breadcrumb from '@/components/Breadcrump';
 
 interface NewsItem {
   category: string;
@@ -57,12 +58,16 @@ export default async function CategoryPage({
   }
 
   return (
-  <>
-      <Navbar />
+    <>
+      <div className="hidden lg:block">
+        <Navbar />
+      </div>
+
       <div className="container mx-auto px-4 py-8">
+        {/* <Breadcrumb /> */}
         <CategoryHeader category={category} />
 
-       <CategorySection data={data} />
+        <CategorySection data={data} />
       </div>
     </>
   );

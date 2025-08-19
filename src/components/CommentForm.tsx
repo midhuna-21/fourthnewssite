@@ -5,7 +5,7 @@ const CommentForm = () => {
   return (
     <div className="w-full max-w-4xl mx-auto px-4 py-8">
       {/* Heading */}
-      <h2 className="text-lg font-extrabold mb-6">LEAVE A REPLY</h2>
+      <h2 className="text-[20px] font-[oswald] mb-6"style={{fontWeight:600}}>LEAVE A REPLY</h2>
 
       {/* Form */}
       <form className="space-y-4">
@@ -14,12 +14,12 @@ const CommentForm = () => {
           <input
             type="text"
             placeholder="Enter Name"
-            className="w-full border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 "
           />
           <input
             type="email"
             placeholder="Enter Email"
-            className="w-full border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2"
           />
         </div>
 
@@ -27,14 +27,14 @@ const CommentForm = () => {
         <input
           type="text"
           placeholder="Enter Website"
-          className="w-full border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 "
         />
 
         {/* Comments */}
         <textarea
           placeholder="Enter Comments"
           rows={6}
-          className="w-full border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2"
         ></textarea>
 
         {/* Submit Button */}

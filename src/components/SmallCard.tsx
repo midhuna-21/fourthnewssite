@@ -29,7 +29,7 @@ const SmallCard: React.FC<Props> = ({ data }) => {
         <span className="text-black font-bold">▶</span>
       </div>
       <div className="bg-black text-white p-3">
-        <h3 className="text-md font-bold">{data.title}</h3>
+        <p className="text-md line-clamp-2 leading-tight font-[oswald] text-[24px]" style={{fontWeight:700}}>{data.title}</p>
       </div>
     </div>
   );

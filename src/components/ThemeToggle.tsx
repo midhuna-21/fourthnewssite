@@ -1,4 +1,3 @@
-// components/ThemeToggle.tsx
 'use client'
 import { Sun, Moon } from "lucide-react";
 import { useTheme } from 'next-themes';
@@ -13,7 +12,7 @@ export default function ThemeToggle() {
   }, []);
 
   if (!mounted) {
-    return <div className="w-[26px] h-[26px]" />; // Placeholder to prevent layout shift
+    return <div className="w-[26px] h-[26px]" />;
   }
 
   const toggleTheme = () => {
@@ -21,16 +20,26 @@ export default function ThemeToggle() {
   };
 
   return (
-    <button 
+    <button
       type="button"
       onClick={toggleTheme}
-      className="text-gray-400 hover:text-gray-200 dark:text-gray-400 dark:hover:text-gray-200 cursor-pointer transition-colors duration-200"
+      className="text-[#5a5a5a] cursor-pointer transition-colors duration-200"
       aria-label="Toggle theme"
     >
       {theme === 'dark' ? (
-        <Sun size={26} strokeWidth={2} />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="26"
+          height="26"
+          viewBox="0 0 24 24"
+          fill="white"
+        >
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+        </svg>
+
+        // <Moon size={26} strokeWidth={2} fill="white" color="white"/>
       ) : (
-        <Moon size={26} strokeWidth={2} />
+        <Sun size={26} strokeWidth={2} />
       )}
     </button>
   );

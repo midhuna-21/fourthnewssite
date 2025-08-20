@@ -50,8 +50,9 @@ const FeaturedArticle: React.FC<Props> = ({ data }) => {
         </h1>
       </Link>
       {/* Short Description */}
+     
       <p
-        className="text-[14px] sm:text-[15px] md:text-[16px] mt-2 text-gray-500"
+        className="text-[14px] sm:text-[15px]  whitespace-nowrap overflow-hidden md:text-[16px] mt-2 text-gray-500"
         style={{
           fontWeight: 400,
           fontFamily: "Roboto, sans-serif",

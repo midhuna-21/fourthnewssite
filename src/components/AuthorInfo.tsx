@@ -15,15 +15,13 @@ const AuthorInfo: React.FC<AuthorProps> = ({ name, role = "Staff", date }) => {
     <div className="flex items-center space-x-3 mt-6 mb-5">
       {/* Author Image */}
       <div className="w-12 h-12 relative rounded-full overflow-hidden">
-      <Image
-  src={picture}
-  alt="Author"
-  width={48}
-  height={48}
-/>
-
+        <Image
+          src={picture}
+          alt="Author"
+          width={48}
+          height={48}
+        />
       </div>
-
       {/* Author Details */}
       <div className="flex flex-col">
         <p className="text-sm text-gray-500">

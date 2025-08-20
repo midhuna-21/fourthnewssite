@@ -131,7 +131,7 @@ function SearchContent({ query }: { query: string }) {
     <div className="container mx-auto px-6 py-12">
       <div className="mt-7">
         {/* Breadcrumb */}
-        <nav
+        {/* <nav
           className="text-[20px] text-gray-500"
           aria-label="Breadcrumb"
           style={{fontWeight: 500 }}
@@ -145,7 +145,7 @@ function SearchContent({ query }: { query: string }) {
             </li>
             <li>{query}</li>
           </ol>
-        </nav>
+        </nav> */}
 
         {/* Category Title */}
         <h1

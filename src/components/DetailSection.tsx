@@ -7,6 +7,7 @@ import CommentForm from '@/components/CommentForm';
 import RelatedNews from '@/components/RelatedNews';
 import HorizontalNewsCard from '@/components/HorizontalNewsCard';
 import PromoNews from './PromoNews';
+import f from '../../public/images/author.jpg'
 
 interface NewsItem {
   category: string;
@@ -55,12 +56,11 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
         {/* Left */}
         <div ref={leftRef} className="lg:col-span-2">
           <ArticleDetail data={article} />
-          {/* <AuthorInfo
+          <AuthorInfo
             name="Vibenews Staff"
             role="Editor"
             date={article.date}
-            image=""
-          /> */}
+          />
           <ArticleParagraph data={article} />
 
           <div ref={stopRef}>

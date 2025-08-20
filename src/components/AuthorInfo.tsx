@@ -1,21 +1,22 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import picture from '../../public/images/author.jpg'
 
 interface AuthorProps {
   name: string;
   role?: string;
   date: string;
-  image: string;
+  // image: string;
 }
 
-const AuthorInfo: React.FC<AuthorProps> = ({ name, role = "Staff", date, image }) => {
+const AuthorInfo: React.FC<AuthorProps> = ({ name, role = "Staff", date }) => {
   return (
     <div className="flex items-center space-x-3 mt-6 mb-5">
       {/* Author Image */}
       <div className="w-12 h-12 relative rounded-full overflow-hidden">
       <Image
-  src=""
+  src={picture}
   alt="Author"
   width={48}
   height={48}

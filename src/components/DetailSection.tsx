@@ -50,7 +50,7 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative">
         {/* Left */}
         <div ref={leftRef} className="lg:col-span-2">
@@ -64,7 +64,7 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
           <ArticleParagraph data={article} />
 
           <div ref={stopRef}>
-                 <PromoNews />
+                 {/* <PromoNews /> */}
             <CommentForm />
             <RelatedNews data={otherArticles} />
           </div>
@@ -74,9 +74,9 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
         <div className="lg:col-span-1 relative">
           <div
             ref={rightRef}
-            className={`${rightPosition === 'sticky' ? 'sticky top-20' : 'absolute bottom-0'} transition-all duration-500`}
+            className={`${rightPosition === 'sticky' ? 'sticky top-10' : 'absolute bottom-0'} transition-all duration-500`}
           >
-            <h2 className="text-xl font-bold mb-4">POPULAR POSTS</h2>
+            <h2 className="text-[24px] font-[oswald] mb-4" style={{fontWeight:700}}>POPULAR NEWS</h2>
             <div className="divide-y divide-[#313030]">
               {data.slice(0, 4).map((item, index) => (
                 <div key={index} className="py-3">

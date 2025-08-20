@@ -32,25 +32,25 @@ const ExclusiveClips: React.FC<Props> = ({ data }) => {
                 <div className="lg:col-span-4 space-y-2">
                     <SubHeadline title="Exclusive clips" />
                     <div className="border-b border-[#313030] pb-2 pr-3">
-                        <TopHorizontalCard data={data[1]} />
+                        <TopHorizontalCard data={data[0]} />
                     </div>
                     <div className="border-b border-[#313030] pb-2 pr-3">
                         <TopHorizontalCard data={data[1]} />
                     </div>
                     <div className="border-b border-[#313030] pb-2 pr-3">
-                        <TopHorizontalCard data={data[1]} />
+                        <TopHorizontalCard data={data[2]} />
                     </div>
                     <div className=" pr-3">
-                        <TopHorizontalCard data={data[1]} />
+                        <TopHorizontalCard data={data[3]} />
                     </div>
                 </div>
 
                 {/* RIGHT */}
                 <div className="lg:col-span-8">
-                    <TopFeaturedArticle data={data[8]} />
+                    <TopFeaturedArticle data={data[4]} />
                     <div className="lg:col-span-9 grid grid-cols-1 lg:grid-cols-8 gap-6">
                         <div className="lg:col-span-4 mt-5">
-                            <TopNewsCard data={data[0]} />
+                            <TopNewsCard data={data[5]} />
                         </div>
                         <div className="lg:col-span-4 border-gray-300 mt-5">
                             {data.slice(6, 9).map((item, i) => (

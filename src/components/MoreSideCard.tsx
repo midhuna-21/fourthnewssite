@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface NewsData {
     slug: string;
@@ -15,6 +16,10 @@ interface Props {
 }
 const MoreSideCard:React.FC<Props>=({data})=>{
   return (
+     <Link
+        href={`/${data.category}/${data.slug}`}
+        title={data.slug}
+      >
     <div className="w-full mb-4">
       {/* Image */}
       <div className="relative w-full h-48 md:h-56">
@@ -29,9 +34,9 @@ const MoreSideCard:React.FC<Props>=({data})=>{
 
       {/* Content */}
      <div className="mt-2">
-  <p style={{ color: "#838383" }}>
+  <p className="text-gray-500">
     <span
-      className="text-[14px]"
+      className="text-[14px] capitalize"
       style={{ fontWeight: 700, fontFamily: "Roboto, sans-serif" }}
     >
       {data.category}
@@ -53,6 +58,7 @@ const MoreSideCard:React.FC<Props>=({data})=>{
 </div>
 
     </div>
+      </Link>
   );
 }
 

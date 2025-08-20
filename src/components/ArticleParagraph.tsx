@@ -20,7 +20,7 @@ const ArticleParagraphWith = ({ data }: ArticleParagraphProps) => {
     }
 
     return (
-        <div className="px-4">
+        <div>
             {paragraphs.map((text, index) => (
                 <p
                     key={index}

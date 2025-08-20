@@ -23,7 +23,7 @@ interface Props {
 
 const MoreTopHeadlines: React.FC<Props> = ({ data }) => {
   return (
-    <div className="container mx-auto px-4 mt-6">
+    <div className="container mx-auto px-4 mt-24">
       {/* Subheadline for entire section */}
       <SubHeadline title="More Top Headlines" />
 
@@ -37,13 +37,13 @@ const MoreTopHeadlines: React.FC<Props> = ({ data }) => {
                <HorizontalNewsCard data={data[1]} />
           </div>
           <div className="border-b border-[#313030] pb-2 pt-2 pr-3">
-               <HorizontalNewsCard data={data[1]} />
+               <HorizontalNewsCard data={data[2]} />
           </div>
            <div className="border-b border-[#313030] pb-2 pt-2 pr-3">
-               <HorizontalNewsCard data={data[1]} />
+               <HorizontalNewsCard data={data[3]} />
           </div>
            <div className="pt-2 pr-3">
-               <HorizontalNewsCard data={data[1]} />
+               <HorizontalNewsCard data={data[4]} />
           </div>
          </div>
     
@@ -52,19 +52,19 @@ const MoreTopHeadlines: React.FC<Props> = ({ data }) => {
         {/* RIGHT */}
         <div className="lg:col-span-9">
           {/* Top full-width article */}
-          <MoreFeaturedArticle data={data[8]} />
+          <MoreFeaturedArticle data={data[5]} />
 
           {/* Three cards in one row */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 border-b border-[#313030]">
            <div className="border-r border-[#313030] pb-7 pr-4">
 
-            <NewsCard data={data[3]} />
+            <NewsCard data={data[6]} />
            </div>
             <div className="border-r border-[#313030] pr-4">
 
-            <NewsCard data={data[4]} />
+            <NewsCard data={data[7]} />
             </div>
-            <NewsCard data={data[5]} />
+            <NewsCard data={data[8]} />
           </div>
         </div>
       </div>

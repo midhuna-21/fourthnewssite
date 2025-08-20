@@ -3,7 +3,7 @@ import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-gray-300 px-6 md:px-16 mt-24 p-12">
+    <footer className="bg-black text-gray-300 px-6 md:px-16 p-12">
       {/* Top Section: Logo + Social */}
      <div className="flex flex-col items-start justify-between border-b border-gray-700 pb-6">
   {/* Logo */}

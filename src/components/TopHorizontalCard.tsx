@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 
 interface NewsData {
   slug: string;
@@ -17,28 +17,50 @@ interface Props {
 
 const TopHorizontalCard: React.FC<Props> = ({ data }) => {
   return (
-    <div className="flex max-w-md">
-      <div className="flex-shrink-0">
+      <Link
+        href={`/${data.category}/${data.slug}`}
+        title={data.slug}
+        className="block w-full"
+        style={{ color: "inherit" }}
+      >
+    <div className="flex flex-col sm:flex-row w-full">
+      {/* Left: Image */}
+      <div className="flex-shrink-0 w-full sm:w-[160px]">
         <Image
           src={data.image}
           alt={data.title}
           width={160}
           height={160}
-          className="w-45 h-30 object-cover"
+          className="w-full h-[180px] sm:w-[160px] sm:h-[120px] object-cover"
         />
       </div>
 
-      <div className="ml-3 flex flex-col justify-center">
-       <p style={{ color: '#838383' }}>
-            <span className="text-[14px]" style={{fontWeight:700,fontFamily:'Roboto, sans-serif'}}>{data.category}</span>{" "}
-            <span className="ml-1 text-[11px]"style={{fontFamily:'Roboto, sans-serif'}}>{data.date}</span>
-          </p>
-        <h3 className="mt-1 font-[oswald] text-[17px] font-bold leading-tight line-clamp-2">
+      {/* Right: Text */}
+      <div className="mt-2 sm:mt-0 sm:ml-3 flex flex-col justify-center w-full">
+        <p className="text-gray-500">
+          <span
+            className="text-[13px] sm:text-[14px] capitalize"
+            style={{ fontWeight: 700, fontFamily: "Roboto, sans-serif" }}
+          >
+            {data.category}
+          </span>{" "}
+          <span
+            className="ml-1 text-[11px] sm:text-[12px]"
+            style={{ fontFamily: "Roboto, sans-serif" }}
+          >
+            {data.date}
+          </span>
+        </p>
+
+        <h3
+          className="mt-1 font-[oswald] text-[15px] sm:text-[17px] font-bold leading-snug break-words whitespace-normal w-full"
+        >
           {data.title}
         </h3>
       </div>
     </div>
+      </Link>
   );
-}
+};
 
 export default TopHorizontalCard;

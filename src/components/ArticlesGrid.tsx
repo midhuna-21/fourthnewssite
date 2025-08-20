@@ -3,38 +3,47 @@ import HorizonArticle from "./HorizonArticle";
 import SubHeadline from "./SubHeadline";
 
 interface NewsData {
-    slug:string;
-    title:string;
-    category:string;
-    shortdescription:string;
-    description:string;
-    date:string;
-    image:string;
+  slug: string;
+  title: string;
+  category: string;
+  shortdescription: string;
+  description: string;
+  date: string;
+  image: string;
 }
 
 interface Props {
-    data:NewsData[];
+  data: NewsData[];
 }
 
-const ArticleGrid:React.FC<Props>=({data})=>{
+const ArticleGrid: React.FC<Props> = ({ data }) => {
   return (
+    
     <div className="container mx-auto px-4 py-8 mt-7">
       <SubHeadline title="Recommended For You" />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 border-b border-[#313030] mt-4">
-        <div className="border-r pr-4 pb-6 border-[#313030]">
-              <HorizonArticle data={data[0]}/>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 border-b border-[#313030] mt-4">
+        {/* Card 1 */}
+        <div className="pb-6 sm:border-r sm:pr-4 border-[#313030]">
+          <HorizonArticle data={data[0]} />
         </div>
-          <div className="border-r pr-4 border-[#313030]">
-              <HorizonArticle data={data[1]}/>
+
+        {/* Card 2 */}
+        <div className="pb-6 lg:pb-0 sm:border-r sm:pr-4 border-[#313030]">
+          <HorizonArticle data={data[1]} />
         </div>
-           <div className="border-r pr-4 border-[#313030]">
-              <HorizonArticle data={data[2]}/>
+
+        {/* Card 3 */}
+        <div className="pb-6 lg:pb-0 sm:border-r sm:pr-4 border-[#313030]">
+          <HorizonArticle data={data[2]} />
         </div>
-          <HorizonArticle data={data[3]}/>
-       
+
+        {/* Card 4 */}
+        <div className="pb-0">
+          <HorizonArticle data={data[3]} />
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default ArticleGrid;

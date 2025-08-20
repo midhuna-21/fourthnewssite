@@ -1,24 +1,29 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface NewsData {
-    slug: string;
-    category: string;
-    title: string;
-    shortdescription: string;
-    description: string;
-    date: string;
-    image: string;
+  slug: string;
+  category: string;
+  title: string;
+  shortdescription: string;
+  description: string;
+  date: string;
+  image: string;
 }
 
 interface Props {
-    data: NewsData;
+  data: NewsData;
 }
 
-const MoreFirstSection:React.FC<Props>=({data})=>{
+const MoreFirstSection: React.FC<Props> = ({ data }) => {
   return (
+     <Link
+        href={`/${data.category}/${data.slug}`}
+        title={data.slug}
+      >
     <div className="w-full mt-4">
       {/* Image */}
-      <div className="relative w-full h-72 md:h-[450px]">
+      <div className="relative w-full h-56 sm:h-64 md:h-80 lg:h-[450px]">
         <Image
           src={data.image}
           alt={data.title}
@@ -30,15 +35,22 @@ const MoreFirstSection:React.FC<Props>=({data})=>{
 
       {/* Content */}
       <div className="mt-4">
-        <p style={{ color: '#838383' }}>
-            <span className="text-[18px]" style={{fontWeight:700,fontFamily:'Roboto, sans-serif'}}>{data.category}</span>{" "}
+        <p className="text-gray-500">
+          <span className="text-[18px]" style={{fontWeight:700,fontFamily:'Roboto, sans-serif'}}>{data.category}</span>{" "}
             <span className="ml-1 text-[12px]"style={{fontFamily:'Roboto, sans-serif'}}>{data.date}</span>
-          </p>
-        <h2 className="text-[36px] font-[oswald] leading-tight line-clamp-1" style={{fontWeight:700}}>{data.title}</h2>
-        <p className="mt-1 text-[16px]" style={{fontFamily:'Roboto, sans-serif',color:'#b0b0b0'}}>{data.shortdescription}</p>
+        </p>
+
+        <h2 className="mt-1 font-[oswald] font-bold leading-tight line-clamp-2 text-[20px] sm:text-[28px] md:text-[36px]">
+          {data.title}
+        </h2>
+
+        <p className="mt-1 text-[12px] sm:text-[14px] md:text-[16px] text-gray-500"style={{fontFamily:'Roboto, sans-serif'}}>
+          {data.shortdescription}
+        </p>
       </div>
     </div>
+      </Link>
   );
-}
+};
 
 export default MoreFirstSection;

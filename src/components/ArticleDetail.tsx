@@ -18,27 +18,27 @@ interface Props {
 
 const ArticleDetail: React.FC<Props> = ({ data }) => {
   return (
-    <div className="container mx-auto px-4">
+    <div>
       {/* Category + Date */}
-      <p className="text-sm mb-2" style={{ color: '#454545' }}>
-        <span className="font-semibold text-[18px]">{data.category}
-        </span> • {data.date}
+      <p className="mb-2 text-gray-500">
+        <span className="font-semibold text-[16px] capitalize sm:text-[18px] md:text-[18px]">{data.category}</span> •{" "}
+        <span className="text-[12px] sm:text-[14px] md:text-[14px]">{data.date}</span>
       </p>
 
       {/* Title */}
       <h1
-        className="text-[56px] leading-[1.1] font-[oswald] mb-4"
-        style={{ fontWeight: 700 }}
+        className="font-[oswald] font-bold mb-4 text-[28px] sm:text-[40px] md:text-[56px] leading-tight sm:leading-[1.2] md:leading-[1.1]"
       >
         {data.title}
       </h1>
 
-
       {/* Short Description */}
-      <p className="text-[19px] mb-6" style={{ color: '#DDDDD', fontWeight: 400 }}>{data.shortdescription}</p>
+      <p className="mb-6 text-[14px] sm:text-[16px] md:text-[19px] text-gray-500 font-normal">
+        {data.shortdescription}
+      </p>
 
       {/* Article Image */}
-      <div className="w-full aspect-video relative overflow-hidden shadow-md">
+      <div className="w-full relative overflow-hidden shadow-md aspect-[16/9] sm:aspect-[16/9] md:aspect-video">
         <Image
           src={data.image}
           alt={data.title}

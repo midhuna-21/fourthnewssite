@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface NewsData {
   slug: string;
@@ -16,6 +17,12 @@ interface Props {
 
 const LifestyleCard: React.FC<Props> = ({ data }) => {
   return (
+      <Link
+        href={`/${data.category}/${data.slug}`}
+        title={data.slug}
+        className="block w-full"
+        style={{ color: "inherit" }}
+      >
     <div className="relative w-full h-56 sm:h-64 md:h-96">
       <Image
         src={data.image}
@@ -26,8 +33,8 @@ const LifestyleCard: React.FC<Props> = ({ data }) => {
       />
       <div className="absolute inset-0 flex flex-col justify-end px-3 py-4 sm:px-4 md:px-8  bg-gradient-to-t from-black/70 via-black/30 to-transparent">
         {/* Category and date */}
-       <p>
-            <span className="text-[18px]" style={{fontWeight:700,fontFamily:'Roboto, sans-serif'}}>{data.category}</span>{" "}
+       <p style={{color:"white"}}>
+            <span className="text-[18px] capitalize" style={{fontWeight:700,fontFamily:'Roboto, sans-serif'}}>{data.category}</span>{" "}
             <span className="ml-1 text-[12px]"style={{fontFamily:'Roboto, sans-serif'}}>{data.date}</span>
           </p>
 
@@ -45,6 +52,7 @@ const LifestyleCard: React.FC<Props> = ({ data }) => {
         </p>
       </div>
     </div>
+      </Link>
   );
 };
 

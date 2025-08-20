@@ -25,14 +25,14 @@ const NewsFirstLayout:React.FC<Props>=({data})=>{
       {/* LEFT */}
       <div className="lg:col-span-3 space-y-3">
         <SubHeadline title="what's happenging"/>
-        <NewsCard data={data[3]}/>
-        <NewsCard data={data[5]}/>
-        <NewsCard data={data[9]}/>
+        <NewsCard data={data[0]}/>
+        <NewsCard data={data[1]}/>
+        <NewsCard data={data[2]}/>
       </div>
 
       {/* CENTER */}
       <div className="lg:col-span-6">
-        <FeaturedArticle data={data[8]}/>
+        <FeaturedArticle data={data[3]}/>
       </div>
 
       {/* RIGHT  */}
@@ -41,15 +41,15 @@ const NewsFirstLayout:React.FC<Props>=({data})=>{
        <SubHeadline title="Just In"/>
 
         {/* Top Overlay Article */}
-        <OverlayArticleCard data={data[0]}/>
+        <OverlayArticleCard data={data[4]}/>
 
         {/* Horizontal Cards */}
        <div className="space-y-3">
-         <HorizontalNewsCard data={data[1]}/>
-        <HorizontalNewsCard data={data[2]}/>
-        <HorizontalNewsCard data={data[4]}/>
+         <HorizontalNewsCard data={data[5]}/>
         <HorizontalNewsCard data={data[6]}/>
         <HorizontalNewsCard data={data[7]}/>
+        <HorizontalNewsCard data={data[8]}/>
+        <HorizontalNewsCard data={data[9]}/>
        </div>
 
       </div>

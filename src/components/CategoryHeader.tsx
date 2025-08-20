@@ -9,7 +9,7 @@ export default function CategoryHeader({ category }: Props) {
   return (
     <div className='mt-7'>
       {/* Breadcrumb */}
-      <nav className=" text-[20px]" aria-label="Breadcrumb"style={{ color: '#DDDDD',fontWeight:500 }}>
+      <nav className=" text-[20px]" aria-label="Breadcrumb" style={{ color: '#DDDDD', fontWeight: 500 }}>
         <ol className="list-reset flex ">
           <li>
             <Link href="/">Home</Link>
@@ -20,9 +20,13 @@ export default function CategoryHeader({ category }: Props) {
       </nav>
 
       {/* Category Title */}
-      <h1 className="text-[45px]"style={{fontWeight:700,fontFamily:'Roboto, sans-serif'}}>
+      <h1
+        className="text-[28px] sm:text-[36px] xs:text-[36px] font-bold"
+        style={{ fontFamily: 'Roboto, sans-serif' }}
+      >
         Category : {category}
       </h1>
+
     </div>
   );
 }

@@ -9,6 +9,7 @@ import politicsData from '../../public/data/politics.json';
 import educationData from '../../public/data/education.json';
 import sportsData from '../../public/data/sports.json';
 import technologyData from '../../public/data/technology.json';
+import entertainmentData from '../../public/data/entertainment.json';
 import SecondArticle from "@/components/SecondArticle";
 import ArticleLayout from "@/components/ArticleLayout";
 import ArticlesGrid from "@/components/ArticlesGrid";
@@ -28,27 +29,27 @@ export default function Home() {
         <Navbar />
       </div>
 
-      <NewsFirstLayout data={[businessData[0], businessData[1], businessData[2], businessData[3], businessData[4], businessData[5], businessData[6], businessData[7], educationData[21], businessData[9], businessData[10]]} />
+      <NewsFirstLayout data={[businessData[3], healthData[1], scienceData[8], politicsData[16], educationData[26], technologyData[0], sportsData[0], businessData[0], educationData[0], businessData[1]]} />
 
       <ArticleLayout data={[politicsData[0], politicsData[1], politicsData[2], politicsData[3], politicsData[4], politicsData[5]]} />
 
-      <ArticlesGrid data={[educationData[0], educationData[1], educationData[2], educationData[3]]} />
+      <ArticlesGrid data={[educationData[1], scienceData[1], technologyData[4], educationData[3]]} />
 
-      <LatestNewsSection data={[scienceData[0], scienceData[1]]} />
+      <LatestNewsSection data={[politicsData[0], healthData[6]]} />
 
-      <FourCardGrid data={[healthData[0], healthData[1], healthData[2], healthData[3]]} />
+      <FourCardGrid data={[healthData[0], scienceData[2], sportsData[2], educationData[11]]} />
 
-      <PromoNews />
+      {/* <PromoNews /> */}
 
-      <MoreTopHeadlines data={[sportsData[0], sportsData[1], sportsData[2], sportsData[3], sportsData[4], sportsData[5], sportsData[6], sportsData[7], sportsData[8], sportsData[9], sportsData[10]]} />
+      <MoreTopHeadlines data={[sportsData[9], educationData[1], politicsData[3], sportsData[3], technologyData[3], educationData[5], businessData[8], healthData[7], educationData[9], sportsData[9], sportsData[10]]} />
 
-      <ExclusiveClips data={[technologyData[0], technologyData[1], technologyData[2], technologyData[3], technologyData[4], technologyData[5], technologyData[6], technologyData[7], technologyData[8], technologyData[9], technologyData[10]]} />
+      <ExclusiveClips data={[entertainmentData[9], healthData[8], sportsData[4], technologyData[8], politicsData[4], educationData[14], businessData[2], entertainmentData[2], businessData[4], entertainmentData[1], entertainmentData[0]]} />
 
-      <MainLayout data={[educationData[20], educationData[19], educationData[18], educationData[17], educationData[16], educationData[16]]} />
+      <MainLayout data={[politicsData[12], educationData[19], healthData[10], sportsData[10], educationData[16]]} />
 
-      <EntertainmentSection data={[healthData[0], healthData[1], healthData[2], healthData[3], sportsData[3]]} />
+      <EntertainmentSection data={[healthData[28], healthData[21], healthData[2], healthData[3], healthData[4]]} />
 
-      <ScrollLayout data={[technologyData[0], technologyData[1], technologyData[2], technologyData[3], technologyData[4], technologyData[5], technologyData[6], technologyData[7], technologyData[8], technologyData[9], educationData[1]]} />
+      <ScrollLayout data={[politicsData[11], sportsData[22], businessData[22], technologyData[20], educationData[4], healthData[24], scienceData[5], politicsData[27], scienceData[15], scienceData[16], scienceData[18],entertainmentData[19],entertainmentData[18],entertainmentData[20],technologyData[28]]} />
 
     </div>
   );

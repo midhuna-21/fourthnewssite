@@ -35,16 +35,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-   <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${oswald.variable} antialiased`}
-      >
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-        </Providers>
-      </body>
-    </html>
+ <html lang="en" suppressHydrationWarning>
+  <body
+    className={`${geistSans?.variable ?? ''} ${geistMono?.variable ?? ''} ${oswald?.variable ?? ''} antialiased`}
+    suppressHydrationWarning
+  >
+    <Providers>
+      <Header />
+      {children}
+      <Footer />
+    </Providers>
+  </body>
+</html>
+
   );
 }

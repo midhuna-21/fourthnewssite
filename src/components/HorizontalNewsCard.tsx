@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface NewsData {
   slug: string;
@@ -16,9 +17,16 @@ interface Props {
 
 const HorizontalNewsCard: React.FC<Props> = ({ data }) => {
   return (
-    <div className="flex max-w-md">
+       <Link
+        href={`/${data.category}/${data.slug}`}
+        title={data.slug}
+        className="block w-full"
+        style={{ color: "inherit" }}
+      >
+    <div className="flex w-full lg:max-w-md">
       {/* Image */}
-      <div className="flex-shrink-0 relative w-[105px] aspect-[105/95]">
+
+      <div className="flex-shrink-0 relative w-[95px] sm:w-[105px] aspect-[105/95]">
         <Image
           src={data.image}
           alt={data.title}
@@ -31,11 +39,10 @@ const HorizontalNewsCard: React.FC<Props> = ({ data }) => {
       <div className="ml-3 flex flex-col justify-center">
         <p>
           <span
-            className="text-[14px]"
+            className="text-[14px] capitalize text-gray-500"
             style={{
               fontWeight: 700,
               fontFamily: "Roboto, sans-serif",
-              color: "#9b9b9b",
             }}
           >
             {data.category}
@@ -50,14 +57,17 @@ const HorizontalNewsCard: React.FC<Props> = ({ data }) => {
             {data.date}
           </span>
         </p>
+
         <h3
-          className="mt-1 font-[oswald] text-[17px] leading-snug line-clamp-2"
-          style={{ fontWeight: 700 }}
+          className="mt-1 font-['Oswald'] font-bold 
+                     text-[15px] sm:text-[16px] md:text-[17px] 
+                     leading-snug line-clamp-3"
         >
           {data.title}
         </h3>
       </div>
     </div>
+      </Link>
   );
 };
 

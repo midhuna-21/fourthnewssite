@@ -1,57 +1,54 @@
-// components/MainLayout.tsx
-import React from "react";
-import LargeImageSection from "./LargeImageSection";
-import RightSidebar from "./RightSidebar";
-import SubHeadlineTwo from "./SubHeadlineTwo";
+  // components/MainLayout.tsx
+  import React from "react";
+  import LargeImageSection from "./LargeImageSection";
+  import RightSidebar from "./RightSidebar";
+  import SubHeadlineTwo from "./SubHeadlineTwo";
 
-interface NewsData {
-  slug: string;
-  title: string;
-  category: string;
-  shortdescription: string;
-  description: string;
-  date: string;
-  image: string;
-}
-
-interface Props {
-  data: NewsData[];
-}
-
-const MainLayout: React.FC<Props> = ({ data }) => {
-  if (!data || data.length < 5) {
-    return <div className="text-red-500">Not enough data to display layout.</div>;
+  interface NewsData {
+    slug: string;
+    title: string;
+    category: string;
+    shortdescription: string;
+    description: string;
+    date: string;
+    image: string;
   }
 
-  return (
-    <div className="container mx-auto px-4 mt-24">
-      {/* Full Height Black Background */}
-      <div className="h-screen bg-black text-white p-6">
-        <div className="flex h-full gap-6">
+  interface Props {
+    data: NewsData[];
+  }
 
-          {/* Left Section: Large Image */}
-          {/* Left Section: Large Image */}
-          <div className="flex-[2] flex flex-col border-b pb-5 border-[#313030]">
-            <SubHeadlineTwo title="News" />
-            <div className="flex-1 overflow-hidden">
-              <LargeImageSection data={data[0]} />
-            </div>
-          </div>
+  const MainLayout: React.FC<Props> = ({ data }) => {
+    if (!data || data.length < 5) {
+      return <div className="text-red-500">Not enough data to display layout.</div>;
+    }
 
+    return (
+<div className="container mx-auto px-4 mt-24">
+  {/* Full Height Black Background */}
+  <div className="min-h-screen lg:h-screen bg-black text-white p-6">
+    <div className="flex flex-col lg:flex-row lg:h-full gap-6">
 
-          {/* Right Section: Scrollable Sidebar */}
-          <div className="flex-1 flex flex-col">
-            <SubHeadlineTwo title="More News" />
-            <div className="flex-1 overflow-y-auto custom-scrollbar">
-              <RightSidebar data={data.slice(1, 5)} />
-            </div>
-
-          </div>
-
+      {/* Left Section: Large Image */}
+      <div className="lg:flex-[2] flex flex-col border-b pb-5 lg:border-r-0 border-[#313030]">
+        <SubHeadlineTwo title="News" />
+        <div className="lg:flex-1 overflow-hidden">
+          <LargeImageSection data={data[0]} />
         </div>
       </div>
-    </div>
-  );
-};
 
-export default MainLayout;
+      {/* Right Section: Scrollable Sidebar */}
+      <div className="lg:flex-1 flex flex-col pt-5 lg:pt-0">
+        <SubHeadlineTwo title="More News" />
+        <div className="lg:flex-1 lg:overflow-y-auto custom-scrollbar">
+          <RightSidebar data={data.slice(1, 5)} />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+    );
+  };
+
+  export default MainLayout;

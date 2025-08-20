@@ -12,6 +12,7 @@ import politicsData from '../../public/data/politics.json';
 import scienceData from '../../public/data/science.json';
 import entertainmentData from '../../public/data/entertainment.json';
 import educationData from '../../public/data/education.json';
+import Link from "next/link";
 
 const news = [businessData[0], sportsData[0], politicsData[0], healthData[0], technologyData[0], scienceData[0], educationData[0], entertainmentData[0]];
 
@@ -56,9 +57,11 @@ export default function Header() {
 
           {/* --- Center --- */}
           {/* Desktop: Logo only */}
+          <Link href='/' title="home">
           <span className="hidden md:block text-[#00ffc8] italic text-2xl sm:text-3xl font-black text-center">
             VIBENEWS
           </span>
+          </Link>
 
           {/* --- Right Side --- */}
           <div className="flex items-center gap-3">
@@ -105,37 +108,44 @@ export default function Header() {
           }`}
       >
         {/* Drawer Header */}
-        <div className="flex items-center justify-between p-6 border-b border-gray-700">
-          <span className="text-[#00ffc8] italic text-2xl font-black">VIBENEWS</span>
-          <button
-            onClick={() => setIsMenuOpen(false)}
-            className="text-gray-400 hover:text-white"
-          >
-            CLOSE <X className="inline ml-2" size={22} />
-          </button>
-        </div>
+     {/* Drawer Header */}
+<div className="flex items-center justify-between p-6 border-b border-gray-700 h-16">
+  <span className="text-[#00ffc8] italic text-2xl font-black">VIBENEWS</span>
+  <button
+    onClick={() => setIsMenuOpen(false)}
+    className="text-gray-400 hover:text-white"
+  >
+    CLOSE <X className="inline ml-2" size={22} />
+  </button>
+</div>
 
-        {/* News List */}
-        <div className="overflow-y-auto h-full p-4 space-y-6">
-          {news.map((item) => (
-            <div key={item.slug} className="flex gap-4 border-b border-gray-700 pb-4">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-24 h-24 object-cover flex-shrink-0"
-              />
-              <div>
-                <p className="text-sm font-semibold text-gray-400">
-                  {item.category}{" "}
-                  <span className="text-xs font-normal ml-2">{item.date}</span>
-                </p>
-                <h3 className="text-md font-bold hover:text-[#00ffc8] cursor-pointer">
-                  {item.title}
-                </h3>
-              </div>
-            </div>
-          ))}
+{/* News List */}
+<div className="overflow-y-auto h-[calc(100%-64px)] p-4 space-y-6">
+  {news.map((item) => (
+    <Link key={item.slug} href={`/${item.category}`} className="block">
+      <div className="flex gap-4 border-b border-gray-700 pb-4">
+        <img
+          src={item.image}
+          alt={item.title}
+          className="w-24 h-24 object-cover flex-shrink-0"
+        />
+        <div>
+          <p className="text-sm font-semibold text-gray-400">
+            {item.category}{" "}
+            <span className="text-xs font-normal ml-2">{item.date}</span>
+          </p>
+          <h3
+            className="text-[16px] font-[oswald] cursor-pointer"
+            style={{ fontWeight: 700 }}
+          >
+            {item.title}
+          </h3>
         </div>
+      </div>
+    </Link>
+  ))}
+</div>
+
       </div>
 
       {/* Light transparent background when drawer is open */}

@@ -23,7 +23,7 @@ interface Props {
 
 const RelatedNews: React.FC<Props> = ({ data }) => {
   return (
-    <div className="container mx-auto px-4 mt-6">
+    <div className="mt-6">
       {/* Subheadline for entire section */}
       <SubHeadline title="Related News" />
         <div className="lg:col-span-9">

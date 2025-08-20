@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface NewsData {
@@ -16,18 +17,34 @@ interface Props {
 
 const NewsHeadline: React.FC<Props> = ({ data }) => {
   return (
+        <Link
+        href={`/${data.category}/${data.slug}`}
+        title={data.slug}
+        className="block w-full"
+        style={{ color: "inherit" }}
+      >
     <div>
       {/* Date + Dot */}
+
       <div className="flex items-center">
         <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-        <span className="text-[11px]" style={{color:'#838383',fontFamily:'Roboto, sans-serif'}}>{data.date}</span>
+        <span
+          className="text-[10px] sm:text-[11px] md:text-[12px] capitalize text-gray-500"
+          style={{fontFamily: "Roboto, sans-serif" }}
+          >
+          {data.date}
+        </span>
       </div>
 
       {/* Headline */}
-      <h2 className="text-[24px] font-[oswald] line-clamp-2" style={{fontWeight:700}}>
+      <p
+        className="font-[oswald] line-clamp-2 text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px]"
+        style={{ fontWeight: 700 }}
+        >
         {data.title}
-      </h2>
+      </p>
     </div>
+        </Link>
   );
 };
 

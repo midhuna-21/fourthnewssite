@@ -18,21 +18,24 @@ interface Props {
 
 const ArticleLayout: React.FC<Props> = ({ data }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-12 gap-6 container mx-auto px-4 mt-12">
-      {/* Left Section (9/12 width) */}
-      <div className="md:col-span-9">
-        <SecondArticle data={data[0]} />
-      </div>
+    <div className="container mx-auto px-4 mt-12">
+      {/* Grid for desktop, stack for mobile/tablet */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        {/* Left Section (Featured Article) */}
+        <div className="col-span-1 lg:col-span-9">
+          <SecondArticle data={data[0]} />
+        </div>
 
-      {/* Right Section (3/12 width) */}
-      <div className="md:col-span-3 flex flex-col gap-2">
-        <SubHeadline title="Latest"/>
-        <NewsHeadline data={data[0]} />
-        <NewsHeadline data={data[1]} />
-        {/* <NewsHeadline data={data[2]} /> */}
+        {/* Right Section (Latest Headlines) */}
+        <div className="col-span-1 lg:col-span-3 flex flex-col gap-4">
+          <SubHeadline title="Latest" />
+          <NewsHeadline data={data[0]} />
+          <NewsHeadline data={data[1]} />
+          <NewsHeadline data={data[2]} />
+        </div>
       </div>
     </div>
   );
-};  
+};
 
 export default ArticleLayout;

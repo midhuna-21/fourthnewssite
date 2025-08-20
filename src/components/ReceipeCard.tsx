@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface NewsData {
   slug: string;
@@ -16,6 +17,12 @@ interface Props {
 
 const RecipeCard: React.FC<Props> = ({ data }) => {
   return (
+      <Link
+        href={`/${data.category}/${data.slug}`}
+        title={data.slug}
+        className="block w-full"
+        style={{ color: "inherit" }}
+      >
 <div className="flex flex-col sm:flex-row w-full border-b border-[#313030] min-h-[150px]">
   {/* Image */}
   <div className="relative w-full sm:w-2/5 h-40 sm:h-auto">
@@ -28,10 +35,10 @@ const RecipeCard: React.FC<Props> = ({ data }) => {
   </div>
 
   {/* Text Content */}
-  <div className="flex flex-col justify-center px-3 sm:px-5 py-3 sm:py-2 w-full sm:w-3/5">
-    <p style={{ color: '#838383' }}>
+  <div className="flex flex-col justify-center px-3 sm:px-5 py-3 sm:py-2 w-full sm:w-3/5 ">
+    <p className="text-gray-500">
       <span
-        className="text-[14px]"
+        className="text-[14px] capitalize"
         style={{ fontWeight: 700, fontFamily: 'Roboto, sans-serif' }}
       >
         {data.category}
@@ -50,13 +57,14 @@ const RecipeCard: React.FC<Props> = ({ data }) => {
       {data.title}
     </h2>
     <p
-      className="text-[14px] mt-1 line-clamp-2 leading-tight"
-      style={{ color: "#838383", fontWeight: 400 }}
+      className="text-[14px] mt-1 line-clamp-2 leading-tight text-gray-500"
+      style={{fontWeight: 400 }}
     >
       {data.shortdescription}
     </p>
   </div>
 </div>
+      </Link>
 
 
   );

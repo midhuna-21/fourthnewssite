@@ -132,9 +132,9 @@ function SearchContent({ query }: { query: string }) {
       <div className="mt-7">
         {/* Breadcrumb */}
         <nav
-          className="text-[20px]"
+          className="text-[20px] text-gray-500"
           aria-label="Breadcrumb"
-          style={{ color: "#DDDDDD", fontWeight: 500 }}
+          style={{fontWeight: 500 }}
         >
           <ol className="list-reset flex">
             <li>

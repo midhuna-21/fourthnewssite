@@ -28,70 +28,73 @@ const PaginationComponent = ({
   onPageChange: (page: number) => void;
 }) => {
   return (
-    <div className="flex items-center gap-10 max-w-sm mx-auto">
-      {/* Previous */}
-      <button
-        onClick={() => onPageChange(currentPage - 1)}
-        disabled={currentPage === 1}
-        className={`group flex items-center justify-center w-10 h-10 rounded-full text-sm font-medium transition-all duration-300 ${
-          currentPage === 1
-            ? "text-gray-400 cursor-not-allowed bg-gray-50"
-            : "text-gray-700 bg-white border border-gray-200 hover:border-gray-300 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0"
-        }`}
-      >
-        <svg
-          className="w-4 h-4 transition-transform group-hover:-translate-x-1"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M15 19l-7-7 7-7"
-          />
-        </svg>
-      </button>
+  <div className="flex items-center gap-10 max-w-sm mx-auto">
+  {/* Previous */}
+  <button
+    onClick={() => onPageChange(currentPage - 1)}
+    disabled={currentPage === 1}
+    className={`group flex items-center justify-center w-10 h-10 rounded-full text-sm font-medium transition-all duration-300 border ${
+      currentPage === 1
+        ? "text-gray-400 cursor-not-allowed border-gray-300 bg-transparent"
+        : "text-gray-700 border-gray-400 hover:border-gray-400 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 bg-transparent"
+    }`}
+  >
+    <svg
+      className="w-4 h-4 transition-transform group-hover:-translate-x-1"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M15 19l-7-7 7-7"
+      />
+    </svg>
+  </button>
 
-      {/* Page Dots */}
-      <div className="flex items-center space-x-2">
-        {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-          <button
-            key={page}
-            onClick={() => onPageChange(page)}
-            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 hover:scale-125 ${
-              currentPage === page ? "bg-black scale-125 shadow-md" : "bg-gray-300 hover:bg-gray-400"
-            }`}
-          />
-        ))}
-      </div>
-
-      {/* Next */}
+  {/* Page Dots */}
+  <div className="flex items-center space-x-2">
+    {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
       <button
-        onClick={() => onPageChange(currentPage + 1)}
-        disabled={currentPage === totalPages}
-        className={`group flex items-center justify-center w-10 h-10 rounded-full text-sm font-medium transition-all duration-300 ${
-          currentPage === totalPages
-            ? "text-gray-400 cursor-not-allowed bg-gray-50"
-            : "text-gray-700 bg-white border border-gray-200 hover:border-gray-300 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0"
+        key={page}
+        onClick={() => onPageChange(page)}
+        className={`w-2.5 h-2.5 rounded-full transition-all duration-300 hover:scale-125 ${
+          currentPage === page
+            ? "bg-gray-500 scale-125 shadow-md"
+            : "bg-gray-300 hover:bg-gray-400"
         }`}
-      >
-        <svg
-          className="w-4 h-4 transition-transform group-hover:translate-x-1"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M9 5l7 7-7 7"
-          />
-        </svg>
-      </button>
-    </div>
+      />
+    ))}
+  </div>
+
+  {/* Next */}
+  <button
+    onClick={() => onPageChange(currentPage + 1)}
+    disabled={currentPage === totalPages}
+    className={`group flex items-center justify-center w-10 h-10 rounded-full text-sm font-medium transition-all duration-300 border ${
+      currentPage === totalPages
+        ? "text-gray-400 cursor-not-allowed border-gray-300 bg-transparent"
+        : "text-gray-700 border-gray-400 hover:border-gray-400 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 bg-transparent"
+    }`}
+  >
+    <svg
+      className="w-4 h-4 transition-transform group-hover:translate-x-1"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M9 5l7 7-7 7"
+      />
+    </svg>
+  </button>
+</div>
+
   );
 };
 

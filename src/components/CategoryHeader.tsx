@@ -9,7 +9,7 @@ export default function CategoryHeader({ category }: Props) {
   return (
     <div className='mt-7'>
       {/* Breadcrumb */}
-      <nav className=" text-[20px]" aria-label="Breadcrumb" style={{ color: '#DDDDD', fontWeight: 500 }}>
+      <nav className=" text-[20px] text-gray-500" aria-label="Breadcrumb" style={{fontWeight: 500 }}>
         <ol className="list-reset flex ">
           <li>
             <Link href="/">Home</Link>

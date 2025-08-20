@@ -8,6 +8,7 @@ import RelatedNews from '@/components/RelatedNews';
 import HorizontalNewsCard from '@/components/HorizontalNewsCard';
 import PromoNews from './PromoNews';
 import f from '../../public/images/author.jpg'
+import AuthorCard from './AuthorCard';
 
 interface NewsItem {
   category: string;
@@ -65,6 +66,7 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
 
           <div ref={stopRef}>
                  {/* <PromoNews /> */}
+                 <AuthorCard />
             <CommentForm />
             <RelatedNews data={otherArticles} />
           </div>

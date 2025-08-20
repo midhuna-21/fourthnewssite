@@ -26,10 +26,10 @@ const AuthorInfo: React.FC<AuthorProps> = ({ name, role = "Staff", date }) => {
 
       {/* Author Details */}
       <div className="flex flex-col">
-        <p className="text-sm"style={{ color: '#838383' }}>
+        <p className="text-sm text-gray-500">
           By <span className="font-semibold">{name}</span>
         </p>
-        <p className="text-sm"style={{ color: '#838383' }}>
+        <p className="text-sm text-gray-500">
           Published <span className="font-medium">{date}</span>
         </p>
       </div>

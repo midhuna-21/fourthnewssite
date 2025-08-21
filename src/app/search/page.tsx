@@ -121,7 +121,7 @@ function SearchContent({ query }: { query: string }) {
   const currentPageData = filteredArticles.slice(startIndex, endIndex);
 
   return (
-    <div className="container mx-auto px-8 py-8">
+    <div className="w-full max-w-7xl px-8 mx-auto py-8">
       <div className="mt-7">
         {/* Breadcrumb */}
         {/* <nav

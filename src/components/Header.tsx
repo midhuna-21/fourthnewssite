@@ -35,7 +35,7 @@ export default function Header() {
     <>
       {/* Top Header */}
       <header className="w-full bg-black h-26 transition-colors duration-300">
-        <div className="container mx-auto px-7 flex items-center justify-between h-full">
+        <div className="w-full max-w-7xl px-8 mx-auto flex items-center justify-between h-full">
 
           <div className="flex items-center">
             <span className="md:hidden text-[#00ffc8] italic text-2xl sm:text-3xl font-black">

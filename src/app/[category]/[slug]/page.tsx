@@ -89,7 +89,7 @@ export default async function DetailPage({ params }: DetailPageProps) {
       </div>
 
       {/* Content with proper responsive padding */}
-      <div className="container mx-auto px-8 mt-12 mb-12">
+      <div className="w-full max-w-7xl px-8 mx-auto mt-12 mb-12">
         <DetailSection article={article} otherArticles={otherArticles} data={data} />
       </div>
     </div>

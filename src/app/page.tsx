@@ -29,7 +29,7 @@ export default function Home() {
         <Navbar />
       </div>
 
-<div className="container px-8 mx-auto">
+<div className="w-full max-w-7xl px-8 mx-auto">
       <NewsFirstLayout data={[businessData[3], healthData[1], scienceData[8], politicsData[16], educationData[26], technologyData[0], sportsData[0], businessData[0], educationData[0], businessData[1]]} />
 
       <ArticleLayout data={[politicsData[0], politicsData[1], politicsData[2], politicsData[3], politicsData[4], politicsData[5]]} />

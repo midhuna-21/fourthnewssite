@@ -19,14 +19,15 @@
   }
 
   const MainLayout: React.FC<Props> = ({ data }) => {
-    if (!data || data.length < 5) {
-      return <div className="text-red-500">Not enough data to display layout.</div>;
-    }
+    // if (!data || data.length < 5) {
+    //   return <div className="text-red-500">Not enough data to display layout.</div>;
+    // }
 
     return (
 <div className="mt-24">
   {/* Full Height Black Background */}
-  <div className="min-h-screen lg:h-screen bg-black text-white p-6">
+<div className="min-h-[105vh] lg:h-[105vh] bg-black text-white p-6">
+
     <div className="flex flex-col lg:flex-row lg:h-full gap-6">
 
       {/* Left Section: Large Image */}

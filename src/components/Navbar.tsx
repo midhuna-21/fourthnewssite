@@ -16,7 +16,7 @@ const categories = [
 export default function Navbar() {
   return (
     <nav className="w-full border-b border-[#909090] p-2">
-      <div className="mx-auto flex items-center justify-between container px-5">
+      <div className="w-full max-w-7xl px-5 mx-auto flex items-center justify-between">
         <ul className="flex items-center space-x-2">
           {categories.map((item) => (
             <li key={item.category} className="relative group">

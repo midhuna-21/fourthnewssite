@@ -7,9 +7,9 @@ export default function Footer() {
       {/* Top Section: Logo + Social */}
      <div className="flex flex-col items-start justify-between border-b border-gray-700 pb-6">
   {/* Logo */}
-  <h2 className="text-3xl font-extrabold italic text-[#00ffc8]">
-    VIBENEWS
-  </h2>
+    <span className=" text-[#ffffff] italic text-lg sm:text-3xl font-black">
+    MIRRORSTANDARD
+  </span>
 
   {/* Social Icons */}
   <div className="flex space-x-6 mt-4 text-white">
@@ -57,7 +57,7 @@ export default function Footer() {
       {/* Bottom Section */}
       <div className="border-t border-gray-700 pt-4 text-xs flex flex-col md:flex-row justify-between items-center text-gray-400">
         <p>
-          © Copyright <span className="font-bold text-white">VIBENEWS</span> 2023. All Rights Reserved.
+          © Copyright <span className="font-bold text-white">MIRRORSTANDARD</span> 2023. All Rights Reserved.
         </p>
         <div className="flex space-x-4 mt-2 md:mt-0">
           <a href="#">Terms of Use</a>

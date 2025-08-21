@@ -13,6 +13,8 @@ import scienceData from '../../public/data/science.json';
 import entertainmentData from '../../public/data/entertainment.json';
 import educationData from '../../public/data/education.json';
 import Link from "next/link";
+import Image from "next/image";
+import logo from '../../public/images/mirrorstandard-logo.webp'
 
 const news = [businessData[0], sportsData[0], politicsData[0], healthData[0], technologyData[0], scienceData[0], educationData[0], entertainmentData[0]];
 
@@ -38,8 +40,8 @@ export default function Header() {
         <div className="w-full max-w-7xl px-8 mx-auto flex items-center justify-between h-full">
 
           <div className="flex items-center">
-            <span className="md:hidden text-[#00ffc8] italic text-2xl sm:text-3xl font-black">
-              VIBENEWS
+            <span className="md:hidden text-[#ffffff] italic text-lg sm:text-3xl font-black">
+              MIRRORSTANDARD
             </span>
             <button
               type="button"
@@ -51,12 +53,23 @@ export default function Header() {
           </div>
 
           <Link href='/' title="home">
-            <span className="hidden md:block text-[#00ffc8] italic text-2xl sm:text-3xl font-black text-center">
-              VIBENEWS
+            {/* <span className="hidden md:block text-[#ffffffe7] italic text-xl sm:text-3xl font-black text-center">
+              MIRRORSTANDARD
+            </span> */}
+            <span className="hidden md:block text-[#ffffff] italic text-lg sm:text-3xl font-black">
+              MIRRORSTANDARD
             </span>
+            {/* <Image
+        src={logo}
+        alt="VIBENEWS Logo"
+        width={140}       // adjust width
+        height={40}       // adjust height
+        className="hidden md:block object-contain"
+      /> */}
           </Link>
 
           <div className="flex items-center gap-3">
+            {/* Desktop */}
             <div className="hidden md:flex items-center gap-3">
               <ThemeToggle />
               <button
@@ -68,6 +81,7 @@ export default function Header() {
               </button>
             </div>
 
+            {/* Mobile */}
             <div className="flex md:hidden items-center gap-3">
               <ThemeToggle />
               <button
@@ -75,17 +89,18 @@ export default function Header() {
                 className="text-[#5a5a5a] hover:text-[#00ffc8] cursor-pointer"
                 onClick={() => setIsSearchOpen(true)}
               >
-                <Search size={26} strokeWidth={2} />
+                <Search size={20} strokeWidth={2} />   {/* smaller size */}
               </button>
               <button
                 type="button"
                 className="text-[#5a5a5a] hover:text-[#00ffc8] cursor-pointer"
                 onClick={() => setIsMenuOpen(true)}
               >
-                <Menu size={32} strokeWidth={2} strokeLinecap="square" />
+                <Menu size={26} strokeWidth={2} strokeLinecap="square" />  {/* smaller size */}
               </button>
             </div>
           </div>
+
         </div>
       </header>
       <div
@@ -93,12 +108,12 @@ export default function Header() {
           }`}
       >
         <div className="flex items-center justify-between p-6 border-b border-gray-700 h-16">
-          <span className="text-[#00ffc8] italic text-2xl font-black">VIBENEWS</span>
+          <span className="text-[#ffffff] italic text-xl md:text-2xl font-black">MIRRORSTANDARD</span>
           <button
             onClick={() => setIsMenuOpen(false)}
             className="text-gray-400 hover:text-white"
           >
-            CLOSE <X className="inline ml-2" size={22} />
+            <X className="inline ml-2" size={22} />
           </button>
         </div>
 
@@ -137,45 +152,45 @@ export default function Header() {
       )}
 
       {isSearchOpen && (
-      <div className="fixed inset-0 bg-black bg-opacity-95 z-50 flex flex-col items-center justify-center">
-  <div className="w-full max-w-xl px-4 sm:px-6">
-    <form
-      onSubmit={handleSearch}
-      className="relative flex items-center border-b border-[#00ffc8]"
-    >
-      <input
-        type="text"
-        placeholder="Type Keywords Here..."
-        className="
+        <div className="fixed inset-0 bg-black bg-opacity-95 z-50 flex flex-col items-center justify-center">
+          <div className="w-full max-w-xl px-4 sm:px-6">
+            <form
+              onSubmit={handleSearch}
+              className="relative flex items-center border-b border-[#00ffc8]"
+            >
+              <input
+                type="text"
+                placeholder="Type Keywords Here..."
+                className="
           flex-1 bg-transparent text-white 
           text-2xl sm:text-3xl md:text-4xl   
           font-light py-2 sm:py-3 px-2 
           outline-none placeholder-gray-500
         "
-        autoFocus
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-      />
-      <button
-        type="submit"
-        className="text-gray-400 hover:text-[#00ffc8] transition-colors duration-300 px-2"
-      >
-        <Search size={24} className="sm:w-7 sm:h-7 md:w-8 md:h-8" strokeWidth={2} />
-      </button>
-    </form>
-  </div>
+                autoFocus
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
+              <button
+                type="submit"
+                className="text-gray-400 hover:text-[#00ffc8] transition-colors duration-300 px-2"
+              >
+                <Search size={24} className="sm:w-7 sm:h-7 md:w-8 md:h-8" strokeWidth={2} />
+              </button>
+            </form>
+          </div>
 
-  <button
-    type="button"
-    className="
+          <button
+            type="button"
+            className="
       absolute top-4 right-4 sm:top-6 sm:right-6 md:top-8 md:right-8 
       text-gray-400 hover:text-white transition-colors duration-300
     "
-    onClick={() => setIsSearchOpen(false)}
-  >
-    <X size={28} className="sm:w-8 sm:h-8 md:w-9 md:h-9" strokeWidth={2} />
-  </button>
-</div>
+            onClick={() => setIsSearchOpen(false)}
+          >
+            <X size={28} className="sm:w-8 sm:h-8 md:w-9 md:h-9" strokeWidth={2} />
+          </button>
+        </div>
 
       )}
     </>

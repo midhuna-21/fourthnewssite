@@ -17,6 +17,7 @@ import scienceData from "../../../public/data/science.json";
 import entertainmentData from "../../../public/data/entertainment.json";
 import CategoryHeader from "@/components/CategoryHeader";
 import Link from "next/link";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 // Pagination Component
 const PaginationComponent = ({
@@ -188,6 +189,8 @@ function SearchContent({ query }: { query: string }) {
           />
         </div>
       )}
+           <ScrollToTopButton />
+      
     </div>
   );
 }

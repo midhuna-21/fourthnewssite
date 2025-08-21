@@ -13,6 +13,7 @@ import CategoryLeftSection from '@/components/CategoryLeftSection';
 import HorizontalNewsCard from '@/components/HorizontalNewsCard';
 import CategorySection from '@/components/CategorySection';
 import Breadcrumb from '@/components/Breadcrump';
+import ScrollToTopButton from '@/components/ScrollToTopButton';
 
 interface NewsItem {
   category: string;
@@ -41,6 +42,7 @@ export async function generateStaticParams() {
   }));
 }
 
+
 export default async function CategoryPage({
   params,
 }: {
@@ -68,6 +70,8 @@ export default async function CategoryPage({
         <CategoryHeader category={category} />
 
         <CategorySection data={data} />
+        <ScrollToTopButton />
+
       </div>
     </>
   );

@@ -17,6 +17,8 @@ import CommentForm from '@/components/CommentForm';
 import RelatedNews from '@/components/RelatedNews';
 import HorizontalNewsCard from '@/components/HorizontalNewsCard';
 import DetailSection from '@/components/DetailSection';
+import ScrollToTopButton from '@/components/ScrollToTopButton';
+import Script from "next/script";
 
 export async function generateStaticParams() {
     const allData = [
@@ -82,16 +84,49 @@ export default async function DetailPage({ params }: DetailPageProps) {
     const otherArticles = data.filter(item => item.slug !== slug);
 
     return (
-       <div>
-      {/* Navbar only on large screens */}
-      <div className="hidden lg:block">
-        <Navbar />
-      </div>
+        <div>
+            <Script type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "NewsArticle",
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": `https://www.mirrorstandard.com/${article.category}/${article.slug}/`
+                        },
+                        "headline": article.title,
+                        "description": article.shortdescription,
+                        "image": article.image,
+                        "author": {
+                            "@type": "Person",
+                            "name": "mirrorstandard",
+                            "url": "https://www.mirrorstandard.com/"
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Mirrorstandard",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://www.mirrorstandard.com/images/mirrorstandard-logo.webp"
+                            }
+                        },
+                        "datePublished": "2025-06-18T00:00:00.000Z",
+                        "dateModified": "2025-06-18T00:00:00.000Z"
+                    }),
+                }}
+            />
 
-      {/* Content with proper responsive padding */}
-      <div className="w-full max-w-7xl px-8 mx-auto mt-12 mb-12">
-        <DetailSection article={article} otherArticles={otherArticles} data={data} />
-      </div>
-    </div>
+            {/* Navbar only on large screens */}
+            <div className="hidden lg:block">
+                <Navbar />
+            </div>
+
+            {/* Content with proper responsive padding */}
+            <div className="w-full max-w-7xl px-8 mx-auto mt-12 mb-12">
+                <DetailSection article={article} otherArticles={otherArticles} data={data} />
+            </div>
+            <ScrollToTopButton />
+
+        </div>
     );
 }

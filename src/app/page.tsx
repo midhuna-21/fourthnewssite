@@ -21,6 +21,7 @@ import MainLayout from "@/components/MainLayout";
 import EntertainmentSection from "@/components/Entertainment";
 import ScrollLayout from "@/components/ScrollLayout";
 import PromoNews from "@/components/PromoNews";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function Home() {
   return (
@@ -51,6 +52,7 @@ export default function Home() {
       <EntertainmentSection data={[healthData[28], healthData[21], healthData[2], healthData[3], healthData[4]]} />
 
       <ScrollLayout data={[politicsData[11], sportsData[22], businessData[22], technologyData[20], educationData[4], healthData[24], scienceData[5], politicsData[27], scienceData[15], scienceData[16], scienceData[18],entertainmentData[19],entertainmentData[18],entertainmentData[20],technologyData[28]]} />
+     <ScrollToTopButton />
    </div>
 
     </div>

@@ -18,7 +18,7 @@ import entertainmentData from "../../../public/data/entertainment.json";
 import CategoryHeader from "@/components/CategoryHeader";
 import Link from "next/link";
 
-// --- Pagination Component (same as yours) ---
+// Pagination Component
 const PaginationComponent = ({
   currentPage,
   totalPages,
@@ -29,37 +29,36 @@ const PaginationComponent = ({
   onPageChange: (page: number) => void;
 }) => {
   return (
-    <div className="flex items-center gap-10 max-w-sm mx-auto">
-      {/* Prev */}
+    <div className="flex items-center gap-8 max-w-sm mx-auto">
+      {/* Previous */}
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className={`group flex items-center justify-center w-10 h-10 rounded-full ${currentPage === 1
-            ? "text-gray-400 cursor-not-allowed bg-gray-50"
-            : "text-gray-700 bg-white border border-gray-200 hover:shadow-lg hover:-translate-y-0.5"
-          }`}
+        className={`flex items-center justify-center w-8 h-8 rounded-full transition-colors ${
+          currentPage === 1
+            ? "text-gray-400 cursor-not-allowed"
+            : "text-gray-700 hover:bg-gray-100"
+        }`}
       >
-        <svg
-          className="w-4 h-4 transition-transform group-hover:-translate-x-1"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
 
-      {/* Dots */}
+      {/* Page Numbers */}
       <div className="flex items-center space-x-2">
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
           <button
             key={page}
             onClick={() => onPageChange(page)}
-            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${currentPage === page
-                ? "bg-black scale-125 shadow-md"
-                : "bg-gray-300 hover:bg-gray-400"
-              }`}
-          />
+            className={`w-8 h-8 rounded-full text-sm font-medium transition-colors ${
+              currentPage === page
+                ? "text-white bg-[#838383]"
+                : " hover:bg-gray-100"
+            }`}
+          >
+            {page}
+          </button>
         ))}
       </div>
 
@@ -67,23 +66,20 @@ const PaginationComponent = ({
       <button
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className={`group flex items-center justify-center w-10 h-10 rounded-full ${currentPage === totalPages
-            ? "text-gray-400 cursor-not-allowed bg-gray-50"
-            : "text-gray-700 bg-white border border-gray-200 hover:shadow-lg hover:-translate-y-0.5"
-          }`}
+        className={`flex items-center justify-center w-8 h-8 rounded-full transition-colors ${
+          currentPage === totalPages
+            ? "text-gray-400 cursor-not-allowed"
+            : "text-gray-700 hover:bg-gray-100"
+        }`}
       >
-        <svg
-          className="w-4 h-4 transition-transform group-hover:translate-x-1"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
       </button>
     </div>
   );
 };
+
 // ✅ Main SearchContent
 function SearchContent({ query }: { query: string }) {
   const allArticles = [

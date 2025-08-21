@@ -18,7 +18,7 @@ interface Props {
 
 const ArticleLayout: React.FC<Props> = ({ data }) => {
   return (
-    <div className="container mx-auto px-4 mt-12">
+    <div className="mt-12">
       {/* Grid for desktop, stack for mobile/tablet */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Left Section (Featured Article) */}

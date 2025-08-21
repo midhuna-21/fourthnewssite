@@ -29,6 +29,7 @@ export default function Home() {
         <Navbar />
       </div>
 
+<div className="container px-8 mx-auto">
       <NewsFirstLayout data={[businessData[3], healthData[1], scienceData[8], politicsData[16], educationData[26], technologyData[0], sportsData[0], businessData[0], educationData[0], businessData[1]]} />
 
       <ArticleLayout data={[politicsData[0], politicsData[1], politicsData[2], politicsData[3], politicsData[4], politicsData[5]]} />
@@ -50,6 +51,7 @@ export default function Home() {
       <EntertainmentSection data={[healthData[28], healthData[21], healthData[2], healthData[3], healthData[4]]} />
 
       <ScrollLayout data={[politicsData[11], sportsData[22], businessData[22], technologyData[20], educationData[4], healthData[24], scienceData[5], politicsData[27], scienceData[15], scienceData[16], scienceData[18],entertainmentData[19],entertainmentData[18],entertainmentData[20],technologyData[28]]} />
+   </div>
 
     </div>
   );

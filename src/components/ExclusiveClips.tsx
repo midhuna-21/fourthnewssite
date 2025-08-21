@@ -27,17 +27,17 @@ interface Props {
 
 const ExclusiveClips: React.FC<Props> = ({ data }) => {
     return (
-        <div className="container mx-auto px-4 mt-24">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-4 border-b border-[#313030] pb-5">
+        <div className="mt-24">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-4 border-b border-[#615e5e54] pb-5">
                 <div className="lg:col-span-4 space-y-2">
                     <SubHeadline title="Exclusive clips" />
-                    <div className="border-b border-[#313030] pb-2 pr-3">
+                    <div className="border-b border-[#615e5e54] pb-2 pr-3">
                         <TopHorizontalCard data={data[0]} />
                     </div>
-                    <div className="border-b border-[#313030] pb-2 pr-3">
+                    <div className="border-b border-[#615e5e54] pb-2 pr-3">
                         <TopHorizontalCard data={data[1]} />
                     </div>
-                    <div className="border-b border-[#313030] pb-2 pr-3">
+                    <div className="border-b border-[#615e5e54] pb-2 pr-3">
                         <TopHorizontalCard data={data[2]} />
                     </div>
                     <div className=" pr-3">

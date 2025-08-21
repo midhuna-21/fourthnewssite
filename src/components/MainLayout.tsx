@@ -24,7 +24,7 @@
     }
 
     return (
-<div className="container mx-auto px-4 mt-24">
+<div className="mt-24">
   {/* Full Height Black Background */}
   <div className="min-h-screen lg:h-screen bg-black text-white p-6">
     <div className="flex flex-col lg:flex-row lg:h-full gap-6">

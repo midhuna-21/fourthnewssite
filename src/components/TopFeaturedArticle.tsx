@@ -23,7 +23,7 @@ const TopFeaturedArticle: React.FC<Props> = ({ data }) => {
         className="block w-full"
         style={{ color: "inherit" }}
       >
-        <div className="flex flex-col md:flex-row border-b border-[#313030] max-w-6xl mx-auto h-auto md:h-80">
+        <div className="flex flex-col md:flex-row border-b border-[#615e5e54] max-w-6xl mx-auto h-auto md:h-80">
 
             {/* Left Text Content */}
             <div className="md:w-6/12 w-full flex flex-col justify-center pr-0 md:pr-4 py-4">
@@ -52,8 +52,8 @@ const TopFeaturedArticle: React.FC<Props> = ({ data }) => {
 
                 {/* Responsive Description */}
                 <p
-                    className="mt-3 text-sm md:text-base leading-snug md:leading-tight line-clamp-3"
-                    style={{ fontWeight: 400, color: "#b0b0b0" }}
+                    className="mt-3 text-sm text-gray-500 md:text-base leading-snug md:leading-tight line-clamp-3"
+                    style={{ fontWeight: 400 }}
                 >
                     {data.shortdescription}
                 </p>

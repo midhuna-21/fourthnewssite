@@ -23,7 +23,7 @@ const MoreFeaturedArticle: React.FC<Props> = ({ data }) => {
             className="block w-full"
             style={{ color: "inherit" }}
         >
-            <div className="flex flex-col md:flex-row border-b border-[#313030] max-w-6xl mx-auto min-h-[340px] pb-3 md:pb-0">
+            <div className="flex flex-col md:flex-row border-b border-[#615e5e54] max-w-6xl mx-auto min-h-[340px] pb-3 md:pb-0">
                 {/* Left Image */}
                 <div className="md:w-6/12 w-full">
                     <Image

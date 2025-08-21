@@ -6,8 +6,6 @@ import ArticleParagraph from '@/components/ArticleParagraph';
 import CommentForm from '@/components/CommentForm';
 import RelatedNews from '@/components/RelatedNews';
 import HorizontalNewsCard from '@/components/HorizontalNewsCard';
-import PromoNews from './PromoNews';
-import f from '../../public/images/author.jpg'
 import AuthorCard from './AuthorCard';
 
 interface NewsItem {
@@ -36,14 +34,18 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
     const handleScroll = () => {
       if (!leftRef.current || !stopRef.current || !rightRef.current) return;
 
-      const stopPoint = stopRef.current.getBoundingClientRect().bottom; // bottom of comment form
-      const offset = 20; // same as sticky top
+      const stopPoint = stopRef.current.getBoundingClientRect().bottom;
+      const offset = 20;
 
-      if (stopPoint - offset <= 0) {
-        // left section finished scrolling
-        setRightPosition('absolute'); // right section stops sticking
+      if (window.innerWidth >= 1024) {
+        // apply sticky only on large screens
+        if (stopPoint - offset <= 0) {
+          setRightPosition('absolute');
+        } else {
+          setRightPosition('sticky');
+        }
       } else {
-        setRightPosition('sticky');
+        setRightPosition('absolute'); // disable sticky on tab & mobile
       }
     };
 
@@ -53,6 +55,7 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
 
   return (
     <div>
+      {/* On mobile & tablet: 1 column; On large: 3 columns */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative">
         {/* Left */}
         <div ref={leftRef} className="lg:col-span-2">
@@ -65,8 +68,7 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
           <ArticleParagraph data={article} />
 
           <div ref={stopRef}>
-                 {/* <PromoNews /> */}
-                 <AuthorCard />
+            <AuthorCard />
             <CommentForm />
             <RelatedNews data={otherArticles} />
           </div>
@@ -76,10 +78,10 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
         <div className="lg:col-span-1 relative">
           <div
             ref={rightRef}
-            className={`${rightPosition === 'sticky' ? 'sticky top-10' : 'absolute bottom-0'} transition-all duration-500`}
+            className={`${rightPosition === 'sticky' ? 'sticky top-10' : 'relative'} transition-all duration-500`}
           >
-            <h2 className="text-[24px] font-[oswald] mb-4" style={{fontWeight:700}}>POPULAR NEWS</h2>
-            <div className="divide-y divide-[#313030]">
+            <h2 className="text-[24px] font-[oswald] mb-4 font-bold">POPULAR NEWS</h2>
+            <div className="divide-y divide-[#615e5e54]">
               {data.slice(0, 4).map((item, index) => (
                 <div key={index} className="py-3">
                   <HorizontalNewsCard data={item} />

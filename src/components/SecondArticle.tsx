@@ -24,7 +24,7 @@ const SecondArticle: React.FC<Props> = ({ data }) => {
         style={{ color: "inherit" }}
       >
 
-    <div className="flex flex-col md:flex-row border-r border-b border-[#999999] max-w-6xl mx-auto h-auto md:h-[350px]">
+    <div className="flex flex-col md:flex-row border-r border-b border-[#615e5e54] max-w-6xl mx-auto h-auto md:h-[350px]">
       {/* Left Image */}
       <div className="md:w-8/12 w-full h-[220px] md:h-full">
       

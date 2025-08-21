@@ -43,7 +43,7 @@ const ScrollLayout: React.FC<Props> = ({ data }) => {
   }, []);
 
   return (
-  <div className="w-full container mx-auto px-4 py-8 mb-12 mt-12">
+  <div className="w-full py-8 mb-12 mt-12">
   <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
     {/* LEFT */}
     <div
@@ -52,31 +52,31 @@ const ScrollLayout: React.FC<Props> = ({ data }) => {
     >
       <SubHeadline title="More News" />
       <div id="first-more-section">
-        <div className="border-b border-[#313030] pb-6">
+        <div className="border-b border-[#615e5e54] pb-6">
           <MoreFirstSection data={data[0]} />
         </div>
       </div>
 
       <div className="space-y-3 mt-8">
-        <div className="border-b border-[#313030] pb-3">
+        <div className="border-b border-[#615e5e54] pb-3">
           <MoreSecondSection data={data[1]} />
         </div>
-        <div className="border-b border-[#313030] pb-3">
+        <div className="border-b border-[#615e5e54] pb-3">
           <MoreSecondSection data={data[2]} />
         </div>
         <MoreSecondSection data={data[3]} />
       </div>
 
       <div className="mt-8" id="second-more-section" ref={stopRef}>
-        <div className="border-t border-b border-[#313030] pt-5 pb-8">
+        <div className="border-t border-b border-[#615e5e54] pt-5 pb-8">
           <MoreFirstSection data={data[4]} />
         </div>
 
         <div className="space-y-3 mt-8">
-          <div className="border-b border-[#313030] pb-3">
+          <div className="border-b border-[#615e5e54] pb-3">
             <MoreSecondSection data={data[5]} />
           </div>
-          <div className="border-b border-[#313030] pb-3">
+          <div className="border-b border-[#615e5e54] pb-3">
             <MoreSecondSection data={data[6]} />
           </div>
           <MoreSecondSection data={data[7]} />
@@ -98,7 +98,7 @@ const ScrollLayout: React.FC<Props> = ({ data }) => {
           <SubHeadline title="Trending Topic" />
           <div className="mt-4">
             {[data[11], data[12], data[13]].map((item, index) => (
-              <div key={index} className={index < 2 ? "pb-2 border-b border-[#313030] mb-2" : ""}>
+              <div key={index} className={index < 2 ? "pb-2 border-b border-[#615e5e54] mb-2" : ""}>
                 <TopHorizontalCard data={item} />
               </div>
             ))}

@@ -135,18 +135,19 @@ export default function SearchPage() {
   const currentPageData = filteredArticles.slice(startIndex, endIndex);
 
   return (
-    <div className="container mx-auto px-6 py-12 text-white">
-      <h1 className="text-3xl font-bold mb-6">
-        Search Results for: <span className="text-[#00ffc8]">{query}</span>
-      </h1>
+    <div className="container mx-auto px-6 py-1 text-white">
+   <h1 className="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-bold mb-0">
+  Search Results for: <span className="text-[#00ffc8]">{query}</span>
+</h1>
 
+{/* 
       {filteredArticles.length === 0 && (
         <p className="text-gray-400 text-xl">No results found.</p>
-      )}
+      )} */}
 
       {filteredArticles.length > 0 && (
         <>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Left Section */}
             <div className="lg:col-span-2 space-y-6">
               <CategoryLeftSection data={currentPageData} />

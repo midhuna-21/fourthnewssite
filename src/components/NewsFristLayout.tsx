@@ -21,7 +21,7 @@ interface Props {
 const NewsFirstLayout:React.FC<Props>=({data})=>{
     
   return (
-    <div className="container mx-auto px-4 mt-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
+    <div className="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
       {/* LEFT */}
       <div className="lg:col-span-3 space-y-3">
         <SubHeadline title="what's happenging"/>

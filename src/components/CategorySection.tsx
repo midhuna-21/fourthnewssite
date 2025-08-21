@@ -28,73 +28,54 @@ const PaginationComponent = ({
   onPageChange: (page: number) => void;
 }) => {
   return (
-  <div className="flex items-center gap-10 max-w-sm mx-auto">
-  {/* Previous */}
-  <button
-    onClick={() => onPageChange(currentPage - 1)}
-    disabled={currentPage === 1}
-    className={`group flex items-center justify-center w-10 h-10 rounded-full text-sm font-medium transition-all duration-300 border ${
-      currentPage === 1
-        ? "text-gray-400 cursor-not-allowed border-gray-300 bg-transparent"
-        : "text-gray-700 border-gray-400 hover:border-gray-400 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 bg-transparent"
-    }`}
-  >
-    <svg
-      className="w-4 h-4 transition-transform group-hover:-translate-x-1"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M15 19l-7-7 7-7"
-      />
-    </svg>
-  </button>
-
-  {/* Page Dots */}
-  <div className="flex items-center space-x-2">
-    {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+    <div className="flex items-center gap-8 max-w-sm mx-auto">
+      {/* Previous */}
       <button
-        key={page}
-        onClick={() => onPageChange(page)}
-        className={`w-2.5 h-2.5 rounded-full transition-all duration-300 hover:scale-125 ${
-          currentPage === page
-            ? "bg-gray-500 scale-125 shadow-md"
-            : "bg-gray-300 hover:bg-gray-400"
+        onClick={() => onPageChange(currentPage - 1)}
+        disabled={currentPage === 1}
+        className={`flex items-center justify-center w-8 h-8 rounded-full transition-colors ${
+          currentPage === 1
+            ? "text-gray-400 cursor-not-allowed"
+            : "text-gray-700 hover:bg-gray-100"
         }`}
-      />
-    ))}
-  </div>
+      >
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
 
-  {/* Next */}
-  <button
-    onClick={() => onPageChange(currentPage + 1)}
-    disabled={currentPage === totalPages}
-    className={`group flex items-center justify-center w-10 h-10 rounded-full text-sm font-medium transition-all duration-300 border ${
-      currentPage === totalPages
-        ? "text-gray-400 cursor-not-allowed border-gray-300 bg-transparent"
-        : "text-gray-700 border-gray-400 hover:border-gray-400 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 bg-transparent"
-    }`}
-  >
-    <svg
-      className="w-4 h-4 transition-transform group-hover:translate-x-1"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M9 5l7 7-7 7"
-      />
-    </svg>
-  </button>
-</div>
+      {/* Page Numbers */}
+      <div className="flex items-center space-x-2">
+        {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+          <button
+            key={page}
+            onClick={() => onPageChange(page)}
+            className={`w-8 h-8 rounded-full text-sm font-medium transition-colors ${
+              currentPage === page
+                ? "text-white bg-[#838383]"
+                : " hover:bg-gray-100"
+            }`}
+          >
+            {page}
+          </button>
+        ))}
+      </div>
 
+      {/* Next */}
+      <button
+        onClick={() => onPageChange(currentPage + 1)}
+        disabled={currentPage === totalPages}
+        className={`flex items-center justify-center w-8 h-8 rounded-full transition-colors ${
+          currentPage === totalPages
+            ? "text-gray-400 cursor-not-allowed"
+            : "text-gray-700 hover:bg-gray-100"
+        }`}
+      >
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
   );
 };
 
@@ -140,7 +121,7 @@ export default function CategorySection({ data }: Props) {
             <h2 className="text-[24px] font-[oswald] uppercase mb-4" style={{ fontWeight: 700 }}>
               Trending News
             </h2>
-            <div className="divide-y divide-gray-[#313030]">
+            <div className="divide-y divide-[#615e5e54]">
               {data.slice(9, 13).map((item, idx) => (
                 <div key={idx} className="py-3">
                   <HorizontalNewsCard data={item} />

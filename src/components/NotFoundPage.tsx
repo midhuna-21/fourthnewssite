@@ -4,17 +4,17 @@ import { Search } from "lucide-react";
 
 export default function NotFoundPage() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col md:mt-24 mt-5 md:mb-5 md-0">
       {/* Heading */}
-      <h1 className="text-4xl font-extrabold mb-4">Nothing found!</h1>
+      <h1 className="text-[24px] sm:text-[32px] md:text-[36px] lg:text-[42px]  font-[oswald] mb-4" style={{fontWeight:700}}>Nothing found!</h1>
 
       {/* Subtext */}
-      <p className="text-gray-600 mb-6">
+      <p className="text-gray-600 mb-6" style={{fontFamily:'Roboto, sans-serif'}}>
         It looks like nothing was found here. Maybe try a search?
       </p>
 
       {/* Search Bar */}
-      <div className="flex w-full max-w-2xl border rounded overflow-hidden">
+      <div className="flex w-full border border-gray-300 rounded overflow-hidden">
         <input
           type="text"
           placeholder="Search..."

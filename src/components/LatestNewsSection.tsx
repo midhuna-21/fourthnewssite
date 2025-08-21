@@ -17,7 +17,7 @@ interface Props {
 
 const LatestNewsSection: React.FC<Props> = ({ data }) => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="py-8">
       <SubHeadline title="Latest News" />
       <div className="flex flex-col lg:flex-row gap-8 mt-5">
         <div className="w-full lg:w-1/2">

@@ -23,7 +23,7 @@ const RecipeCard: React.FC<Props> = ({ data }) => {
         className="block w-full"
         style={{ color: "inherit" }}
       >
-<div className="flex flex-col sm:flex-row w-full border-b border-[#313030] min-h-[150px]">
+<div className="flex flex-col sm:flex-row w-full border-b border-[#615e5e54] min-h-[150px]">
   {/* Image */}
   <div className="relative w-full sm:w-2/5 h-40 sm:h-auto">
     <Image

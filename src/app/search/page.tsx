@@ -19,74 +19,71 @@ import CategoryHeader from "@/components/CategoryHeader";
 import Link from "next/link";
 
 // --- Pagination Component (same as yours) ---
- const PaginationComponent = ({
-    currentPage,
-    totalPages,
-    onPageChange,
-  }: {
-    currentPage: number;
-    totalPages: number;
-    onPageChange: (page: number) => void;
-  }) => {
-    return (
-      <div className="flex items-center gap-10 max-w-sm mx-auto">
-        {/* Prev */}
-        <button
-          onClick={() => onPageChange(currentPage - 1)}
-          disabled={currentPage === 1}
-          className={`group flex items-center justify-center w-10 h-10 rounded-full ${
-            currentPage === 1
-              ? "text-gray-400 cursor-not-allowed bg-gray-50"
-              : "text-gray-700 bg-white border border-gray-200 hover:shadow-lg hover:-translate-y-0.5"
+const PaginationComponent = ({
+  currentPage,
+  totalPages,
+  onPageChange,
+}: {
+  currentPage: number;
+  totalPages: number;
+  onPageChange: (page: number) => void;
+}) => {
+  return (
+    <div className="flex items-center gap-10 max-w-sm mx-auto">
+      {/* Prev */}
+      <button
+        onClick={() => onPageChange(currentPage - 1)}
+        disabled={currentPage === 1}
+        className={`group flex items-center justify-center w-10 h-10 rounded-full ${currentPage === 1
+            ? "text-gray-400 cursor-not-allowed bg-gray-50"
+            : "text-gray-700 bg-white border border-gray-200 hover:shadow-lg hover:-translate-y-0.5"
           }`}
+      >
+        <svg
+          className="w-4 h-4 transition-transform group-hover:-translate-x-1"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
         >
-          <svg
-            className="w-4 h-4 transition-transform group-hover:-translate-x-1"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
 
-        {/* Dots */}
-        <div className="flex items-center space-x-2">
-          {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-            <button
-              key={page}
-              onClick={() => onPageChange(page)}
-              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                currentPage === page
-                  ? "bg-black scale-125 shadow-md"
-                  : "bg-gray-300 hover:bg-gray-400"
+      {/* Dots */}
+      <div className="flex items-center space-x-2">
+        {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+          <button
+            key={page}
+            onClick={() => onPageChange(page)}
+            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${currentPage === page
+                ? "bg-black scale-125 shadow-md"
+                : "bg-gray-300 hover:bg-gray-400"
               }`}
-            />
-          ))}
-        </div>
-
-        {/* Next */}
-        <button
-          onClick={() => onPageChange(currentPage + 1)}
-          disabled={currentPage === totalPages}
-          className={`group flex items-center justify-center w-10 h-10 rounded-full ${
-            currentPage === totalPages
-              ? "text-gray-400 cursor-not-allowed bg-gray-50"
-              : "text-gray-700 bg-white border border-gray-200 hover:shadow-lg hover:-translate-y-0.5"
-          }`}
-        >
-          <svg
-            className="w-4 h-4 transition-transform group-hover:translate-x-1"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
+          />
+        ))}
       </div>
-    );
-  };
+
+      {/* Next */}
+      <button
+        onClick={() => onPageChange(currentPage + 1)}
+        disabled={currentPage === totalPages}
+        className={`group flex items-center justify-center w-10 h-10 rounded-full ${currentPage === totalPages
+            ? "text-gray-400 cursor-not-allowed bg-gray-50"
+            : "text-gray-700 bg-white border border-gray-200 hover:shadow-lg hover:-translate-y-0.5"
+          }`}
+      >
+        <svg
+          className="w-4 h-4 transition-transform group-hover:translate-x-1"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  );
+};
 // ✅ Main SearchContent
 function SearchContent({ query }: { query: string }) {
   const allArticles = [
@@ -128,7 +125,7 @@ function SearchContent({ query }: { query: string }) {
   const currentPageData = filteredArticles.slice(startIndex, endIndex);
 
   return (
-    <div className="container mx-auto px-6 py-12">
+    <div className="container mx-auto px-8 py-8">
       <div className="mt-7">
         {/* Breadcrumb */}
         {/* <nav
@@ -148,15 +145,14 @@ function SearchContent({ query }: { query: string }) {
         </nav> */}
 
         {/* Category Title */}
-        <h1
-          className="text-[28px] sm:text-[36px] xs:text-[36px] font-bold"
-          style={{ fontFamily: "Roboto, sans-serif" }}
-        >
-          Search Results for Category: {query}
+        <h1 className="text-[24px] sm:text-[28px] md:text-[40px] lg:text-[40px] mb-0 " style={{fontWeight:700,fontFamily:'Roboto, sans-serif'}}>
+          Search Results for: {query}
         </h1>
+
+         <div className="w-16 border-b-4"></div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Left */}
         <div className="lg:col-span-2 space-y-6">
           {hasResults ? (
@@ -175,7 +171,7 @@ function SearchContent({ query }: { query: string }) {
             >
               POPULAR NEWS
             </h2>
-            <div className="divide-y divide-gray-300">
+            <div className="divide-y divide-[#615e5e54]">
               {businessData.slice(0, 4).map((item, idx) => (
                 <div key={idx} className="py-3">
                   <HorizontalNewsCard data={item} />
@@ -231,7 +227,7 @@ function SearchQueryHandler() {
 
 export default function SearchPage() {
   return (
-    <Suspense fallback={<div className="p-6">Loading search results...</div>}>
+    <Suspense>
       <SearchQueryHandler />
     </Suspense>
   );

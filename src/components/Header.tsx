@@ -34,38 +34,29 @@ export default function Header() {
   return (
     <>
       {/* Top Header */}
-      <header className="w-full bg-black h-24 transition-colors duration-300">
-        <div className="container mx-auto px-4 flex items-center justify-between h-full">
+      <header className="w-full bg-black h-26 transition-colors duration-300">
+        <div className="container mx-auto px-7 flex items-center justify-between h-full">
 
-          {/* --- Left Side --- */}
-          {/* Mobile/Tablet: Logo | Desktop: Menu */}
           <div className="flex items-center">
-            {/* Mobile/Tablet Logo */}
             <span className="md:hidden text-[#00ffc8] italic text-2xl sm:text-3xl font-black">
               VIBENEWS
             </span>
-
-            {/* Desktop Menu */}
             <button
               type="button"
               className="hidden md:block text-[#5a5a5a] hover:text-[#00ffc8] cursor-pointer"
               onClick={() => setIsMenuOpen(true)}
             >
-              <Menu size={36} strokeWidth={2} strokeLinecap="square" />
+              <Menu size={40} strokeWidth={2} strokeLinecap="square" className="scale-y-90" />
             </button>
           </div>
 
-          {/* --- Center --- */}
-          {/* Desktop: Logo only */}
           <Link href='/' title="home">
-          <span className="hidden md:block text-[#00ffc8] italic text-2xl sm:text-3xl font-black text-center">
-            VIBENEWS
-          </span>
+            <span className="hidden md:block text-[#00ffc8] italic text-2xl sm:text-3xl font-black text-center">
+              VIBENEWS
+            </span>
           </Link>
 
-          {/* --- Right Side --- */}
           <div className="flex items-center gap-3">
-            {/* Desktop: ThemeToggle + Search */}
             <div className="hidden md:flex items-center gap-3">
               <ThemeToggle />
               <button
@@ -77,7 +68,6 @@ export default function Header() {
               </button>
             </div>
 
-            {/* Mobile/Tablet: ThemeToggle + Search + Menu */}
             <div className="flex md:hidden items-center gap-3">
               <ThemeToggle />
               <button
@@ -96,59 +86,49 @@ export default function Header() {
               </button>
             </div>
           </div>
-
         </div>
       </header>
-
-
-
-      {/* Left Drawer Menu */}
       <div
         className={`fixed top-0 left-0 h-full w-80 sm:w-96 bg-black text-white z-50 transform transition-transform duration-300 ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
       >
-        {/* Drawer Header */}
-     {/* Drawer Header */}
-<div className="flex items-center justify-between p-6 border-b border-gray-700 h-16">
-  <span className="text-[#00ffc8] italic text-2xl font-black">VIBENEWS</span>
-  <button
-    onClick={() => setIsMenuOpen(false)}
-    className="text-gray-400 hover:text-white"
-  >
-    CLOSE <X className="inline ml-2" size={22} />
-  </button>
-</div>
-
-{/* News List */}
-<div className="overflow-y-auto h-[calc(100%-64px)] p-4 space-y-6">
-  {news.map((item) => (
-    <Link key={item.slug} href={`/${item.category}`} className="block">
-      <div className="flex gap-4 border-b border-gray-700 pb-4">
-        <img
-          src={item.image}
-          alt={item.title}
-          className="w-24 h-24 object-cover flex-shrink-0"
-        />
-        <div>
-          <p className="text-sm font-semibold text-gray-400">
-            {item.category}{" "}
-            <span className="text-xs font-normal ml-2">{item.date}</span>
-          </p>
-          <h3
-            className="text-[16px] font-[oswald] cursor-pointer"
-            style={{ fontWeight: 700 }}
+        <div className="flex items-center justify-between p-6 border-b border-gray-700 h-16">
+          <span className="text-[#00ffc8] italic text-2xl font-black">VIBENEWS</span>
+          <button
+            onClick={() => setIsMenuOpen(false)}
+            className="text-gray-400 hover:text-white"
           >
-            {item.title}
-          </h3>
+            CLOSE <X className="inline ml-2" size={22} />
+          </button>
+        </div>
+
+        <div className="overflow-y-auto h-[calc(100%-64px)] p-4 space-y-6">
+          {news.map((item) => (
+            <Link key={item.slug} href={`/${item.category}`} className="block">
+              <div className="flex gap-4 border-b border-gray-700 pb-4">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-24 h-24 object-cover flex-shrink-0"
+                />
+                <div>
+                  <p className="text-sm font-semibold text-gray-400">
+                    {item.category}{" "}
+                    <span className="text-xs font-normal ml-2">{item.date}</span>
+                  </p>
+                  <h3
+                    className="text-[16px] font-[oswald] cursor-pointer"
+                    style={{ fontWeight: 700 }}
+                  >
+                    {item.title}
+                  </h3>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
-    </Link>
-  ))}
-</div>
 
-      </div>
-
-      {/* Light transparent background when drawer is open */}
       {isMenuOpen && (
         <div
           className="fixed inset-0 bg-black/70 z-40 transition-opacity duration-300"
@@ -156,40 +136,47 @@ export default function Header() {
         />
       )}
 
-      {/* Search Overlay */}
       {isSearchOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-95 z-50 flex flex-col items-center justify-center">
-          <div className="w-full max-w-2xl px-6">
-            <form
-              onSubmit={handleSearch}
-              className="relative flex items-center border-b-2 border-[#00ffc8]"
-            >
-              <input
-                type="text"
-                placeholder="Type Keywords Here..."
-                className="flex-1 bg-transparent text-white text-4xl font-light py-3 px-2 outline-none placeholder-gray-500"
-                autoFocus
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
-              <button
-                type="submit"
-                className="text-gray-400 hover:text-[#00ffc8] transition-colors duration-300 px-2"
-              >
-                <Search size={28} strokeWidth={2} />
-              </button>
-            </form>
-          </div>
+      <div className="fixed inset-0 bg-black bg-opacity-95 z-50 flex flex-col items-center justify-center">
+  <div className="w-full max-w-xl px-4 sm:px-6">
+    <form
+      onSubmit={handleSearch}
+      className="relative flex items-center border-b border-[#00ffc8]"
+    >
+      <input
+        type="text"
+        placeholder="Type Keywords Here..."
+        className="
+          flex-1 bg-transparent text-white 
+          text-2xl sm:text-3xl md:text-4xl   
+          font-light py-2 sm:py-3 px-2 
+          outline-none placeholder-gray-500
+        "
+        autoFocus
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+      />
+      <button
+        type="submit"
+        className="text-gray-400 hover:text-[#00ffc8] transition-colors duration-300 px-2"
+      >
+        <Search size={24} className="sm:w-7 sm:h-7 md:w-8 md:h-8" strokeWidth={2} />
+      </button>
+    </form>
+  </div>
 
-          {/* Close button */}
-          <button
-            type="button"
-            className="absolute top-8 right-8 text-gray-400 hover:text-white transition-colors duration-300"
-            onClick={() => setIsSearchOpen(false)}
-          >
-            <X size={36} strokeWidth={2} />
-          </button>
-        </div>
+  <button
+    type="button"
+    className="
+      absolute top-4 right-4 sm:top-6 sm:right-6 md:top-8 md:right-8 
+      text-gray-400 hover:text-white transition-colors duration-300
+    "
+    onClick={() => setIsSearchOpen(false)}
+  >
+    <X size={28} className="sm:w-8 sm:h-8 md:w-9 md:h-9" strokeWidth={2} />
+  </button>
+</div>
+
       )}
     </>
   );

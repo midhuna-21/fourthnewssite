@@ -22,7 +22,7 @@ const CategoryLeftSection: React.FC<Props> = ({ data }) => {
           {data.map((item, index) => (
             <div
               key={item.slug || index}
-              className={index !== data.length - 1 ? "border-b border-[#838383] pb-5" : ""}
+              className={index !== data.length - 1 ? "border-b border-[#615e5e54] pb-5" : ""}
             >
               <MoreSecondSection data={item} />
             </div>

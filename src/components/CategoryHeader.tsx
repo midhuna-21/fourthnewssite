@@ -7,7 +7,7 @@ interface Props {
 
 export default function CategoryHeader({ category }: Props) {
   return (
-    <div className='mt-7'>
+    <div className='md:mt-7 mt-4'>
       {/* Breadcrumb */}
       <nav className=" text-[20px] text-gray-500" aria-label="Breadcrumb" style={{fontWeight: 500 }}>
         <ol className="list-reset flex ">

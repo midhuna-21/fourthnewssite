@@ -17,7 +17,7 @@ interface Props {
 const CategoryLeftSection: React.FC<Props> = ({ data }) => {
   return (
     <div>
-      <div className="mt-12" id="second-more-section">
+      <div className="md:mt-12 mt-7" id="second-more-section">
         <div className="space-y-5">
           {data.map((item, index) => (
             <div

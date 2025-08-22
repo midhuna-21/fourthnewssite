@@ -43,8 +43,8 @@ const NewsCard: React.FC<Props> = ({ data }) => {
           {/* Title text size responsive */}
           <p
             className="font-['Oswald'] font-bold line-clamp-2 
-                       text-[20px] sm:text-[24px] lg:text-[24px] 
-                       leading-snug lg:leading-tight"
+                       text-[17px] sm:text-[24px] lg:text-[24px] 
+                       leading-tight"
           >
             {data.title}
           </p>

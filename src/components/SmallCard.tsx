@@ -32,11 +32,12 @@ const SmallCard: React.FC<Props> = ({ data }) => {
           className="w-full h-50 object-cover"
         />
 
-        <div className="absolute top-2 left-2 bg-green-400 rounded-full p-2">
+        {/* <div className="absolute top-2 left-2 bg-green-400 rounded-full p-2">
           <span className="text-black font-bold">▶</span>
-        </div>
+        </div> */}
+
         <div className="bg-black text-white mt-2">
-          <p className="text-md line-clamp-2 leading-tight font-[oswald] text-[24px]" style={{ fontWeight: 700 }}>{data.title}</p>
+          <p className="text-md line-clamp-2 leading-tight font-[oswald] text-[17px] md:text-[24px]" style={{ fontWeight: 700 }}>{data.title}</p>
         </div>
       </div>
     </Link>

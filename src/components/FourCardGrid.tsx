@@ -17,7 +17,7 @@ interface Props {
 const FourCardGrid: React.FC<Props> = ({ data }) => {
   return (
     <div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-5 mt-5">
         {data.slice(0, 4).map((item) => (
           <RecipeCard key={item.slug} data={item} />
         ))}

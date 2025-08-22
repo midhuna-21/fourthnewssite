@@ -21,7 +21,7 @@ const ArticleGrid: React.FC<Props> = ({ data }) => {
     
     <div className="py-8 mt-7">
       <SubHeadline title="Recommended For You" />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 border-b border-[#615e5e54] mt-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 md:gap-6 border-b border-[#615e5e54] md:pb-0 pb-7 md:mt-3">
         {/* Card 1 */}
         <div className="pb-6 sm:border-r sm:pr-4 border-[#615e5e54]">
           <HorizonArticle data={data[0]} />

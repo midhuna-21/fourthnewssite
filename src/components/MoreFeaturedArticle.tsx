@@ -23,7 +23,7 @@ const MoreFeaturedArticle: React.FC<Props> = ({ data }) => {
             className="block w-full"
             style={{ color: "inherit" }}
         >
-            <div className="flex flex-col md:flex-row border-b border-[#615e5e54] max-w-6xl mx-auto min-h-[340px] pb-3 md:pb-0">
+            <div className="flex flex-col md:flex-row md:border-b border-[#615e5e54] max-w-6xl mx-auto min-h-[340px] pb-3 md:pb-0">
                 {/* Left Image */}
                 <div className="md:w-6/12 w-full">
                     <Image
@@ -53,14 +53,14 @@ const MoreFeaturedArticle: React.FC<Props> = ({ data }) => {
                     </p>
 
                     <p
-                        className="font-[oswald] leading-snug md:leading-tight line-clamp-3 text-[22px] sm:text-[28px] md:text-[32px] lg:text-[36px] mt-1"
+                        className="font-[oswald] leading-tight md:leading-tight line-clamp-3 text-[22px] sm:text-[28px] md:text-[32px] lg:text-[36px] mt-1"
                         style={{ fontWeight: 700 }}
                     >
                         {data.title}
                     </p>
 
                     <p
-                        className="mt-3 text-[14px] text-gray-500 sm:text-[15px] md:text-[16px] leading-snug md:leading-tight line-clamp-3"
+                        className="mt-1 text-[14px] text-gray-500 sm:text-[15px] md:text-[16px] leading-tight md:leading-tight line-clamp-3"
                         style={{ fontWeight: 400 }}
                     >
                         {data.shortdescription}

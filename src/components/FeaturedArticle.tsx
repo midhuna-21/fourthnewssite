@@ -75,7 +75,7 @@ const FeaturedArticle: React.FC<Props> = ({ data }) => {
             alt={data.title}
             width={1000}
             height={800}
-            className="w-full h-[220px] sm:h-[350px] md:h-[590px] object-cover"
+            className="w-full h-[350px] sm:h-[350px] md:h-[590px] object-cover"
           />
         </Link>
       </div>

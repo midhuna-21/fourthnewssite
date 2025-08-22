@@ -23,7 +23,7 @@ const LargeImageSection: React.FC<Props> = ({ data }) => {
       className="block w-full"
       style={{ color: "inherit" }}
     >
-   <div className="relative w-full h-[600px] pr-4 mt-4 mx-auto mb-6">
+   <div className="relative w-full md:h-[600px] h-[400px] pr-4 mt-4 mx-auto mb-6">
 
   {/* Image */}
   <Image
@@ -34,21 +34,16 @@ const LargeImageSection: React.FC<Props> = ({ data }) => {
     priority
   />
 
-  {/* Play Button */}
-  <div className="absolute top-4 left-4 bg-emerald-400 rounded-full w-12 h-12 flex items-center justify-center shadow-md">
-    <span className="text-black text-lg font-bold">▶</span>
-  </div>
-
   {/* Bottom Overlay */}
   <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 rounded-b-lg">
     <h2
-      className="text-[20px] md:text-[28px] lg:text-[36px] text-white font-[oswald] leading-snug"
+      className="text-[20px] md:text-[28px] lg:text-[36px] md:mt-0 mt-3 text-white font-[oswald] leading-snug"
       style={{ fontWeight: 700 }}
     >
       {data.title}
     </h2>
     <p
-      className="text-[14px] md:text-[16px] mt-1 leading-relaxed"
+      className="text-[14px] md:text-[16px] mt-1 leading-tight line-clamp-3"
       style={{ color: "#A7A7A7", fontFamily: "Roboto, sans-serif" }}
     >
       {data.shortdescription}

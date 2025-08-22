@@ -21,9 +21,9 @@ interface Props {
 const NewsFirstLayout:React.FC<Props>=({data})=>{
     
   return (
-    <div className="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
+    <div className="mt-12 md:mt-6 grid grid-cols-1 lg:grid-cols-12 gap-15 md:gap-6">
       {/* LEFT */}
-      <div className="lg:col-span-3 space-y-3">
+      <div className="lg:col-span-3 md:space-y-3 space-y-4">
         <SubHeadline title="what's happenging"/>
         <NewsCard data={data[0]}/>
         <NewsCard data={data[1]}/>
@@ -36,7 +36,7 @@ const NewsFirstLayout:React.FC<Props>=({data})=>{
       </div>
 
       {/* RIGHT  */}
-      <div className="lg:col-span-3 space-y-4">
+      <div className="lg:col-span-3 space-y-3 md:space-y-4">
         {/* Just In Heading */}
        <SubHeadline title="Just In"/>
 
@@ -44,7 +44,7 @@ const NewsFirstLayout:React.FC<Props>=({data})=>{
         <OverlayArticleCard data={data[4]}/>
 
         {/* Horizontal Cards */}
-       <div className="space-y-3">
+       <div className="md:space-y-3 space-y-4">
          <HorizontalNewsCard data={data[5]}/>
         <HorizontalNewsCard data={data[6]}/>
         <HorizontalNewsCard data={data[7]}/>

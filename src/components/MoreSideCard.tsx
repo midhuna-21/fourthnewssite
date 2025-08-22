@@ -50,7 +50,7 @@ const MoreSideCard:React.FC<Props>=({data})=>{
   </p>
 
   <p
-    className="text-[24px] font-[oswald] leading-tight"
+    className="text-[17px] md:text-[24px] font-[oswald] leading-tight"
     style={{ fontWeight: 700 }}
   >
     {data.title}

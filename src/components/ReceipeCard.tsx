@@ -35,7 +35,7 @@ const RecipeCard: React.FC<Props> = ({ data }) => {
   </div>
 
   {/* Text Content */}
-  <div className="flex flex-col justify-center px-3 sm:px-5 py-3 sm:py-2 w-full sm:w-3/5 ">
+  <div className="flex flex-col justify-center px-0 md:px-3 sm:px-5 py-3 sm:py-2 w-full sm:w-3/5 ">
     <p className="text-gray-500">
       <span
         className="text-[14px] capitalize"
@@ -51,7 +51,7 @@ const RecipeCard: React.FC<Props> = ({ data }) => {
       </span>
     </p>
     <h2
-      className="font-[oswald] text-[24px] leading-tight line-clamp-2 mt-1"
+      className="font-[oswald] text-[17px] md:text-[24px] leading-tight line-clamp-2 mt-1"
       style={{ fontWeight: 700 }}
     >
       {data.title}

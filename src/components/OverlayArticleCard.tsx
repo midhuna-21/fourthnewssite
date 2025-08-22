@@ -17,7 +17,7 @@ interface Props {
 
 const OverlayArticleCard: React.FC<Props> = ({ data }) => {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full md:mb-0 mb-5">
        <Link
         href={`/${data.category}/${data.slug}`}
         title={data.slug}

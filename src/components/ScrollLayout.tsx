@@ -43,7 +43,7 @@ const ScrollLayout: React.FC<Props> = ({ data }) => {
   }, []);
 
   return (
-  <div className="w-full py-8 mb-12 mt-12">
+  <div className="w-full py-8 mb-12 mt-8">
   <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
     {/* LEFT */}
     <div
@@ -58,10 +58,10 @@ const ScrollLayout: React.FC<Props> = ({ data }) => {
       </div>
 
       <div className="space-y-3 mt-8">
-        <div className="border-b border-[#615e5e54] pb-3">
+        <div className="md:border-b border-[#615e5e54] pb-4 md:pb-3">
           <MoreSecondSection data={data[1]} />
         </div>
-        <div className="border-b border-[#615e5e54] pb-3">
+        <div className="md:border-b border-[#615e5e54] pb-4 md:pb-3">
           <MoreSecondSection data={data[2]} />
         </div>
         <MoreSecondSection data={data[3]} />
@@ -73,10 +73,10 @@ const ScrollLayout: React.FC<Props> = ({ data }) => {
         </div>
 
         <div className="space-y-3 mt-8">
-          <div className="border-b border-[#615e5e54] pb-3">
+          <div className="md:border-b border-[#615e5e54] pb-5 md:pb-3">
             <MoreSecondSection data={data[5]} />
           </div>
-          <div className="border-b border-[#615e5e54] pb-3">
+          <div className="md:border-b border-[#615e5e54] pb-5 md:pb-3">
             <MoreSecondSection data={data[6]} />
           </div>
           <MoreSecondSection data={data[7]} />
@@ -94,18 +94,18 @@ const ScrollLayout: React.FC<Props> = ({ data }) => {
           <MoreSideCard data={data[10]} />
         </div>
 
-        <div className="mt-12">
+        <div className="mt-9">
           <SubHeadline title="Trending Topic" />
           <div className="mt-4">
             {[data[11], data[12], data[13]].map((item, index) => (
-              <div key={index} className={index < 2 ? "pb-2 border-b border-[#615e5e54] mb-2" : ""}>
+              <div key={index} className={index < 2 ? "pb-4 md:pb-2 md:border-b border-[#615e5e54] mb-2" : ""}>
                 <TopHorizontalCard data={item} />
               </div>
             ))}
           </div>
         </div>
 
-        <div className="mt-16">
+        <div className="mt-14">
           <VibeNewsCard data={data[14]} />
         </div>
       </div>

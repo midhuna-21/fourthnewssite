@@ -35,7 +35,7 @@ const HorizonArticle: React.FC<Props> = ({ data }) => {
       </div>
 
       {/* Text */}
-      <div className="mt-3">
+      <div className="mt-2">
         <p className="text-gray-500">
           <span
             className="text-[12px] sm:text-[13px] md:text-[14px] capitalize"
@@ -52,7 +52,7 @@ const HorizonArticle: React.FC<Props> = ({ data }) => {
         </p>
 
         <h2
-          className="font-[oswald] line-clamp-2 leading-snug mt-1 text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] hover:underline"
+          className="font-[oswald] line-clamp-2 leading-tight text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px]"
           style={{ fontWeight: 700 }}
         >
           {data.title}

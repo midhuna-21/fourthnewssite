@@ -23,7 +23,7 @@ const LifestyleCard: React.FC<Props> = ({ data }) => {
         className="block w-full"
         style={{ color: "inherit" }}
       >
-    <div className="relative w-full h-56 sm:h-64 md:h-96">
+    <div className="relative w-full h-70 sm:h-64 md:h-96">
       <Image
         src={data.image}
         alt={data.title}
@@ -47,7 +47,7 @@ const LifestyleCard: React.FC<Props> = ({ data }) => {
         </h1>
 
         {/* Short description */}
-        <p className="text-xs sm:text-sm md:text-base mt-2 max-w-2xl leading-tight" style={{color:'#B0B0B0',fontWeight:400}}>
+        <p className="text-sm sm:text-sm md:text-base mt-2 max-w-2xl leading-tight line-clamp-3" style={{color:'#ffffff',fontWeight:400}}>
           {data.shortdescription}
         </p>
       </div>

@@ -132,7 +132,7 @@ export default function Header() {
                     <span className="text-xs font-normal ml-2">{item.date}</span>
                   </p>
                   <h3
-                    className="text-[16px] font-[oswald] cursor-pointer"
+                    className="text-[12px] md:text-[16px] font-[oswald] cursor-pointer"
                     style={{ fontWeight: 700 }}
                   >
                     {item.title}

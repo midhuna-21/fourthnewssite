@@ -24,7 +24,7 @@ const SecondArticle: React.FC<Props> = ({ data }) => {
         style={{ color: "inherit" }}
       >
 
-    <div className="flex flex-col md:flex-row border-r border-b border-[#615e5e54] max-w-6xl mx-auto h-auto md:h-[350px]">
+    <div className="flex flex-col md:flex-row md:border-r md:border-b border-[#615e5e54] max-w-6xl mx-auto h-auto md:h-[350px]">
       {/* Left Image */}
       <div className="md:w-8/12 w-full h-[220px] md:h-full">
       
@@ -55,14 +55,14 @@ const SecondArticle: React.FC<Props> = ({ data }) => {
         </p>
 
         <h2
-          className="font-[oswald] text-[22px] sm:text-[28px] md:text-[32px] lg:text-[36px] font-bold leading-snug md:leading-tight"
+          className="font-[oswald] text-[22px] sm:text-[28px] md:text-[32px] lg:text-[36px] leading-tight line-clamp-2"
           style={{ fontWeight: 700 }}
         >
           {data.title}
         </h2>
 
         <p
-          className="mt-2 text-[14px] text-gray-500 md:text-[16px]"
+          className="mt-2 text-[14px] text-gray-500 md:text-[16px] leading-tight"
           style={{
             fontWeight: 400,
             fontFamily: "Roboto, sans-serif",

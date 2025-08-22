@@ -16,10 +16,10 @@ interface Props {
 }
 
 const LatestNewsSection: React.FC<Props> = ({ data }) => {
+  console.log(data,'data')
   return (
-    <div className="py-8">
-      <SubHeadline title="Latest News" />
-      <div className="flex flex-col lg:flex-row gap-8 mt-5">
+    <div>
+      <div className="flex flex-col lg:flex-row  gap-5 md:gap-8 mt-5">
         <div className="w-full lg:w-1/2">
           <LifestyleCard data={data[0]} />
         </div>

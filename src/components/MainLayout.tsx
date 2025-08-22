@@ -24,14 +24,14 @@
     // }
 
     return (
-<div className="mt-24">
+<div className="mt-18">
   {/* Full Height Black Background */}
 <div className="min-h-[105vh] lg:h-[105vh] bg-black text-white p-6">
 
-    <div className="flex flex-col lg:flex-row lg:h-full gap-6">
+    <div className="flex flex-col lg:flex-row lg:h-full gap-0 md:gap-6">
 
       {/* Left Section: Large Image */}
-      <div className="lg:flex-[2] flex flex-col border-b pb-5 lg:border-r-0 border-[#313030]">
+      <div className="lg:flex-[2] flex flex-col md:border-b pb-5 lg:border-r-0 border-[#313030]">
         <SubHeadlineTwo title="News" />
         <div className="lg:flex-1 overflow-hidden">
           <LargeImageSection data={data[0]} />
@@ -39,8 +39,8 @@
       </div>
 
       {/* Right Section: Scrollable Sidebar */}
-      <div className="lg:flex-1 flex flex-col pt-5 lg:pt-0">
-        <SubHeadlineTwo title="More News" />
+      <div className="lg:flex-1 flex flex-col md:pt-5 lg:pt-0">
+        <SubHeadlineTwo title="Latest" />
         <div className="lg:flex-1 lg:overflow-y-auto custom-scrollbar">
           <RightSidebar data={data.slice(1, 5)} />
         </div>

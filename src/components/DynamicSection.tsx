@@ -23,7 +23,7 @@ const DynamicSection: React.FC<Props> = ({ data }) => {
 
   // Filtered data
   const filteredData = useMemo(() => {
-    console.log(selectedCategory,'selectedCategory')
+    // console.log(selectedCategory,'selectedCategory')
     if (selectedCategory === "All") return data;
     return data.filter((item) => item.category === selectedCategory);
   }, [selectedCategory, data]);

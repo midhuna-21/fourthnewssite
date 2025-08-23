@@ -25,7 +25,7 @@ const VibeNewsCard: React.FC<Props> = ({data}) => {
       {/* Background Image */}
       <img
         src={data.image}
-        alt="VibeNews"
+        alt="MirrorStandard"
         className="w-full h-full object-cover"
       />
 

@@ -65,7 +65,7 @@ export default async function CategoryPage({
         <Navbar />
       </div>
 
-      <div className="w-full max-w-7xl px-8 mx-auto md:py-8 py-0">
+      <div className="w-full max-w-7xl px-5 md:px-8 mx-auto md:py-8 py-0">
         {/* <Breadcrumb /> */}
         <CategoryHeader category={category} />
 

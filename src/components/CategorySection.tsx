@@ -28,7 +28,7 @@ const PaginationComponent = ({
   onPageChange: (page: number) => void;
 }) => {
   return (
-    <div className="flex items-center gap-8 max-w-sm mx-auto">
+    <div className="flex items-center gap-4 max-w-sm mx-auto">
       {/* Previous */}
       <button
         onClick={() => onPageChange(currentPage - 1)}
@@ -104,43 +104,48 @@ export default function CategorySection({ data }: Props) {
   const currentPageData = data.slice(startIndex, endIndex);
 
   return (
-    <div className="w-full">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* Left Section */}
-        <div className="lg:col-span-2 space-y-6">
-          {currentPageData.length > 0 ? (
-            <CategoryLeftSection data={currentPageData} />
-          ) : (
-            <p className="text-center text-gray-500">No news available.</p>
-          )}
-        </div>
+<div className="w-full">
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    {/* Left Section */}
+    <div className="lg:col-span-2 space-y-6">
+      {currentPageData.length > 0 ? (
+        <CategoryLeftSection data={currentPageData} />
+      ) : (
+        <p className="text-center text-gray-500">No news available.</p>
+      )}
 
-        {/* Right Section */}
-        <div className="lg:col-span-1">
-          <div className="sticky top-10">
-            <h2 className="text-[24px] font-[oswald] uppercase mb-4" style={{ fontWeight: 700 }}>
-              Trending News
-            </h2>
-            <div className="divide-y divide-[#615e5e54]">
-              {data.slice(9, 13).map((item, idx) => (
-                <div key={idx} className="py-3">
-                  <HorizontalNewsCard data={item} />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {showPagination && (
-        <div className="py-24"> {/* ~48px / ~3cm spacing */}
+     {showPagination && (
+  <div className="py-3 md:py-10">
     <PaginationComponent
       currentPage={currentPage}
       totalPages={totalPages}
       onPageChange={handlePageChange}
     />
+  </div>
+)}
+
     </div>
-      )}
+
+    {/* Right Section */}
+    <div className="lg:col-span-1">
+      <div className="sticky top-10">
+        <h2
+          className="text-[24px] font-[oswald] uppercase mb-4"
+          style={{ fontWeight: 700 }}
+        >
+          Trending News
+        </h2>
+        <div className="divide-y divide-[#615e5e54]">
+          {data.slice(9, 13).map((item, idx) => (
+            <div key={idx} className="py-3">
+              <HorizontalNewsCard data={item} />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+
   );
 }

@@ -30,7 +30,7 @@ const PaginationComponent = ({
   onPageChange: (page: number) => void;
 }) => {
   return (
-    <div className="flex items-center gap-8 max-w-sm mx-auto">
+    <div className="flex items-center gap-4 max-w-sm mx-auto">
       {/* Previous */}
       <button
         onClick={() => onPageChange(currentPage - 1)}
@@ -122,7 +122,7 @@ function SearchContent({ query }: { query: string }) {
   const currentPageData = filteredArticles.slice(startIndex, endIndex);
 
   return (
-    <div className="w-full max-w-7xl px-8 mx-auto py-8">
+    <div className="w-full max-w-7xl px-5 md:px-8 mx-auto md:py-8 py-0">
       <div className="mt-7">
         {/* Breadcrumb */}
         {/* <nav
@@ -142,11 +142,11 @@ function SearchContent({ query }: { query: string }) {
         </nav> */}
 
         {/* Category Title */}
-        <h1 className="text-[24px] sm:text-[28px] md:text-[40px] lg:text-[40px] mb-0 " style={{fontWeight:700,fontFamily:'Roboto, sans-serif'}}>
+        <h1 className="text-[20px] sm:text-[28px] md:text-[40px] lg:text-[40px] mb-0 " style={{fontWeight:700,fontFamily:'Roboto, sans-serif'}}>
           Search Results for: {query}
         </h1>
 
-         <div className="w-16 border-b-4"></div>
+         {/* <div className="w-16 border-b-4"></div> */}
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -157,6 +157,16 @@ function SearchContent({ query }: { query: string }) {
           ) : (
             <NotFoundPage />
           )}
+
+          {showPagination && (
+        <div className="md:py-10 py-5">
+          <PaginationComponent
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={handlePageChange}
+          />
+        </div>
+      )}  
         </div>
 
         {/* Right */}
@@ -180,15 +190,7 @@ function SearchContent({ query }: { query: string }) {
       </div>
 
       {/* Pagination below */}
-      {showPagination && (
-        <div className="py-24">
-          <PaginationComponent
-            currentPage={currentPage}
-            totalPages={totalPages}
-            onPageChange={handlePageChange}
-          />
-        </div>
-      )}
+      
            <ScrollToTopButton />
       
     </div>
@@ -209,7 +211,7 @@ function SearchQueryHandler() {
     const timer = setTimeout(() => {
       setLoading(false);
       setActiveQuery(query);
-    }, 2000); // 2 sec spinner
+    }, 1000); // 2 sec spinner
     return () => clearTimeout(timer);
   }, [query]);
 

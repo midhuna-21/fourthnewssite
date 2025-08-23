@@ -20,20 +20,20 @@ const ArticleDetail: React.FC<Props> = ({ data }) => {
   return (
     <div>
       {/* Category + Date */}
-      <p className="mb-2 text-gray-500">
+      <p className="text-gray-500">
         <span className="font-semibold text-[16px] capitalize sm:text-[18px] md:text-[18px]">{data.category}</span> •{" "}
         <span className="text-[12px] sm:text-[14px] md:text-[14px]">{data.date}</span>
       </p>
 
       {/* Title */}
       <h1
-        className="font-[oswald] font-bold mb-4 text-[28px] sm:text-[40px] md:text-[56px] leading-tight sm:leading-[1.2] md:leading-[1.1]"
+        className="font-[oswald] font-bold mb-2 text-[24px] sm:text-[40px] md:text-[56px] leading-tight sm:leading-[1.2] md:leading-[1.1]"
       >
         {data.title}
       </h1>
 
       {/* Short Description */}
-      <p className="mb-6 text-[14px] sm:text-[16px] md:text-[19px] text-gray-500 font-normal">
+    <p className="mb-6 text-[12px] sm:text-[14px] md:text-[17px] text-gray-500 leading-tight italic">
         {data.shortdescription}
       </p>
 

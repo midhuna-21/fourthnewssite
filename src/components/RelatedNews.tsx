@@ -23,12 +23,12 @@ interface Props {
 
 const RelatedNews: React.FC<Props> = ({ data }) => {
   return (
-    <div className="mt-6">
+    <div>
       {/* Subheadline for entire section */}
       <SubHeadline title="Related News" />
         <div className="lg:col-span-9">
           {/* Three cards in one row */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-3">
             <NewsCard data={data[3]} />
             <NewsCard data={data[4]} />
             <NewsCard data={data[5]} />

@@ -16,7 +16,7 @@ interface Props {
 }
 
 const LatestNewsSection: React.FC<Props> = ({ data }) => {
-  console.log(data,'data')
+  // console.log(data,'data')
   return (
     <div>
       <div className="flex flex-col lg:flex-row  gap-5 md:gap-8 mt-5">

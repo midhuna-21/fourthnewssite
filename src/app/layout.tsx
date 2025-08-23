@@ -20,14 +20,14 @@ const geistMono = Geist_Mono({
 
 const oswald = Oswald({
   subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700"], 
-  variable: "--font-oswald",
+  weight: ["200", "300", "400", "500", "600", "700"],
+  variable: "--font-oswald",  
 });
 
-export const metadata: Metadata = {
+export const metadata: Metadata = { 
   metadataBase: new URL("https://www.mirrorstandard.com"),
-  title: "Mirrorstandard - Breaking News, Politics & Business Analysis",
-  description: "Breaking news and expert analysis on politics, business, tech, health, science & sports. Stay ahead with daily global insights and trending stories.",
+  title: "Mirrorstandard News – Breaking Headlines, Politics, Business & In-Depth Analysis",
+  description: "Mirrorstandard delivers breaking news and trusted analysis on politics, business, world affairs, technology, health, science, education, and sports. Stay updated with investigative journalism, expert opinions, and real-time global headlines designed to keep you ahead in today’s fast-moving world.",
   keywords:
     "social media liability laws 2025, Brazil Supreme Court tech rulings, platform accountability regulations, Uber Waymo robotaxi launch Atlanta, self-driving cars in Georgia, Cooper Flagg NBA draft 2025, top NBA prospects after LeBron, youth mental health and smartphone addiction, screen time vs addictive app use, cervical cancer screening with self-sample kits, mailed HPV test effectiveness, political targeting case, Puerto Rico politics and legal system",
   openGraph: {
@@ -75,18 +75,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
- <html lang="en" suppressHydrationWarning>
-  <body
-    className={`${geistSans?.variable ?? ''} ${geistMono?.variable ?? ''} ${oswald?.variable ?? ''} antialiased`}
-    suppressHydrationWarning
-  >
-    <Providers>
-      <Header />
-      {children}
-      <Footer />
-    </Providers>
-  </body>
-</html>
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${geistSans?.variable ?? ''} ${geistMono?.variable ?? ''} ${oswald?.variable ?? ''} antialiased`}
+        suppressHydrationWarning
+      >
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
+      </body>
+    </html>
 
   );
 }

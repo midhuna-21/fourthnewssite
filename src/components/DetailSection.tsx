@@ -7,6 +7,7 @@ import CommentForm from '@/components/CommentForm';
 import RelatedNews from '@/components/RelatedNews';
 import HorizontalNewsCard from '@/components/HorizontalNewsCard';
 import AuthorCard from './AuthorCard';
+import NewsNavigation from './NewsNavigation';
 
 interface NewsItem {
   category: string;
@@ -60,15 +61,16 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
         {/* Left */}
         <div ref={leftRef} className="lg:col-span-2">
           <ArticleDetail data={article} />
-          {/* <AuthorInfo
-            name="Vibenews Staff"
+          <AuthorInfo
+            name="MirrorStandard Staff"
             role="Editor"
             date={article.date}
-          /> */}
+          />
           <ArticleParagraph data={article} />
 
           <div ref={stopRef}>
-            {/* <AuthorCard /> */}
+            <AuthorCard />
+            <NewsNavigation data={[data[0],data[1]]}/>
             <CommentForm />
             <RelatedNews data={otherArticles} />
           </div>
@@ -82,7 +84,7 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
           >
             <h2 className="text-[24px] font-[oswald] mb-4 font-bold">POPULAR NEWS</h2>
             <div className="divide-y divide-[#615e5e54]">
-              {data.slice(0, 4).map((item, index) => (
+              {data.slice(4, 8).map((item, index) => (
                 <div key={index} className="py-3">
                   <HorizontalNewsCard data={item} />
                 </div>

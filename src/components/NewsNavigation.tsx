@@ -1,0 +1,75 @@
+import Link from "next/link";
+import Image from "next/image";
+import { FC } from "react";
+import arrowLeft from '../../public/images/arrow-left.webp';
+import arrowRight from '../../public/images/arrow-right.webp';
+
+interface NewsData {
+    slug: string;
+    title: string;
+    category: string;
+    shortdescription: string;
+    description: string;
+    image: string;
+    date: string;
+}
+interface Props {
+    data: NewsData[];
+}
+
+const NewsNavigation: FC<Props> = ({ data }) => {
+    const prevPost = data[0];
+    const nextPost = data[1];
+
+    return (
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 py-6 border-b border-gray-300">
+            {/* Previous Post */}
+            <Link
+                href={`/${prevPost.category}/${prevPost.slug}`}
+                className="flex items-center gap-2 w-full md:w-[48%] hover:text-blue-600"
+            >
+                <Image
+                    src={arrowLeft}
+                    alt="Previous"
+                    width={30}
+                    height={25}
+                />
+                <div className="flex flex-col">
+                    <span className="text-sm uppercase text-blue-500">Previous Post</span>
+                    <span
+                        className="font-[oswald] leading-tight text-[16px] md:text-[20px]"
+                        style={{ fontWeight: 700 }}
+                    >
+                        {prevPost.title}
+                    </span>
+                </div>
+            </Link>
+
+            {/* Next Post */}
+            <Link
+                href={`/${nextPost.category}/${nextPost.slug}`}
+                className="flex items-center gap-2 w-full md:w-[48%] hover:text-blue-600 md:justify-end"
+            >
+                <div className="flex flex-col text-right">
+                    <span className="text-sm uppercase text-blue-500">Next Post</span>
+                    <span
+                        className="font-[oswald] leading-tight text-[16px] md:text-[20px]"
+                        style={{ fontWeight: 700 }}
+                    >
+                        {nextPost.title}
+                    </span>
+                </div>
+                <Image
+                    src={arrowRight}
+                    alt="Next"
+                    width={30}
+                    height={25}
+                />
+            </Link>
+        </div>
+
+
+    );
+};
+
+export default NewsNavigation;

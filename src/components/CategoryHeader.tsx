@@ -15,7 +15,7 @@ export default function CategoryHeader({ category }: Props) {
             <Link href="/">Home</Link>
           </li>
           <li><span className="mx-2">→</span></li>
-          <li className="">{category}</li>
+          <li className="capitalize">{category}</li>
         </ol>
       </nav>
 
@@ -24,7 +24,7 @@ export default function CategoryHeader({ category }: Props) {
         className="text-[28px] sm:text-[36px] xs:text-[36px] font-bold"
         style={{ fontFamily: 'Roboto, sans-serif' }}
       >
-        Category : {category}
+        Category : <span className='capitalize'>{category}</span>
       </h1>
 
     </div>

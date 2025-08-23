@@ -3,7 +3,7 @@ import React from "react";
 
 const CommentForm = () => {
   return (
-    <div className="w-full max-w-4xl py-8">
+    <div className="w-full max-w-4xl py-15">
       {/* Heading */}
       <h2 className="text-[20px] font-[oswald] mb-6"style={{fontWeight:600}}>LEAVE A REPLY</h2>
 

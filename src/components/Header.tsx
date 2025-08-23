@@ -15,6 +15,7 @@ import educationData from '../../public/data/education.json';
 import Link from "next/link";
 import Image from "next/image";
 import logo from '../../public/images/mirrorstandard-logo.webp'
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa"
 
 const news = [businessData[0], sportsData[0], politicsData[0], healthData[0], technologyData[0], scienceData[0], educationData[0], entertainmentData[0]];
 
@@ -117,30 +118,54 @@ export default function Header() {
           </button>
         </div>
 
-        <div className="overflow-y-auto h-[calc(100%-64px)] p-4 space-y-6">
-          {news.map((item) => (
-            <Link key={item.slug} href={`/${item.category}`} className="block">
-              <div className="flex gap-4 border-b border-gray-700 pb-4">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-24 h-24 object-cover flex-shrink-0"
-                />
-                <div>
-                  <p className="text-sm font-semibold text-gray-400">
-                    {item.category}{" "}
-                    <span className="text-xs font-normal ml-2">{item.date}</span>
-                  </p>
-                  <h3
-                    className="text-[12px] md:text-[16px] font-[oswald] cursor-pointer"
-                    style={{ fontWeight: 700 }}
-                  >
-                    {item.title}
-                  </h3>
+        <div className="overflow-y-auto h-[calc(100%-64px)] p-4 space-y-6 flex flex-col justify-between">
+          <div>
+            {news.map((item, index) => (
+              <Link key={item.slug} href={`/${item.category}`} className="block">
+                <div
+                  className={`flex gap-4 ${index !== news.length - 1 ? "border-b border-gray-700 py-2" : "py-2"
+                    }`}
+                >
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-24 h-24 object-cover flex-shrink-0"
+                  />
+                  <div>
+                    <p className="text-sm capitalize font-semibold text-gray-400">
+                      {item.category}{" "}
+                      <span className="text-xs font-normal ml-2">{item.date}</span>
+                    </p>
+                    <h3
+                      className="text-[12px] md:text-[16px] font-[oswald] cursor-pointer"
+                      style={{ fontWeight: 700 }}
+                    >
+                      {item.title}
+                    </h3>
+                  </div>
                 </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))}
+          </div>
+
+          {/* Social Media Icons */}
+          <div className="flex items-center gap-5 py-3 text-[#404040]">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF size={22} className="hover:text-[#ffff] transition-colors" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <FaTwitter size={22} className="hover:text-[#ffff] transition-colors" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <FaInstagram size={22} className="hover:text-[#ffff] transition-colors" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <FaLinkedinIn size={22} className="hover:text-[#ffff] transition-colors" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <FaYoutube size={22} className="hover:text-[#ffff] transition-colors" />
+            </a>
+          </div>
         </div>
       </div>
 

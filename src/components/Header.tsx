@@ -37,7 +37,7 @@ export default function Header() {
   return (
     <>
       {/* Top Header */}
-      <header className="w-full bg-black h-26 transition-colors duration-300">
+      <header className="w-full bg-black h-15 md:h-28 transition-colors duration-300">
         <div className="w-full max-w-7xl px-8 mx-auto flex items-center justify-between h-full">
 
           <div className="flex items-center">

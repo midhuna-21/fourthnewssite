@@ -17,7 +17,7 @@ interface Props {
 
 const RightSidebar: React.FC<Props> = ({ data }) => {
   return (
-    <div className="flex flex-col gap-5 pr-4 mt-4">
+    <div className="flex flex-col gap-5 pr-4">
       {data.slice(0, 4).map((item, index) => (
         <SmallCard key={item.slug || index} data={item} />
       ))}

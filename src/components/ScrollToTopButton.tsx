@@ -21,13 +21,13 @@ export default function ScrollToTopButton() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 bg-[#00ffc8] rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+          className="fixed bottom-6 right-6 bg-[#00ffc8] rounded-full md:w-14 md:h-14 w-10 h-10 flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
         >
           {/* Custom SVG arrow */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            className="w-6 h-6 text-black"
+            className="w-5 h-5 md:w-6 md:h-6 md:text-black text-white"
             fill="currentColor"
           >
             <path d="M12 4l-6 6h4v10h4V10h4z" />

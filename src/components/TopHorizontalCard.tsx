@@ -53,7 +53,7 @@ const TopHorizontalCard: React.FC<Props> = ({ data }) => {
         </p>
 
         <h3
-          className="font-[oswald] text-[15px] sm:text-[17px] font-bold leading-tight break-words whitespace-normal w-full"
+          className="font-[oswald] text-[18px] md:text-[17px] font-bold leading-tight break-words whitespace-normal w-full"
         >
           {data.title}
         </h3>

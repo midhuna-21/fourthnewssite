@@ -17,41 +17,41 @@ interface Props {
 
 const LargeImageSection: React.FC<Props> = ({ data }) => {
   return (
-    <Link
-      href={`/${data.category}/${data.slug}`}
-      title={data.slug}
-      className="block w-full"
-      style={{ color: "inherit" }}
-    >
-   <div className="relative w-full md:h-[600px] h-[400px] pr-4 mt-4 mx-auto mb-6">
+<Link
+  href={`/${data.category}/${data.slug}`}
+  title={data.slug}
+  className="block w-full"
+  style={{ color: "inherit" }}
+>
+  <div className="relative w-full md:h-[400px] h-[200px] pr-4 mt-3 mx-auto mb-3 overflow-hidden">
 
-  {/* Image */}
-  <Image
-    src={data.image}
-    alt={data.title}
-    fill
-    className="object-cover"
-    priority
-  />
-
-  {/* Bottom Overlay */}
-  <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 rounded-b-lg">
-    <h2
-      className="text-[20px] md:text-[28px] lg:text-[36px] md:mt-0 mt-3 text-white font-[oswald] leading-snug"
-      style={{ fontWeight: 700 }}
-    >
-      {data.title}
-    </h2>
-    <p
-      className="text-[14px] md:text-[16px] mt-1 leading-tight line-clamp-3"
-      style={{ color: "#A7A7A7", fontFamily: "Roboto, sans-serif" }}
-    >
-      {data.shortdescription}
-    </p>
+    {/* Background Image */}
+    <Image
+      src={data.image}
+      alt={data.title}
+      fill
+      className="object-cover"
+      priority
+    />
+      </div>
+    {/* Bottom Overlay */}
+    <div className=" bg-black bg-opacity-70 rounded-b-lg overflow-hidden">
+      <h2
+        className="text-[20px] md:text-[28px] lg:text-[36px] text-white font-[oswald] leading-tight"
+        style={{ fontWeight: 700 }}
+      >
+        {data.title}
+      </h2>
+      <p
+        className="text-[14px] md:text-[16px] leading-tight mt-1 line-clamp-2"
+        style={{ color: "#A7A7A7", fontFamily: "Roboto, sans-serif" }}
+      >
+        {data.shortdescription}
+      </p>
   </div>
-</div>
+</Link>
 
-    </Link>
+
   );
 };
 

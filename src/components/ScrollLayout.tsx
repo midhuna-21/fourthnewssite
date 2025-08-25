@@ -43,75 +43,79 @@ const ScrollLayout: React.FC<Props> = ({ data }) => {
   }, []);
 
   return (
-  <div className="w-full py-8 mb-12 mt-8">
-  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-    {/* LEFT */}
-    <div
-      className={`transition-transform duration-500 ${stopScroll ? "translate-y-[50px]" : ""} col-span-1 lg:col-span-2`}
-      ref={leftRef}
-    >
-      <SubHeadline title="More News" />
-      <div id="first-more-section">
-        <div className="border-b border-[#615e5e54] pb-6">
-          <MoreFirstSection data={data[0]} />
-        </div>
-      </div>
-
-      <div className="space-y-3 mt-8">
-        <div className="md:border-b border-[#615e5e54] pb-4 md:pb-3">
-          <MoreSecondSection data={data[1]} />
-        </div>
-        <div className="md:border-b border-[#615e5e54] pb-4 md:pb-3">
-          <MoreSecondSection data={data[2]} />
-        </div>
-        <MoreSecondSection data={data[3]} />
-      </div>
-
-      <div className="mt-8" id="second-more-section" ref={stopRef}>
-        <div className="border-t border-b border-[#615e5e54] pt-5 pb-8">
-          <MoreFirstSection data={data[4]} />
-        </div>
-
-        <div className="space-y-3 mt-8">
-          <div className="md:border-b border-[#615e5e54] pb-5 md:pb-3">
-            <MoreSecondSection data={data[5]} />
-          </div>
-          <div className="md:border-b border-[#615e5e54] pb-5 md:pb-3">
-            <MoreSecondSection data={data[6]} />
-          </div>
-          <MoreSecondSection data={data[7]} />
-        </div>
-      </div>
-    </div>
-
-    {/* RIGHT */}
-    <div className="col-span-1 lg:col-span-1 mt-10 lg:mt-0">
-      <div className="sticky top-10">
-        <SubHeadline title="Science" />
-        <div className="mt-4">
-          <MoreSideCard data={data[8]} />
-          <MoreSideCard data={data[9]} />
-          <MoreSideCard data={data[10]} />
-        </div>
-
-        <div className="mt-9">
-          <SubHeadline title="Trending Topic" />
-          <div className="mt-4">
-            {[data[11], data[12], data[13]].map((item, index) => (
-              <div key={index} className={index < 2 ? "pb-4 md:pb-2 md:border-b border-[#615e5e54] mb-2" : ""}>
-                <TopHorizontalCard data={item} />
+    <div className="w-full py-8 mb-8 mt-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* LEFT */}
+        <div
+          className={`relative col-span-1 lg:col-span-2`}
+          ref={leftRef}
+        >
+          <div
+            className={`transition-transform duration-500 ${stopScroll ? "sticky top-[50px]" : ""
+              }`}
+          >
+            <SubHeadline title="More News" />
+            <div id="first-more-section">
+              <div className="border-b border-[#615e5e54] pb-6">
+                <MoreFirstSection data={data[0]} />
               </div>
-            ))}
+            </div>
+
+            <div className="space-y-3 mt-8">
+              <div className="md:border-b border-[#615e5e54] pb-4 md:pb-3">
+                <MoreSecondSection data={data[1]} />
+              </div>
+              <div className="md:border-b border-[#615e5e54] pb-4 md:pb-3">
+                <MoreSecondSection data={data[2]} />
+              </div>
+              <MoreSecondSection data={data[3]} />
+            </div>
+
+            <div className="mt-8" id="second-more-section" ref={stopRef}>
+              <div className="border-t border-b border-[#615e5e54] pt-5 pb-8">
+                <MoreFirstSection data={data[4]} />
+              </div>
+
+              <div className="space-y-3 mt-8">
+                <div className="md:border-b border-[#615e5e54] pb-5 md:pb-3">
+                  <MoreSecondSection data={data[5]} />
+                </div>
+                <div className="md:border-b border-[#615e5e54] pb-5 md:pb-3">
+                  <MoreSecondSection data={data[6]} />
+                </div>
+                <MoreSecondSection data={data[7]} />
+              </div>
+            </div>
           </div>
         </div>
+        {/* RIGHT */}
+        <div className="col-span-1 lg:col-span-1 mt-6 lg:mt-0">
+          <div className="sticky top-10">
+            <SubHeadline title="Science" />
+            <div className="mt-4">
+              <MoreSideCard data={data[8]} />
+              <MoreSideCard data={data[9]} />
+              <MoreSideCard data={data[10]} />
+            </div>
 
-        <div className="mt-14">
-          <VibeNewsCard data={data[14]} />
+            <div className="mt-9">
+              <SubHeadline title="Trending Topic" />
+              <div className="mt-4">
+                {[data[11], data[12], data[13]].map((item, index) => (
+                  <div key={index} className={index < 2 ? "pb-4 md:pb-2 md:border-b border-[#615e5e54] mb-2" : ""}>
+                    <TopHorizontalCard data={item} />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-14">
+              <VibeNewsCard data={data[14]} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
   );
 };

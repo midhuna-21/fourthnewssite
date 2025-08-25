@@ -38,15 +38,15 @@ const ArticleDetail: React.FC<Props> = ({ data }) => {
       </p>
 
       {/* Article Image */}
-      <div className="w-full relative overflow-hidden shadow-md aspect-[16/9] sm:aspect-[16/9] md:aspect-video">
-        <Image
-          src={data.image}
-          alt={data.title}
-          fill
-          className="object-cover"
-          priority
-        />
-      </div>
+        <div className="w-full relative overflow-hidden shadow-md aspect-[16/9] sm:aspect-[16/9] md:aspect-video">
+          <Image
+            src={data.image}
+            alt={data.title}
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
     </div>
   );
 };

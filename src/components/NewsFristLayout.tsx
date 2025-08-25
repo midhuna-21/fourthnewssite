@@ -44,8 +44,8 @@ const NewsFirstLayout:React.FC<Props>=({data})=>{
         <OverlayArticleCard data={data[4]}/>
 
         {/* Horizontal Cards */}
-       <div className="md:space-y-3 space-y-4">
-         <HorizontalNewsCard data={data[5]}/>
+       <div className="md:space-y-2 space-y-4 md:mt-2">
+        <HorizontalNewsCard data={data[5]}/>
         <HorizontalNewsCard data={data[6]}/>
         <HorizontalNewsCard data={data[7]}/>
         <HorizontalNewsCard data={data[8]}/>

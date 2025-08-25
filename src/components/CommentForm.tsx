@@ -72,7 +72,7 @@ const CommentForm = () => {
             <input
               type="text"
               name="name"
-              placeholder="Enter Name *"
+              placeholder="Enter Name"
               value={formData.name}
               onChange={handleChange}
               className="w-full border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2"
@@ -86,7 +86,7 @@ const CommentForm = () => {
             <input
               type="email"
               name="email"
-              placeholder="Enter Email *"
+              placeholder="Enter Email"
               value={formData.email}
               onChange={handleChange}
               className="w-full border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2"
@@ -102,7 +102,7 @@ const CommentForm = () => {
           <input
             type="text"
             name="website"
-            placeholder="Enter Website (optional)"
+            placeholder="Enter Website"
             value={formData.website}
             onChange={handleChange}
             className="w-full border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2"
@@ -116,7 +116,7 @@ const CommentForm = () => {
         <div>
           <textarea
             name="comment"
-            placeholder="Enter Comment *"
+            placeholder="Enter Comment"
             rows={6}
             value={formData.comment}
             onChange={handleChange}

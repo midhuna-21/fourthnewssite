@@ -24,13 +24,13 @@ const AuthorCard: React.FC= () => {
 
       {/* Author Details */}
       <div className="text-left">
-        <p className="uppercase text-xs mb-1">
+        <p className="uppercase text-[11px] mb-1">
           Written By
         </p>
         <h3 className="text-lg font-semibold">Mirrorstandard Staff</h3>
-        <p className="text-[14px] md:text-[14px] leading-tight">
-          All the design inspiration you need. It's like crack for designers. And good for you too! Even though I still hated planks at the end, my core felt tighter after doing them.
-        </p>
+        <p className="text-[14px] md:text-[14px] text-gray-600" style={{fontWeight:700}}>
+FOUNDING EDITOR
+           </p>
       </div>
     </div>
   );

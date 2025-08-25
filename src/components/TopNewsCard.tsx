@@ -25,13 +25,26 @@ const TopNewsCard: React.FC<Props> = ({ data }) => {
       >
     <div className="w-full lg:max-w-sm">
       {/* Image */}
+      <div className="relative overflow-hidden group">
       <Image
         src={data.image}
         alt={data.title}
         width={800}
         height={400}
-        className="w-full h-[220px] sm:h-[260px] lg:h-[160px] object-cover"
-      />
+        className="w-full h-[220px] sm:h-[260px] lg:h-[160px] object-cover
+            transition-transform duration-700 ease-in-out 
+            group-hover:scale-105
+          "
+                />
+             
+                <div
+                  className="
+            absolute inset-0 bg-black/0 
+            group-hover:bg-black/10 
+            transition-colors duration-500 ease-in-out
+          "
+                />
+              </div>
 
       {/* Text Content */}
       <div className="mt-2 lg:px-0">

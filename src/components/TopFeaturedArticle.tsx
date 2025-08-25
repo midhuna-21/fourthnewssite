@@ -26,15 +26,19 @@ const TopFeaturedArticle: React.FC<Props> = ({ data }) => {
   <div className="flex flex-col md:flex-row md:border-b border-[#615e5e54] max-w-6xl mx-auto h-auto">
     
     {/* Right Image on mobile first, left on desktop */}
-    <div className="w-full md:w-6/12 order-first md:order-last">
-      <Image
-        src={data.image}
-        alt={data.title}
-        width={900}
-        height={700}
-        className="w-full h-70 sm:h-64 md:h-full object-cover"
-      />
-    </div>
+  <div className="w-full md:w-6/12 order-first md:order-last relative overflow-hidden group">
+  <Image
+    src={data.image}
+    alt={data.title}
+    width={900}
+    height={700}
+    className="w-full h-70 sm:h-64 md:h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+  />
+
+  {/* Hover overlay */}
+  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 ease-in-out" />
+</div>
+
 
     {/* Left Text Content */}
     <div className="w-full md:w-6/12 flex flex-col justify-center pr-0 md:pr-4 md:py-4 py-2">

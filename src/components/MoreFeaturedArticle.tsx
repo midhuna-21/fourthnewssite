@@ -25,15 +25,19 @@ const MoreFeaturedArticle: React.FC<Props> = ({ data }) => {
         >
             <div className="flex flex-col md:flex-row md:border-b border-[#615e5e54] max-w-6xl mx-auto min-h-[340px] pb-3 md:pb-0">
                 {/* Left Image */}
-                <div className="md:w-6/12 w-full">
-                    <Image
-                        src={data.image}
-                        alt={data.title}
-                        width={900}
-                        height={700}
-                        className="w-full h-full object-cover"
-                    />
-                </div>
+             <div className="md:w-6/12 w-full relative overflow-hidden group">
+  <Image
+    src={data.image}
+    alt={data.title}
+    width={900}
+    height={700}
+    className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+  />
+
+  {/* Hover overlay */}
+  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 ease-in-out" />
+</div>
+
 
                 {/* Right Text Content */}
                 <div className="md:w-6/12 w-full flex flex-col justify-center mt-3 p-0 md:p-6">

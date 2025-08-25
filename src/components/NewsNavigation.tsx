@@ -26,7 +26,7 @@ const NewsNavigation: FC<Props> = ({ data }) => {
             {/* Previous Post */}
             <Link
                 href={`/${prevPost.category}/${prevPost.slug}`}
-                className="flex items-center gap-2 w-full md:w-[48%] hover:text-blue-600"
+                className="flex items-center gap-2 w-full md:w-[48%]"
             >
                 <Image
                     src={arrowLeft}
@@ -48,7 +48,7 @@ const NewsNavigation: FC<Props> = ({ data }) => {
             {/* Next Post */}
             <Link
                 href={`/${nextPost.category}/${nextPost.slug}`}
-                className="flex items-center gap-2 w-full md:w-[48%] hover:text-blue-600 md:justify-end"
+                className="flex items-center gap-2 w-full md:w-[48%]  md:justify-end"
             >
                 <div className="flex flex-col text-right">
                     <span className="text-sm uppercase text-blue-500">Next Post</span>

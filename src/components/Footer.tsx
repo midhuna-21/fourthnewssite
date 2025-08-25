@@ -70,11 +70,9 @@ export default function Footer() {
               </Link>
             ))}
             <div >
-
-              <p className="text-[10px] mt-2 leading-tight text-center text-gray-300">
-                © Munich, LLC. All rights reserved. <br />
-                MIRRORSTANDARD® is a registered <br /> U.S. trademark of tagDiv, LLC.
-              </p>
+   <p className="text-[10px] mt-2 leading-tight text-gray-300 text-center">
+             © Copyright 2025 , mirrorstandard <br /> All Rights Reserved.
+            </p>
               <div className="flex justify-center space-x-5 mt-4 text-lg">
                 <a href="#"><FaFacebookF /></a>
                 <a href="#"><FaInstagram /></a>
@@ -91,9 +89,8 @@ export default function Footer() {
           {/* Left Side */}
           <div className="w-[300px] lg:w-[380px] flex-shrink-0">
             <h2 className="text-[24px] font-bold">MIRRORSTANDARD</h2>
-            <p className="text-sm mt-2 leading-tight text-gray-300">
-              © Munich, LLC. All rights reserved. <br />
-              MIRRORSTANDARD® is a registered <br /> U.S. trademark of tagDiv, LLC.
+            <p className="text-[12px] mt-2 leading-tight text-gray-300">
+             © Copyright 2025 , mirrorstandard <br /> All Rights Reserved.
             </p>
             <div className="flex space-x-5 mt-6 text-lg">
               <a href="#"><FaFacebookF /></a>

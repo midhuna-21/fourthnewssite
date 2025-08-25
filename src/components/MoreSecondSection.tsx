@@ -23,15 +23,19 @@ const MoreSecondSection: React.FC<Props> = ({ data }) => {
     >
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-start">
         {/* Image */}
-        <div className="relative w-full h-70 sm:h-56 md:h-64 lg:h-72">
-          <Image
-            src={data.image}
-            alt={data.title}
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
+       <div className="relative w-full h-70 sm:h-56 md:h-64 lg:h-72 overflow-hidden group">
+  <Image
+    src={data.image}
+    alt={data.title}
+    fill
+    priority
+    className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+  />
+
+  {/* Hover overlay */}
+  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 ease-in-out" />
+</div>
+
 
         {/* Text Content */}
         <div className="md:mt-0">

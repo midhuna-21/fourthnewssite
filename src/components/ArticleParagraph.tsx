@@ -24,7 +24,7 @@ const ArticleParagraphWith = ({ data }: ArticleParagraphProps) => {
       {paragraphs.map((text, index) => (
         <p
           key={index}
-          className="md:text-[17px] text-[12px] text-justify hyphens-auto break-words leading-relaxed  mb-5"
+          className="md:text-[17px] text-[12px] text-start break-words leading-relaxed mb-5"
           style={{
             fontWeight: 400,
             fontFamily: 'Roboto, sans-serif',

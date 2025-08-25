@@ -70,13 +70,24 @@ const FeaturedArticle: React.FC<Props> = ({ data }) => {
           style={{ color: "inherit" }}
         >
 
+          <div className="relative overflow-hidden group">
           <Image
             src={data.image}
             alt={data.title}
             width={1000}
             height={800}
-            className="w-full h-[350px] sm:h-[350px] md:h-[590px] object-cover"
+            className="w-full h-[350px] sm:h-[350px] md:h-[590px] object-cover transition-transform duration-700 ease-in-out 
+                group-hover:scale-105"
           />
+
+                    <div
+                      className="
+                absolute inset-0 bg-black/0 
+                group-hover:bg-black/10 
+                transition-colors duration-500 ease-in-out
+              "
+                    />
+                  </div>
         </Link>
       </div>
     </div>

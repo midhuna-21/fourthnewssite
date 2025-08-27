@@ -22,6 +22,7 @@ export default function Navbar() {
             <li key={item.category} className="relative group">
               <Link
                 href={`/${item.category}`}
+                title={item.category}
                 className="relative font-[Oswald] text-[16px] uppercase px-[13px] py-[14px]"
                 style={{ fontWeight: 600 }}
               >

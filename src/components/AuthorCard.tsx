@@ -8,11 +8,11 @@ import picture from '../../public/images/author.jpg';
 //   image: string;
 // }
 
-const AuthorCard: React.FC= () => {
+const AuthorCard: React.FC = () => {
   return (
     <div className="py-8 rounded-lg flex flex-col sm:flex-row items-start gap-4">
       {/* Profile Image */}
-      <div className="flex-shrink-0">
+      {/* <div className="flex-shrink-0">
         <Image
           src={picture}
           alt='mirror standard'
@@ -20,7 +20,7 @@ const AuthorCard: React.FC= () => {
           height={96}
           className="rounded-full object-cover w-24 h-24"
         />
-      </div>
+      </div> */}
 
       {/* Author Details */}
       <div className="text-left">
@@ -28,9 +28,9 @@ const AuthorCard: React.FC= () => {
           Written By
         </p>
         <h3 className="text-lg font-semibold">Mirrorstandard Staff</h3>
-        <p className="text-[14px] md:text-[14px] text-gray-600" style={{fontWeight:700}}>
-FOUNDING EDITOR
-           </p>
+        <p className="text-[14px] md:text-[14px] text-gray-600 capitalize" style={{ fontWeight: 700 }}>
+         EDITOR-IN-CHIEF
+        </p>
       </div>
     </div>
   );

@@ -26,6 +26,7 @@ const NewsNavigation: FC<Props> = ({ data }) => {
             {/* Previous Post */}
             <Link
                 href={`/${prevPost.category}/${prevPost.slug}`}
+                title={prevPost.slug}
                 className="flex items-center gap-2 w-full md:w-[48%]"
             >
                 <Image
@@ -48,6 +49,7 @@ const NewsNavigation: FC<Props> = ({ data }) => {
             {/* Next Post */}
             <Link
                 href={`/${nextPost.category}/${nextPost.slug}`}
+                title={nextPost.slug}
                 className="flex items-center gap-2 w-full md:w-[48%]  md:justify-end"
             >
                 <div className="flex flex-col text-right">

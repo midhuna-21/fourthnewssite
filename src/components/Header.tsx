@@ -121,7 +121,7 @@ export default function Header() {
         <div className="overflow-y-auto h-[calc(100%-64px)] p-4 space-y-6 flex flex-col justify-between">
           <div>
             {news.map((item, index) => (
-              <Link key={item.slug} href={`/${item.category}`} className="block">
+              <Link key={item.slug} href={`/${item.category}`} title={item.category} className="block">
                 <div
                   className={`flex gap-4 ${index !== news.length - 1 ? "border-b border-gray-700 py-2" : "py-2"
                     }`}

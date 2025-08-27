@@ -12,7 +12,7 @@ export default function CategoryHeader({ category }: Props) {
       <nav className=" text-[20px] text-gray-500" aria-label="Breadcrumb" style={{fontWeight: 500 }}>
         <ol className="list-reset flex ">
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/" title='home'>Home</Link>
           </li>
           <li><span className="mx-2">→</span></li>
           <li className="capitalize">{category}</li>

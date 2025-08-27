@@ -34,6 +34,7 @@ export default function Footer() {
                 <li key={category}>
                   <Link
                     href={`/${category.toLowerCase()}`}
+                    title={category}
                     className="hover:text-yellow-500"
                   >
                     {category}
@@ -70,9 +71,9 @@ export default function Footer() {
               </Link>
             ))}
             <div >
-   <p className="text-[10px] mt-2 leading-tight text-gray-300 text-center">
-             © Copyright 2025 , mirrorstandard <br /> All Rights Reserved.
-            </p>
+              <p className="text-[10px] mt-2 leading-tight text-gray-300 text-center">
+                © Copyright 2025 , mirrorstandard <br /> All Rights Reserved.
+              </p>
               <div className="flex justify-center space-x-5 mt-4 text-lg">
                 <a href="#"><FaFacebookF /></a>
                 <a href="#"><FaInstagram /></a>
@@ -90,14 +91,14 @@ export default function Footer() {
           <div className="w-[300px] lg:w-[380px] flex-shrink-0">
             <h2 className="text-[24px] font-bold">MIRRORSTANDARD</h2>
             <p className="text-[12px] mt-2 leading-tight text-gray-300">
-             © Copyright 2025 , mirrorstandard <br /> All Rights Reserved.
+              © Copyright 2025 , mirrorstandard <br /> All Rights Reserved.
             </p>
             <div className="flex space-x-5 mt-6 text-lg">
-              <a href="#"><FaFacebookF /></a>
-              <a href="#"><FaInstagram /></a>
-              <a href="#"><FaXTwitter /></a>
-              <a href="#"><FaVk /></a>
-              <a href="#"><FaYoutube /></a>
+              {/* <a href="#"><FaFacebookF /></a> */}
+              <Link href="https://x.com/MirrorstandardU" title="twitter"><FaXTwitter /></Link>
+              <Link href="https://www.instagram.com/mirrorstandardusnews/" title="instagram"><FaInstagram /></Link>
+              {/* <a href="#"><FaVk /></a> */}
+              <Link href="https://www.youtube.com/@mirrorstandardUS" title="youtube"><FaYoutube /></Link>
             </div>
           </div>
 
@@ -107,12 +108,14 @@ export default function Footer() {
             <div>
               <h3 className="text-xl font-bold text-yellow-500 mb-4">About Us</h3>
               <ul className="space-y-2 text-[11px] tracking-widest">
-                <li><a href="#" className="hover:text-yellow-500">ABOUT</a></li>
-                <li><a href="#" className="hover:text-yellow-500">CONTACT</a></li>
-                <li><a href="#" className="hover:text-yellow-500">OUR TEAM</a></li>
-                <li><a href="#" className="hover:text-yellow-500">EDITORIAL POLICY</a></li>
-                <li><a href="#" className="hover:text-yellow-500">CORRECTION POLICY</a></li>
-                <li><a href="#" className="hover:text-yellow-500">TERMS AND CONDITIONS</a></li>
+                
+                <li><Link href='/about' title="about" className="hover:text-yellow-500">ABOUT</Link></li>
+                <li><Link href='/contact' title="contact" className="hover:text-yellow-500">CONTACT</Link></li>
+                <li><Link href='/our-team' title="our team" className="hover:text-yellow-500">OUR TEAM</Link></li>
+                <li><Link href='/editorial-policy' title="editorial policy" className="hover:text-yellow-500">EDITORIAL POLICY</Link></li>
+                <li><Link href='/privacy-policy' title="privacy policy" className="hover:text-yellow-500">PRIVACY POLICY</Link></li>
+                <li><Link href='/corrections-policy' title="corrections policy" className="hover:text-yellow-500">CORRECTIONS POLICY</Link></li>
+                <li><Link href='/terms-and-conditions' title="terms and conditions" className="hover:text-yellow-500">TERMS AND CONDITIONS</Link></li>
               </ul>
             </div>
 
@@ -124,6 +127,7 @@ export default function Footer() {
                   <li key={category}>
                     <Link
                       href={`/${category.toLowerCase()}`}
+                      title={category}
                       className="hover:text-yellow-500 tracking-widest"
                     >
                       {category}

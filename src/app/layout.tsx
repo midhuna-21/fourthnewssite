@@ -21,18 +21,17 @@ const geistMono = Geist_Mono({
 const oswald = Oswald({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700"],
-  variable: "--font-oswald",  
+  variable: "--font-oswald",
 });
 
-export const metadata: Metadata = { 
+export const metadata: Metadata = {
   metadataBase: new URL("https://www.mirrorstandard.com"),
-  title: "Mirrorstandard News – Breaking Headlines, Politics, Business & In-Depth Analysis",
-  description: "Mirrorstandard delivers breaking news and trusted analysis on politics, business, world affairs, technology, health, science, education, and sports. Stay updated with investigative journalism, expert opinions, and real-time global headlines designed to keep you ahead in today’s fast-moving world.",
-  keywords:
-    "social media liability laws 2025, Brazil Supreme Court tech rulings, platform accountability regulations, Uber Waymo robotaxi launch Atlanta, self-driving cars in Georgia, Cooper Flagg NBA draft 2025, top NBA prospects after LeBron, youth mental health and smartphone addiction, screen time vs addictive app use, cervical cancer screening with self-sample kits, mailed HPV test effectiveness, political targeting case, Puerto Rico politics and legal system",
+  title: "Mirrorstandard News – Latest World Updates, Politics, Business & Expert Insights",
+  description: "Mirrorstandard brings you real-time headlines and authoritative coverage across politics, business, world news, science, health, education, sports, and technology. Explore investigative reporting, global perspectives, and expert commentary that help you stay informed and ahead in a rapidly changing world.",
+  keywords: "2025 social media regulation, Brazil Supreme Court tech decisions, global platform accountability, Uber Waymo robotaxi Atlanta launch, Georgia autonomous vehicles, Cooper Flagg 2025 NBA draft, next generation NBA stars, smartphone addiction youth impact, screen time and mental health, home HPV test cervical cancer screening, self-sample cancer detection kits, Puerto Rico political case targeting, legal reforms in Puerto Rico",
   openGraph: {
-    title: "Mirrorstandard - Breaking News, Politics & Business Analysis",
-    description: "Breaking news and expert analysis on politics, business, tech, health, science & sports. Stay ahead with daily global insights and trending stories.",
+    title: "Mirrorstandard – Latest News, Politics, Business & Global Insights",
+    description: "Mirrorstandard delivers breaking news and expert insights on politics, business, tech, health, science, and sports. Stay updated with global analysis and top stories every day.",
     url: "https://www.mirrorstandard.com",
     siteName: "Mirrorstandard",
     images: [
@@ -48,8 +47,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Breaking News, Politics & Business Analysis - Mirrorstandard",
-    description: "Stay ahead with breaking news and expert analysis on politics, business, technology, health, science & sports.",
+    title: "Mirrorstandard – Breaking News, Politics, Business & World Analysis",
+    description: "Get the latest headlines and in-depth analysis on politics, business, technology, health, science, and sports with Mirrorstandard’s trusted reporting.",
     images: "https://www.Mirrorstandard.com/images/mirrorstandard-logo.webp",
     site: '@Mirrorstandard'
   },

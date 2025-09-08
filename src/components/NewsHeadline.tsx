@@ -37,12 +37,12 @@ const NewsHeadline: React.FC<Props> = ({ data }) => {
       </div>
 
       {/* Headline */}
-      <p
+      <h3
         className="font-[oswald] line-clamp-2 text-[18px] leading-tight  sm:text-[20px] md:text-[22px] lg:text-[24px]"
         style={{ fontWeight: 700 }}
         >
         {data.title}
-      </p>
+      </h3>
     </div>
         </Link>
   );

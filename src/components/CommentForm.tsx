@@ -151,9 +151,9 @@ const CommentForm = () => {
                 </svg>
               </div>
 
-              <h3 className="text-xl font-bold text-gray-800 mb-3">
+              <p className="text-xl font-bold text-gray-800 mb-3">
                 Thank You!
-              </h3>
+              </p>
 
               <p className="text-gray-600 text-sm mb-8 leading-relaxed">
                 Your comment has been successfully submitted. Thank you for taking the time

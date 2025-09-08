@@ -91,6 +91,7 @@ export default function PrivacyPolicy() {
                     </p>
                     <a
                         href="mailto:privacy@mirrorstandard.com"
+                        aria-label="mail"
                         className="inline-flex items-center space-x-3 text-lg hover:opacity-70 transition-opacity group"
                     >
                         <Mail className="w-5 h-5" />
@@ -120,6 +121,7 @@ export default function PrivacyPolicy() {
                     </p>
                     <a
                         href="mailto:privacy@mirrorstandard.com"
+              aria-label="mail"
                         className="inline-flex items-center space-x-3 text-lg hover:opacity-70 transition-opacity group"
                     >
                         <Mail className="w-5 h-5" />

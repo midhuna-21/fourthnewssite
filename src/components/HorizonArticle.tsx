@@ -60,12 +60,12 @@ const HorizonArticle: React.FC<Props> = ({ data }) => {
             </span>
           </p>
 
-          <h2
+          <h3
             className="font-[oswald] line-clamp-2 leading-tight text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px]"
             style={{ fontWeight: 700 }}
           >
             {data.title}
-          </h2>
+          </h3>
         </div>
       </div>
     </Link>

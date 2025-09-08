@@ -36,7 +36,7 @@ const NewsCard: React.FC<Props> = ({ data }) => {
       group-hover:scale-105
     "
           />
-       
+
           <div
             className="
       absolute inset-0 bg-black/0 
@@ -52,14 +52,13 @@ const NewsCard: React.FC<Props> = ({ data }) => {
             <span className="ml-1 text-[11px]" style={{ fontFamily: 'Roboto, sans-serif' }}>{data.date}</span>
           </p>
 
-          {/* Title text size responsive */}
-          <p
+          <h3
             className="font-['Oswald'] font-bold line-clamp-2 
                        text-[17px] sm:text-[24px] lg:text-[24px] 
                        leading-tight"
           >
             {data.title}
-          </p>
+          </h3>
         </div>
       </Link>
     </div>

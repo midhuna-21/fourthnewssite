@@ -46,6 +46,7 @@ export default function Header() {
             </span>
             <button
               type="button"
+               aria-label="Open menu"
               className="hidden md:block text-[#5a5a5a] hover:text-[#00ffc8] cursor-pointer"
               onClick={() => setIsMenuOpen(true)}
             >
@@ -75,6 +76,7 @@ export default function Header() {
               <ThemeToggle />
               <button
                 type="button"
+                 aria-label="search"
                 className="text-[#5a5a5a] hover:text-[#00ffc8] cursor-pointer"
                 onClick={() => setIsSearchOpen(true)}
               >
@@ -87,6 +89,7 @@ export default function Header() {
               <ThemeToggle />
               <button
                 type="button"
+                aria-label="search"
                 className="text-[#5a5a5a] hover:text-[#00ffc8] cursor-pointer"
                 onClick={() => setIsSearchOpen(true)}
               >
@@ -94,10 +97,11 @@ export default function Header() {
               </button>
               <button
                 type="button"
+                aria-label="Open menu"
                 className="text-[#5a5a5a] hover:text-[#00ffc8] cursor-pointer"
                 onClick={() => setIsMenuOpen(true)}
               >
-                <Menu size={26} strokeWidth={2} strokeLinecap="square" />  {/* smaller size */}
+                <Menu size={26} strokeWidth={2} strokeLinecap="square" />  
               </button>
             </div>
           </div>
@@ -112,6 +116,7 @@ export default function Header() {
           <span className="text-[#ffffff] italic text-xl md:text-2xl font-black">MIRRORSTANDARD</span>
           <button
             onClick={() => setIsMenuOpen(false)}
+            aria-label="twitter"
             className="text-gray-400 hover:text-white"
           >
             <X className="inline ml-2" size={22} />
@@ -126,22 +131,24 @@ export default function Header() {
                   className={`flex gap-4 ${index !== news.length - 1 ? "border-b border-gray-700 py-2" : "py-2"
                     }`}
                 >
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-24 h-24 object-cover flex-shrink-0"
-                  />
+                 <Image
+  src={item.image}
+  alt={item.title}     
+  width={96}       
+  height={96}           
+  className="object-cover flex-shrink-0"
+/>
                   <div>
                     <p className="text-sm capitalize font-semibold text-gray-400">
                       {item.category}{" "}
                       <span className="text-xs font-normal ml-2">{item.date}</span>
                     </p>
-                    <h3
+                    <h2
                       className="text-[12px] md:text-[16px] font-[oswald] cursor-pointer"
                       style={{ fontWeight: 700 }}
                     >
                       {item.title}
-                    </h3>
+                    </h2>
                   </div>
                 </div>
               </Link>
@@ -150,21 +157,21 @@ export default function Header() {
 
           {/* Social Media Icons */}
           <div className="flex items-center gap-5 py-3 text-[#404040]">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            {/* <Link href="#" target="_blank" rel="noopener noreferrer">
               <FaFacebookF size={22} className="hover:text-[#ffff] transition-colors" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            </Link> */}
+            <Link href="https://x.com/MirrorstandardU" title="twitter" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={22} className="hover:text-[#ffff] transition-colors" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.instagram.com/mirrorstandardusnews/" title="instagram" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={22} className="hover:text-[#ffff] transition-colors" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            </Link>
+            {/* <a href="#" target="_blank" rel="noopener noreferrer">
               <FaLinkedinIn size={22} className="hover:text-[#ffff] transition-colors" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            </a> */}
+            <Link href="https://www.youtube.com/@mirrorstandardUS" title="youtube" target="_blank" rel="noopener noreferrer">
               <FaYoutube size={22} className="hover:text-[#ffff] transition-colors" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -198,6 +205,7 @@ export default function Header() {
               />
               <button
                 type="submit"
+                aria-label="search"
                 className="text-gray-400 hover:text-[#00ffc8] transition-colors duration-300 px-2"
               >
                 <Search size={24} className="sm:w-7 sm:h-7 md:w-8 md:h-8" strokeWidth={2} />

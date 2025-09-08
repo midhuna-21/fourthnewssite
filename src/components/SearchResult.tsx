@@ -31,6 +31,7 @@ const PaginationComponent = ({
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
+        aria-label="previous news"
         className={`group flex items-center justify-center w-10 h-10 rounded-full text-sm font-medium transition-all duration-300 ${
           currentPage === 1
             ? "text-gray-400 cursor-not-allowed bg-gray-50"
@@ -66,6 +67,7 @@ const PaginationComponent = ({
       <button
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
+        aria-label="next news"
         className={`group flex items-center justify-center w-10 h-10 rounded-full text-sm font-medium transition-all duration-300 ${
           currentPage === totalPages
             ? "text-gray-400 cursor-not-allowed bg-gray-50"

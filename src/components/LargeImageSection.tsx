@@ -28,7 +28,7 @@ const LargeImageSection: React.FC<Props> = ({ data }) => {
     {/* Background Image */}
     <Image
       src={data.image}
-      alt={data.title}
+      alt={data.slug}
       fill
       className="object-cover"
       priority
@@ -36,12 +36,12 @@ const LargeImageSection: React.FC<Props> = ({ data }) => {
       </div>
     {/* Bottom Overlay */}
     <div className=" bg-black bg-opacity-70 rounded-b-lg overflow-hidden">
-      <h2
+      <h3
         className="text-[20px] md:text-[28px] lg:text-[36px] text-white font-[oswald] leading-tight"
         style={{ fontWeight: 700 }}
       >
         {data.title}
-      </h2>
+      </h3>
       <p
         className="text-[14px] md:text-[16px] leading-tight mt-1 line-clamp-2"
         style={{ color: "#A7A7A7", fontFamily: "Roboto, sans-serif" }}

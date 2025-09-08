@@ -55,12 +55,12 @@ const RecipeCard: React.FC<Props> = ({ data }) => {
         {data.date}
       </span>
     </p>
-    <h2
+    <h3
       className="font-[oswald] text-[17px] md:text-[24px] leading-tight line-clamp-2 mt-1"
       style={{ fontWeight: 700 }}
     >
       {data.title}
-    </h2>
+    </h3>
     <p
       className="text-[14px] mt-1 line-clamp-2 leading-tight text-gray-500"
       style={{fontWeight: 400 }}

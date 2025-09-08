@@ -56,12 +56,12 @@ const MoreFeaturedArticle: React.FC<Props> = ({ data }) => {
                         </span>
                     </p>
 
-                    <p
+                    <h2
                         className="font-[oswald] leading-tight md:leading-tight line-clamp-3 text-[22px] sm:text-[28px] md:text-[32px] lg:text-[36px] mt-1"
                         style={{ fontWeight: 700 }}
                     >
                         {data.title}
-                    </p>
+                    </h2>
 
                     <p
                         className="mt-1 text-[14px] text-gray-500 sm:text-[15px] md:text-[16px] leading-tight md:leading-tight line-clamp-3"

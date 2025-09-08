@@ -33,20 +33,20 @@ const ArticleDetail: React.FC<Props> = ({ data }) => {
       </h1>
 
       {/* Short Description */}
-    <p className="mb-6 text-[12px] sm:text-[14px] md:text-[17px] text-gray-500 leading-tight italic">
+      <p className="mb-6 text-[12px] sm:text-[14px] md:text-[17px] text-gray-500 leading-tight italic">
         {data.shortdescription}
       </p>
 
       {/* Article Image */}
-        <div className="w-full relative overflow-hidden shadow-md aspect-[16/9] sm:aspect-[16/9] md:aspect-video">
-          <Image
-            src={data.image}
-            alt={data.title}
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
+      <div className="w-full relative overflow-hidden shadow-md aspect-[16/9] sm:aspect-[16/9] md:aspect-video">
+        <Image
+          src={data.image}
+          alt={data.title}
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
     </div>
   );
 };

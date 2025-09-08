@@ -65,6 +65,7 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
             name="MirrorStandard Staff"
             role="Editor"
             date={article.date}
+            image='/images/author-image.webp'
           />
           <ArticleParagraph data={article} />
 

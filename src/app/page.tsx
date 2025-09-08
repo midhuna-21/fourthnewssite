@@ -84,11 +84,13 @@ export default function Home() {
               url: [
                 "https://www.mirrorstandard.com",
                 "https://www.mirrorstandard.com/business/",
-                "https://www.mirrorstandard.com/technology/",
                 "https://www.mirrorstandard.com/politics/",
-                "https://www.mirrorstandard.com/health/",
                 "https://www.mirrorstandard.com/science/",
+                "https://www.mirrorstandard.com/technology/",
                 "https://www.mirrorstandard.com/sports",
+                "https://www.mirrorstandard.com/health/",
+                "https://www.mirrorstandard.com/education/",
+                "https://www.mirrorstandard.com/entertainment/",
 
               ],
             },

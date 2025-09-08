@@ -26,7 +26,7 @@ const SmallCard: React.FC<Props> = ({ data }) => {
       <div className="relative w-full">
         <Image
           src={data.image}
-          alt={data.title}
+          alt={data.slug}
           width={400}
           height={300}
           className="w-full h-50 object-cover"
@@ -37,7 +37,7 @@ const SmallCard: React.FC<Props> = ({ data }) => {
         </div> */}
 
         <div className="bg-black text-white mt-2">
-          <p className="text-md line-clamp-2 leading-tight font-[oswald] text-[17px] md:text-[24px]" style={{ fontWeight: 700 }}>{data.title}</p>
+          <h3 className="text-md line-clamp-2 leading-tight font-[oswald] text-[17px] md:text-[24px]" style={{ fontWeight: 700 }}>{data.title}</h3>
         </div>
       </div>
     </Link>

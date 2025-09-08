@@ -53,12 +53,12 @@ const MoreSideCard: React.FC<Props> = ({ data }) => {
             </span>
           </p>
 
-          <p
+          <h3
             className="text-[17px] md:text-[24px] font-[oswald] leading-tight"
             style={{ fontWeight: 700 }}
           >
             {data.title}
-          </p>
+          </h3>
         </div>
 
       </div>

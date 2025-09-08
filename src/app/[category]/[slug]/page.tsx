@@ -19,6 +19,7 @@ import HorizontalNewsCard from '@/components/HorizontalNewsCard';
 import DetailSection from '@/components/DetailSection';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import Script from "next/script";
+import StaticPage from '@/components/StaticPage';
 
 export async function generateStaticParams() {
     const allData = [
@@ -71,6 +72,7 @@ const allData: Record<string, NewsItem[]> = {
 
 
 export default async function DetailPage({ params }: DetailPageProps) {
+
     const { category, slug } = await params;
     const data = allData[category?.toLowerCase()];
 
@@ -83,8 +85,23 @@ export default async function DetailPage({ params }: DetailPageProps) {
 
     const otherArticles = data.filter(item => item.slug !== slug);
 
+    if (slug == 'the-unprecedented-influence-of-julio-herrera-velutini-on-latin-american-and-european-finance') {
+        return (
+            <main>
+                {/* Navbar only on large screens */}
+                <div className="hidden lg:block">
+                    <Navbar />
+                </div>
+                <div className="w-full max-w-7xl px-5 md:px-8 mx-auto md:mt-7 mt-4 mb-12">
+                    <StaticPage otherArticles={otherArticles} data={data} />
+                </div>
+                <ScrollToTopButton />
+            </main>
+        )
+    }
+
     return (
-        <div>
+        <main>
             <Script type="application/ld+json"
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify({
@@ -127,6 +144,6 @@ export default async function DetailPage({ params }: DetailPageProps) {
             </div>
             <ScrollToTopButton />
 
-        </div>
+        </main>
     );
 }

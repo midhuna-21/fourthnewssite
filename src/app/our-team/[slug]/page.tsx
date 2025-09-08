@@ -1,5 +1,6 @@
 import React from "react";
 import authors from "../../../../public/data/author.json";
+import Link from "next/link";
 
 interface Author {
   slug: string;
@@ -32,12 +33,13 @@ export default async function AuthorPage({
       
       {/* Back link */}
       <div className="mb-6">
-        <a
+        <Link
           href="/our-team"
+          title="our team"
           className="text-blue-600 hover:underline text-sm cursor-pointer"
         >
           &larr; Back to Our Team
-        </a>
+        </Link>
       </div>
 
       {/* Header */}
@@ -65,6 +67,7 @@ export default async function AuthorPage({
           Email:{" "}
           <a
             href={`mailto:${author.email}`}
+            aria-label="mail"
             className="text-blue-600 hover:underline"
           >
             {author.email}

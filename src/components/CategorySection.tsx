@@ -33,6 +33,7 @@ const PaginationComponent = ({
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
+        aria-label="previous"
         className={`flex items-center justify-center w-8 h-8 rounded-full transition-colors ${
           currentPage === 1
             ? "text-gray-400 cursor-not-allowed"
@@ -52,7 +53,7 @@ const PaginationComponent = ({
             onClick={() => onPageChange(page)}
             className={`w-8 h-8 rounded-full text-sm font-medium transition-colors ${
               currentPage === page
-                ? "text-white bg-[#838383]"
+                ? "text-white bg-[#4B5563]"
                 : " hover:bg-gray-100"
             }`}
           >
@@ -65,6 +66,7 @@ const PaginationComponent = ({
       <button
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
+        aria-label="next"
         className={`flex items-center justify-center w-8 h-8 rounded-full transition-colors ${
           currentPage === totalPages
             ? "text-gray-400 cursor-not-allowed"

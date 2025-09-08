@@ -107,11 +107,11 @@ const ScrollLayout: React.FC<Props> = ({ data }) => {
                   </div>
                 ))}
               </div>
-            </div>
-
-            <div className="mt-14">
+          <div className="mt-14 h-60 md:h-80 lg:h-96">
               <VibeNewsCard data={data[14]} />
             </div>
+            </div>
+
           </div>
         </div>
       </div>

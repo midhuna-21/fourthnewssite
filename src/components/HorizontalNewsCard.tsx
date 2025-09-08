@@ -54,7 +54,7 @@ const HorizontalNewsCard: React.FC<Props> = ({ data }) => {
               className="ml-1 text-[11px]"
               style={{
                 fontFamily: "Roboto, sans-serif",
-                color: "#838383",
+                color: "#4B5563",
               }}
             >
               {data.date}

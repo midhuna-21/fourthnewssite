@@ -53,12 +53,12 @@ const LifestyleCard: React.FC<Props> = ({ data }) => {
     </p>
 
     {/* Title */}
-    <h1
+    <h3
       className="text-white font-[oswald] text-lg sm:text-xl md:text-[36px] leading-tight line-clamp-2"
       style={{ fontWeight: 700 }}
     >
       {data.title}
-    </h1>
+    </h3>
 
     {/* Short description */}
     <p

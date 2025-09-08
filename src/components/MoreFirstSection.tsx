@@ -44,9 +44,9 @@ const MoreFirstSection: React.FC<Props> = ({ data }) => {
             <span className="ml-1 text-[12px]" style={{ fontFamily: 'Roboto, sans-serif' }}>{data.date}</span>
           </p>
 
-          <h2 className=" font-[oswald] font-bold leading-tight line-clamp-2 text-[20px] sm:text-[28px] md:text-[36px]">
+          <h3 className=" font-[oswald] font-bold leading-tight line-clamp-2 text-[20px] sm:text-[28px] md:text-[36px]">
             {data.title}
-          </h2>
+          </h3>
 
           <p className="mt-1 text-[12px] sm:text-[14px] md:text-[16px] leading-tight text-gray-500" style={{ fontFamily: 'Roboto, sans-serif' }}>
             {data.shortdescription}

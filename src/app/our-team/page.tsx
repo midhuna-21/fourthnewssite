@@ -222,7 +222,7 @@ function ReporterCard({ name, specialty, desc, linkText, index, slug }: {
 function AuthorLink({ name, slug, index }: { name: string; slug: string; index: string }) {
   return (
     <div className="group cursor-pointer">
-        <Link href={`/our-team/${slug}`}>
+        <Link href={`/our-team/${slug}`} title={name}>
       <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-[#615e5e54] transition-all duration-300">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">

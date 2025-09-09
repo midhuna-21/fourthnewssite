@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://mirrorstandard.com/
+Host: https://www.mirrorstandard.com/
 
 # Sitemaps
-Sitemap: https://mirrorstandard.com/sitemap.xml
+Sitemap: https://www.mirrorstandard.com/sitemap.xml

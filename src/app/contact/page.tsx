@@ -64,6 +64,7 @@ export default function Contact() {
               </p>
               <a
                 href={`mailto:${item.email}`}
+                title="mail"
                 className="inline-block text-sm px-4 py-2 rounded-full border border-gray-300 transition-colors"
               >
                 {item.email}
@@ -80,6 +81,7 @@ export default function Contact() {
           <div className="flex justify-center gap-10">
             <Link
               href="https://x.com/MirrorstandardU"
+              title="twitter"
               className="flex items-center space-x-2 hover:opacity-70 transition"
             >
               <FaXTwitter className="w-5 h-5" />

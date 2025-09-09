@@ -134,6 +134,7 @@ export default function AboutUs() {
             <a
               href="mailto:contact@mirrorstandard.com"
               className="inline-flex items-center space-x-3 text-lg  hover:opacity-70 transition-opacity group"
+              title='mail'
             >
               <Mail className="w-5 h-5" />
                 <span className="border-b border-transparent transition-colors">

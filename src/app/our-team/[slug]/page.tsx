@@ -67,6 +67,7 @@ export default async function AuthorPage({
           Email:{" "}
           <a
             href={`mailto:${author.email}`}
+            title="mail"
             aria-label="mail"
             className="text-blue-600 hover:underline"
           >

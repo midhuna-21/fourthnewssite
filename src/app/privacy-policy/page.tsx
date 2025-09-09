@@ -1,4 +1,39 @@
+import type { Metadata } from "next";
 import { Mail, Shield, Eye, Lock, Cookie, Users, CheckCircle2 } from "lucide-react";
+
+export async function generateMetadata(): Promise<Metadata> {
+
+    const siteUrl = "https://www.mirrorstandard.com";
+    const categoryUrl = `${siteUrl}/privacy-policy`;
+
+    return {
+        title: "MirrorStandard – Privacy Policy",
+        description: "Discover how MirrorStandard protects your data, ensures transparency, and safeguards your information while delivering reliable news.",
+        alternates: { canonical: categoryUrl },
+        openGraph: {
+            title: "MirrorStandard – Privacy Policy",
+            description: "Discover how MirrorStandard protects your data, ensures transparency, and safeguards your information while delivering reliable news.",
+            url: "https://www.mirrorstandard.com/privacy-policy",
+            siteName: "MirrorStandard",
+            images: [
+                {
+                    url: "https://www.mirrorstandard.com/images/mirrorstandard-logo.webp",
+                    width: 1200,
+                    height: 630,
+                    alt: "MirrorStandard Logo",
+                },
+            ],
+            type: "website",
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: "MirrorStandard – Privacy Policy",
+            description: "Discover how MirrorStandard protects your data, ensures transparency, and safeguards your information while delivering reliable news.",
+            images: "https://www.mirrorstandard.com/images/mirrorstandard-logo.webp",
+            site: '@MirrorStandard',
+        },
+    };
+}
 
 export default function PrivacyPolicy() {
     const purposes = [
@@ -92,6 +127,7 @@ export default function PrivacyPolicy() {
                     <a
                         href="mailto:privacy@mirrorstandard.com"
                         aria-label="mail"
+                        title="mail"
                         className="inline-flex items-center space-x-3 text-lg hover:opacity-70 transition-opacity group"
                     >
                         <Mail className="w-5 h-5" />
@@ -121,7 +157,8 @@ export default function PrivacyPolicy() {
                     </p>
                     <a
                         href="mailto:privacy@mirrorstandard.com"
-              aria-label="mail"
+                        aria-label="mail"
+                        title='mail'
                         className="inline-flex items-center space-x-3 text-lg hover:opacity-70 transition-opacity group"
                     >
                         <Mail className="w-5 h-5" />

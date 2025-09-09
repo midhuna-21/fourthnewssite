@@ -26,20 +26,20 @@ const oswald = Oswald({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.mirrorstandard.com"),
-  title: "Mirrorstandard News – Latest World Updates, Politics, Business & Expert Insights",
+  title: "Mirror Standard News – Latest World Updates, Politics, Business & Expert Insights",
   description: "Mirrorstandard brings you real-time headlines and authoritative coverage across politics, business, world news, science, health, education, sports, and technology. Explore investigative reporting, global perspectives, and expert commentary that help you stay informed and ahead in a rapidly changing world.",
   keywords: "2025 social media regulation, Brazil Supreme Court tech decisions, global platform accountability, Uber Waymo robotaxi Atlanta launch, Georgia autonomous vehicles, Cooper Flagg 2025 NBA draft, next generation NBA stars, smartphone addiction youth impact, screen time and mental health, home HPV test cervical cancer screening, self-sample cancer detection kits, Puerto Rico political case targeting, legal reforms in Puerto Rico",
   openGraph: {
-    title: "Mirrorstandard – Latest News, Politics, Business & Global Insights",
-    description: "Mirrorstandard delivers breaking news and expert insights on politics, business, tech, health, science, and sports. Stay updated with global analysis and top stories every day.",
+    title: "Mirror Standard – Latest News, Politics, Business & Global Insights",
+    description: "Mirror Standard delivers breaking news and expert insights on politics, business, tech, health, science, and sports. Stay updated with global analysis and top stories every day.",
     url: "https://www.mirrorstandard.com",
-    siteName: "Mirrorstandard",
+    siteName: "Mirror Standard",
     images: [
       {
         url: "https://www.mirrorstandard.com/images/mirrorstandard-logo.webp",
         width: 1200,
         height: 630,
-        alt: "Mirrorstandard Logo",
+        alt: "Mirror Standard Logo",
       },
     ],
     type: "website",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mirrorstandard – Breaking News, Politics, Business & World Analysis",
     description: "Get the latest headlines and in-depth analysis on politics, business, technology, health, science, and sports with Mirrorstandard’s trusted reporting.",
-    images: "https://www.Mirrorstandard.com/images/mirrorstandard-logo.webp",
+    images: "https://www.mirrorstandard.com/images/mirrorstandard-logo.webp",
     site: '@Mirrorstandard'
   },
 
@@ -75,6 +75,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="googlebot" content="index, follow" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+      </head>
       <body
         className={`${geistSans?.variable ?? ''} ${geistMono?.variable ?? ''} ${oswald?.variable ?? ''} antialiased`}
         suppressHydrationWarning

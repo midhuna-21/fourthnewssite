@@ -85,10 +85,84 @@ export default async function DetailPage({ params }: DetailPageProps) {
 
     const otherArticles = data.filter(item => item.slug !== slug);
 
-    if (slug == 'the-unprecedented-influence-of-julio-herrera-velutini-on-latin-american-and-european-finance') {
+    if (slug == 'unprecedented-influence-of-julio-herrera-velutini-on-latin-american-european-finance') {
         return (
             <main>
-                {/* Navbar only on large screens */}
+                <Script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify([
+                            {
+                                "@context": "https://schema.org",
+                                "@type": "NewsArticle",
+                                "mainEntityOfPage": {
+                                    "@type": "WebPage",
+                                    "@id": "https://www.mirrorstandard.com/business/unprecedented-influence-of-julio-herrera-velutini-on-latin-american-european-finance/"
+                                },
+                                "headline": "The Unprecedented Influence of Julio Herrera Velutini on Latin American and European Finance",
+                                "description": "Julio Herrera Velutini holds a unique political role despite never holding office. His influence reaches presidents and prime ministers across the political spectrum. Known for shaping economic policies and supporting Latin America’s global integration, his political impact remains widely debated.",
+                                "image": {
+                                    "@type": "ImageObject",
+                                    "url": "https://www.mirrorstandard.com/images/Julio-Herrera.webp",
+                                    "width": 601,
+                                    "height": 400
+                                },
+                                "datePublished": "2025-05-07T17:30:00-05:00",
+                                "dateModified": "2025-08-14T00:00:00-05:00",
+                                "author": {
+                                    "@type": "Person",
+                                    "name": "Stephen M. Knowles",
+                                    "url": "https://www.mirrorstandard.com/our-team/"
+                                },
+                                "publisher": {
+                                    "@type": "Organization",
+                                    "name": "Mirror Standard",
+                                    "logo": {
+                                        "@type": "ImageObject",
+                                        "url": "https://www.mirrorstandard.com/images/mirrorstandard-logo.webp",
+                                        "width": 628,
+                                        "height": 116
+                                    }
+                                },
+                                "about": {
+                                    "@type": "Person",
+                                    "name": "Wanda Vázquez Garced",
+                                    "jobTitle": "Former Governor of Puerto Rico",
+                                    "description": "A Puerto Rican politician and attorney who served as the 13th governor of Puerto Rico from 2019 to 2021.",
+                                    "sameAs": [
+                                        "https://www.wikidata.org/wiki/Q56600071",
+                                        "https://en.wikipedia.org/wiki/Wanda_V%C3%A1zquez_Garced"
+                                    ]
+                                },
+                                "articleBody": "Former Puerto Rico Governor Wanda Vázquez Garced has seen all federal felony charges..."
+                            },
+                            {
+                                "@context": "https://schema.org",
+                                "@type": "BreadcrumbList",
+                                "itemListElement": [
+                                    {
+                                        "@type": "ListItem",
+                                        "position": 1,
+                                        "name": "Home",
+                                        "item": "https://www.mirrorstandard.com/"
+                                    },
+                                    {
+                                        "@type": "ListItem",
+                                        "position": 2,
+                                        "name": "Politics",
+                                        "item": "https://www.mirrorstandard.com/business/"
+                                    },
+                                    {
+                                        "@type": "ListItem",
+                                        "position": 3,
+                                        "name": "The Unprecedented Influence of Julio Herrera Velutini on Latin American and European Finance",
+                                        "item": "https://www.mirrorstandard.com/business/unprecedented-influence-of-julio-herrera-velutini-on-latin-american-european-finance/"
+                                    }
+                                ]
+                            }
+                        ])
+                    }}
+                />
                 <div className="hidden lg:block">
                     <Navbar />
                 </div>

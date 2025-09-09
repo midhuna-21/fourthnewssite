@@ -33,6 +33,7 @@ export default function TermsConditions() {
           <a
             href="mailto:press@mirrorstandard.com"
               aria-label="mail"
+              title="mail"
             className="inline-flex items-center space-x-3 text-lg hover:opacity-70 transition-opacity group"
           >
             <Mail className="w-5 h-5" />
@@ -52,6 +53,7 @@ export default function TermsConditions() {
            We put a lot of effort into fact-checking and keeping our reporting current. That said, news changes fast, and sometimes details shift after publication. We can’t promise that every story will stay fully up to date forever, but we do promise to correct mistakes when we find them.(See our{" "}
             <Link 
               href="/corrections-policy"
+              title="corrections-policy"
               className="underline hover:opacity-70 text-blue-500"
             >
               Corrections Policy
@@ -129,6 +131,7 @@ export default function TermsConditions() {
           <a
             href="mailto:contact@mirrorstandard.com"
               aria-label="mail"
+              title="mail"
             className="inline-flex items-center space-x-3 text-lg hover:opacity-70 transition-opacity group"
           >
             <Mail className="w-5 h-5" />

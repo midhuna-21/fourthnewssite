@@ -38,7 +38,7 @@ export default function Home() {
               "@context": "https://schema.org",
               "@type": "NewsMediaOrganization",
               "@id": "https://www.mirrorstandard.com/#organization",
-              name: "Mirrorstandard",
+              name: "Mirror Standard",
               url: "https://www.mirrorstandard.com",
               logo: {
                 "@type": "ImageObject",

@@ -104,9 +104,9 @@ export default function Home() {
       </div>
 
       <div className="w-full max-w-7xl md:px-8 px-4 mx-auto">
-        <NewsFirstLayout data={[businessData[3], healthData[1], scienceData[8], politicsData[16], educationData[26], technologyData[0], sportsData[0], businessData[0], educationData[0], businessData[1]]} />
+        <NewsFirstLayout data={[businessData[3], healthData[13], scienceData[9], politicsData[16], educationData[26], technologyData[0], sportsData[0], businessData[0], educationData[14], businessData[23]]} />
 
-        <ArticleLayout data={[politicsData[0], politicsData[1], politicsData[2], politicsData[3], politicsData[4], politicsData[5]]} />
+        <ArticleLayout data={[politicsData[0], politicsData[1], politicsData[2], politicsData[10], politicsData[4], politicsData[5]]} />
 
         <ArticlesGrid data={[educationData[1], scienceData[1], technologyData[4], educationData[3]]} />
 
@@ -115,17 +115,17 @@ export default function Home() {
         <FourCardGrid data={[healthData[0], scienceData[2], sportsData[2], educationData[11]]} /> */}
 
         {/* <PromoNews /> */}
-        <DynamicSection data={[politicsData[0],politicsData[4],politicsData[1],politicsData[2],politicsData[3],politicsData[5], healthData[6],healthData[3],healthData[0],healthData[1],healthData[2],healthData[5],healthData[6], scienceData[4], scienceData[2],scienceData[0],scienceData[1],scienceData[3],scienceData[5],educationData[4], educationData[11],educationData[0],educationData[1],educationData[2],educationData[5],businessData[0],businessData[1],businessData[2],businessData[3],businessData[4],businessData[5]]} />
+        <DynamicSection data={[politicsData[17],politicsData[7],politicsData[15],politicsData[11],politicsData[9],politicsData[6], healthData[8],healthData[3],healthData[0],healthData[1],healthData[2],healthData[5],healthData[6], scienceData[4], scienceData[2],scienceData[0],scienceData[8],scienceData[3],scienceData[5],educationData[4], educationData[11],educationData[0],educationData[9],educationData[2],educationData[6],businessData[0],businessData[1],businessData[2],businessData[20],businessData[6],businessData[5]]} />
 
-        <MoreTopHeadlines data={[sportsData[9], educationData[1], politicsData[3], sportsData[3], technologyData[3], educationData[5], businessData[8], healthData[7], educationData[9], sportsData[9], sportsData[10]]} />
+        <MoreTopHeadlines data={[sportsData[12], educationData[8], politicsData[3], sportsData[3], technologyData[3], educationData[5], businessData[8], healthData[7], educationData[10], sportsData[9], sportsData[11]]} />
 
-        <ExclusiveClips data={[entertainmentData[9], healthData[8], sportsData[4], technologyData[8], politicsData[4], educationData[14], businessData[2], entertainmentData[2], businessData[4], entertainmentData[1], entertainmentData[0]]} />
+        <ExclusiveClips data={[entertainmentData[9], healthData[9], sportsData[4], technologyData[8], politicsData[8], educationData[17], businessData[21], entertainmentData[2], businessData[4], entertainmentData[1], entertainmentData[0]]} />
 
-        <MainLayout data={[politicsData[12], educationData[19], healthData[10], sportsData[10], educationData[16]]} />
+        <MainLayout data={[politicsData[12], educationData[19], healthData[11], sportsData[10], educationData[16]]} />
 
-        <EntertainmentSection data={[healthData[28], healthData[21], healthData[2], healthData[3], healthData[4]]} />
+        <EntertainmentSection data={[healthData[28], healthData[21], healthData[12], healthData[10], healthData[4]]} />
 
-        <ScrollLayout data={[politicsData[11], sportsData[22], businessData[22], technologyData[20], educationData[4], healthData[24], scienceData[5], politicsData[27], scienceData[15], scienceData[16], scienceData[18], entertainmentData[19], entertainmentData[18], entertainmentData[20], technologyData[28]]} />
+        <ScrollLayout data={[politicsData[14], sportsData[22], businessData[22], technologyData[20], educationData[7], healthData[24], scienceData[7], politicsData[27], scienceData[15], scienceData[16], scienceData[18], entertainmentData[19], entertainmentData[18], entertainmentData[20], technologyData[28]]} />
         <ScrollToTopButton />
       </div>
 

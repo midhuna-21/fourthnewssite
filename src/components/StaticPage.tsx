@@ -73,7 +73,7 @@ export default function StaticPage({ otherArticles, data }: Props) {
           <AuthorInfo
             name="MirrorStandard Staff"
             role="Editor"
-            date='3 June 2023'
+            date='Sept. 20, 2025'
             image='/images/author-image.webp'
           />
           <span className="text-[14px] sm:text-[16px] md:text-[16px] capitalize text-gray-500">

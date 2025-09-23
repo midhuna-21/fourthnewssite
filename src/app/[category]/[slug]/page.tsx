@@ -21,69 +21,69 @@ import ScrollToTopButton from '@/components/ScrollToTopButton';
 import Script from "next/script";
 import StaticPage from '@/components/StaticPage';
 
-export async function generateStaticParams() {
-    const allData = [
-        { category: 'politics', articles: politicsData },
-        { category: 'business', articles: businessData },
-        { category: 'technology', articles: technologyData },
-        { category: 'sports', articles: sportsData },
-        { category: 'science', articles: scienceData },
-        { category: 'health', articles: healthData },
-        { category: 'entertainment', articles: entertainmentData },
-        { category: 'education', articles: educationData },
+    export async function generateStaticParams() {
+        const allData = [
+            { category: 'politics', articles: politicsData },
+            { category: 'business', articles: businessData },
+            { category: 'technology', articles: technologyData },
+            { category: 'sports', articles: sportsData },
+            { category: 'science', articles: scienceData },
+            { category: 'health', articles: healthData },
+            { category: 'entertainment', articles: entertainmentData },
+            { category: 'education', articles: educationData },
 
-    ];
+        ];
 
-    const params = allData.flatMap(({ category, articles }) =>
-        articles.map((article) => ({
-            category,
-            slug: article.slug,
-        }))
-    );
+        const params = allData.flatMap(({ category, articles }) =>
+            articles.map((article) => ({
+                category,
+                slug: article.slug,
+            }))
+        );
 
-    return params;
-}
-
-
-interface NewsItem {
-    category: string;
-    title: string;
-    shortdescription: string;
-    description: string;
-    image: string;
-    slug: string;
-    date: string;
-}
-
-interface DetailPageProps {
-    params: Promise<{ category: string, slug: string }>;
-}
-
-const allData: Record<string, NewsItem[]> = {
-    business: businessData,
-    technology: technologyData,
-    sports: sportsData,
-    health: healthData,
-    politics: politicsData,
-    science: scienceData,
-    entertainment: entertainmentData,
-    education: educationData,
-};
-
-
-export default async function DetailPage({ params }: DetailPageProps) {
-
-    const { category, slug } = await params;
-    const data = allData[category?.toLowerCase()];
-
-    if (!data) return notFound();
-
-    const article = data.find(item => item.slug === slug);
-    if (!article) {
-        return <div className="p-4">No article found for slug {slug}</div>;
+        return params;
     }
 
-    const otherArticles = data.filter(item => item.slug !== slug);
+
+    interface NewsItem {
+        category: string;
+        title: string;
+        shortdescription: string;
+        description: string;
+        image: string;
+        slug: string;
+        date: string;
+    }
+
+    interface DetailPageProps {
+        params: Promise<{ category: string, slug: string }>;
+    }
+
+    const allData: Record<string, NewsItem[]> = {
+        business: businessData,
+        technology: technologyData,
+        sports: sportsData,
+        health: healthData,
+        politics: politicsData,
+        science: scienceData,
+        entertainment: entertainmentData,
+        education: educationData,
+    };
+
+
+    export default async function DetailPage({ params }: DetailPageProps) {
+
+        const { category, slug } = await params;
+        const data = allData[category?.toLowerCase()];
+
+        if (!data) return notFound();
+
+        const article = data.find(item => item.slug === slug);
+        if (!article) {
+            return <div className="p-4">No article found for slug {slug}</div>;
+        }
+
+        const otherArticles = data.filter(item => item.slug !== slug);
 
     if (slug == 'unprecedented-influence-of-julio-herrera-velutini-on-latin-american-european-finance') {
         return (

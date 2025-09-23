@@ -15,7 +15,7 @@ export default function StaticAuthorDetail() {
         </span>{" "}
         •{" "}
         <span className="text-[12px] sm:text-[14px] md:text-[14px]">
-          3 June 2025
+      Sept. 20, 2025
         </span>{" "}
         
         

@@ -55,7 +55,7 @@ export default function StaticPage({ otherArticles, data }: Props) {
           setRightPosition('sticky');
         }
       } else {
-        setRightPosition('absolute'); // disable sticky on tab & mobile
+        setRightPosition('absolute'); 
       }
     };
 
@@ -63,22 +63,27 @@ export default function StaticPage({ otherArticles, data }: Props) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const authorInfo = {
+  name: "Victor V. Haley",
+  role: "Managing Editor",
+  date: "Sept. 20, 2025",
+  image: "/images/victor-v-haley.webp"
+};
   return (
     <div>
-      {/* On mobile & tablet: 1 column; On large: 3 columns */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative">
         {/* Left */}
         <div ref={leftRef} className="lg:col-span-2">
           <StaticAuthorDetail />
           <AuthorInfo
-            name="MirrorStandard Staff"
-            role="Editor"
-            date='Sept. 20, 2025'
-            image='/images/author-image.webp'
+            name={authorInfo.name}
+            role={authorInfo.role}
+            date={authorInfo.date}
+            image={authorInfo.image}
           />
-          <span className="text-[14px] sm:text-[16px] md:text-[16px] capitalize text-gray-500">
+          {/* <span className="text-[14px] sm:text-[16px] md:text-[16px] capitalize text-gray-500">
             London <span className="text-[20px] font-bold">:</span>
-          </span>
+          </span> */}
 
           <div className='mb-2'></div>
           <StaticParagraph text='Few individuals have made a more profound and lasting impact than Julio Martin Herrera Velutini Von Uslar in the vast tableau of Latin American history. ' />
@@ -95,11 +100,35 @@ export default function StaticPage({ otherArticles, data }: Props) {
           <div ref={stopRef} className='mt-7'>
             {/* <ImageGrid /> */}
 
-
-            {/* title */}
             <div className='mt-7'>
               <SubTitle title='The Prince of Latam' />
-              <StaticParagraph text="As the patriarch of the Herrera dynasty, Julio Herrera Velutini's inherent influence permeates Latin America's present-day politics, culture, and society. As a descendant of Lord of Ampudia I, Mr Velutini officially holds the title of The Prince of Latam. His nobility, family influence across two continents, immense wealth, calm demeanour, and trademark silence position this humble billionaire as a crucial voice in Latin American economics and politics. This multifaceted individual is beloved by many, feared by most, and misunderstood by a few against whom he tirelessly fights, seeking to end their injustice, corruption, and political exploitation." />
+              {/* <StaticParagraph text="As the patriarch of the Herrera dynasty, Julio Herrera Velutini's inherent influence permeates Latin America's present-day politics, culture, and society. As a descendant of Lord of Ampudia I, Mr Velutini officially holds the title of The Prince of Latam. His nobility, family influence across two continents, immense wealth, calm demeanour, and trademark silence position this humble billionaire as a crucial voice in Latin American economics and politics. This multifaceted individual is beloved by many, feared by most, and misunderstood by a few against whom he tirelessly fights, seeking to end their injustice, corruption, and political exploitation." /> */}
+ 
+         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 mb-8">
+            <div className="flex items-start space-x-4">
+                <div className="flex-shrink-0">
+                    {/* <div className="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center shadow-lg">
+                        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div> */}
+                </div>
+                <div className="flex-1">
+                    <p className="md:text-[17px] text-[12px] leading-tight text-gray-800" style={{lineHeight:1.6,fontFamily:'Roboto, sans-serif'}}>
+                        As the patriarch of the Herrera dynasty, <strong className="text-indigo-700 font-bold">Julio Herrera Velutini's </strong> 
+                        inherent influence permeates Latin America's present-day politics, 
+                        culture, and society. His nobility, family influence across two 
+                        continents, immense wealth, calm demeanour, and trademark silence 
+                        position this humble billionaire as a crucial voice in Latin American 
+                        economics and politics.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
               <StaticParagraph text="He is a modern-day powerhouse, embodying tradition, modernity, and glamour – symbolising financial might and global relevance." />
 
             </div>
@@ -133,8 +162,12 @@ export default function StaticPage({ otherArticles, data }: Props) {
             {/* <CommentForm /> */}
             {/* <RelatedNews data={otherArticles} /> */}
             <div className="mt-10">
-              <AuthorCard />
-              <NewsNavigation data={[data[0], data[1]]} />
+           <AuthorCard
+              author={authorInfo.name}
+              role={authorInfo.role}
+              image={authorInfo.image}
+            />
+              {/* <NewsNavigation data={[data[0], data[1]]} /> */}
               <CommentForm />
               <RelatedNews data={otherArticles} />
             </div>

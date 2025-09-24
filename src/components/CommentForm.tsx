@@ -55,7 +55,7 @@ const CommentForm = () => {
   };
 
   return (
-    <div className="w-full max-w-4xl py-15">
+    <div className="w-full max-w-4xl py-5">
       {/* Heading */}
       <h2
         className="text-[20px] font-[oswald] mb-6"

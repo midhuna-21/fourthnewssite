@@ -104,7 +104,7 @@ export default function Home() {
       </div>
 
       <div className="w-full max-w-7xl md:px-8 px-4 mx-auto">
-        <NewsFirstLayout data={[businessData[3], healthData[13], scienceData[9], politicsData[16], educationData[26], technologyData[0], sportsData[0], businessData[0], educationData[14], businessData[23]]} />
+        <NewsFirstLayout data={[businessData[0], healthData[13], scienceData[9], politicsData[16], educationData[26], technologyData[0], sportsData[0], businessData[3], educationData[14], businessData[23]]} />
 
         <ArticleLayout data={[politicsData[0], politicsData[1], politicsData[2], politicsData[10], politicsData[4], politicsData[5]]} />
 

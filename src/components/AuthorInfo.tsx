@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import picture from '../../public/images/author-image.webp'
 
 interface AuthorProps {
   name: string;
@@ -10,14 +9,14 @@ interface AuthorProps {
   image: string;
 }
 
-const AuthorInfo: React.FC<AuthorProps> = ({ name, role = "Staff", date }) => {
+const AuthorInfo: React.FC<AuthorProps> = ({ name,role,image,date }) => {
   return (
     <div className="flex items-center space-x-3 py-7">
       {/* Author Image */}
       <div className="w-12 h-12 relative rounded-full overflow-hidden">
         <Image
-          src={picture}
-          alt="Author"
+          src={image}
+          alt={name}
           width={48}
           height={48}
         />

@@ -8,7 +8,8 @@
       "When he’s not reviewing drafts or coordinating reporters across time zones, Michael enjoys spotting small details others might miss and thinking about how journalism can make a real difference. He’s also the kind of editor who encourages questions, debates, and curiosity in every story.",
       "Michael’s work covers politics, investigative reporting, and editorial strategy. He’s deeply interested in media ethics and how independent newsrooms like Mirror Standard can earn and keep readers’ trust."
     ],
-    "email": "michael.gentry@mirrorstandard.com"
+    "email": "michael.gentry@mirrorstandard.com",
+    "image":"/images/michael-y-gentry.webp"
   },
   {
     "slug": "victor-v-haley",
@@ -19,7 +20,8 @@
       "He loves untangling complicated topics so readers can actually understand what’s going on. Politics, economics, culture — it doesn’t matter. Victor wants the news to make sense, not just fill a page.",
       "When he’s not wrangling stories, Victor enjoys mentoring reporters and experimenting with new ways to tell a story. He’s a firm believer that a newsroom works best when everyone brings their own ideas to the table."
     ],
-    "email": "victor.haley@mirrorstandard.com"
+    "email": "victor.haley@mirrorstandard.com",
+    "image":"/images/victor-v-haley.webp"
   },
   {
     "slug": "betty-d-chambers",
@@ -30,7 +32,8 @@
       "She’s not afraid to ask the tough questions, and she believes that good reporting should make readers think, not just nod along. Outside of work, Betty enjoys reading history, exploring local communities, and trying out new coffee shops while brainstorming story ideas.",
       ""
     ],
-    "email": "betty.chambers@mirrorstandard.com"
+    "email": "betty.chambers@mirrorstandard.com",
+    "image":"/images/betty-d-chambers.webp"
   },
   {
     "slug": "jacqueline-l-wood",
@@ -41,7 +44,8 @@
       "Some days you’ll find her at tech conferences, other days she’s talking to entrepreneurs, artists, or everyday folks whose stories deserve attention. Jacqueline believes that readers should walk away understanding why a story matters, not just what happened.",
       "When she’s off the clock, Jacqueline enjoys sketching, catching live music, and experimenting with new recipes in the kitchen — all little ways to stay curious and creative."
     ],
-    "email": "jacqueline.wood@mirrorstandard.com"
+    "email": "jacqueline.wood@mirrorstandard.com",
+    "image":"/images/jacqueline-l-wood.webp"
   },
   {
     "slug": "margaret-j-kern",
@@ -52,6 +56,7 @@
       "She believes complex topics can be made understandable without losing nuance. Margaret enjoys breaking things down so readers can make sense of the news and see how it impacts their lives.",
       "When she’s not crunching numbers or chasing stories, Margaret can usually be found hiking, reading about history, or testing out new coffee blends — anything that sparks curiosity."
     ],
-    "email": "margaret.kern@mirrorstandard.com"
+    "email": "margaret.kern@mirrorstandard.com",
+    "image":"/images/margaret-j-kern.webp"
   }
 ]

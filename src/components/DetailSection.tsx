@@ -17,6 +17,9 @@ interface NewsItem {
   image: string;
   slug: string;
   date: string;
+  author: string;
+  authorImage: string;
+  role: string;
 }
 
 interface Props {
@@ -62,18 +65,23 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
         <div ref={leftRef} className="lg:col-span-2">
           <ArticleDetail data={article} />
           <AuthorInfo
-            name="MirrorStandard Staff"
-            role="Editor"
+            name={article.author}
+            role={article.role}
             date={article.date}
-            image='/images/author-image.webp'
+            image={article.authorImage}
           />
           <ArticleParagraph data={article} />
 
           <div ref={stopRef}>
-            <AuthorCard />
-            <NewsNavigation data={[data[0],data[1]]}/>
+            <AuthorCard
+              author={article.author}
+              role={article.role}
+              image={article.authorImage}
+            />
+
+            <NewsNavigation data={[otherArticles[0], otherArticles[1]]} />
             <CommentForm />
-            <RelatedNews data={otherArticles} />
+            <RelatedNews data={[otherArticles[2], otherArticles[3], otherArticles[4]]} />
           </div>
         </div>
 
@@ -85,7 +93,7 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
           >
             <h2 className="text-[24px] font-[oswald] mb-4 font-bold">POPULAR NEWS</h2>
             <div className="divide-y divide-[#615e5e54]">
-              {data.slice(4, 8).map((item, index) => (
+              {data.slice(5, 9).map((item, index) => (
                 <div key={index} className="py-3">
                   <HorizontalNewsCard data={item} />
                 </div>

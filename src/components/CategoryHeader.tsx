@@ -22,7 +22,7 @@ export default function CategoryHeader({ category }: Props) {
       {/* Category Title */}
       <h1
         className="text-[28px] sm:text-[36px] xs:text-[36px] font-bold"
-        style={{ fontFamily: 'Roboto, sans-serif' }}
+ 
       >
         Category : <span className='capitalize'>{category}</span>
       </h1>

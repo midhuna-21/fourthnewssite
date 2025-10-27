@@ -11,6 +11,10 @@ const ImageGrid = () => {
           src="/images/JMHV-museum-london.webp"
           alt="Julio Herrera Velutini"
           fill
+          quality={75}
+          placeholder="blur"
+            blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+
           className="object-cover"
         />
       </div>

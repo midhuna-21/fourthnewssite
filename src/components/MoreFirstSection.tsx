@@ -28,6 +28,10 @@ const MoreFirstSection: React.FC<Props> = ({ data }) => {
             src={data.image}
             alt={data.title}
             fill
+            quality={75}
+            placeholder="blur"
+              blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+
             priority
             className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
           />

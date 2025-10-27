@@ -46,7 +46,7 @@ export default function Header() {
             </span>
             <button
               type="button"
-               aria-label="Open menu"
+              aria-label="Open menu"
               className="hidden md:block text-[#5a5a5a] hover:text-[#00ffc8] cursor-pointer"
               onClick={() => setIsMenuOpen(true)}
             >
@@ -76,7 +76,7 @@ export default function Header() {
               <ThemeToggle />
               <button
                 type="button"
-                 aria-label="search"
+                aria-label="search"
                 className="text-[#5a5a5a] hover:text-[#00ffc8] cursor-pointer"
                 onClick={() => setIsSearchOpen(true)}
               >
@@ -101,7 +101,7 @@ export default function Header() {
                 className="text-[#5a5a5a] hover:text-[#00ffc8] cursor-pointer"
                 onClick={() => setIsMenuOpen(true)}
               >
-                <Menu size={26} strokeWidth={2} strokeLinecap="square" />  
+                <Menu size={26} strokeWidth={2} strokeLinecap="square" />
               </button>
             </div>
           </div>
@@ -131,13 +131,17 @@ export default function Header() {
                   className={`flex gap-4 ${index !== news.length - 1 ? "border-b border-gray-700 py-2" : "py-2"
                     }`}
                 >
-                 <Image
-  src={item.image}
-  alt={item.title}     
-  width={96}       
-  height={96}           
-  className="object-cover flex-shrink-0"
-/>
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={96}
+                    height={96}
+                    quality={75}
+                    placeholder="blur"
+                      blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+
+                    className="object-cover flex-shrink-0"
+                  />
                   <div>
                     <p className="text-sm capitalize font-semibold text-gray-400">
                       {item.category}{" "}

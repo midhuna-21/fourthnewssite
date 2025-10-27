@@ -27,7 +27,11 @@ const MoreSideCard: React.FC<Props> = ({ data }) => {
             src={data.image}
             alt={data.title}
             fill
+            quality={75}
+            placeholder="blur"
             priority
+              blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+
             className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
           />
 
@@ -41,13 +45,12 @@ const MoreSideCard: React.FC<Props> = ({ data }) => {
           <p className="text-gray-500">
             <span
               className="text-[14px] capitalize"
-              style={{ fontWeight: 700, fontFamily: "Roboto, sans-serif" }}
+              style={{ fontWeight: 700 }}
             >
               {data.category}
             </span>
             <span
               className="ml-1 text-[11px]"
-              style={{ fontFamily: "Roboto, sans-serif" }}
             >
               {data.date}
             </span>

@@ -17,6 +17,10 @@ const AuthorCard: React.FC<AuthorProps> = ({ author, role, image }) => {
           alt={author}
           width={96}
           height={96}
+          quality={75}
+          placeholder="blur"
+            blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+
           className="rounded-full object-cover w-24 h-24"
         />
       </div>
@@ -28,7 +32,7 @@ const AuthorCard: React.FC<AuthorProps> = ({ author, role, image }) => {
         </p>
         <p className="text-lg font-semibold">{author}</p>
         <p className="text-[14px] md:text-[14px] text-gray-600 capitalize" style={{ fontWeight: 700 }}>
-  {role}
+          {role}
         </p>
       </div>
     </div>

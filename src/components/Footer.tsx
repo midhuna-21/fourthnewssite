@@ -68,6 +68,10 @@ export default function Footer() {
                     alt={politicsData[i].title}
                     width={64}
                     height={64}
+                    quality={75}
+                    placeholder="blur"
+                      blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+
                     className="object-cover"
                   />
                 </div>
@@ -163,6 +167,9 @@ export default function Footer() {
                       alt={politicsData[i].title}
                       width={64}
                       height={64}
+                      quality={75}
+                      placeholder="blur"
+                        blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
                       className="object-cover"
                     />
                   </div>

@@ -16,6 +16,10 @@ const StaticImage: React.FC<Props> = ({ image, alt, title }) => {
         className="object-cover"
         width={800}
         height={450}
+        quality={75}
+        placeholder="blur"
+          blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+
       />
     </div>
   );

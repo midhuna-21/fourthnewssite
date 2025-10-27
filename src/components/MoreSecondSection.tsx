@@ -29,6 +29,8 @@ const MoreSecondSection: React.FC<Props> = ({ data }) => {
             alt={data.title}
             fill
             priority
+              blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+
             className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
           />
 

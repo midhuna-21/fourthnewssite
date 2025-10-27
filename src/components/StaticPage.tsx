@@ -16,6 +16,7 @@ import StaticSidebarBottom from './StaticSidebarBottom';
 import QuoteBlock from './QuoteBlock';
 import ImageGrid from './ImageGrid';
 import SubTitle from './SubTitle';
+import JulioHorizontalCard from './JulioHorizontalCard';
 
 interface NewsItem {
   category: string;
@@ -184,11 +185,15 @@ export default function StaticPage({ otherArticles, data }: Props) {
            
             <h2 className="text-[24px] font-[oswald] mb-4 font-bold">POPULAR NEWS</h2>
             <div className="divide-y divide-[#615e5e54]">
-              {data.slice(4, 8).map((item, index) => (
+              {data.slice(4, 7).map((item, index) => (
                 <div key={index} className="py-3">
                   <HorizontalNewsCard data={item} />
                 </div>
               ))}
+           
+                <JulioHorizontalCard 
+/>
+
             </div>
           </div>
 

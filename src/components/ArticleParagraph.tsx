@@ -27,7 +27,6 @@ const ArticleParagraphWith = ({ data }: ArticleParagraphProps) => {
           className="md:text-[17px] text-[12px] text-start break-words leading-relaxed mb-5"
           style={{
             fontWeight: 400,
-            fontFamily: 'Roboto, sans-serif',
             lineHeight: 1.4,
           }}
         >

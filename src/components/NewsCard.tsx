@@ -28,6 +28,10 @@ const NewsCard: React.FC<Props> = ({ data }) => {
             alt={data.title}
             width={800}
             height={500}
+            quality={75}
+            placeholder="blur"
+              blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+
             className="
       w-full 
       h-[180px] sm:h-[200px] lg:h-[170px] 
@@ -48,8 +52,8 @@ const NewsCard: React.FC<Props> = ({ data }) => {
 
         <div className="mt-2">
           <p className="flex items-center gap-2 text-gray-500">
-            <span className="text-[14px] capitalize" style={{ fontWeight: 700, fontFamily: 'Roboto, sans-serif' }}>{data.category}</span>{" "}
-            <span className="ml-1 text-[11px]" style={{ fontFamily: 'Roboto, sans-serif' }}>{data.date}</span>
+            <span className="text-[14px] capitalize" style={{ fontWeight: 700 }}>{data.category}</span>{" "}
+            <span className="ml-1 text-[11px]">{data.date}</span>
           </p>
 
           <h3

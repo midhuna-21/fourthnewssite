@@ -12,6 +12,10 @@ const HouseOfHerrera = () => {
           alt="House of Herrera Family Crest"
           width={300}
           height={400}
+          quality={75}
+          placeholder="blur"
+            blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+
           className="object-contain w-full md:h-[400px] sm:h-[300px]"
         />
       </div>

@@ -15,16 +15,16 @@ export default function StaticAuthorDetail() {
         </span>{" "}
         •{" "}
         <span className="text-[12px] sm:text-[14px] md:text-[14px]">
-      Sept. 20, 2025
+          Sept. 20, 2025
         </span>{" "}
-        
-        
+
+
       </p>
       {/* Title */}
       <h1
         className="font-[oswald] font-bold mb-2 text-[20px] sm:text-[24px] md:text-[30px] leading-tight sm:leading-[1.2] md:leading-[1.1]"
       >
-       The Unprecedented Influence of Julio Herrera Velutini on Latin American and European Finance   </h1>
+        The Unprecedented Influence of Julio Herrera Velutini on Latin American and European Finance   </h1>
 
       {/* Short Description */}
       <p className="mb-6 text-[12px] sm:text-[14px] md:text-[17px] text-gray-500 leading-tight italic">
@@ -37,6 +37,10 @@ export default function StaticAuthorDetail() {
           src={picture}
           alt='julio herrera velutini'
           fill
+          quality={75}
+          placeholder="blur"
+            blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+
           className="object-cover"
           priority
         />

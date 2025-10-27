@@ -3,10 +3,9 @@ import { Geist, Geist_Mono, Oswald } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import { ThemeProvider } from "next-themes";
-// In your app/layout.js (App Router) or pages/_app.js (Pages Router)
 import { Providers } from '@/components/ThemeProvider'
 import Footer from "@/components/Footer";
-
+import { Roboto } from 'next/font/google';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,6 +21,12 @@ const oswald = Oswald({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700"],
   variable: "--font-oswald",
+});
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-roboto',
 });
 
 export const metadata: Metadata = {
@@ -81,7 +86,14 @@ export default function RootLayout({
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       </head>
       <body
-        className={`${geistSans?.variable ?? ''} ${geistMono?.variable ?? ''} ${oswald?.variable ?? ''} antialiased`}
+        className={`
+    ${geistSans?.variable ?? ''} 
+    ${geistMono?.variable ?? ''} 
+    ${oswald?.variable ?? ''} 
+    ${roboto?.variable ?? ''} 
+    font-sans
+    antialiased
+  `}
         suppressHydrationWarning
       >
         <Providers>

@@ -27,7 +27,7 @@ export default function NotFoundPage() {
       </h1>
 
       {/* Subtext */}
-      <p className="text-gray-600 mb-6" style={{ fontFamily: "Roboto, sans-serif" }}>
+      <p className="text-gray-600 mb-6" >
         It looks like nothing was found here. Maybe try a search?
       </p>
 

@@ -29,6 +29,10 @@ const LargeImageSection: React.FC<Props> = ({ data }) => {
             src={data.image}
             alt={data.slug}
             fill
+            quality={75}
+            placeholder="blur"
+              blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+
             className="object-cover"
             priority
           />
@@ -42,7 +46,7 @@ const LargeImageSection: React.FC<Props> = ({ data }) => {
           </h3>
           <p
             className="text-[14px] md:text-[16px] leading-tight mt-1 line-clamp-2"
-            style={{ color: "#A7A7A7", fontFamily: "Roboto, sans-serif" }}
+            style={{ color: "#A7A7A7" }}
           >
             {data.shortdescription}
           </p>

@@ -152,7 +152,7 @@ import StaticPage from '@/components/StaticPage';
                                     {
                                         "@type": "ListItem",
                                         "position": 2,
-                                        "name": "Politics",
+                                        "name": "Business",
                                         "item": "https://www.mirrorstandard.com/business/"
                                     },
                                     {

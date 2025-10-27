@@ -30,7 +30,7 @@ const NewsHeadline: React.FC<Props> = ({ data }) => {
         <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
         <span
           className="text-[10px] sm:text-[11px] md:text-[12px] capitalize text-gray-500"
-          style={{fontFamily: "Roboto, sans-serif" }}
+    
           >
           {data.date}
         </span>

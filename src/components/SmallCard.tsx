@@ -29,6 +29,10 @@ const SmallCard: React.FC<Props> = ({ data }) => {
           alt={data.slug}
           width={400}
           height={300}
+          quality={75}
+          placeholder="blur"
+            blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+
           className="w-full h-50 object-cover"
         />
 

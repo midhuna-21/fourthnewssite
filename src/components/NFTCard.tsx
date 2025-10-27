@@ -9,6 +9,10 @@ export default function NFTCard() {
         alt="NFT Opportunities For Entertainment Companies"
         width={400}
         height={400}
+        quality={75}
+        placeholder="blur"
+          blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+
         className="w-full h-auto object-cover"
       />
 
@@ -23,5 +27,5 @@ export default function NFTCard() {
         NFT Opportunities For Entertainment Companies
       </h3>
     </div>
-  ); 
+  );
 }

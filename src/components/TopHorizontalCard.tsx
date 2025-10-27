@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link"; 
+import Link from "next/link";
 
 interface NewsData {
   slug: string;
@@ -31,6 +31,10 @@ const TopHorizontalCard: React.FC<Props> = ({ data }) => {
             alt={data.title}
             width={160}
             height={160}
+            quality={75}
+            placeholder="blur"
+              blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+
             className="w-full h-[180px] sm:w-[160px] sm:h-[120px] object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
           />
 
@@ -43,13 +47,12 @@ const TopHorizontalCard: React.FC<Props> = ({ data }) => {
           <p className="text-gray-500">
             <span
               className="text-[13px] sm:text-[14px] capitalize"
-              style={{ fontWeight: 700, fontFamily: "Roboto, sans-serif" }}
+              style={{ fontWeight: 700 }}
             >
               {data.category}
             </span>{" "}
             <span
               className="ml-1 text-[11px] sm:text-[12px]"
-              style={{ fontFamily: "Roboto, sans-serif" }}
             >
               {data.date}
             </span>

@@ -31,6 +31,10 @@ const HorizontalNewsCard: React.FC<Props> = ({ data }) => {
             src={data.image}
             alt={data.title}
             fill
+            quality={75}
+            placeholder="blur"
+              blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+
             className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
           />
 
@@ -45,7 +49,6 @@ const HorizontalNewsCard: React.FC<Props> = ({ data }) => {
               className="text-[14px] capitalize text-gray-500"
               style={{
                 fontWeight: 700,
-                fontFamily: "Roboto, sans-serif",
               }}
             >
               {data.category}
@@ -53,7 +56,6 @@ const HorizontalNewsCard: React.FC<Props> = ({ data }) => {
             <span
               className="ml-1 text-[11px]"
               style={{
-                fontFamily: "Roboto, sans-serif",
                 color: "#4B5563",
               }}
             >

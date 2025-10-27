@@ -21,7 +21,6 @@ interface Props {
 const DynamicSection: React.FC<Props> = ({ data }) => {
   const [selectedCategory, setSelectedCategory] = useState("politics");
 
-  // Filtered data
   const filteredData = useMemo(() => {
     // console.log(selectedCategory,'selectedCategory')
     if (selectedCategory === "All") return data;
@@ -30,7 +29,6 @@ const DynamicSection: React.FC<Props> = ({ data }) => {
 
   return (
   <div className="md:mt-0 mt-7">
-  {/* Headline + Categories side by side */}
   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 md:gap-3 mb-3">
     {/* Left side */}
     <div className="flex items-center flex-1">
@@ -50,12 +48,10 @@ const DynamicSection: React.FC<Props> = ({ data }) => {
     </nav>
   </div>
 
-  {/* LatestNewsSection (show only if we have >= 2 items) */}
   {filteredData.length >= 2 && (
     <LatestNewsSection data={filteredData.slice(0, 2)} />
   )}
 
-  {/* FourCardGrid (show only if we have >= 1 item) */}
   {filteredData.length > 2 && (
     <FourCardGrid data={filteredData.slice(2, 6)} />
   )}

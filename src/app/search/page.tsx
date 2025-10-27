@@ -144,7 +144,7 @@ function SearchContent({ query }: { query: string }) {
         </nav> */}
 
         {/* Category Title */}
-        <h1 className="text-[20px] sm:text-[28px] md:text-[40px] lg:text-[40px] mb-0 " style={{fontWeight:700,fontFamily:'Roboto, sans-serif'}}>
+        <h1 className="text-[20px] sm:text-[28px] md:text-[40px] lg:text-[40px] mb-0 " style={{fontWeight:700}}>
           Search Results for: {query}
         </h1>
 

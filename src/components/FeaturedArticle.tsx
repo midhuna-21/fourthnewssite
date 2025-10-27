@@ -29,25 +29,24 @@ const FeaturedArticle: React.FC<Props> = ({ data }) => {
         <p className="text-sm text-gray-500">
           <span
             className="text-[18px] capitalize "
-            style={{ fontWeight: 700, fontFamily: "Roboto, sans-serif" }}
+            style={{ fontWeight: 700}}
           >
             {data.category}
           </span>{" "}
           <span
             className="ml-1 text-[12px]"
-            style={{ fontFamily: "Roboto, sans-serif" }}
           >
             {data.date}
           </span>
         </p>
 
         {/* Title */}
-        <h2
+        <h1
           className="font-[oswald] font-bold leading-tight text-[24px] sm:text-[36px] md:text-[36px]"
           style={{ fontWeight: 700 }}
         >
           {data.title}
-        </h2>
+        </h1>
       </Link>
       {/* Short Description */}
 
@@ -55,7 +54,6 @@ const FeaturedArticle: React.FC<Props> = ({ data }) => {
         className="text-[14px] sm:text-[15px]  whitespace-nowrap overflow-hidden md:text-[16px] mt-2 text-gray-500"
         style={{
           fontWeight: 400,
-          fontFamily: "Roboto, sans-serif",
         }}
       >
         {data.shortdescription}
@@ -75,6 +73,10 @@ const FeaturedArticle: React.FC<Props> = ({ data }) => {
               src={data.image}
               alt={data.title}
               width={1000}
+              quality={75}
+              placeholder="blur"
+                blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+
               height={800}
               priority
               fetchPriority="high"

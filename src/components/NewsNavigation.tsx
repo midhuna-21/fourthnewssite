@@ -33,6 +33,8 @@ const NewsNavigation: FC<Props> = ({ data }) => {
                     src={arrowLeft}
                     alt="Previous"
                     width={30}
+                    quality={75}
+                    placeholder="blur"
                     height={25}
                 />
                 <div className="flex flex-col">
@@ -62,6 +64,10 @@ const NewsNavigation: FC<Props> = ({ data }) => {
                     </span>
                 </div>
                 <Image
+                    quality={75}
+                    placeholder="blur"
+                      blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+
                     src={arrowRight}
                     alt="Next"
                     width={30}

@@ -1,4 +1,4 @@
-import { Users, User, ExternalLink, ArrowRight, Circle } from "lucide-react";
+import { User, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export default function OurTeam() {
@@ -14,16 +14,12 @@ export default function OurTeam() {
   return (
      <div className="min-h-screen">
       <div className="max-w-4xl mx-auto px-6 py-16">
-
-    {/* Hero Header */}
     <header className="text-center relative">
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-thin tracking-tighter mb-4 md:mb-4 leading-none">
         Our Team
       </h1>
        <div className="w-20 h-[2px] bg-gray-600 mx-auto mb-4"></div>
     </header>
-
-    {/* Mission Statement */}
     <section className="mb-7 sm:mb-6">
       <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-6 sm:p-10 md:p-12 transition-all duration-500 group">
         <div className="max-w-4xl mx-auto">
@@ -39,8 +35,6 @@ export default function OurTeam() {
         </div>
       </div>
     </section>
-
-    {/* Leadership */}
     <section className="mb-10 sm:mb-12">
       <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mb-10 sm:mb-16">
         <div className="w-16 sm:w-32 h-px"></div>
@@ -67,8 +61,6 @@ export default function OurTeam() {
         />
       </div>
     </section>
-
-    {/* Reporting Team */}
     <section className="mb-10 sm:mb-12">
       <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mb-10 sm:mb-16">
         <div className="w-16 sm:w-32 h-px"></div>
@@ -103,8 +95,6 @@ export default function OurTeam() {
         />
       </div>
     </section>
-
-    {/* Staff Byline */}
     <section className="mb-10 sm:mb-12">
       <div className="rounded-3xl p-6 sm:p-10 md:p-16 hover:scale-[1.02] transition-transform duration-500">
         <div className="max-w-4xl mx-auto">
@@ -126,8 +116,6 @@ export default function OurTeam() {
         </div>
       </div>
     </section>
-
-    {/* Author Directory */}
     <section className="mb-10 sm:mb-12">
       <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mb-10 sm:mb-16">
         <div className="w-16 sm:w-32 h-px"></div>
@@ -141,10 +129,8 @@ export default function OurTeam() {
         ))}
       </div>
     </section>
-
   </div>
 </div>
-
   );
 }
 
@@ -168,7 +154,6 @@ function EditorCard({ name, title, desc, linkText, index,slug }: {
           </div>
         </div>
       <Link key={slug} href={`/our-team/${slug}`} title={name} className="text-primary">
-
         <h3 className="text-2xl font-light mb-2  transition-colors duration-300">{name}</h3>
         </Link>
         <div className="text-sm font-medium text-gray-500 mb-6 tracking-wider uppercase">{title}</div>

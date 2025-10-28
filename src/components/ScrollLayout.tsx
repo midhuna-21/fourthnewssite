@@ -31,7 +31,6 @@ const ScrollLayout: React.FC<Props> = ({ data }) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // If second section reaches top of viewport, stop left scroll
         setStopScroll(entry.isIntersecting);
       },
       { root: null, threshold: 0.1 }
@@ -45,7 +44,6 @@ const ScrollLayout: React.FC<Props> = ({ data }) => {
   return (
     <div className="w-full py-8 mb-8 mt-8">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* LEFT */}
         <div
           className={`relative col-span-1 lg:col-span-2`}
           ref={leftRef}
@@ -75,7 +73,6 @@ const ScrollLayout: React.FC<Props> = ({ data }) => {
               <div className="border-t border-b border-[#615e5e54] pt-5 pb-8">
                 <MoreFirstSection data={data[4]} />
               </div>
-
               <div className="space-y-3 mt-8">
                 <div className="md:border-b border-[#615e5e54] pb-5 md:pb-3">
                   <MoreSecondSection data={data[5]} />
@@ -97,7 +94,6 @@ const ScrollLayout: React.FC<Props> = ({ data }) => {
               <MoreSideCard data={data[9]} />
               <MoreSideCard data={data[10]} />
             </div>
-
             <div className="mt-9">
               <SubHeadline title="Trending Topic" />
               <div className="mt-4">
@@ -111,7 +107,6 @@ const ScrollLayout: React.FC<Props> = ({ data }) => {
               <VibeNewsCard data={data[14]} />
             </div>
             </div>
-
           </div>
         </div>
       </div>

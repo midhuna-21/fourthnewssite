@@ -28,26 +28,17 @@ export default function AboutUs() {
   return (
     <div className="min-h-screen">
       <div className="max-w-4xl mx-auto px-6 py-16">
-
-        {/* Header */}
         <header className="text-center mb-16">
           <h1 className="text-6xl font-light  mb-4 tracking-tight">
             About Us
           </h1>
         <div className="w-20 h-[2px] bg-gray-600 mx-auto mb-4"></div>
-          {/* <p className="text-xl text-black dark:text-white leading-relaxed max-w-2xl mx-auto font-light">
-            Independent journalism for an informed world
-          </p> */}
         </header>
-
-        {/* About */}
         <section className="mb-10">
           <p className="text-lg leading-tight mb-8 font-light">
             At Mirror Standard, we believe the world deserves news that's clear, honest, and free from hidden agendas. We are not a media empire backed by billion-dollar corporations or political donors. Instead, we’re a group of independent journalists and editors — connected online, working across time zones — united by one mission: to bring you the truth as it is.
           </p>
         </section>
-
-        {/* Mission */}
         <section className="mb-20">
           <h2 className="text-2xl font-light  mb-8 pb-3 border-b border-gray-200 dark:border-gray-800">
             Our Mission
@@ -73,8 +64,6 @@ export default function AboutUs() {
             ))}
           </div>
         </section>
-
-        {/* Who We Are */}
         <section className="mb-20">
           <h2 className="text-2xl font-light  mb-8 pb-3 border-b border-gray-200">
             Who We Are
@@ -88,8 +77,6 @@ export default function AboutUs() {
             </p>
           </div>
         </section>
-
-        {/* How We Work */}
         <section className="mb-20">
           <h2 className="text-2xl font-light mb-8 pb-3 border-b border-gray-200">
             How We Work
@@ -103,8 +90,6 @@ export default function AboutUs() {
             </p>
           </div>
         </section>
-
-        {/* Our Promise */}
         <section className="mb-20">
           <h2 className="text-2xl font-light mb-8 pb-3 border-b border-gray-200 ">
             Our Promise
@@ -120,8 +105,6 @@ export default function AboutUs() {
             ))}
           </div>
         </section>
-
-        {/* Contact */}
         <section className="text-center">
           <h2 className="text-2xl font-light  mb-8">
             Join the Conversation
@@ -142,21 +125,13 @@ export default function AboutUs() {
               </span>
               <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
             </a>
-
-
-            {/* <a
-              href="#"
-              className="inline-flex items-center space-x-3 text-lg hover:opacity-70 transition-opacity group"
-            > */}
               <FaXTwitter className="w-5 h-5" />
               <Link href='https://x.com/MirrorstandardU' title='twitter' className="border-b border-transparent transition-colors">
                 Follow us on Twitter
               </Link>
               <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
-            {/* </a> */}
           </div>
         </section>
-
       </div>
     </div>
   );

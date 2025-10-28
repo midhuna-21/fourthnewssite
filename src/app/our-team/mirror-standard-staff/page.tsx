@@ -3,41 +3,28 @@ import Link from "next/link";
 export default function StaffByline() {
   return (
     <article className="max-w-4xl mx-auto overflow-hidden mb-12 py-4">
-      {/* Header */}
       <div className=" px-8 py-12 text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">
           Mirror Standard Staff
         </h1>
-          <div className="w-16 h-[2px] bg-gray-600 mx-auto mb-6"></div>
-
-        {/* <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-          Quality journalism through collaborative effort
-        </p> */}
+        <div className="w-16 h-[2px] bg-gray-600 mx-auto mb-6"></div>
       </div>
-
-      {/* Main Content */}
       <div className="px-8">
-        
-        {/* Introduction */}
         <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-gray-600 text-xl leading-relaxed mb-6">
-  When a story carries the byline{" "}
-  <strong className="text-gray-500">Mirror Standard Staff</strong>, it means the article was a team effort. Sometimes multiple reporters and editors collaborated on a piece, other times an external journalist we trust contributed. Either way, it reflects the work of our newsroom as a whole.
-</p>
-
-          
+          <p className="text-gray-600 text-xl leading-relaxed mb-6">
+            When a story carries the byline{" "}
+            <strong className="text-gray-500">Mirror Standard Staff</strong>, it means the article was a team effort. Sometimes multiple reporters and editors collaborated on a piece, other times an external journalist we trust contributed. Either way, it reflects the work of our newsroom as a whole.
+          </p>
           <p className="text-gray-600 text-lg leading-relaxed">
-       These stories often involve research, interviews, fact-checking, and careful editing from several people. Instead of listing every contributor on every story, we credit the collective:
-       <strong className="text-bold "> Mirror Standard Staff</strong> It’s our way of showing that good journalism is rarely the work of just one person.
+            These stories often involve research, interviews, fact-checking, and careful editing from several people. Instead of listing every contributor on every story, we credit the collective:
+            <strong className="text-bold "> Mirror Standard Staff</strong> It’s our way of showing that good journalism is rarely the work of just one person.
           </p>
         </div>
-
-        {/* Editorial Standards */}
         <div className="border border-[#615e5e54] rounded-lg p-8 mb-12">
           <h2 className="text-2xl font-bold mb-6 text-center">
             Our Editorial Standards
           </h2>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -48,7 +35,7 @@ export default function StaffByline() {
               <h3 className="text-lg font-semibold mb-2">Fact Verification</h3>
               <p className="text-gray-500">Every fact is double-checked before publication</p>
             </div>
-            
+
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -58,7 +45,7 @@ export default function StaffByline() {
               <h3 className="text-lg font-semibold mb-2">Clear Separation</h3>
               <p className="text-gray-500">Opinion and news reporting are distinctly separated</p>
             </div>
-            
+
             <div className="text-center">
               <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,16 +57,14 @@ export default function StaffByline() {
             </div>
           </div>
         </div>
-
-        {/* Meet the Team Section */}
         <div className="text-center mb-12">
           <h2 className="text-2xl font-bold mb-4">
             Meet the People Behind the Stories
           </h2>
           <p className="text-gray-500 text-lg mb-8 max-w-2xl mx-auto">
-           Curious about who makes up the Mirror Standard Staff? 
+            Curious about who makes up the Mirror Standard Staff?
           </p>
-          
+
           <Link
             href="/our-team"
             title="our team"
@@ -91,11 +76,7 @@ export default function StaffByline() {
             View Our Team
           </Link>
         </div>
-
-        {/* Divider */}
         <div className="border-t border-gray-200 my-12"></div>
-
-        {/* Contact Section */}
         <div className="text-center">
           <h2 className="text-xl font-semibold mb-4">
             Questions or Story Tips?
@@ -103,7 +84,6 @@ export default function StaffByline() {
           <p className="text-gray-500 mb-6">
             Our editorial team is always ready to hear from you.
           </p>
-          
           <a
             href="mailto:staff@mirrorstandard.com"
             aria-label="mail"

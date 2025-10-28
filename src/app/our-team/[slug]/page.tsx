@@ -30,8 +30,6 @@ export default async function AuthorPage({
 
   return (
     <div className=" max-w-4xl mx-auto px-6 py-16">
-      
-      {/* Back link */}
       <div className="mb-6">
         <Link
           href="/our-team"
@@ -41,25 +39,18 @@ export default async function AuthorPage({
           &larr; Back to Our Team
         </Link>
       </div>
-
-      {/* Header */}
       <div className="flex flex-col md:flex-row items-start md:items-center mb-8 border-b pb-6 gap-6">
-        
+
         <div>
           <h1 className="text-3xl font-bold ">{author.name}</h1>
           <p className="text-gray-600 mt-1">{author.role}</p>
         </div>
       </div>
-
-      {/* Bio */}
       <section className="mb-12 space-y-4 text-gray-500 leading-relaxed text-lg">
         {author.bio.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}
       </section>
-
-    
-      {/* Contact */}
       <section className="border-t pt-6 text-gray-500">
         <p className="text-sm">
           <span className="font-medium">Want to get in touch or share a tip?</span>

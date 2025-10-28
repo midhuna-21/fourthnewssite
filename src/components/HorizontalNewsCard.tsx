@@ -19,13 +19,11 @@ const HorizontalNewsCard: React.FC<Props> = ({ data }) => {
   return (
     <Link
       href={`/${data.category}/${data.slug}`}
-      title={data.slug}
+      title={data.title}
       className="block w-full"
       style={{ color: "inherit" }}
     >
       <div className="flex w-full lg:max-w-md">
-        {/* Image */}
-
         <div className="flex-shrink-0 relative w-[95px] sm:w-[105px] aspect-[105/95] overflow-hidden group">
           <Image
             src={data.image}
@@ -33,16 +31,11 @@ const HorizontalNewsCard: React.FC<Props> = ({ data }) => {
             fill
             quality={75}
             placeholder="blur"
-              blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
-
+            blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA="
             className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
           />
-
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 ease-in-out" />
         </div>
-
-
-        {/* Text */}
         <div className="ml-3 flex flex-col justify-center">
           <p>
             <span
@@ -62,14 +55,13 @@ const HorizontalNewsCard: React.FC<Props> = ({ data }) => {
               {data.date}
             </span>
           </p>
-
-          <h3
+          <p
             className="mt-1 font-['Oswald'] font-bold 
                      text-[15px] sm:text-[16px] md:text-[17px] 
                      leading-tight line-clamp-2"
           >
             {data.title}
-          </h3>
+          </p>
         </div>
       </div>
     </Link>

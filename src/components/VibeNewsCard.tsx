@@ -17,38 +17,31 @@ interface Props {
 }
 
 const VibeNewsCard: React.FC<Props> = ({ data }) => {
-  return (
+  return (  
     <Link
       href={`/${data.category}/${data.slug}`}
-      title={data.slug}
+      title={data.title}
     >
       <div className="relative w-full h-full">
-        {/* Background Image */}
         <Image
           src={data.image}
           alt="MirrorStandard"
           fill
           quality={75}
           placeholder="blur"
-            blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+          blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
 
           className="object-cover"
         />
-
-        {/* Overlay Content */}
         <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-between p-4 text-white">
-          {/* Top Label */}
           <p>
             <span className="text-[14px] capitalize" style={{ fontWeight: 700 }}>{data.category}</span>{" "}
             <span className="ml-1 text-[11px]">{data.date}</span>
           </p>
-          {/* Bottom Headline */}
           <div className="mt-auto">
-
             <p className="text-[24px] leading-tight font-[oswald]" style={{ fontWeight: 700 }}>
               {data.title}
             </p>
-
           </div>
         </div>
       </div>

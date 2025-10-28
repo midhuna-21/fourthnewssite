@@ -19,12 +19,11 @@ const TopNewsCard: React.FC<Props> = ({ data }) => {
   return (
     <Link
       href={`/${data.category}/${data.slug}`}
-      title={data.slug}
+      title={data.title}
       className="block w-full"
       style={{ color: "inherit" }}
     >
       <div className="w-full lg:max-w-sm">
-        {/* Image */}
         <div className="relative overflow-hidden group">
           <Image
             src={data.image}
@@ -40,7 +39,6 @@ const TopNewsCard: React.FC<Props> = ({ data }) => {
             group-hover:scale-105
           "
           />
-
           <div
             className="
             absolute inset-0 bg-black/0 
@@ -64,7 +62,6 @@ const TopNewsCard: React.FC<Props> = ({ data }) => {
               {data.date}
             </span>
           </p>
-
           <h3
             className="font-[oswald] font-bold leading-tight mt-1
                      text-[20px] sm:text-[22px] lg:text-[24px]"

@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Mail, Shield, Eye, Lock, Cookie, Users, CheckCircle2 } from "lucide-react";
+import { Mail, Shield, CheckCircle2 } from "lucide-react";
 
 export async function generateMetadata(): Promise<Metadata> {
-
     const siteUrl = "https://www.mirrorstandard.com";
     const categoryUrl = `${siteUrl}/privacy-policy`;
 
@@ -46,26 +45,17 @@ export default function PrivacyPolicy() {
     return (
         <div className="min-h-screen">
             <div className="max-w-4xl mx-auto px-6 py-16">
-
-                {/* Header */}
                 <header className="text-center mb-10">
                     <h1 className="text-6xl font-light mb-4 tracking-tight">
                         Privacy Policy
                     </h1>
                     <div className="w-16 h-[2px] bg-gray-600 mx-auto mb-8"></div>
-                    {/* <p className="text-lg leading-relaxed font-light max-w-2xl mx-auto">
-            Last updated: <em>[Insert Date]</em>
-          </p> */}
                 </header>
-
-                {/* Intro */}
                 <section className="mb-10">
                     <p className="text-lg leading-relaxed font-light">
                         At Mirror Standard, we value the trust you place in us. We’re a small newsroom, not a tech giant, and protecting your privacy is just as important to us as reporting the news. This page explains what information we collect, why we collect it, and how you can stay in control.
                     </p>
                 </section>
-
-                {/* What We Collect */}
                 <section className="mb-10">
                     <h2 className="text-2xl font-light mb-8 pb-3 border-b">
                         What We Collect (and What We Don’t)
@@ -80,8 +70,6 @@ export default function PrivacyPolicy() {
                         What we *don’t* collect: personal information we don’t need. We don’t ask for things like your home address, financial details, or anything unrelated to providing you with journalism. And we never sell or trade your information to anyone, ever.
                     </p>
                 </section>
-
-                {/* How We Use Your Information */}
                 <section className="mb-10">
                     <h2 className="text-2xl font-light mb-8 pb-3 border-b">
                         How We Use Your Information
@@ -103,7 +91,6 @@ export default function PrivacyPolicy() {
                     </p>
                 </section>
 
-                {/* Cookies */}
                 <section className="mb-10">
                     <h2 className="text-2xl font-light mb-8 pb-3 border-b">
                         Cookies and Analytics
@@ -115,8 +102,6 @@ export default function PrivacyPolicy() {
                         We also use third-party analytics tools (such as Google Analytics) to better understand readership trends. Those services may collect anonymous data under their own privacy policies.
                     </p>
                 </section>
-
-                {/* Your Rights */}
                 <section className="mb-10">
                     <h2 className="text-2xl font-light mb-8 pb-3 border-b">
                         Your Choices and Rights
@@ -137,8 +122,6 @@ export default function PrivacyPolicy() {
                         <Shield className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                     </a>
                 </section>
-
-                {/* Protection */}
                 <section className="mb-10">
                     <h2 className="text-2xl font-light mb-8 pb-3 border-b">
                         How We Protect Your Information
@@ -147,8 +130,6 @@ export default function PrivacyPolicy() {
                         We take reasonable steps to keep your information safe. Most of what we hold is limited to email records and anonymous analytics data. We’re a small independent newsroom, not a company storing sensitive personal databases — and that’s intentional. Less data means less risk.
                     </p>
                 </section>
-
-                {/* Questions */}
                 <section className="text-center mb-10">
                     <h2 className="text-2xl font-light mb-8">Questions?</h2>
                     <p className="text-lg leading-relaxed font-light max-w-2xl mx-auto mb-8">
@@ -167,7 +148,6 @@ export default function PrivacyPolicy() {
                         </span>
                     </a>
                 </section>
-
                 <div className="mt-16 pt-8 border-t border-gray-300">
                 </div>
                 <section className="text-center">

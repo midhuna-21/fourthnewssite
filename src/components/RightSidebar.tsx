@@ -1,4 +1,3 @@
-// components/RightSidebar.tsx
 import SmallCard from "./SmallCard";
 
 interface NewsData {

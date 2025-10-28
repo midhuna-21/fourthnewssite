@@ -10,10 +10,7 @@ import educationData from '../../../public/data/education.json';
 import CategoryHeader from '@/components/CategoryHeader';
 import Navbar from '@/components/Navbar';
 import { Metadata } from 'next';
-import CategoryLeftSection from '@/components/CategoryLeftSection';
-import HorizontalNewsCard from '@/components/HorizontalNewsCard';
 import CategorySection from '@/components/CategorySection';
-import Breadcrumb from '@/components/Breadcrump';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 
 interface NewsItem {
@@ -150,7 +147,7 @@ export default async function CategoryPage({
   if (!data) {
     return (
       <div className="container py-5">
-        <h2>Category not found</h2>
+        <p>Category not found</p>
       </div>
     );
   }
@@ -160,11 +157,8 @@ export default async function CategoryPage({
       <div className="hidden lg:block">
         <Navbar />
       </div>
-
       <div className="w-full max-w-7xl px-5 md:px-8 mx-auto md:py-8 py-0">
-        {/* <Breadcrumb /> */}
         <CategoryHeader category={category} />
-
         <CategorySection data={data} />
         <ScrollToTopButton />
 

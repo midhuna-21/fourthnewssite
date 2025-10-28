@@ -1,4 +1,3 @@
-// components/MainLayout.tsx
 import React from "react";
 import LargeImageSection from "./LargeImageSection";
 import RightSidebar from "./RightSidebar";
@@ -26,8 +25,6 @@ const MainLayout: React.FC<Props> = ({ data }) => {
               <LargeImageSection data={data[0]} />
             </div>
           </div>
-
-
           <div className="flex-1 lg:flex-1 min-h-0 flex flex-col md:pt-5 lg:pt-0">
             <SubHeadlineTwo title="Latest" />
             <div className="overflow-y-auto mt-3 custom-scrollbar max-h-[400px] md:max-h-none">

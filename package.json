@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "optimize-images": "node scripts/optimize-images.js",
     "build": "next build && node w3infoclear.js",
     "start": "next start",
     "lint": "next lint"

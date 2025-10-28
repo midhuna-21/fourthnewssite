@@ -36,8 +36,6 @@ export default function ThemeToggle() {
         >
           <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
         </svg>
-
-        // <Moon size={26} strokeWidth={2} fill="white" color="white"/>
       ) : (
         <Sun size={26} strokeWidth={2} />
       )}

@@ -32,8 +32,6 @@ const ArticleParagraphWith = ({ data }: ArticleParagraphProps) => {
         >
           {text}
         </p>
-
-
       ))}
     </div>
   );

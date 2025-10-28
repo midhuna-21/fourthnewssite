@@ -1,15 +1,11 @@
-// components/AgnellisHerreras.tsx
 import React from "react";
 
 const StaticSidebarBottom = () => {
   return (
     <section className=" mx-auto py-2 md:py-10">
-      {/* Title */}
       <h1 className="text-[22px] font-light leading-tight mb-4">
         The Agnellis and the Herreras
       </h1>
-
-      {/* Paragraphs */}
       <div className="space-y-3 text-gray-500">
         <p className="text-sm md:text-base leading-relaxed">
           Julio Herrera Velutini is often compared to Gianni Agnelli.

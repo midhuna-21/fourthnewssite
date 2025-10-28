@@ -42,26 +42,22 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
       const offset = 20;
 
       if (window.innerWidth >= 1024) {
-        // apply sticky only on large screens
         if (stopPoint - offset <= 0) {
           setRightPosition('absolute');
         } else {
           setRightPosition('sticky');
         }
       } else {
-        setRightPosition('absolute'); // disable sticky on tab & mobile
+        setRightPosition('absolute');
       }
     };
-
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div>
-      {/* On mobile & tablet: 1 column; On large: 3 columns */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative">
-        {/* Left */}
         <div ref={leftRef} className="lg:col-span-2">
           <ArticleDetail data={article} />
           <AuthorInfo
@@ -71,21 +67,17 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
             image={article.authorImage}
           />
           <ArticleParagraph data={article} />
-
           <div ref={stopRef}>
             <AuthorCard
               author={article.author}
               role={article.role}
               image={article.authorImage}
             />
-
             <NewsNavigation data={[otherArticles[0], otherArticles[1]]} />
             <CommentForm />
             <RelatedNews data={[otherArticles[2], otherArticles[3], otherArticles[4]]} />
           </div>
         </div>
-
-        {/* Right */}
         <div className="lg:col-span-1 relative">
           <div
             ref={rightRef}

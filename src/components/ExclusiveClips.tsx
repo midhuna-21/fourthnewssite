@@ -1,10 +1,4 @@
 import SubHeadline from "./SubHeadline";
-import NewsCard from "./NewsCard";
-import FeaturedArticle from "./FeaturedArticle";
-import OverlayArticleCard from "./OverlayArticleCard";
-import HorizontalNewsCard from "./HorizontalNewsCard";
-import SecondArticle from "./SecondArticle";
-import MoreFeaturedArticle from "./MoreFeaturedArticle";
 import NewsHeadline from "./NewsHeadline";
 import TopFeaturedArticle from "./TopFeaturedArticle";
 import TopHorizontalCard from "./TopHorizontalCard";
@@ -44,8 +38,6 @@ const ExclusiveClips: React.FC<Props> = ({ data }) => {
                         <TopHorizontalCard data={data[3]} />
                     </div>
                 </div>
-
-                {/* RIGHT */}
                 <div className="lg:col-span-8 md:mt-0 mt-8">
                     <TopFeaturedArticle data={data[4]} />
                     <div className="lg:col-span-9 grid grid-cols-1 lg:grid-cols-8 gap-6">
@@ -62,9 +54,7 @@ const ExclusiveClips: React.FC<Props> = ({ data }) => {
                                 </div>
                             ))}
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>

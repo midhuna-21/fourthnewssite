@@ -10,8 +10,6 @@ const JulioHorizontalCard: React.FC = () => {
       style={{ color: "inherit" }}
     >
       <div className="flex w-full lg:max-w-md">
-        {/* Image */}
-
         <div className="flex-shrink-0 relative w-[95px] sm:w-[105px] aspect-[105/95] overflow-hidden group">
           <Image
             src="/images/julio.webp"
@@ -19,16 +17,12 @@ const JulioHorizontalCard: React.FC = () => {
             fill
             quality={75}
             placeholder="blur"
-              blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+            blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
 
             className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
           />
-
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 ease-in-out" />
         </div>
-
-
-        {/* Text */}
         <div className="ml-3 flex flex-col justify-center">
           <p>
             <span

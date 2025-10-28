@@ -17,7 +17,6 @@ export default function Categories({ selected, onCategoryChange }: Props) {
                     onClick={() => onCategoryChange(cat)}
                     className={`flex-shrink-0 px-2 sm:px-3 py-1  capitalize cursor-pointer transition-colors duration-200
         ${selected === cat ? "bg-blue-600 text-white" : "text-gray-600 bg-transparent"}`}
-                   
                 >
                     <span className="text-[12px] sm:text-[14px] md:text-[16px] whitespace-nowrap">
                         {cat}

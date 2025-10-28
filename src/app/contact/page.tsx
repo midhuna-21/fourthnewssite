@@ -34,8 +34,6 @@ export default function Contact() {
   return (
     <div className="min-h-screen ">
       <div className="max-w-4xl mx-auto px-6 py-16">
-        
-        {/* Header */}
         <header className="text-center mb-20">
           <h1 className="text-5xl font-light  mb-4 tracking-tight">
             Get in Touch
@@ -45,8 +43,6 @@ export default function Contact() {
             We may be a digital-first newsroom, but we’re real people behind the bylines — and we want to hear from you. Whether you’ve got a news tip, a correction, or just want to say hello, reaching us is simple.
           </p>
         </header>
-
-        {/* Contact Sections */}
         <section className="grid gap-12 mb-20">
           {contacts.map((item, idx) => (
             <div
@@ -72,8 +68,6 @@ export default function Contact() {
             </div>
           ))}
         </section>
-
-        {/* Social Links */}
         <section className="text-center mb-20">
           <h2 className="text-2xl font-light mb-8">
             Stay Connected
@@ -103,8 +97,6 @@ export default function Contact() {
             </Link>
           </div>
         </section>
-
-        {/* Footer Note */}
         <div className="mt-16 pt-8 border-t border-gray-200  text-center">
           <div className="w-8 h-[2px] mx-auto mb-4"></div>
           <p className="font-light italic max-w-xl mx-auto">

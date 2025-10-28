@@ -3,12 +3,9 @@ import React from "react";
 import Image from "next/image";
 import picture from '../../public/images/julio.webp'
 
-
-
 export default function JulioFirstSection() {
     return (
         <div>
-            {/* Category + Date */}
             <p className="text-gray-500">
                 <span className="font-semibold text-[16px] capitalize sm:text-[18px] md:text-[18px]">
                     Business
@@ -17,16 +14,11 @@ export default function JulioFirstSection() {
                 <span className="text-[12px] sm:text-[14px] md:text-[14px]">
                     Oct. 3, 2025
                 </span>{" "}
-
-
             </p>
-            {/* Title */}
             <h1
                 className="font-[oswald] font-bold mb-2 text-[20px] sm:text-[24px] md:text-[30px] leading-tight sm:leading-[1.2] md:leading-[1.1]"
             >
                 Julio Herrera Velutini: A Legal Resolution with Integrity Restored  </h1>
-
-            {/* Short Description */}
             <p className="mb-6 text-[12px] sm:text-[14px] md:text-[17px] text-gray-500 leading-tight italic">
                 All legal matters have been resolved with no corruption or fraud convictions, as Julio Herrera Velutini moves forward with clarity and focus.</p>
             <div className="w-full relative overflow-hidden shadow-md aspect-[16/9] sm:aspect-[16/9] md:aspect-video">
@@ -36,7 +28,7 @@ export default function JulioFirstSection() {
                     fill
                     quality={75}
                     placeholder="blur"
-                      blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+                    blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
 
                     className="object-cover"
                     priority

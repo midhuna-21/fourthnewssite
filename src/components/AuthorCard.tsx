@@ -1,5 +1,4 @@
 import Image from "next/image";
-import picture from '../../public/images/author-image.webp';
 
 interface AuthorProps {
   author: string;
@@ -10,7 +9,6 @@ interface AuthorProps {
 const AuthorCard: React.FC<AuthorProps> = ({ author, role, image }) => {
   return (
     <div className="py-8 rounded-lg flex flex-col sm:flex-row items-start gap-4">
-      {/* Profile Image */}
       <div className="flex-shrink-0">
         <Image
           src={image}
@@ -19,13 +17,10 @@ const AuthorCard: React.FC<AuthorProps> = ({ author, role, image }) => {
           height={96}
           quality={75}
           placeholder="blur"
-            blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
-
+          blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA="
           className="rounded-full object-cover w-24 h-24"
         />
       </div>
-
-      {/* Author Details */}
       <div className="text-left">
         <p className="uppercase text-[11px] mb-1">
           Written By

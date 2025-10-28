@@ -5,23 +5,17 @@ export default function TermsConditions() {
   return (
     <div className="min-h-screen">
       <div className="max-w-4xl mx-auto px-6 py-16">
-        
-        {/* Header */}
         <header className="text-center mb-15">
           <h1 className="text-6xl font-light mb-4 tracking-tight">
             Terms &amp; Conditions
           </h1>
           <div className="w-16 h-[2px] bg-gray-600 mx-auto"></div>
         </header>
-
-        {/* Intro */}
         <section className="mb-10">
           <p className="text-lg leading-relaxed font-light">
            Thanks for reading Mirror Standard. By using our website, you’re agreeing to a few basic ground rules. We’ll keep this straightforward, because no one likes fine print.
           </p>
         </section>
-
-        {/* Using Our Work */}
         <section className="mb-10">
           <h2 className="text-2xl font-light mb-8 pb-3 border-b">
             Using Our Work
@@ -43,8 +37,6 @@ export default function TermsConditions() {
             <FileText className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
           </a>
         </section>
-
-        {/* About Accuracy */}
         <section className="mb-10">
           <h2 className="text-2xl font-light mb-8 pb-3 border-b">
             About Accuracy
@@ -61,8 +53,6 @@ export default function TermsConditions() {
             for how that works.)
           </p>
         </section>
-
-        {/* Opinions and Commentary */}
         <section className="mb-10">
           <h2 className="text-2xl font-light mb-8 pb-3 border-b">
             Opinions and Commentary
@@ -71,8 +61,6 @@ export default function TermsConditions() {
            Some pieces on our site are analysis or opinion. We always label them clearly. They reflect the author’s views — not necessarily the entire Mirror Standard team.
           </p>
         </section>
-
-        {/* Outside Links */}
         <section className="mb-10">
           <h2 className="text-2xl font-light mb-8 pb-3 border-b">
             Outside Links
@@ -81,8 +69,6 @@ export default function TermsConditions() {
            Our stories sometimes link out to other websites for context. We can’t vouch for everything on those sites, and we’re not responsible for their content or privacy practices.
           </p>
         </section>
-
-        {/* Limits of Responsibility */}
         <section className="mb-10">
           <h2 className="text-2xl font-light mb-8 pb-3 border-b">
             Limits of Responsibility
@@ -91,8 +77,6 @@ export default function TermsConditions() {
            Mirror Standard publishes journalism for general information. We don’t provide legal, medical, or financial advice, and we can’t be held responsible for decisions made based on what you read here.
           </p>
         </section>
-
-        {/* Reader Contributions */}
         <section className="mb-10">
           <h2 className="text-2xl font-light mb-8 pb-3 border-b">
             Reader Contributions
@@ -101,8 +85,6 @@ export default function TermsConditions() {
           If we open up comments or allow reader submissions in the future, we expect everyone to keep things respectful. We reserve the right to remove content that crosses the line into abuse, spam, or anything unlawful.
           </p>
         </section>
-
-        {/* Updates to Terms */}
         <section className="mb-10">
           <h2 className="text-2xl font-light mb-8 pb-3 border-b">
             Updates to These Terms
@@ -111,8 +93,6 @@ export default function TermsConditions() {
             We may update these Terms now and then. If we do, we’ll post the new version here and update the “Last Updated” date at the top.
           </p>
         </section>
-
-        {/* Governing Law */}
         <section className="mb-10">
           <h2 className="text-2xl font-light mb-8 pb-3 border-b">
             Governing Law
@@ -121,8 +101,6 @@ export default function TermsConditions() {
             These Terms are based on the laws of <em>[insert country/region]</em>.
           </p>
         </section>
-
-        {/* Questions */}
         <section className="text-center mb-10">
           <h2 className="text-2xl font-light mb-8">Questions?</h2>
           <p className="text-lg leading-relaxed font-light max-w-2xl mx-auto mb-8">
@@ -141,8 +119,6 @@ export default function TermsConditions() {
             <MessageSquare className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
           </a>
         </section>
-
-        {/* Summary */}
         <section className="text-center">
           <p className="text-lg leading-relaxed font-light max-w-2xl mx-auto">
            Enjoy our journalism, credit us if you share it, and know that while we do our best to stay accurate, we’re not giving professional advice.

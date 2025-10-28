@@ -19,7 +19,7 @@ const SmallCard: React.FC<Props> = ({ data }) => {
   return (
     <Link
       href={`/${data.category}/${data.slug}`}
-      title={data.slug}
+      title={data.title}
       className="block w-full"
       style={{ color: "inherit" }}
     >
@@ -31,15 +31,9 @@ const SmallCard: React.FC<Props> = ({ data }) => {
           height={300}
           quality={75}
           placeholder="blur"
-            blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
-
+          blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" 
           className="w-full h-50 object-cover"
         />
-
-        {/* <div className="absolute top-2 left-2 bg-green-400 rounded-full p-2">
-          <span className="text-black font-bold">▶</span>
-        </div> */}
-
         <div className="bg-black text-white mt-2">
           <h3 className="text-md line-clamp-2 leading-tight font-[oswald] text-[17px] md:text-[24px]" style={{ fontWeight: 700 }}>{data.title}</h3>
         </div>

@@ -20,7 +20,7 @@ const NewsCard: React.FC<Props> = ({ data }) => {
     <div className="w-full lg:max-w-sm">
       <Link
         href={`/${data.category}/${data.slug}`}
-        title={data.slug}
+        title={data.title}
       >
         <div className="relative overflow-hidden group">
           <Image
@@ -30,8 +30,7 @@ const NewsCard: React.FC<Props> = ({ data }) => {
             height={500}
             quality={75}
             placeholder="blur"
-              blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
-
+            blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA="
             className="
       w-full 
       h-[180px] sm:h-[200px] lg:h-[170px] 
@@ -39,8 +38,9 @@ const NewsCard: React.FC<Props> = ({ data }) => {
       transition-transform duration-700 ease-in-out 
       group-hover:scale-105
     "
+            priority
+            fetchPriority="high"
           />
-
           <div
             className="
       absolute inset-0 bg-black/0 

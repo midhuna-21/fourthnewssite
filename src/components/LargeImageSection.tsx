@@ -19,7 +19,7 @@ const LargeImageSection: React.FC<Props> = ({ data }) => {
   return (
     <Link
       href={`/${data.category}/${data.slug}`}
-      title={data.slug}
+      title={data.title}
       className="block w-full"
       style={{ color: "inherit" }}
     >

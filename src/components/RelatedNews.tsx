@@ -1,11 +1,5 @@
 import SubHeadline from "./SubHeadline";
 import NewsCard from "./NewsCard";
-import FeaturedArticle from "./FeaturedArticle";
-import OverlayArticleCard from "./OverlayArticleCard";
-import HorizontalNewsCard from "./HorizontalNewsCard";
-import SecondArticle from "./SecondArticle";
-import MoreFeaturedArticle from "./MoreFeaturedArticle";
-
 
 interface NewsData {
     slug:string;

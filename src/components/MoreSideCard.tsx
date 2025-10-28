@@ -18,10 +18,9 @@ const MoreSideCard: React.FC<Props> = ({ data }) => {
   return (
     <Link
       href={`/${data.category}/${data.slug}`}
-      title={data.slug}
+      title={data.title}
     >
       <div className="w-full mb-4">
-        {/* Image */}
         <div className="relative w-full h-48 md:h-56 overflow-hidden group">
           <Image
             src={data.image}
@@ -30,17 +29,11 @@ const MoreSideCard: React.FC<Props> = ({ data }) => {
             quality={75}
             placeholder="blur"
             priority
-              blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
-
+            blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA="
             className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
           />
-
-          {/* Hover overlay */}
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 ease-in-out" />
         </div>
-
-
-        {/* Content */}
         <div className="mt-2">
           <p className="text-gray-500">
             <span
@@ -63,7 +56,6 @@ const MoreSideCard: React.FC<Props> = ({ data }) => {
             {data.title}
           </h3>
         </div>
-
       </div>
     </Link>
   );

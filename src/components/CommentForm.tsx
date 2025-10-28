@@ -25,21 +25,15 @@ const CommentForm = () => {
     if (!formData.name.trim()) {
       newErrors.name = "Please enter your name";
     }
-
     if (!/\S+@\S+\.\S+/.test(formData.email.trim())) {
       newErrors.email = "Please enter a valid email address";
     }
-
-
      if (!formData.website.trim()) {
       newErrors.website = "Please enter website";
     }
-
-
     if (!formData.comment.trim()) {
       newErrors.comment = "Please enter your comment";
     }
-
     return newErrors;
   };
 
@@ -56,17 +50,13 @@ const CommentForm = () => {
 
   return (
     <div className="w-full max-w-4xl py-5">
-      {/* Heading */}
       <h2
         className="text-[20px] font-[oswald] mb-6"
         style={{ fontWeight: 600 }}
       >
         LEAVE A REPLY
       </h2>
-
-      {/* Form */}
       <form className="space-y-4" onSubmit={handleSubmit}>
-        {/* Name + Email */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <input
@@ -81,7 +71,6 @@ const CommentForm = () => {
               <p className="text-red-500 text-xs mt-1 italic">{errors.name}</p>
             )}
           </div>
-
           <div>
             <input
               type="email"
@@ -96,8 +85,6 @@ const CommentForm = () => {
             )}
           </div>
         </div>
-
-        {/* Website (optional) */}
         <div>
           <input
             type="text"
@@ -111,8 +98,6 @@ const CommentForm = () => {
               <p className="text-red-500 text-xs mt-1 italic">{errors.website}</p>
             )}
         </div>
-
-        {/* Comment */}
         <div>
           <textarea
             name="comment"
@@ -126,8 +111,6 @@ const CommentForm = () => {
             <p className="text-red-500 text-xs mt-1 italic">{errors.comment}</p>
           )}
         </div>
-
-        {/* Submit */}
         <button
           type="submit"
           className="px-8 py-3 border border-blue-600 text-blue-600 cursor-pointer font-bold text-sm hover:bg-blue-600 hover:text-white transition-colors duration-200"
@@ -135,31 +118,23 @@ const CommentForm = () => {
           POST COMMENT
         </button>
       </form>
-
-      {/* Success Modal */}
       {showModal && (
         <div className="fixed inset-0 flex items-center justify-center  bg-opacity-50 z-60 backdrop-blur-xs">
           <div className="bg-white rounded-xl shadow-2xl text-center max-w-sm w-full mx-4 overflow-hidden transform transition-all duration-300 scale-100">
-            {/* Success indicator bar */}
             <div className="h-1 bg-gradient-to-r from-blue-400 to-emerald-600"></div>
-
             <div className="p-8">
-              {/* Icon */}
               <div className="mx-auto w-14 h-14 bg-emerald-50 rounded-full flex items-center justify-center mb-6 border-4 border-emerald-100">
                 <svg className="w-7 h-7 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-
               <p className="text-xl font-bold text-gray-800 mb-3">
                 Thank You!
               </p>
-
               <p className="text-gray-600 text-sm mb-8 leading-relaxed">
                 Your comment has been successfully submitted. Thank you for taking the time
                 to share your thoughts with us. We truly value your feedback.
               </p>
-
               <button
                 onClick={() => setShowModal(false)}
                 className="w-full px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 cursor-pointer transition-all duration-200 font-semibold text-sm tracking-wide shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"

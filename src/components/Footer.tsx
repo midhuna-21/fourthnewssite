@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaXTwitter, FaVk, FaYoutube } from "react-icons/fa6";
+import { FaInstagram, FaXTwitter, FaVk, FaYoutube } from "react-icons/fa6";
 import politicsData from "../../public/data/politics.json";
 import Link from "next/link";
 import Image from "next/image";
@@ -21,15 +21,10 @@ export default function Footer() {
 
         {/* ========== MOBILE VIEW ========== */}
         <div className="block md:hidden space-y-10">
-          {/* Logo + Social + Copyright */}
           <div className="text-center">
             <p className="text-[24px] font-bold">MIRRORSTANDARD</p>
-
           </div>
-
-          {/* Categories (no heading) */}
           <div>
-            {/* <h3 className="text-xl font-bold text-yellow-500 mb-4">Popular Category</h3> */}
             <ul className="space-y-2 text-[11px] tracking-widest">
               {categories.map((category) => (
                 <li key={category}>
@@ -44,8 +39,6 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
-          {/* Editor's Picks */}
           <div>
             <p className="text-xl font-bold text-yellow-500 mb-4 text-center">Editor Picks</p>
             {[0, 1].map((i) => (
@@ -82,40 +75,30 @@ export default function Footer() {
                 © Copyright 2025 , mirrorstandard <br /> All Rights Reserved.
               </p>
               <div className="flex justify-center space-x-5 mt-4 text-lg">
-                {/* <a href="#" ><FaFacebookF /></a> */}
                 <Link href="https://x.com/MirrorstandardU" title="twitter"><FaXTwitter /></Link>
                 <Link href="https://www.instagram.com/mirrorstandardusnews/" title="instagram"><FaInstagram /></Link>
-                {/* <a href="#"><FaVk /></a> */}
                 <Link href="https://www.youtube.com/@mirrorstandardUS" title="youtube"><FaYoutube /></Link>
               </div>
             </div>
           </div>
         </div>
-
         {/* ========== DESKTOP VIEW ========== */}
         <div className="hidden md:flex gap-12 flex-wrap">
-          {/* Left Side */}
           <div className="w-[300px] lg:w-[380px] flex-shrink-0">
             <p className="text-[24px] font-bold">MIRRORSTANDARD</p>
             <p className="text-[12px] mt-2 leading-tight text-gray-300">
               © Copyright 2025 , mirrorstandard <br /> All Rights Reserved.
             </p>
             <div className="flex space-x-5 mt-6 text-lg">
-              {/* <a href="#"><FaFacebookF /></a> */}
               <Link href="https://x.com/MirrorstandardU" title="twitter"><FaXTwitter /></Link>
               <Link href="https://www.instagram.com/mirrorstandardusnews/" title="instagram"><FaInstagram /></Link>
-              {/* <a href="#"><FaVk /></a> */}
               <Link href="https://www.youtube.com/@mirrorstandardUS" title="youtube"><FaYoutube /></Link>
             </div>
           </div>
-
-          {/* Right Side */}
           <div className="grid grid-cols-2 lg:grid-cols-3 flex-1 gap-8">
-            {/* About Us */}
             <div>
               <p className="text-xl font-bold text-yellow-500 mb-4">About Us</p>
               <ul className="space-y-2 text-[11px] tracking-widest">
-
                 <li><Link href='/about' title="about" className="hover:text-yellow-500">ABOUT</Link></li>
                 <li><Link href='/contact' title="contact" className="hover:text-yellow-500">CONTACT</Link></li>
                 <li><Link href='/our-team' title="our team" className="hover:text-yellow-500">OUR TEAM</Link></li>
@@ -125,8 +108,6 @@ export default function Footer() {
                 <li><Link href='/terms-and-conditions' title="terms and conditions" className="hover:text-yellow-500">TERMS AND CONDITIONS</Link></li>
               </ul>
             </div>
-
-            {/* Categories */}
             <div>
               <p className="text-xl font-bold text-yellow-500 mb-4">Popular Category</p>
               <ul className="space-y-2 text-[11px]">
@@ -143,15 +124,13 @@ export default function Footer() {
                 ))}
               </ul>
             </div>
-
-            {/* Editor Picks */}
             <div className="col-span-2 lg:col-span-1">
               <p className="text-xl font-bold text-yellow-500 mb-4">Editor Picks</p>
               {[0, 1].map((i) => (
                 <Link
                   key={i}
                   href={`/${politicsData[i].category}/${politicsData[i].slug}`}
-                  title={politicsData[i].slug}
+                  title={politicsData[i].title}
                   className="block w-full"
                   style={{ color: "inherit" }}
                 >
@@ -178,7 +157,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
       </div>
     </footer>
   );

@@ -19,12 +19,12 @@ const TopHorizontalCard: React.FC<Props> = ({ data }) => {
   return (
     <Link
       href={`/${data.category}/${data.slug}`}
-      title={data.slug}
+      title={data.title}
       className="block w-full"
       style={{ color: "inherit" }}
     >
       <div className="flex flex-col sm:flex-row w-full">
-        {/* Left: Image */}
+        {/* Left */}
         <div className="flex-shrink-0 w-full sm:w-[160px] relative overflow-hidden group">
           <Image
             src={data.image}
@@ -33,16 +33,11 @@ const TopHorizontalCard: React.FC<Props> = ({ data }) => {
             height={160}
             quality={75}
             placeholder="blur"
-              blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
-
+            blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA="
             className="w-full h-[180px] sm:w-[160px] sm:h-[120px] object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
           />
-
-          {/* Hover overlay */}
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 ease-in-out" />
         </div>
-
-        {/* Right: Text */}
         <div className="mt-2 sm:mt-0 sm:ml-3 flex flex-col justify-center w-full">
           <p className="text-gray-500">
             <span
@@ -57,12 +52,11 @@ const TopHorizontalCard: React.FC<Props> = ({ data }) => {
               {data.date}
             </span>
           </p>
-
-          <h2
+          <h3
             className="font-[oswald] text-[18px] md:text-[17px] font-bold leading-tight break-words whitespace-normal w-full"
           >
             {data.title}
-          </h2>
+          </h3>
         </div>
       </div>
     </Link>

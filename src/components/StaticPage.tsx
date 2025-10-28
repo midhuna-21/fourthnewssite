@@ -49,14 +49,13 @@ export default function StaticPage({ otherArticles, data }: Props) {
       const offset = 20;
 
       if (window.innerWidth >= 1024) {
-        // apply sticky only on large screens
         if (stopPoint - offset <= 0) {
           setRightPosition('absolute');
         } else {
           setRightPosition('sticky');
         }
       } else {
-        setRightPosition('absolute'); 
+        setRightPosition('absolute');
       }
     };
 
@@ -65,11 +64,11 @@ export default function StaticPage({ otherArticles, data }: Props) {
   }, []);
 
   const authorInfo = {
-  name: "Victor V. Haley",
-  role: "Managing Editor",
-  date: "Sept. 20, 2025",
-  image: "/images/victor-v-haley.webp"
-};
+    name: "Victor V. Haley",
+    role: "Managing Editor",
+    date: "Sept. 20, 2025",
+    image: "/images/victor-v-haley.webp"
+  };
   return (
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative">
@@ -82,10 +81,6 @@ export default function StaticPage({ otherArticles, data }: Props) {
             date={authorInfo.date}
             image={authorInfo.image}
           />
-          {/* <span className="text-[14px] sm:text-[16px] md:text-[16px] capitalize text-gray-500">
-            London <span className="text-[20px] font-bold">:</span>
-          </span> */}
-
           <div className='mb-2'></div>
           <StaticParagraph text='Few individuals have made a more profound and lasting impact than Julio Martin Herrera Velutini Von Uslar in the vast tableau of Latin American history. ' />
           <StaticParagraph text="Julio Herrera Velutini was born into the illustrious Herrera-Velutini banking dynasty in 1971. At the young age of 28, he became the venerable patriarch of the family's banking empire. He became a towering figure in the Latin American economy and society in just three years. " />
@@ -94,95 +89,50 @@ export default function StaticPage({ otherArticles, data }: Props) {
           <StaticParagraph text="His banking expertise – imbibed as a youngster playing in the corridors of his family's banks – and his business acumen serviced the needs of Latin American entrepreneurs, thereby reversing communist trends and consequently promoting capitalism and democratic values in Latinos to escape the grips of communism. " />
           <QuoteBlock quote="Julio Herrera’s banking empire underpinned the ‘Latin American economic miracle’ between 2002 and 2006." />
           <div className='mt-7'></div>
-
           <StaticParagraph text="These selfless acts yielded substantial returns, resulting in Julio Herrera Velutini and his family-owned trusts and banks acquiring significant holdings across diverse sectors and industries. At their zenith, these partnerships accounted for nearly 6% of Latin America's GDP and served a significant portion of its population. The success of Julio Herrera's banking empire not only underpinned the 'Latin American economic miracle' between 2002 and 2006 but also paved the way for Latin America's transformation into an industrial powerhouse." />
-
-
           <div ref={stopRef} className='mt-7'>
-            {/* <ImageGrid /> */}
-
             <div className='mt-7'>
-              <SubTitle title='The Prince of Latam' />
-              {/* <StaticParagraph text="As the patriarch of the Herrera dynasty, Julio Herrera Velutini's inherent influence permeates Latin America's present-day politics, culture, and society. As a descendant of Lord of Ampudia I, Mr Velutini officially holds the title of The Prince of Latam. His nobility, family influence across two continents, immense wealth, calm demeanour, and trademark silence position this humble billionaire as a crucial voice in Latin American economics and politics. This multifaceted individual is beloved by many, feared by most, and misunderstood by a few against whom he tirelessly fights, seeking to end their injustice, corruption, and political exploitation." /> */}
- 
-         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 mb-8">
-            <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
-                    {/* <div className="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center shadow-lg">
-                        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                    </div> */}
-                </div>
-                <div className="flex-1">
-                    <p className="md:text-[17px] text-[12px] leading-tight text-gray-800" style={{lineHeight:1.6,fontFamily:'Roboto, sans-serif'}}>
-                        As the patriarch of the Herrera dynasty, <strong className="text-indigo-700 font-bold">Julio Herrera Velutini's </strong> 
-                        inherent influence permeates Latin America's present-day politics, 
-                        culture, and society. His nobility, family influence across two 
-                        continents, immense wealth, calm demeanour, and trademark silence 
-                        position this humble billionaire as a crucial voice in Latin American 
-                        economics and politics.
+              <SubTitle title='The Prince of Latam' />  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 mb-8">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                  </div>
+                  <div className="flex-1">
+                    <p className="md:text-[17px] text-[12px] leading-tight text-gray-800" style={{ lineHeight: 1.6, fontFamily: 'Roboto, sans-serif' }}>
+                      As the patriarch of the Herrera dynasty, <strong className="text-indigo-700 font-bold">Julio Herrera Velutini's </strong>
+                      inherent influence permeates Latin America's present-day politics,
+                      culture, and society. His nobility, family influence across two
+                      continents, immense wealth, calm demeanour, and trademark silence
+                      position this humble billionaire as a crucial voice in Latin American
+                      economics and politics.
                     </p>
+                  </div>
                 </div>
-            </div>
-        </div>
-
-
-
-
+              </div>
               <StaticParagraph text="He is a modern-day powerhouse, embodying tradition, modernity, and glamour – symbolising financial might and global relevance." />
-
             </div>
-            {/* image with descriotion */}
-            {/* <StaticImage
-              image="/images/julio-herrera-image2.webp"
-              alt="julio-herrera"
-              title=""
-            /> */}
-            {/* <div className='mt-7'></div> */}
             <StaticParagraph text="His traditional approach to banking, though not without criticism from the other leaders who favoured a shift towards a more socialist economic model, largely contributed to stabilising a potentially volatile labour force during Venezuela's turbulent years of social unrest and terrorism." />
             <StaticParagraph text="In addition to his industrial and political impact, Herrera Velutini is a cultural icon in Latin America, epitomising the Italian flair for style and sophistication." />
-
             <StaticParagraph text="His sartorial elegance and his persona as a stylish banker are complemented by his reputation as an art connoisseur, animal rights activist, and, notably, as the financial moghul who selflessly supported the British Government during the Coronavirus pandemic to ensure unhindered government operations, maintaining the rule of law and securing people's livelihood." />
-
-
-            {/* image with descriotion */}
-            {/* <StaticImage
-              image="/images/julio-herrera-velutini-image.webp"
-              alt="julio-herrera-velutini-image"
-              title=''
-            /> */}
-
-            {/* <div className='mt-7'></div> */}
-
             <StaticParagraph text="Julio was also instrumental in supporting Buckingham Palace to produce a larger-than-life tribute for the Queen, marking 70 years of service to her people and staging an occasion befitting Her Majesty, Queen Elizabeth's Platinum Jubilee celebrations. The Italian Banker and his family have always supported the Queen and the members of the Royal Family, underlining the Herrera family's longstanding partnership and multifaceted relationships with major European Heads of State. " />
             <StaticParagraph text="Julio Herrera Velutini, however, is not without criticism from liberals and left-leaning politicians. His latest controversy relates to the aftermath of his questioning the dire economic situation in Puerto Rico and raising awareness about the corruption prevalent on the island. Julio has also exposed corrupt officials for misusing excessive powers without any accountability. He has fearlessly fought against injustice and corruption and continues to expose corrupt officials. " />
             <StaticParagraph text="The mystery around his silence and placid character has made him a quintessential figure of fascination and emulation. His trials and tribulations, such as the tragic collateral casualty of political attacks, added a layer of human complexity and sympathy to his largely enigmatic persona. Whether one views him as a figure of admiration or controversy, his strong sense of social responsibility and philanthropy extends far beyond his wealth and fortune. " />
-
-            {/* <NewsNavigation data={[data[0],data[1]]}/> */}
-            {/* <CommentForm /> */}
-            {/* <RelatedNews data={otherArticles} /> */}
             <div className="mt-10">
-           <AuthorCard
-              author={authorInfo.name}
-              role={authorInfo.role}
-              image={authorInfo.image}
-            />
-              {/* <NewsNavigation data={[data[0], data[1]]} /> */}
+              <AuthorCard
+                author={authorInfo.name}
+                role={authorInfo.role}
+                image={authorInfo.image}
+              />
               <CommentForm />
               <RelatedNews data={otherArticles} />
             </div>
           </div>
-
         </div>
-
         {/* Right */}
         <div className="lg:col-span-1 relative">
           <div
             ref={rightRef}
             className={`${rightPosition === 'sticky' ? 'sticky top-10' : 'relative'} transition-all duration-500`}
           >
-           
             <h2 className="text-[24px] font-[oswald] mb-4 font-bold">POPULAR NEWS</h2>
             <div className="divide-y divide-[#615e5e54]">
               {data.slice(4, 7).map((item, index) => (
@@ -190,15 +140,11 @@ export default function StaticPage({ otherArticles, data }: Props) {
                   <HorizontalNewsCard data={item} />
                 </div>
               ))}
-           
-                <JulioHorizontalCard 
-/>
-
+              <JulioHorizontalCard
+              />
             </div>
           </div>
-
         </div>
-
       </div>
     </div>
   );

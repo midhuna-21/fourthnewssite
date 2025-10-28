@@ -23,10 +23,9 @@ const NewsNavigation: FC<Props> = ({ data }) => {
 
     return (
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 py-6 border-b border-gray-300">
-            {/* Previous Post */}
             <Link
                 href={`/${prevPost.category}/${prevPost.slug}`}
-                title={prevPost.slug}
+                title={prevPost.title}
                 className="flex items-center gap-2 w-full md:w-[48%]"
             >
                 <Image
@@ -47,11 +46,9 @@ const NewsNavigation: FC<Props> = ({ data }) => {
                     </span>
                 </div>
             </Link>
-
-            {/* Next Post */}
             <Link
                 href={`/${nextPost.category}/${nextPost.slug}`}
-                title={nextPost.slug}
+                title={nextPost.title}
                 className="flex items-center gap-2 w-full md:w-[48%]  md:justify-end"
             >
                 <div className="flex flex-col text-right">
@@ -66,8 +63,7 @@ const NewsNavigation: FC<Props> = ({ data }) => {
                 <Image
                     quality={75}
                     placeholder="blur"
-                      blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
-
+                    blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA="
                     src={arrowRight}
                     alt="Next"
                     width={30}
@@ -75,8 +71,6 @@ const NewsNavigation: FC<Props> = ({ data }) => {
                 />
             </Link>
         </div>
-
-
     );
 };
 

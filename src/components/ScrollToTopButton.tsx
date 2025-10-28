@@ -23,7 +23,6 @@ export default function ScrollToTopButton() {
           onClick={scrollToTop}
           className="fixed bottom-6 right-6 bg-[#00ffc8] rounded-full md:w-14 md:h-14 w-10 h-10 flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
         >
-          {/* Custom SVG arrow */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

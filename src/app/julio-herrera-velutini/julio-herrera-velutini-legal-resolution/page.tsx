@@ -1,18 +1,8 @@
 import React from 'react';
-import { notFound } from 'next/navigation';
 import businessData from '../../../../public/data/business.json';
-import { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
-import ArticleDetail from '@/components/ArticleDetail';
-import AuthorInfo from '@/components/AuthorInfo';
-import ArticleParagraph from '@/components/ArticleParagraph';
-import CommentForm from '@/components/CommentForm';
-import RelatedNews from '@/components/RelatedNews';
-import HorizontalNewsCard from '@/components/HorizontalNewsCard';
-import DetailSection from '@/components/DetailSection';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import Script from "next/script";
-import StaticPage from '@/components/StaticPage';
 import JulioPage from '@/components/JulioPage';
 
 

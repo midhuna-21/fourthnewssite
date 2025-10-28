@@ -8,14 +8,7 @@ import politicsData from '../../../../public/data/politics.json';
 import scienceData from '../../../../public/data/science.json';
 import entertainmentData from '../../../../public/data/entertainment.json'
 import educationData from '../../../../public/data/education.json';
-import { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
-import ArticleDetail from '@/components/ArticleDetail';
-import AuthorInfo from '@/components/AuthorInfo';
-import ArticleParagraph from '@/components/ArticleParagraph';
-import CommentForm from '@/components/CommentForm';
-import RelatedNews from '@/components/RelatedNews';
-import HorizontalNewsCard from '@/components/HorizontalNewsCard';
 import DetailSection from '@/components/DetailSection';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import Script from "next/script";
@@ -209,18 +202,13 @@ import StaticPage from '@/components/StaticPage';
                     }),
                 }}
             />
-
-            {/* Navbar only on large screens */}
             <div className="hidden lg:block">
                 <Navbar />
             </div>
-
-            {/* Content with proper responsive padding */}
             <div className="w-full max-w-7xl px-5 md:px-8 mx-auto md:mt-7 mt-4 mb-12">
                 <DetailSection article={article} otherArticles={otherArticles} data={data} />
             </div>
             <ScrollToTopButton />
-
         </main>
     );
 }

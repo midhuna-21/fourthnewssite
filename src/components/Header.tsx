@@ -14,8 +14,7 @@ import entertainmentData from '../../public/data/entertainment.json';
 import educationData from '../../public/data/education.json';
 import Link from "next/link";
 import Image from "next/image";
-import logo from '../../public/images/mirrorstandard-logo.webp'
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa"
+import { FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa"
 
 const news = [businessData[0], sportsData[0], politicsData[0], healthData[0], technologyData[0], scienceData[0], educationData[0], entertainmentData[0]];
 
@@ -36,10 +35,8 @@ export default function Header() {
 
   return (
     <>
-      {/* Top Header */}
       <header className="w-full bg-black h-15 md:h-28 transition-colors duration-300">
         <div className="w-full max-w-7xl px-8 mx-auto flex items-center justify-between h-full">
-
           <div className="flex items-center">
             <span className="md:hidden text-[#ffffff] italic text-lg sm:text-3xl font-black">
               MIRRORSTANDARD
@@ -53,25 +50,12 @@ export default function Header() {
               <Menu size={40} strokeWidth={2} strokeLinecap="square" className="scale-y-90" />
             </button>
           </div>
-
           <Link href='/' title="home">
-            {/* <span className="hidden md:block text-[#ffffffe7] italic text-xl sm:text-3xl font-black text-center">
-              MIRRORSTANDARD
-            </span> */}
             <span className="hidden md:block text-[#ffffff] italic text-lg sm:text-3xl font-black">
               MIRRORSTANDARD
             </span>
-            {/* <Image
-        src={logo}
-        alt="VIBENEWS Logo"
-        width={140}       // adjust width
-        height={40}       // adjust height
-        className="hidden md:block object-contain"
-      /> */}
           </Link>
-
           <div className="flex items-center gap-3">
-            {/* Desktop */}
             <div className="hidden md:flex items-center gap-3">
               <ThemeToggle />
               <button
@@ -83,8 +67,6 @@ export default function Header() {
                 <Search size={26} strokeWidth={2} />
               </button>
             </div>
-
-            {/* Mobile */}
             <div className="flex md:hidden items-center gap-3">
               <ThemeToggle />
               <button
@@ -93,7 +75,7 @@ export default function Header() {
                 className="text-[#5a5a5a] hover:text-[#00ffc8] cursor-pointer"
                 onClick={() => setIsSearchOpen(true)}
               >
-                <Search size={20} strokeWidth={2} />   {/* smaller size */}
+                <Search size={20} strokeWidth={2} />
               </button>
               <button
                 type="button"
@@ -105,7 +87,6 @@ export default function Header() {
               </button>
             </div>
           </div>
-
         </div>
       </header>
       <div
@@ -122,7 +103,6 @@ export default function Header() {
             <X className="inline ml-2" size={22} />
           </button>
         </div>
-
         <div className="overflow-y-auto h-[calc(100%-64px)] p-4 space-y-6 flex flex-col justify-between">
           <div>
             {news.map((item, index) => (
@@ -138,7 +118,7 @@ export default function Header() {
                     height={96}
                     quality={75}
                     placeholder="blur"
-                      blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
+                    blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
 
                     className="object-cover flex-shrink-0"
                   />
@@ -158,21 +138,13 @@ export default function Header() {
               </Link>
             ))}
           </div>
-
-          {/* Social Media Icons */}
           <div className="flex items-center gap-5 py-3 text-[#404040]">
-            {/* <Link href="#" target="_blank" rel="noopener noreferrer">
-              <FaFacebookF size={22} className="hover:text-[#ffff] transition-colors" />
-            </Link> */}
             <Link href="https://x.com/MirrorstandardU" title="twitter" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={22} className="hover:text-[#ffff] transition-colors" />
             </Link>
             <Link href="https://www.instagram.com/mirrorstandardusnews/" title="instagram" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={22} className="hover:text-[#ffff] transition-colors" />
             </Link>
-            {/* <a href="#" target="_blank" rel="noopener noreferrer">
-              <FaLinkedinIn size={22} className="hover:text-[#ffff] transition-colors" />
-            </a> */}
             <Link href="https://www.youtube.com/@mirrorstandardUS" title="youtube" target="_blank" rel="noopener noreferrer">
               <FaYoutube size={22} className="hover:text-[#ffff] transition-colors" />
             </Link>

@@ -31,7 +31,6 @@ export default function CorrectionsPolicy() {
     return (
         <div className="min-h-screen">
             <div className="max-w-4xl mx-auto px-6 py-16">
-                {/* Header */}
                 <header className="text-center mb-10">
                     <h1 className="text-6xl font-light mb-4 tracking-tight">
                         Corrections Policy
@@ -42,14 +41,11 @@ export default function CorrectionsPolicy() {
                         Standard. We check our reporting carefully before it goes live, but journalism is fast-moving and no one is perfect. Sometimes mistakes slip through. When that happens, we believe in being open with our readers: admit it, explain it, and fix it.
                     </p>
                 </header>
-
-                {/* How We Handle Mistakes */}
                 <section className="mb-10">
                     <h2 className="text-2xl font-light mb-5 pb-3 border-b">
                         How We Handle Mistakes
                     </h2>
                     <p className="font-light leading-relaxed mb-5 text-gray-500">
-
                         Not all errors are the same, so we respond differently depending on the situation:
                     </p>
                     <div className="space-y-10">
@@ -64,8 +60,6 @@ export default function CorrectionsPolicy() {
                         ))}
                     </div>
                 </section>
-
-                {/* Where Corrections Appear */}
                 <section className="mb-10">
                     <h2 className="text-2xl font-light mb-8 pb-3 border-b">
                         Where You’ll See Corrections
@@ -75,8 +69,6 @@ export default function CorrectionsPolicy() {
                         separate section. Our view is simple: if the mistake was made in the article, the correction belongs in the article too.
                     </p>
                 </section>
-
-                {/* Reader Help */}
                 <section className="mb-10">
                     <h2 className="text-2xl font-light mb-8 pb-3 border-b">
                         How Readers Can Help
@@ -99,8 +91,6 @@ export default function CorrectionsPolicy() {
                         <RefreshCcw className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                     </a>
                 </section>
-
-                {/* Commitment to Transparency */}
                 <section className="mb-20">
                     <h2 className="text-2xl font-light mb-8 pb-3 border-b">
                         Our Commitment to Transparency
@@ -116,17 +106,13 @@ export default function CorrectionsPolicy() {
                         ))}
                     </div>
                 </section>
-
                 <div className="mt-16 pt-8 border-t border-gray-300">
                 </div>
-                {/* Why It Matters */}
                 <section className="text-center">
                     <h2 className="text-2xl font-light mb-8">Why It Matters</h2>
                     <p className="text-lg leading-relaxed font-light max-w-2xl mx-auto">
                         Trust is earned article by article. By being honest about mistakes, we hope to show that we value accuracy over ego. We don’t aim to look flawless; we aim to be reliable.
                     </p>
-
-
                 </section>
             </div>
         </div>

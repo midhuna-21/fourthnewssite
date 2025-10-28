@@ -20,16 +20,14 @@ const FeaturedArticle: React.FC<Props> = ({ data }) => {
     <div className="max-w-4xl mx-auto">
       <Link
         href={`/${data.category}/${data.slug}`}
-        title={data.slug}
+        title={data.title}
         className="block w-full"
         style={{ color: "inherit" }}
       >
-
-        {/* Category + Date */}
         <p className="text-sm text-gray-500">
           <span
             className="text-[18px] capitalize "
-            style={{ fontWeight: 700}}
+            style={{ fontWeight: 700 }}
           >
             {data.category}
           </span>{" "}
@@ -39,8 +37,6 @@ const FeaturedArticle: React.FC<Props> = ({ data }) => {
             {data.date}
           </span>
         </p>
-
-        {/* Title */}
         <h1
           className="font-[oswald] font-bold leading-tight text-[24px] sm:text-[36px] md:text-[36px]"
           style={{ fontWeight: 700 }}
@@ -48,8 +44,6 @@ const FeaturedArticle: React.FC<Props> = ({ data }) => {
           {data.title}
         </h1>
       </Link>
-      {/* Short Description */}
-
       <p
         className="text-[14px] sm:text-[15px]  whitespace-nowrap overflow-hidden md:text-[16px] mt-2 text-gray-500"
         style={{
@@ -58,8 +52,6 @@ const FeaturedArticle: React.FC<Props> = ({ data }) => {
       >
         {data.shortdescription}
       </p>
-
-      {/* Image */}
       <div className="mt-4">
         <Link
           href={`/${data.category}/${data.slug}`}
@@ -67,7 +59,6 @@ const FeaturedArticle: React.FC<Props> = ({ data }) => {
           className="block w-full"
           style={{ color: "inherit" }}
         >
-
           <div className="relative overflow-hidden group">
             <Image
               src={data.image}
@@ -75,15 +66,13 @@ const FeaturedArticle: React.FC<Props> = ({ data }) => {
               width={1000}
               quality={75}
               placeholder="blur"
-                blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
-
+              blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA="
               height={800}
               priority
               fetchPriority="high"
               className="w-full h-[350px] sm:h-[350px] md:h-[590px] object-cover transition-transform duration-700 ease-in-out 
                 group-hover:scale-105"
             />
-
             <div
               className="
                 absolute inset-0 bg-black/0 

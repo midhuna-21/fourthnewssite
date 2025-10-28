@@ -1,5 +1,4 @@
 "use client";
-
 import { Search } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -18,20 +17,15 @@ export default function NotFoundPage() {
 
   return (
     <div className="flex flex-col md:mt-24 mt-5 md:mb-5">
-      {/* Heading */}
       <h1
         className="text-[24px] sm:text-[32px] md:text-[36px] lg:text-[42px] font-[oswald] mb-4"
         style={{ fontWeight: 700 }}
       >
         Nothing found!
       </h1>
-
-      {/* Subtext */}
       <p className="text-gray-600 mb-6" >
         It looks like nothing was found here. Maybe try a search?
       </p>
-
-      {/* Search Bar */}
       <form
         onSubmit={handleSearch}
         className="flex w-full border border-gray-300 rounded overflow-hidden"

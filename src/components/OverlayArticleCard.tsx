@@ -20,7 +20,7 @@ const OverlayArticleCard: React.FC<Props> = ({ data }) => {
     <div className="relative w-full md:mb-3 mb-5">
       <Link
         href={`/${data.category}/${data.slug}`}
-        title={data.slug}
+        title={data.title}
         className="block w-full"
         style={{ color: "inherit" }}
       >
@@ -36,14 +36,8 @@ const OverlayArticleCard: React.FC<Props> = ({ data }) => {
 
             className="w-full h-[200px] sm:h-[220px] lg:h-[200px] object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
           />
-
-          {/* Hover overlay */}
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 ease-in-out" />
-
-          {/* Gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-
-          {/* Text */}
           <div className="absolute bottom-3 left-3 right-3 text-white z-10">
             <p className="text-sm">
               <span
@@ -57,7 +51,6 @@ const OverlayArticleCard: React.FC<Props> = ({ data }) => {
                 {data.date}
               </span>
             </p>
-
             <h3 className="leading-tight font-['Oswald'] font-bold line-clamp-2 text-[24px]">
               {data.title}
             </h3>

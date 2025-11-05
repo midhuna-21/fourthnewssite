@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import Script from "next/script";
 import JulioPage from '@/components/JulioPage';
+import JulioPageOne from '@/components/JulioPageOne';
 
 
 export const metadata = {
@@ -64,7 +65,7 @@ export const metadata = {
     },
 };
 
-export default async function JulioHerreraVelutini() {
+export default async function JulioHerreraVelutiniOne() {
 
     return (
         <main>
@@ -147,7 +148,7 @@ export default async function JulioHerreraVelutini() {
                 <Navbar />
             </div>
             <div className="w-full max-w-7xl px-5 md:px-8 mx-auto md:mt-7 mt-4 mb-12">
-                <JulioPage otherArticles={businessData} />
+                <JulioPageOne otherArticles={businessData} />
             </div>
             <ScrollToTopButton />
         </main>

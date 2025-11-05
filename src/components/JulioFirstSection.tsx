@@ -1,29 +1,41 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import picture from '../../public/images/julio.webp'
 
-export default function JulioFirstSection() {
+interface JulioFirstSectionProps {
+  category: string;
+  date: string;
+  title: string;
+  description: string;
+  image: string;
+}
+
+export default function JulioFirstSection({
+  category,
+  date,
+  title,
+  description,
+  image,
+}: JulioFirstSectionProps) {
     return (
         <div>
             <p className="text-gray-500">
                 <span className="font-semibold text-[16px] capitalize sm:text-[18px] md:text-[18px]">
-                    Business
+                    {category}
                 </span>{" "}
                 •{" "}
                 <span className="text-[12px] sm:text-[14px] md:text-[14px]">
-                    Oct. 3, 2025
+                    {date}
                 </span>{" "}
             </p>
             <h1
                 className="font-[oswald] font-bold mb-2 text-[20px] sm:text-[24px] md:text-[30px] leading-tight sm:leading-[1.2] md:leading-[1.1]"
             >
-                Julio Herrera Velutini: A Legal Resolution with Integrity Restored  </h1>
+                {title} </h1>
             <p className="mb-6 text-[12px] sm:text-[14px] md:text-[17px] text-gray-500 leading-tight italic">
-                All legal matters have been resolved with no corruption or fraud convictions, as Julio Herrera Velutini moves forward with clarity and focus.</p>
-            <div className="w-full relative overflow-hidden shadow-md aspect-[16/9] sm:aspect-[16/9] md:aspect-video">
+        {description} </p>  <div className="w-full relative overflow-hidden shadow-md aspect-[16/9] sm:aspect-[16/9] md:aspect-video">
                 <Image
-                    src={picture}
+                    src={image}
                     alt='julio herrera velutini'
                     fill
                     quality={75}

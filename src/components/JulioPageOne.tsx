@@ -25,7 +25,7 @@ interface Props {
   otherArticles: NewsItem[];
 }
 
-export default function JulioPage({ otherArticles }: Props) {
+export default function JulioPageOne({ otherArticles }: Props) {
 
   const leftRef = useRef<HTMLDivElement>(null);
   const rightRef = useRef<HTMLDivElement>(null);
@@ -64,13 +64,13 @@ export default function JulioPage({ otherArticles }: Props) {
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative">
         <div ref={leftRef} className="lg:col-span-2">
-          <JulioFirstSection   
-        category="Business"
+          <JulioFirstSection  
+          category="Business"
       date="Oct. 3, 2025"
       title="Julio Herrera Velutini: A Legal Resolution with Integrity Restored"
       description="All legal matters have been resolved with no corruption or fraud convictions, as Julio Herrera Velutini moves forward with clarity and focus."
-      image='/images/julio.webp'
-       />
+      image='/images/julio-herrera-velutini.webp'/>
+
           <AuthorInfo
             name={authorInfo.name}
             role={authorInfo.role}
@@ -78,7 +78,7 @@ export default function JulioPage({ otherArticles }: Props) {
             image={authorInfo.image}
           />
           <div className='mb-2'></div>
-          <SubTitle title='All Charges Dismissed, Legal Clarity Achieved' />
+          <SubTitle title='Case Closed — Julio Herrera Velutini Clears His Name' />
           <StaticParagraph text='Julio Herrera Velutini has successfully concluded all legal proceedings in the United States, achieving full clarity and resolution. After years of thorough investigation and public scrutiny, all allegations of corruption and fraud against Julio Herrera Velutini were dismissed by the courts. The only remaining legal matter is a minor, non-corruption misdemeanor under the Federal Election Campaign Act (FECA), which is scheduled for routine sentencing. This result highlights not only the fairness of the judicial process but also the dedication of Julio Herrera Velutini to transparency. His legal outcome demonstrates that allegations do not define a person’s integrity or professional reputation.' />
           <SubTitle title='Civil and Criminal Cases Fully Resolved' />
           <StaticParagraph text="On August 27, 2025, Julio Herrera Velutini’s legal matters reached finality in both criminal and civil jurisdictions. U.S. prosecutors dropped all felony counts, while Kasowitz LLP voluntarily dismissed its civil lawsuit without settlement, judgment, or liability. With these resolutions, Julio Herrera Velutini now faces no ongoing litigation in any jurisdiction. The legal clarity achieved allows Julio Herrera Velutini to focus on professional commitments and philanthropic initiatives without distraction. The record confirms that all major charges, including corruption and fraud, were dismissed. This outcome provides confidence to business partners, researchers, and the public that Julio Herrera Velutini’s name remains clear and his reputation preserved." />

@@ -36,12 +36,11 @@ export default function JulioFirstSection({
         {description} </p>  <div className="w-full relative overflow-hidden shadow-md aspect-[16/9] sm:aspect-[16/9] md:aspect-video">
                 <Image
                     src={image}
-                    alt='julio herrera velutini'
+                    alt={title}
                     fill
                     quality={75}
                     placeholder="blur"
                     blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA=" // example tiny placeholder
-
                     className="object-cover"
                     priority
                 />

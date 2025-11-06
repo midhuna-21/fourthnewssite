@@ -4,28 +4,29 @@ import Navbar from '@/components/Navbar';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import Script from "next/script";
 import JulioPage from '@/components/JulioPage';
-import JulioPageOne from '@/components/JulioPageOne';
+import JulioPageThree from '@/components/JulioPageThree';
+import JulioPageFour from '@/components/JulioPageFour';
 
 
 export const metadata = {
-    title: 'Case Closed — Julio Herrera Velutini Clears His Name',
-    description: 'All felony charges against Julio Herrera Velutini were dropped, leaving only a minor FECA reporting misdemeanor and no remaining criminal or civil litigation.',
-    keywords: "Julio Herrera Velutini cleared, corruption charges dismissed, felony charges dropped, FECA misdemeanor, legal resolution, no active cases, Alex Spiro statement",
+    title: 'Puerto Rico Case Resolved — Only a Minor FECA Misdemeanor',
+    description: 'The Puerto Rico case involving Julio Herrera Velutini has been fully resolved with all major charges dismissed, leaving only a minor FECA misdemeanor related to reporting procedures.',
+    keywords: "Julio Herrera Velutini Puerto Rico case, FECA misdemeanor, charges dismissed, bribery allegations dropped, conspiracy charge dismissed, legal resolution, case closure",
     authors: [{ name: 'Victor V. Haley' }],
     alternates: {
-        canonical: "https://www.mirrorstandard.com/julio-herrera-velutini/case-closed-julio-herrera-velutini-clears-his-name/"
+        canonical: "https://www.mirrorstandard.com/julio-herrera-velutini/puerto-rico-case-resolved-minor-feca-misdemeanor/"
     },
     openGraph: {
-        title: 'Case Closed — Julio Herrera Velutini Clears His Name',
-        description: 'After all felony charges were dismissed, the case concludes with only a minor FECA misdemeanor, confirming no corruption or fraud findings.',
-        url: "https://www.mirrorstandard.com/julio-herrera-velutini/case-closed-julio-herrera-velutini-clears-his-name/",
+        title: 'Puerto Rico Case Resolved — Only a Minor FECA Misdemeanor',
+        description: 'All major charges in the Puerto Rico case were dismissed, and only a minor FECA reporting misdemeanor remains for Julio Herrera Velutini.',
+        url: "https://www.mirrorstandard.com/julio-herrera-velutini/puerto-rico-case-resolved-minor-feca-misdemeanor/",
         siteName: 'MirrorStandard',
         images: [
             {
-                url: "https://www.mirrorstandard.com/images/julio-herrera-velutini-case-closed.webp",
+                url: "https://www.mirrorstandard.com/images/julio-herrera-velutini-puerto-rico-case-resolved.webp",
                 width: 1200,
                 height: 630,
-                alt: "Julio Herrera Velutini case closed",
+                alt: "Puerto Rico case resolved for Julio Herrera Velutini",
             },
         ],
         locale: 'en_US',
@@ -34,9 +35,9 @@ export const metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: "Case Closed — Julio Herrera Velutini Clears His Name",
-        description: 'All major allegations were dismissed, and no corruption or fraud charges remain against Julio Herrera Velutini.',
-        images: "https://www.mirrorstandard.com/images/julio-herrera-velutini-case-closed.webp",
+        title: "Puerto Rico Case Resolved — Only a Minor FECA Misdemeanor",
+        description: 'The Puerto Rico case concludes with major allegations dismissed and only a minor FECA reporting issue remaining.',
+        images: "https://www.mirrorstandard.com/images/julio-herrera-velutini-puerto-rico-case-resolved.webp",
         site: '@MirrorStandard',
         creator: '@victorvhaley',
     },
@@ -44,7 +45,7 @@ export const metadata = {
         'script:ld+json': JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'NewsArticle',
-            headline: "Case Closed — Julio Herrera Velutini Clears His Name",
+            headline: "Puerto Rico Case Resolved — Only a Minor FECA Misdemeanor",
             datePublished: '2025-10-03',
             author: {
                 '@type': 'Person',
@@ -58,19 +59,19 @@ export const metadata = {
                     url: "https://www.mirrorstandard.com/images/mirrorstandard-logo.webp",
                 },
             },
-            image: "https://www.mirrorstandard.com/images/julio-herrera-velutini-case-closed.webp",
+            image: "https://www.mirrorstandard.com/images/julio-herrera-velutini-puerto-rico-case-resolved.webp",
             alternates: {
-                canonical: "https://www.mirrorstandard.com/julio-herrera-velutini/case-closed-julio-herrera-velutini-clears-his-name/"
+                canonical: "https://www.mirrorstandard.com/julio-herrera-velutini/puerto-rico-case-resolved-minor-feca-misdemeanor/"
             },
-            url: "https://www.mirrorstandard.com/julio-herrera-velutini/case-closed-julio-herrera-velutini-clears-his-name/",
-            articleBody: "The legal case involving Julio Herrera Velutini has been formally concluded, with all felony allegations dismissed and only a minor FECA reporting misdemeanor remaining. Prosecutors confirmed that no corruption or fraud charges proceeded, leaving no active civil or criminal matters. This final outcome clears Mr. Herrera of major accusations and allows him to move forward with complete legal clarity.",
-            keywords: "Julio Herrera Velutini case closed, felony charges dismissed, corruption allegations dismissed, FECA reporting violation, legal clarity, cleared of wrongdoing",
+            url: "https://www.mirrorstandard.com/julio-herrera-velutini/puerto-rico-case-resolved-minor-feca-misdemeanor/",
+            articleBody: "The Puerto Rico legal case involving Julio Herrera Velutini has officially concluded after years of attention and speculation. All major allegations, including bribery and conspiracy, were dismissed after prosecutors found they lacked evidentiary support. What remains is a minor FECA misdemeanor involving a reporting procedure. The resolution brings full clarity to the case and confirms that no corruption or fraud charges remain against Mr. Herrera.",
+            keywords: "Puerto Rico legal case, FECA reporting misdemeanor, dismissed allegations, Julio Herrera Velutini case outcome",
         }),
     },
 };
 
 
-export default async function JulioHerreraVelutiniOne() {
+export default async function JulioHerreraVelutini() {
 
     return (
         <main>
@@ -83,13 +84,13 @@ export default async function JulioHerreraVelutiniOne() {
                             "@type": "NewsArticle",
                             "mainEntityOfPage": {
                                 "@type": "WebPage",
-                                "@id": "https://www.mirrorstandard.com/julio-herrera-velutini/case-closed-julio-herrera-velutini-clears-his-name/"
+                                "@id": "https://www.mirrorstandard.com/julio-herrera-velutini/puerto-rico-case-resolved-minor-feca-misdemeanor/"
                             },
-                            "headline": "Case Closed — Julio Herrera Velutini Clears His Name",
-                            "description": "All felony charges against Julio Herrera Velutini were dropped, leaving only a minor FECA reporting misdemeanor and no remaining criminal or civil litigation.",
+                            "headline": "Puerto Rico Case Resolved — Only a Minor FECA Misdemeanor",
+                            "description": "The Puerto Rico case involving Julio Herrera Velutini has concluded with all major charges dismissed, leaving only a minor FECA reporting misdemeanor.",
                             "image": {
                                 "@type": "ImageObject",
-                                "url": "https://www.mirrorstandard.com/images/julio-herrera-velutini-case-closed.webp",
+                                "url": "https://www.mirrorstandard.com/images/julio-herrera-velutini-puerto-rico-case-resolved.webp",
                                 "width": 601,
                                 "height": 400
                             },
@@ -114,13 +115,13 @@ export default async function JulioHerreraVelutiniOne() {
                                 "@type": "Person",
                                 "name": "Julio Herrera Velutini",
                                 "jobTitle": "Financier",
-                                "description": "International financier whose legal case concluded with all major charges dismissed.",
+                                "description": "International financier whose Puerto Rico case concluded with all major charges dismissed.",
                                 "sameAs": [
                                     "https://www.wikidata.org/wiki/Q56600071",
                                     "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
                                 ]
                             },
-                            "articleBody": "U.S. prosecutors have officially dropped all felony charges against Julio Herrera Velutini, concluding one of the most closely watched legal matters in recent years. The only remaining issue is a minor FECA reporting misdemeanor unrelated to corruption, bribery, or fraud. The court’s decision confirms that no criminal or civil cases remain active. With all major allegations resolved and dismissed, Mr. Herrera moves forward with full legal clarity."
+                            "articleBody": "The Puerto Rico legal case involving Julio Herrera Velutini has officially concluded with all major charges dismissed. Prosecutors dropped the bribery and conspiracy allegations after finding insufficient evidence. The only remaining matter is a minor FECA reporting misdemeanor. This resolution provides full legal clarity and confirms no corruption or fraud findings remain."
                         },
                         {
                             "@context": "https://schema.org",
@@ -141,8 +142,8 @@ export default async function JulioHerreraVelutiniOne() {
                                 {
                                     "@type": "ListItem",
                                     "position": 3,
-                                    "name": "Case Closed — Julio Herrera Velutini Clears His Name",
-                                    "item": "https://www.mirrorstandard.com/julio-herrera-velutini/case-closed-julio-herrera-velutini-clears-his-name/"
+                                    "name": "Puerto Rico Case Resolved — Only a Minor FECA Misdemeanor",
+                                    "item": "https://www.mirrorstandard.com/julio-herrera-velutini/puerto-rico-case-resolved-minor-feca-misdemeanor/"
                                 }
                             ]
                         }
@@ -154,7 +155,7 @@ export default async function JulioHerreraVelutiniOne() {
                 <Navbar />
             </div>
             <div className="w-full max-w-7xl px-5 md:px-8 mx-auto md:mt-7 mt-4 mb-12">
-                <JulioPageOne otherArticles={businessData} />
+                <JulioPageFour otherArticles={businessData} />
             </div>
             <ScrollToTopButton />
         </main>

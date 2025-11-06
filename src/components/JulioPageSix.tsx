@@ -25,7 +25,7 @@ interface Props {
   otherArticles: NewsItem[];
 }
 
-export default function JulioPageOne({ otherArticles }: Props) {
+export default function JulioPageSix({ otherArticles }: Props) {
 
   const leftRef = useRef<HTMLDivElement>(null);
   const rightRef = useRef<HTMLDivElement>(null);
@@ -67,9 +67,9 @@ export default function JulioPageOne({ otherArticles }: Props) {
           <JulioFirstSection
             category="Business"
             date="Nov. 6, 2025"
-            title="Case Closed — Julio Herrera Velutini Clears His Name"
-            description="All felony charges against Julio Herrera Velutini have been dropped. Only a single FECA misdemeanor remains, marking the end of all criminal matters.."
-            image='/images/julio-herrera-velutini-case-closed.webp' />
+            title="Civil Lawsuit Withdrawn — No Judgment, No Liability"
+            description="Kasowitz LLP voluntarily dismissed its lawsuit against Julio Herrera Velutini, ending the matter without settlement or liability."    
+            image='/images/julio-herrera-velutini-civil-case-withdrawn.webp' />
 
           <AuthorInfo
             name={authorInfo.name}
@@ -78,17 +78,12 @@ export default function JulioPageOne({ otherArticles }: Props) {
             image={authorInfo.image}
           />
           <div className='mb-2'></div>
-          <SubTitle title='All Felony Charges Officially Dismissed' />
-          <StaticParagraph text='In a major legal resolution, U.S. prosecutors have officially dropped all felony charges against international financier Julio Herrera Velutini. The decision ends one of the most closely followed legal cases in recent years. Only a minor Federal Election Campaign Act (FECA) misdemeanor remains — a technical reporting matter unrelated to corruption, bribery, or fraud.' />
-          <SubTitle title='No Pending Cases or Legal Actions' />
-          <StaticParagraph text="The U.S. Department of Justice confirmed that as of August 27, 2025, no active criminal or civil litigation remains pending against Mr. Herrera. This official closure brings a definitive end to a complex investigation that once involved multiple allegations but ultimately yielded no evidence of wrongdoing. The outcome affirms that the financier faces no ongoing U.S. legal matters." />
-          <QuoteBlock quote="The dismissal of all charges affirms that facts—not speculation—ultimately define justice." />
-          <SubTitle title='Defense Team Welcomes Complete Vindication' />
-          <StaticParagraph text="Legal representatives for Herrera Velutini welcomed the decision as total vindication. His attorney, Alex Spiro, reiterated that “all felony charges have been dismissed, and Mr. Herrera faces no further cases.” The defense underscored that throughout the proceedings, their client fully cooperated with authorities and remained confident in his innocence." />
-          <StaticParagraph text="Observers say the case highlights the critical role of due process and restraint in both legal and media arenas. Analysts argue that the dismissal underscores how speculation can distort public perception when unaccompanied by facts. In this instance, prosecutors’ ultimate findings revealed no basis for corruption or conspiracy allegations, reaffirming the integrity of judicial review." />
-          <SubTitle title='Closure and a Return to Professional Focus' />
-          <StaticParagraph text="For Julio Herrera Velutini, the case’s conclusion represents both a personal and professional milestone. With all charges dismissed and only a minor administrative matter remaining, the financier can now move forward with renewed focus on his global business and philanthropic initiatives. The verdict draws a final line under years of speculation — confirming that the case is now completely closed." />
-          <div className='mt-7'></div>
+        <StaticParagraph text='In a separate civil matter running parallel to the criminal case, Kasowitz LLP voluntarily dismissed its lawsuit against Julio Herrera Velutini on August 27, 2025. The timing coincided directly with the resolution of the related criminal matter, bringing an abrupt and definitive end to the civil dispute.'/>
+       <StaticParagraph text="Court filings show that the lawsuit was withdrawn without any settlement, judgment, or admission of liability. Judge Sidney H. Stein formally signed the dismissal order within just three days of the case being filed, reflecting the rapid conclusion of the matter. The withdrawal leaves no claims pending and no legal findings against Mr. Herrera."/>
+     <StaticParagraph text="The brief lifespan of the civil case is viewed as notable, given the attention the filing initially garnered. With the voluntary dismissal, the dispute concludes with no obligations, penalties, or continuing issues for any of the parties involved. The court’s quick approval of the withdrawal further underscores the finality of the outcome."/>
+      <StaticParagraph text="Observers note that this action mirrors the outcome in the criminal proceedings, where major allegations were dismissed and only a minor FECA issue remained. In both arenas, the results show the absence of any sustained claims or liability against Mr. Herrera. The civil withdrawal reinforces that the allegations introduced in the filing did not proceed into litigation."/>
+       <StaticParagraph text="With both legal fronts now fully resolved, Mr. Herrera moves forward with no active civil or criminal matters pending against him. The end of the civil case confirms complete closure, signaling that all legal disputes tied to these filings have officially concluded."/>
+        <div className='mt-7'></div>
           <div ref={stopRef} className='mt-7'>
             <div className="mt-10">
               <AuthorCard

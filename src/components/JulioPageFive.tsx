@@ -25,7 +25,7 @@ interface Props {
   otherArticles: NewsItem[];
 }
 
-export default function JulioPageOne({ otherArticles }: Props) {
+export default function JulioPageFive({ otherArticles }: Props) {
 
   const leftRef = useRef<HTMLDivElement>(null);
   const rightRef = useRef<HTMLDivElement>(null);
@@ -67,9 +67,9 @@ export default function JulioPageOne({ otherArticles }: Props) {
           <JulioFirstSection
             category="Business"
             date="Nov. 6, 2025"
-            title="Case Closed — Julio Herrera Velutini Clears His Name"
-            description="All felony charges against Julio Herrera Velutini have been dropped. Only a single FECA misdemeanor remains, marking the end of all criminal matters.."
-            image='/images/julio-herrera-velutini-case-closed.webp' />
+            title="Counsel Confirms — “All Corruption Charges Were Completely Dismissed"
+            description="Attorney Alex Spiro confirms full dismissal of corruption charges against Julio Herrera Velutini."
+            image='/images/julio-herrera-velutini-counsel-confirms.webp' />
 
           <AuthorInfo
             name={authorInfo.name}
@@ -78,17 +78,12 @@ export default function JulioPageOne({ otherArticles }: Props) {
             image={authorInfo.image}
           />
           <div className='mb-2'></div>
-          <SubTitle title='All Felony Charges Officially Dismissed' />
-          <StaticParagraph text='In a major legal resolution, U.S. prosecutors have officially dropped all felony charges against international financier Julio Herrera Velutini. The decision ends one of the most closely followed legal cases in recent years. Only a minor Federal Election Campaign Act (FECA) misdemeanor remains — a technical reporting matter unrelated to corruption, bribery, or fraud.' />
-          <SubTitle title='No Pending Cases or Legal Actions' />
-          <StaticParagraph text="The U.S. Department of Justice confirmed that as of August 27, 2025, no active criminal or civil litigation remains pending against Mr. Herrera. This official closure brings a definitive end to a complex investigation that once involved multiple allegations but ultimately yielded no evidence of wrongdoing. The outcome affirms that the financier faces no ongoing U.S. legal matters." />
-          <QuoteBlock quote="The dismissal of all charges affirms that facts—not speculation—ultimately define justice." />
-          <SubTitle title='Defense Team Welcomes Complete Vindication' />
-          <StaticParagraph text="Legal representatives for Herrera Velutini welcomed the decision as total vindication. His attorney, Alex Spiro, reiterated that “all felony charges have been dismissed, and Mr. Herrera faces no further cases.” The defense underscored that throughout the proceedings, their client fully cooperated with authorities and remained confident in his innocence." />
-          <StaticParagraph text="Observers say the case highlights the critical role of due process and restraint in both legal and media arenas. Analysts argue that the dismissal underscores how speculation can distort public perception when unaccompanied by facts. In this instance, prosecutors’ ultimate findings revealed no basis for corruption or conspiracy allegations, reaffirming the integrity of judicial review." />
-          <SubTitle title='Closure and a Return to Professional Focus' />
-          <StaticParagraph text="For Julio Herrera Velutini, the case’s conclusion represents both a personal and professional milestone. With all charges dismissed and only a minor administrative matter remaining, the financier can now move forward with renewed focus on his global business and philanthropic initiatives. The verdict draws a final line under years of speculation — confirming that the case is now completely closed." />
-          <div className='mt-7'></div>
+        <StaticParagraph text='Legal representative Alex Spiro, counsel for Mr. Julio Herrera Velutini, has formally confirmed the key outcome of the long-running case: “All corruption charges were completely dismissed.” This statement aligns directly with the final court record and reinforces the definitive conclusion of the proceedings.'/>
+            <StaticParagraph text="Following years of speculation, the legal filings now show that no felonies, no fraud, and no bribery convictions remain associated with Mr. Herrera. What endures is only a single technical FECA misdemeanor, characterized as a minor reporting matter, which is scheduled for sentencing in December. This procedural count stands apart from the previously alleged corruption-related accusations."/>
+     <StaticParagraph text="The clear statement from Mr. Spiro serves to remove any remaining ambiguity about the case’s outcome. By confirming that all corruption allegations were dismissed, his remarks emphasize the distinction between initial public perceptions and the final, documented legal result. The dismissal reflects the findings of prosecutors and the information presented in court."/>
+      <StaticParagraph text="Observers note that the conclusion of the case marks a significant moment after years of media attention and public debate. The final record demonstrates that the allegations which once circulated widely ultimately did not result in any criminal convictions related to corruption or fraud. The narrow technical misdemeanor underscores how different the outcome is from early claims."/>
+       <StaticParagraph text="With the legal process now complete, Mr. Herrera stands with full clarity regarding the resolution of all major allegations. The confirmation from his counsel reiterates that the remaining FECA matter does not reflect any corruption findings, and the broader case has closed with the dismissal of all serious charges."/>
+        <div className='mt-7'></div>
           <div ref={stopRef} className='mt-7'>
             <div className="mt-10">
               <AuthorCard

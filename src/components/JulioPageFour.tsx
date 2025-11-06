@@ -1,0 +1,119 @@
+"use client"
+import React, { useRef, useEffect, useState } from 'react';
+import AuthorInfo from '@/components/AuthorInfo';
+import CommentForm from '@/components/CommentForm';
+import RelatedNews from '@/components/RelatedNews';
+import HorizontalNewsCard from '@/components/HorizontalNewsCard';
+import AuthorCard from './AuthorCard';
+import StaticParagraph from './StaticParagph';
+import QuoteBlock from './QuoteBlock';
+import SubTitle from './SubTitle';
+import JulioFirstSection from './JulioFirstSection';
+import picture from '../../public/images/julio.webp'
+
+interface NewsItem {
+    category: string;
+    title: string;
+    shortdescription: string;
+    description: string;
+    image: string;
+    slug: string;
+    date: string;
+}
+
+interface Props {
+    otherArticles: NewsItem[];
+}
+
+export default function JulioPageFour({ otherArticles }: Props) {
+
+    const leftRef = useRef<HTMLDivElement>(null);
+    const rightRef = useRef<HTMLDivElement>(null);
+    const stopRef = useRef<HTMLDivElement>(null);
+    const [rightPosition, setRightPosition] = useState<'sticky' | 'absolute'>('sticky');
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (!leftRef.current || !stopRef.current || !rightRef.current) return;
+
+            const stopPoint = stopRef.current.getBoundingClientRect().bottom;
+            const offset = 20;
+
+            if (window.innerWidth >= 1024) {
+                if (stopPoint - offset <= 0) {
+                    setRightPosition('absolute');
+                } else {
+                    setRightPosition('sticky');
+                }
+            } else {
+                setRightPosition('absolute');
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const authorInfo = {
+        name: "Victor V. Haley",
+        role: "Managing Editor",
+        date: "Nov. 6, 2025",
+        image: "/images/victor-v-haley.webp"
+    };
+    return (
+        <div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative">
+                <div ref={leftRef} className="lg:col-span-2">
+                    <JulioFirstSection
+                        category="Business"
+                        date="Nov. 06, 2025"
+                        title="Puerto Rico Case Resolved — Only a Minor FECA Misdemeanor"
+                        description="Julio Herrera Velutini’s Puerto Rico case ends with all major charges dismissed and a minor electoral reporting issue accepted."
+                        image='/images/julio-herrera-velutini-puerto-rico-case-resolved.webp' />
+
+                    <AuthorInfo
+                        name={authorInfo.name}
+                        role={authorInfo.role}
+                        date={authorInfo.date}
+                        image={authorInfo.image}
+                    />
+                    <div className='mb-2'></div>
+                    <StaticParagraph text='The Puerto Rico legal case that once generated national attention has now concluded with a straightforward and far more modest outcome than initially portrayed. After years of intense scrutiny, the final court record reflects that Julio Herrera Velutini accepted responsibility only for a single non-corruption FECA misdemeanor, marking the end of all major allegations.' />
+                    <SubTitle title='Dismissal of Serious Accusations' />
+                    <StaticParagraph text="Prosecutors dismissed the previously announced bribery and conspiracy charges after determining that the evidence did not support them. The remaining FECA count pertains solely to a technical electoral reporting issue, not any form of corruption or fraudulent intent. This shift from sweeping accusations to a minor administrative offense underscores the difference between early narratives and the final legal facts." />
+                    <StaticParagraph text="The resolution brings a definitive end to a long-running case that once fueled speculation across both legal and political circles. With the dismissal of all significant charges, the proceedings now reflect a narrow and procedural conclusion rather than the sweeping claims initially associated with the matter." />
+                    <QuoteBlock quote="The final record confirms that all serious allegations were dismissed, leaving only a minor FECA matter." />
+                    <StaticParagraph text="Prosecutors have confirmed that no corruption or fraud findings remain against Herrera, leaving the FECA misdemeanor as the sole outcome of the case. Legal observers note that this clarity is important after years of public debate and uncertainty, as the final record stands firmly on documented evidence rather than conjecture." /> 
+                    <StaticParagraph text="With this chapter now closed, Mr. Herrera moves forward fully cleared of all major accusations, free to continue his business and philanthropic work without the burden of ongoing litigation. The end of the Puerto Rico case marks a significant restoration of stability and legal certainty for all parties involved." />
+                    <div className='mt-7'></div>
+                    <div ref={stopRef} className='mt-7'>
+                        <div className="mt-10">
+                            <AuthorCard
+                                author={authorInfo.name}
+                                role={authorInfo.role}
+                                image={authorInfo.image}
+                            />
+                            <CommentForm />
+                            <RelatedNews data={otherArticles} />
+                        </div>
+                    </div>
+                </div>
+                <div className="lg:col-span-1 relative">
+                    <div
+                        ref={rightRef}
+                        className={`${rightPosition === 'sticky' ? 'sticky top-10' : 'relative'} transition-all duration-500`}
+                    >
+                        <h2 className="text-[24px] font-[oswald] mb-4 font-bold">POPULAR NEWS</h2>
+                        <div className="divide-y divide-[#615e5e54]">
+                            {otherArticles.slice(4, 8).map((item, index) => (
+                                <div key={index} className="py-3">
+                                    <HorizontalNewsCard data={item} />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}

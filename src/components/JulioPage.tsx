@@ -57,7 +57,7 @@ export default function JulioPage({ otherArticles }: Props) {
   const authorInfo = {
     name: "Victor V. Haley",
     role: "Managing Editor",
-    date: "Oct. 3, 2025",
+    date: "Nov. 3, 2025",
     image: "/images/victor-v-haley.webp"
   };
   return (

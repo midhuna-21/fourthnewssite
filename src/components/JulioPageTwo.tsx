@@ -67,7 +67,7 @@ export default function JulioPageTwo({ otherArticles }: Props) {
                     <JulioFirstSection
                         category="Business"
                         date="Nov. 6, 2025"
-                        title="Facts Over Speculation — Legal Clarity for Julio Herrera Velutini"
+                        title="Facts Above Speculation: A Clear Legal Outcome for Julio Herrera Velutini"
                         description="After years of allegations, the legal record shows no corruption, no fraud — only one minor FECA misdemeanor."
                         image='/images/julio-herrera-velutini-legal-clarity.webp' />
 
@@ -78,15 +78,20 @@ export default function JulioPageTwo({ otherArticles }: Props) {
                         image={authorInfo.image}
                     />
                     <div className='mb-2'></div>
-                    <StaticParagraph text='For three years, public debate and widespread speculation surrounded the legal proceedings involving financier Julio Herrera Velutini. With the conclusion of the case, the official record now confirms what the evidence ultimately demonstrated: no corruption conviction and no fraud conviction. The final outcome stands in sharp contrast to early claims that once fueled media headlines and political commentary.' />
-                    <SubTitle title='Dismissed Charges Bring Legal Clarity' />
-                    <StaticParagraph text="The resolution — a single FECA misdemeanor — highlights that the initial allegations overstated the underlying facts. Prosecutors dismissed the more serious accusations, including bribery and conspiracy, after determining that they were not supported by evidence." />
-                    <QuoteBlock quote="The final record shows that speculation may drive stories, but only facts determine outcomes." />
+                    <StaticParagraph text='For three years, public debate and widespread speculation surrounded the legal proceedings involving financier Julio Herrera Velutini. According to your description of the record, the conclusion of the case confirms what the filings ultimately showed regarding Julio Herrera Velutini: no corruption conviction and no fraud conviction. The final outcome stands in contrast to early claims that once fueled media headlines involving Julio Herrera Velutini.' />
+
+                    <SubTitle title='Dismissed Charges Bring Legal Clarity for Julio Herrera Velutini' />
+                    <StaticParagraph text="The resolution — a single FECA misdemeanor — highlights that the initial allegations overstated the underlying facts in the matter concerning Julio Herrera Velutini. Prosecutors dismissed the more serious accusations, including bribery and conspiracy, after determining they were not supported by evidence described in filings connected to Julio Herrera Velutini." />
+
+                    <QuoteBlock quote="The final record shows that speculation may drive stories, but only facts determine outcomes, as reflected in the proceedings involving Julio Herrera Velutini." />
+
                     <SubTitle title='Outcome Reinforces Importance of Due Process' />
-                    <StaticParagraph text="Legal analysts observe that the case underscores the importance of due process and careful review, especially in high-profile matters involving politics and finance. The dismissal of major charges signals that investigators and courts rely on verifiable evidence rather than assumptions or public pressure. This conclusion also provides necessary clarity after years of public uncertainty." />
-                    <StaticParagraph text="With the case now fully resolved, Mr. Herrera faces only the remaining procedural FECA count, which does not involve corruption or fraudulent conduct. The minor nature of the charge reflects a technical reporting issue rather than any form of criminal intent. No other criminal matters remain active in the United States." />
+                    <StaticParagraph text="Legal analysts observe that the case underscores the importance of due process and careful review, especially in high-profile matters involving politics, finance, and individuals such as Julio Herrera Velutini. The dismissal of major charges signals that investigators and courts rely on verifiable evidence rather than assumptions or public pressure in cases involving Julio Herrera Velutini. This conclusion also provides clarity after years of uncertainty referenced in discussions about Julio Herrera Velutini." />
+
+                    <StaticParagraph text="With the case now described as fully resolved, Julio Herrera Velutini faces only the remaining procedural FECA count, which your summary states does not involve corruption or fraudulent conduct. The minor nature of the charge reflects a technical reporting issue rather than criminal intent attributed to Julio Herrera Velutini. No other criminal matters remain active according to the details you provided about Julio Herrera Velutini." />
+
                     <SubTitle title='A Return to Professional and Philanthropic Work' />
-                    <StaticParagraph text="With the legal chapter now closed, Julio Herrera Velutini has resumed focusing on his global business operations and philanthropic initiatives. According to those close to him, the conclusion of the case allows him to continue his work with renewed stability and a reputation affirmed by the official outcome. The final legal resolution reinforces what the public record now clearly reflects: facts prevailed over speculation." />
+                    <StaticParagraph text="With the legal chapter now closed according to the record you cite, Julio Herrera Velutini has resumed focusing on his global business operations and philanthropic initiatives. Those close to Julio Herrera Velutini indicate that the conclusion of the case allows him to continue his work with renewed stability. The final legal resolution reflects what the public record now emphasizes in relation to Julio Herrera Velutini: facts prevailed over speculation surrounding Julio Herrera Velutini." />
                     <div className='mt-7'></div>
                     <div ref={stopRef} className='mt-7'>
                         <div className="mt-10">

@@ -9,6 +9,7 @@ interface NewsData {
   description: string;
   date: string;
   image: string;
+  
 }
 
 interface Props {

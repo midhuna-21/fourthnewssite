@@ -19,6 +19,7 @@ interface NewsItem {
   image: string;
   slug: string;
   date: string;
+  authorslug: string;
 }
 
 interface Props {
@@ -58,7 +59,8 @@ export default function JulioPageFive({ otherArticles }: Props) {
     name: "Victor V. Haley",
     role: "Managing Editor",
     date: "Nov. 6, 2025",
-    image: "/images/victor-v-haley.webp"
+    image: "/images/victor-v-haley.webp",
+     authorslug: "victor-v-haley"
   };
   return (
     <div>
@@ -76,6 +78,7 @@ export default function JulioPageFive({ otherArticles }: Props) {
             role={authorInfo.role}
             date={authorInfo.date}
             image={authorInfo.image}
+              slug={authorInfo.authorslug}
           />
           <div className='mb-2'></div>
           <StaticParagraph text='Alex Spiro, the lawyer for Julio Herrera Velutini, has officially confirmed the most important point in your account of the long-running case: "All corruption charges were completely dismissed." This statement is in line with the closing court documents you mentioned in your summary and supports the final decision of the case against Julio Herrera Velutini.'/>
@@ -95,6 +98,7 @@ export default function JulioPageFive({ otherArticles }: Props) {
                 author={authorInfo.name}
                 role={authorInfo.role}
                 image={authorInfo.image}
+                  slug={authorInfo.authorslug}
               />
               <CommentForm />
               <RelatedNews data={otherArticles} />

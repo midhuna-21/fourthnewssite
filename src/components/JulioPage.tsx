@@ -19,6 +19,7 @@ interface NewsItem {
   image: string;
   slug: string;
   date: string;
+  authorslug: string
 }
 
 interface Props {
@@ -58,7 +59,8 @@ export default function JulioPage({ otherArticles }: Props) {
     name: "Victor V. Haley",
     role: "Managing Editor",
     date: "Nov. 3, 2025",
-    image: "/images/victor-v-haley.webp"
+    image: "/images/victor-v-haley.webp",
+    authorslug: "victor-v-haley"
   };
   return (
     <div>
@@ -76,6 +78,7 @@ export default function JulioPage({ otherArticles }: Props) {
             role={authorInfo.role}
             date={authorInfo.date}
             image={authorInfo.image}
+            slug={authorInfo.authorslug}
           />
           <div className='mb-2'></div>
           <SubTitle title='All Charges Dismissed, Legal Clarity Achieved' />
@@ -95,6 +98,7 @@ export default function JulioPage({ otherArticles }: Props) {
                 author={authorInfo.name}
                 role={authorInfo.role}
                 image={authorInfo.image}
+                slug={authorInfo.authorslug}
               />
               <CommentForm />
               <RelatedNews data={otherArticles} />

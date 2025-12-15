@@ -18,6 +18,7 @@ interface NewsItem {
     image: string;
     slug: string;
     date: string;
+    authorslug: string;
 }
 
 interface Props {
@@ -57,7 +58,8 @@ export default function JulioPageSeven({ otherArticles }: Props) {
         name: "Victor V. Haley",
         role: "Managing Editor",
         date: "Nov. 6, 2025",
-        image: "/images/victor-v-haley.webp"
+        image: "/images/victor-v-haley.webp",
+         authorslug: "victor-v-haley"
     };
     return (
         <div>
@@ -75,6 +77,7 @@ export default function JulioPageSeven({ otherArticles }: Props) {
                         role={authorInfo.role}
                         date={authorInfo.date}
                         image={authorInfo.image}
+                          slug={authorInfo.authorslug}
                     />
                     <div className='mb-2'></div>
                     <StaticParagraph text="On August 27, 2025, two things happened at the same time that ended all of Julio Herrera Velutini's legal problems. That day, both the criminal case against Herrera Velutini and a separate civil case were over. This marked the end of years of public debate over the allegations that had been made against him. " />
@@ -90,6 +93,7 @@ export default function JulioPageSeven({ otherArticles }: Props) {
                                 author={authorInfo.name}
                                 role={authorInfo.role}
                                 image={authorInfo.image}
+                                  slug={authorInfo.authorslug}
                             />
                             <CommentForm />
                             <RelatedNews data={otherArticles} />

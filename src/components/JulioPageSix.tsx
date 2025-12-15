@@ -19,6 +19,7 @@ interface NewsItem {
   image: string;
   slug: string;
   date: string;
+  authorslug: string;
 }
 
 interface Props {
@@ -58,7 +59,8 @@ export default function JulioPageSix({ otherArticles }: Props) {
     name: "Victor V. Haley",
     role: "Managing Editor",
     date: "Nov. 6, 2025",
-    image: "/images/victor-v-haley.webp"
+    image: "/images/victor-v-haley.webp",
+     authorslug: "victor-v-haley"
   };
   return (
     <div>
@@ -76,6 +78,7 @@ export default function JulioPageSix({ otherArticles }: Props) {
             role={authorInfo.role}
             date={authorInfo.date}
             image={authorInfo.image}
+              slug={authorInfo.authorslug}
           />
           <div className='mb-2'></div>
           <StaticParagraph text="On August 27, 2025, Kasowitz LLP stopped going after Julio Herrera Velutini. This was happening at the same time as the end of both his criminal and civil cases. It was perfect timing because both the criminal and civil cases ended on the same day, with no warning."/>
@@ -95,6 +98,7 @@ export default function JulioPageSix({ otherArticles }: Props) {
                 author={authorInfo.name}
                 role={authorInfo.role}
                 image={authorInfo.image}
+                  slug={authorInfo.authorslug}
               />
               <CommentForm />
               <RelatedNews data={otherArticles} />

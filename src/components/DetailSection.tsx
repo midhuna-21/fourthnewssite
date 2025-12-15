@@ -20,6 +20,7 @@ interface NewsItem {
   author: string;
   authorImage: string;
   role: string;
+  authorslug: string
 }
 
 interface Props {
@@ -65,7 +66,7 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
             role={article.role}
             date={article.date}
             image={article.authorImage}
-            slug={article.slug}
+            slug={article.authorslug}
           />
           <ArticleParagraph data={article} />
           <div ref={stopRef}>
@@ -73,7 +74,7 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
               author={article.author}
               role={article.role}
               image={article.authorImage}
-              slug={article.slug}
+              slug={article.authorslug}
             />
             <NewsNavigation data={[otherArticles[0], otherArticles[1]]} />
             <CommentForm />

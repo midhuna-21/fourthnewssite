@@ -50,6 +50,7 @@ interface NewsItem {
     author: string;
     role: string;
     authorImage: string;
+    authorslug: string;
 }
 
 interface DetailPageProps {

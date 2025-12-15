@@ -9,8 +9,9 @@
       "Michael’s work covers politics, investigative reporting, and editorial strategy. He’s deeply interested in media ethics and how independent newsrooms like Mirror Standard can earn and keep readers’ trust."
     ],
     "email": "michael.gentry@mirrorstandard.com",
-    "image":"/images/michael-y-gentry.webp"
+    "image": "/images/michael-y-gentry.webp"
   },
+  
   {
     "slug": "victor-v-haley",
     "name": "Victor V. Haley",
@@ -21,8 +22,9 @@
       "When he’s not wrangling stories, Victor enjoys mentoring reporters and experimenting with new ways to tell a story. He’s a firm believer that a newsroom works best when everyone brings their own ideas to the table."
     ],
     "email": "victor.haley@mirrorstandard.com",
-    "image":"/images/victor-v-haley.webp"
+    "image": "/images/victor-v-haley.webp"
   },
+
   {
     "slug": "betty-d-chambers",
     "name": "Betty D. Chambers",
@@ -33,8 +35,9 @@
       ""
     ],
     "email": "betty.chambers@mirrorstandard.com",
-    "image":"/images/betty-d-chambers.webp"
+    "image": "/images/betty-d-chambers.webp"
   },
+
   {
     "slug": "jacqueline-l-wood",
     "name": "Jacqueline L. Wood",
@@ -45,8 +48,9 @@
       "When she’s off the clock, Jacqueline enjoys sketching, catching live music, and experimenting with new recipes in the kitchen — all little ways to stay curious and creative."
     ],
     "email": "jacqueline.wood@mirrorstandard.com",
-    "image":"/images/jacqueline-l-wood.webp"
+    "image": "/images/jacqueline-l-wood.webp"
   },
+
   {
     "slug": "margaret-j-kern",
     "name": "Margaret J. Kern",
@@ -57,6 +61,6 @@
       "When she’s not crunching numbers or chasing stories, Margaret can usually be found hiking, reading about history, or testing out new coffee blends — anything that sparks curiosity."
     ],
     "email": "margaret.kern@mirrorstandard.com",
-    "image":"/images/margaret-j-kern.webp"
+    "image": "/images/margaret-j-kern.webp"
   }
 ]

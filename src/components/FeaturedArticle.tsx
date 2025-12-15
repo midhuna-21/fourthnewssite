@@ -37,12 +37,12 @@ const FeaturedArticle: React.FC<Props> = ({ data }) => {
             {data.date}
           </span>
         </p>
-        <h1
+        <h2
           className="font-[oswald] font-bold leading-tight text-[24px] sm:text-[36px] md:text-[36px]"
           style={{ fontWeight: 700 }}
         >
           {data.title}
-        </h1>
+        </h2>
       </Link>
       <p
         className="text-[14px] sm:text-[15px]  whitespace-nowrap overflow-hidden md:text-[16px] mt-2 text-gray-500"

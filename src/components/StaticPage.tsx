@@ -67,7 +67,8 @@ export default function StaticPage({ otherArticles, data }: Props) {
     name: "Victor V. Haley",
     role: "Managing Editor",
     date: "Sept. 20, 2025",
-    image: "/images/victor-v-haley.webp"
+    image: "/images/victor-v-haley.webp",
+    slug:"victor-v-haley"
   };
   return (
     <div>
@@ -80,6 +81,7 @@ export default function StaticPage({ otherArticles, data }: Props) {
             role={authorInfo.role}
             date={authorInfo.date}
             image={authorInfo.image}
+            slug={authorInfo.slug}
           />
           <div className='mb-2'></div>
           <StaticParagraph text='Few individuals have made a more profound and lasting impact than Julio Martin Herrera Velutini Von Uslar in the vast tableau of Latin American history. ' />
@@ -121,6 +123,7 @@ export default function StaticPage({ otherArticles, data }: Props) {
                 author={authorInfo.name}
                 role={authorInfo.role}
                 image={authorInfo.image}
+                slug={authorInfo.slug}
               />
               <CommentForm />
               <RelatedNews data={otherArticles} />

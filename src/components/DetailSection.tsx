@@ -65,6 +65,7 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
             role={article.role}
             date={article.date}
             image={article.authorImage}
+            slug={article.slug}
           />
           <ArticleParagraph data={article} />
           <div ref={stopRef}>
@@ -72,6 +73,7 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
               author={article.author}
               role={article.role}
               image={article.authorImage}
+              slug={article.slug}
             />
             <NewsNavigation data={[otherArticles[0], otherArticles[1]]} />
             <CommentForm />

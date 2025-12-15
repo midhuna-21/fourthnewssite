@@ -127,12 +127,12 @@ export default function Header() {
                       {item.category}{" "}
                       <span className="text-xs font-normal ml-2">{item.date}</span>
                     </p>
-                    <h2
+                    <p
                       className="text-[12px] md:text-[16px] font-[oswald] cursor-pointer"
                       style={{ fontWeight: 700 }}
                     >
                       {item.title}
-                    </h2>
+                    </p>
                   </div>
                 </div>
               </Link>

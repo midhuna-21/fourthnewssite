@@ -1,26 +1,30 @@
+import Link from "next/link";
 import Image from "next/image";
 
 interface AuthorProps {
   author: string;
   role: string;
   image: string;
+  slug: string
 }
 
-const AuthorCard: React.FC<AuthorProps> = ({ author, role, image }) => {
+const AuthorCard: React.FC<AuthorProps> = ({ author, role, image, slug }) => {
   return (
     <div className="py-8 rounded-lg flex flex-col sm:flex-row items-start gap-4">
-      <div className="flex-shrink-0">
-        <Image
-          src={image}
-          alt={author}
-          width={96}
-          height={96}
-          quality={75}
-          placeholder="blur"
-          blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA="
-          className="rounded-full object-cover w-24 h-24"
-        />
-      </div>
+      <Link key={slug} href={`/our-team/${slug}`} title={author} className="text-primary">
+        <div className="flex-shrink-0 cursor-pointer">
+          <Image
+            src={image}
+            alt={author}
+            width={96}
+            height={96}
+            quality={75}
+            placeholder="blur"
+            blurDataURL="data:image/webp;base64,UklGRhIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAQAcJaQAA3AA/vuUAAA="
+            className="rounded-full object-cover w-24 h-24"
+          />
+        </div>
+      </Link>
       <div className="text-left">
         <p className="uppercase text-[11px] mb-1">
           Written By

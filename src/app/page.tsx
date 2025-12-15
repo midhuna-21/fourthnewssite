@@ -10,17 +10,20 @@ import EntertainmentSection from "@/components/Entertainment";
 import ScrollLayout from "@/components/ScrollLayout";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import Script from "next/script";
+import businessData from '../../public/data/business.json'
+import educationData from '../../public/data/education.json'
+import entertainmentData from '../../public/data/entertainment.json'
+import healthData from '../../public/data/health.json'
+import lifestyleData from '../../public/data/lifestyle.json'
+import politicsData from '../../public/data/politics.json'
+import scienceData from '../../public/data/science.json'
+import technologyData from '../../public/data/technology.json'
+import sportsData from '../../public/data/sports.json'
 import DynamicSection from "@/components/DynamicSection";
 
+
 export default async function Home() {
-   const businessData = (await import("../../public/data/business.json")).default;
-  const healthData = (await import("../../public/data/health.json")).default;
-  const scienceData = (await import("../../public/data/science.json")).default;
-  const politicsData = (await import("../../public/data/politics.json")).default;
-  const educationData = (await import("../../public/data/education.json")).default;
-  const sportsData = (await import("../../public/data/sports.json")).default;
-  const technologyData = (await import("../../public/data/technology.json")).default;
-  const entertainmentData = (await import("../../public/data/entertainment.json")).default;
+
 
   return (
     <main>

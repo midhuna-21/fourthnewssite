@@ -55,13 +55,13 @@ const HorizontalNewsCard: React.FC<Props> = ({ data }) => {
               {data.date}
             </span>
           </p>
-          <p
+          <h3
             className="mt-1 font-['Oswald'] font-bold 
                      text-[15px] sm:text-[16px] md:text-[17px] 
                      leading-tight line-clamp-2"
           >
             {data.title}
-          </p>
+          </h3>
         </div>
       </div>
     </Link>

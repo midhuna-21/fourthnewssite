@@ -7,11 +7,51 @@
     "date": "Sept. 3, 2025",
     "image": "/images/addictive-use-not-screen-time-harms-youth-mental-health.webp",
      "author":"Jacqueline L. Wood",
+"authorslug":"jacqueline-l-wood",
     "authorImage":"/images/jacqueline-l-wood.webp",
     "role":"Reporter",
     "slug": "addictive-use-not-screen-time-harms-youth-mental-health"
   },
  
+
+
+
+
+    {
+    "category": "health",
+    "title": "Winter virus season so far is not too bad, but doctors worry about suffering to come",
+    "shortdescription": "Early winter illness levels remain manageable, but doctors warn a post-holiday surge could still strain hospitals in the coming months.",
+    "description": "The winter virus season has started more quietly than many public health experts expected, offering a brief sense of relief for hospitals, clinics, and families alike. So far, rates of influenza, COVID-19, and respiratory syncytial virus (RSV) have remained moderate across many regions, with fewer emergency room visits and hospitalizations compared to recent years. However, doctors and epidemiologists caution that this early calm may be misleading, warning that the most challenging part of the season could still lie ahead as colder weather deepens and holiday gatherings increase close-contact transmission. Physicians note that respiratory viruses often surge later in the winter, particularly after Thanksgiving, Christmas, and New Year’s celebrations, when travel, indoor activities, and social mixing rise sharply. While current data suggests the season is “not too bad” so far, healthcare providers remain on alert, stressing that a delayed spike can be just as disruptive as an early one. One of the main concerns is that multiple viruses may peak simultaneously, placing renewed strain on healthcare systems that are already dealing with staffing shortages and burnout. Doctors report that while flu cases are climbing slowly, RSV activity remains unpredictable, and COVID-19 continues to circulate at low but steady levels, creating the potential for a so-called “tripledemic” later in the season. Pediatricians, in particular, are watching closely, as young children are especially vulnerable to RSV and influenza, and last winter saw significant pressure on children’s hospitals. Another factor adding uncertainty is vaccination fatigue, as some people have skipped or delayed their flu shots and COVID-19 boosters, leaving pockets of the population more susceptible to severe illness. Public health officials emphasize that vaccination remains the most effective tool for reducing hospitalizations and preventing complications, even when virus activity appears mild early on. Doctors also point out that colder temperatures drive people indoors, where poor ventilation can accelerate virus spread, making January and February historically dangerous months for respiratory infections. Compounding the issue is the possibility that people may become less cautious when early reports suggest a “light” season, potentially abandoning preventative measures such as staying home when sick, wearing masks in crowded indoor settings, or practicing good hand hygiene. Hospitals are using the early lull to prepare for potential surges by stocking supplies, reviewing staffing plans, and urging the public to seek care appropriately to avoid emergency department overcrowding. Clinicians also warn that vulnerable populations—including older adults, those with chronic illnesses, and the immunocompromised—remain at high risk regardless of broader trends. Even a moderate season can have severe consequences for these groups, especially if infections spread rapidly later in the winter. Experts stress that viruses do not follow a fixed schedule, and regional differences can be significant, meaning some areas could still experience sharp spikes even if national averages appear stable. The key message from doctors is cautious optimism paired with preparedness: while the season has started better than feared, it is far too early to declare victory. As winter progresses, healthcare providers urge people to stay informed, keep vaccinations up to date, and take symptoms seriously to reduce the likelihood of a sudden and severe wave of illness. The coming weeks will determine whether this winter remains manageable—or whether the quiet start gives way to the surge many doctors are still bracing for. ",
+    "date": "Dec. 15, 2025",
+    "author":"Jacqueline L. Wood",
+"authorslug":"jacqueline-l-wood",
+    "authorImage":"/images/jacqueline-l-wood.webp",
+    "role":"Reporter",
+    "image": "/images/winter-virus-season-doctors-warning.webp",
+    "slug": "winter-virus-season-not-too-bad-doctors-worry-ahead"
+  },
+
+
+    {
+    "category": "health",
+    "title": "Hundreds are quarantined in South Carolina as measles spreads in 2 US outbreaks",
+    "shortdescription": "Hundreds of people have been quarantined in South Carolina as measles spreads across two U.S. outbreaks, raising concerns among public health officials.",
+    "description": "Hundreds of people in South Carolina have been placed under quarantine as health officials work to contain a growing measles outbreak that is part of two active outbreaks currently unfolding in the United States. The highly contagious virus, which was once declared eliminated in the U.S., has resurfaced in clusters that are alarming doctors and public health experts, particularly because of declining vaccination rates in some communities. State health authorities confirmed that the quarantines were issued after confirmed measles cases were linked to schools, childcare settings, and community gatherings, where exposure risk was high and vaccination status could not always be verified. Measles spreads through airborne particles and can remain infectious in enclosed spaces for up to two hours after an infected person leaves, making containment especially challenging once the virus begins circulating. Officials say most of those quarantined were either unvaccinated, under-vaccinated, or had unknown immunity status, prompting precautionary isolation measures to prevent further transmission. The South Carolina outbreak is one of two major measles clusters currently under investigation nationwide, with another outbreak affecting a separate region, underscoring concerns that measles is regaining a foothold in the U.S. due to gaps in immunization coverage. Health experts emphasize that measles is not a mild childhood illness, as it can lead to severe complications including pneumonia, brain swelling, long-term neurological damage, and death, particularly among young children and immunocompromised individuals. Doctors report that even a single imported case can trigger widespread exposure events when vaccination rates fall below the threshold needed for herd immunity. The current outbreaks have reignited debate around vaccine hesitancy and misinformation, which public health officials say continues to undermine decades of progress in disease prevention. Schools and healthcare facilities affected by the outbreak have implemented enhanced screening, contact tracing, and vaccination clinics to limit further spread. Parents of exposed children have been urged to monitor symptoms closely, including fever, cough, runny nose, conjunctivitis, and the characteristic measles rash, which typically appears several days after initial symptoms. Quarantine orders, while disruptive, are considered one of the most effective tools to stop transmission in outbreak settings, especially when individuals may unknowingly spread the virus before symptoms fully develop. State health departments are also coordinating with the Centers for Disease Control and Prevention to track cases, identify exposure sites, and issue public advisories. Doctors warn that outbreaks like this place additional strain on healthcare systems, particularly in pediatric care, as hospitals must isolate suspected cases to prevent spread to other vulnerable patients. The situation also highlights broader national trends, as measles cases have increased in recent years compared to pre-pandemic levels, reversing long-standing declines achieved through widespread vaccination. Public health officials stress that the measles, mumps, and rubella (MMR) vaccine is safe, highly effective, and remains the best defense against outbreaks, with two doses providing about 97 percent protection. They urge parents and caregivers to check vaccination records and seek immunization promptly if doses were missed. While officials remain hopeful that swift quarantines and targeted vaccination efforts will contain the South Carolina outbreak, they caution that continued vigilance is essential. The resurgence of measles serves as a warning that infectious diseases can return quickly when prevention efforts weaken, and health authorities say sustained public cooperation will determine whether these outbreaks are short-lived or become part of a troubling new pattern.",
+    "date": "Dec. 15, 2025",
+    "author":"Jacqueline L. Wood",
+"authorslug":"jacqueline-l-wood",
+    "authorImage":"/images/jacqueline-l-wood.webp",
+    "role":"Reporter",
+    "image": "/images/south-carolina-measles-quarantine-outbreak.webp",
+    "slug": "hundreds-quarantined-south-carolina-measles-outbreaks"
+  },
+
+
+
+
+
+
+
   {
     "category": "health",
     "title": "California's Life Expectancy Stalls Post-COVID: Experts Raise Alarms Over Lingering Health Impacts",
@@ -115,6 +155,7 @@
     "slug": "cdc-who-covid-support-offers-ignored-china",
     "date": "Sept. 4, 2025",
      "author":"Victor V. Haley",
+"authorslug":"victor-v-haley",
     "authorImage":"/images/victor-v-haley.webp",
     "role":"Managing Editor",
     "image": "/images/cdc-who-china-covid-response.webp",
@@ -126,6 +167,7 @@
     "shortdescription": "A major clinical trial for an HIV vaccine developed by Johnson & Johnson has been halted after researchers found it failed to prevent infection. The result marks another setback in the decades-long effort to find a reliable vaccine against the virus that causes AIDS.",
     "date": "Sept. 5, 2025",
      "author":"Victor V. Haley",
+"authorslug":"victor-v-haley",
     "authorImage":"/images/victor-v-haley.webp",
     "role":"Managing Editor",
     "slug": "another-hiv-vaccine-fails-trial",
@@ -139,6 +181,7 @@
     "date": "Sept. 5, 2025",
     "slug": "wuhan-coronavirus-pandemic-potential",
      "author":"Victor V. Haley",
+"authorslug":"victor-v-haley",
     "authorImage":"/images/victor-v-haley.webp",
     "role":"Managing Editor",
     "image": "/images/wuhan-coronavirus-pandemic-potential.webp",
@@ -151,6 +194,7 @@
     "date": "Sept. 5, 2025",
     "slug": "mask-hoarding-coronavirus-risk-us",
      "author":"Victor V. Haley",
+"authorslug":"victor-v-haley",
     "authorImage":"/images/victor-v-haley.webp",
     "role":"Managing Editor",
     "image": "/images/mask-hoarding-coronavirus-risk-us.webp",
@@ -163,6 +207,7 @@
     "date": "Sept. 5, 2025",
     "slug": "surgical-checklist-noncompliance-risks-patients",
      "author":"Victor V. Haley",
+"authorslug":"victor-v-haley",
     "authorImage":"/images/victor-v-haley.webp",
     "role":"Managing Editor",
     "image": "/images/surgical-checklist-noncompliance-risks-patients.webp",
@@ -175,6 +220,7 @@
     "date": "Sept. 5, 2025",
     "slug": "china-identifies-novel-coronavirus-wuhan",
      "author":"Victor V. Haley",
+"authorslug":"victor-v-haley",
     "authorImage":"/images/victor-v-haley.webp",
     "role":"Managing Editor",
     "image": "/images/china-identifies-novel-coronavirus-wuhan.webp",
@@ -187,6 +233,7 @@
     "slug": "us-claims-patent-ownership-hiv-prevention-drugs",
     "date": "Sept. 6, 2025",
      "author":"Victor V. Haley",
+"authorslug":"victor-v-haley",
     "authorImage":"/images/victor-v-haley.webp",
     "role":"Managing Editor",
     "image": "/images/us-hiv-prevention-drug-patent-dispute.webp",
@@ -198,6 +245,7 @@
     "shortdescription": "After a relatively mild start, the U.S. flu season may be entering a more dangerous phase, according to the CDC. Public health officials are urging vaccinations and renewed vigilance as hospitalizations rise and multiple strains begin to circulate widely.",
     "slug": "cdc-warns-flu-season-may-worsen",
      "author":"Victor V. Haley",
+"authorslug":"victor-v-haley",
     "authorImage":"/images/victor-v-haley.webp",
     "role":"Managing Editor",
     "date": "Sept. 6, 2025",
@@ -212,6 +260,7 @@
     "image": "/images/oral-pill-scabies-treatment-global-impact.webp",
     "date": "Sept. 6, 2025",
      "author":"Victor V. Haley",
+"authorslug":"victor-v-haley",
     "authorImage":"/images/victor-v-haley.webp",
     "role":"Managing Editor",
     "description": "For millions of people around the world, scabies is not just an irritating skin condition—it is a relentless cycle of suffering, stigma, and secondary infections. Characterized by intense itching and painful rashes caused by microscopic mites burrowing into the skin, scabies disproportionately affects those living in poverty, in overcrowded environments, or without consistent access to healthcare. Now, a game-changing oral treatment—ivermectin—offers new hope for breaking that cycle on a global scale.Scabies, though treatable, has long posed a stubborn public health challenge. Traditional treatment methods typically involve topical creams like permethrin, which must be applied meticulously to the entire body—often more than once. For vulnerable populations, particularly in low-resource settings, these regimens are hard to follow and inconsistently applied.Enter ivermectin: a low-cost, easy-to-administer oral medication that has shown extraordinary promise in reducing outbreaks and controlling reinfection. Public health experts believe this pill could revolutionize the way the world handles one of its most neglected skin diseases. What Is Scabies?Scabies is caused by the Sarcoptes scabiei mite, a parasite that burrows under the skin to lay eggs. The resulting immune response produces unbearable itching and a rash, often worsening at night. If left untreated, scabies can lead to crusting, open sores, bacterial superinfections, and—in severe cases—kidney and heart complications.While scabies is endemic in more than 100 countries, its burden falls heavily on children and those in crowded living conditions, such as refugee camps, nursing homes, prisons, and slums. According to the World Health Organization (WHO), over 200 million people are infected with scabies at any given time. A Pill With Powerful PotentialIvermectin, first discovered in the 1970s, was originally used to treat parasitic infections in animals. It later became a vital tool in combating river blindness and lymphatic filariasis in humans. The discovery earned its researchers a Nobel Prize in Medicine in 2015.Now, ivermectin is being embraced as a front-line weapon against scabies.In community-wide trials conducted in countries like Fiji, Solomon Islands, and Ethiopia, oral ivermectin reduced scabies prevalence by more than 90% within one year. In some regions, the reduction was so dramatic that follow-up treatments were needed only once every two years.\"We’re seeing transformative outcomes,” said Dr. Michael Marks, a researcher at the London School of Hygiene & Tropical Medicine and an expert on scabies control. “Ivermectin can be given safely, it’s effective after just one or two doses, and it reaches people who might otherwise never receive treatment.\" Topical Creams vs Oral TreatmentPermethrin cream has long been the standard scabies treatment. But the method comes with barriers:\n- It requires full-body application (from neck to toe), including hard-to-reach places.\n- It must stay on the skin for up to 12 hours before being washed off.\n- All clothing, linens, and close contacts must be treated simultaneously.\n- Multiple rounds are often necessary.For large households or communities, this becomes logistically overwhelming.By contrast, ivermectin is a single oral dose in pill form, making it ideal for mass drug administration (MDA) programs.\"Compliance improves dramatically when people just have to swallow a pill,” noted Dr. Sarah White, an infectious disease physician working in Pacific Island outreach clinics. “And in areas without privacy or clean water, it removes a huge burden.\" Safety and AccessibilityIvermectin is considered safe for most populations, including children over 15 kg (about 33 lbs) and adults. It is not currently recommended for very young children or pregnant women, though ongoing research is exploring adjusted protocols for those groups.In many countries, ivermectin is already included in Neglected Tropical Disease (NTD) programs. It is inexpensive—just a few cents per dose—and can be distributed in bulk.The WHO added ivermectin to its List of Essential Medicines, and advocacy groups are now pushing for it to be recognized as the standard first-line treatment for scabies in endemic areas. Mass Treatment Success StoriesIn Fiji, a national campaign in 2018 used ivermectin-based mass treatment to target the entire population. The results were staggering: scabies prevalence dropped from 33% to less than 2% in less than a year.The campaign also had unexpected benefits. With fewer scabies infections, the incidence of impetigo (a bacterial skin infection often caused by scratching) also plummeted—leading to a reduction in kidney infections and even rheumatic heart disease, both of which are common long-term consequences of untreated scabies.\"We didn’t just treat scabies—we disrupted a whole chain of downstream health issues,\" said Dr. Sera Tikoinaka, a physician in Suva, Fiji. \"It was one of the most cost-effective interventions we’ve ever launched.\" Challenges AheadDespite the optimism, challenges remain. Global access to ivermectin is still limited in some regions. Regulatory approvals vary, and not all countries have incorporated ivermectin into their treatment guidelines for scabies.Moreover, resistance is always a concern. While ivermectin has remained broadly effective for decades, overuse or misuse could lead to reduced sensitivity in mites. Experts say careful monitoring and responsible dosing will be crucial.There is also a need for greater public awareness. In many communities, scabies is deeply stigmatized and misunderstood. Education campaigns, alongside medical treatment, are essential to encourage people to come forward for diagnosis and care. A Global Health OpportunityThe global movement to elevate scabies treatment is gaining traction. In 2017, the WHO classified scabies as a Neglected Tropical Disease, officially recognizing its burden on public health. Since then, the organization has encouraged countries to scale up ivermectin-based MDA campaigns, particularly in high-prevalence settings.Organizations like the International Alliance for the Control of Scabies (IACS) are also calling for more investment in diagnostic tools, supply chains, and community outreach.“With the tools we have now, we could eliminate scabies as a public health problem in a generation,” said Dr. Marks. “What we need is the political will and the resources to do it.” The Human Cost of DelayFor many people living in poverty, scabies is not just a medical problem—it is a source of social isolation, missed school or work, and lifelong complications. Children scratched raw by mites often face bullying or shame. Infected skin can turn septic. Untreated infections can damage the kidneys, and in extreme cases, contribute to fatal outcomes.In refugee camps, prisons, and disaster zones, outbreaks can spiral quickly, especially in the absence of hygiene infrastructure.“Scabies causes pain far beyond the itch,” said Dr. Amina Yusuf, a pediatrician working in displaced persons camps in Sudan. “It’s about dignity, access, and inclusion.”   A Pill for Dignity, Relief, and HopeFor decades, scabies has inflicted quiet misery on the most vulnerable members of society. But with the advent of affordable, scalable oral treatment like ivermectin, the world now has a chance to eliminate this age-old scourge.Public health officials, researchers, and communities are coming together to ensure that a simple pill—just a few cents and a few minutes—can relieve suffering, restore dignity, and build healthier futures. The path ahead will require investment, coordination, and commitment—but the potential return is enormous.As Dr. Marks put it: \"We know how to end this. The question is: will we?\""
@@ -223,6 +272,7 @@
     "date": "Sept. 6, 2025",
     "slug": "polio-surge-pakistan-afghanistan-2025",
      "author":"Victor V. Haley",
+"authorslug":"victor-v-haley",
     "authorImage":"/images/victor-v-haley.webp",
     "role":"Managing Editor",
     "image": "/images/polio-surge-pakistan-afghanistan-2025.webp",
@@ -234,6 +284,7 @@
     "shortdescription": "Pharmaceutical giants are increasingly turning their attention to low-income populations, launching initiatives to develop and distribute affordable treatments for diseases that disproportionately affect the world’s poor. Advocates hail this as long overdue, while critics remain wary of motives and sustainability.",
     "date": "Sept. 6, 2025",
      "author":"Victor V. Haley",
+"authorslug":"victor-v-haley",
     "authorImage":"/images/victor-v-haley.webp",
     "role":"Managing Editor",
     "slug": "drug-companies-shift-focus-to-global-poor",
@@ -247,6 +298,7 @@
     "date": "Sept. 6, 2025",
     "slug": "ebola-vaccine-smaller-doses-strategy-africa",
      "author":"Victor V. Haley",
+"authorslug":"victor-v-haley",
     "authorImage":"/images/victor-v-haley.webp",
     "role":"Managing Editor",
     "image": "/images/ebola-vaccine-smaller-doses-strategy-africa.webp",
@@ -259,6 +311,7 @@
     "slug": "measles-global-resurgence-2025",
     "date": "Sept. 7, 2025",
      "author":"Michael Y. Gentry",
+"authorslug":"michael-y-gentry",
     "authorImage":"/images/michael-y-gentry.webp",
     "role":"Editor-in-Chief",
     "image": "/images/measles-global-resurgence-2025.webp",
@@ -271,6 +324,7 @@
     "date": "Sept. 7, 2025",
     "slug": "malaria-child-survival-remote-villages",
      "author":"Michael Y. Gentry",
+"authorslug":"michael-y-gentry",
     "authorImage":"/images/michael-y-gentry.webp",
     "role":"Editor-in-Chief",
     "image": "/images/malaria-child-survival-remote-villages.webp",
@@ -282,6 +336,7 @@
     "shortdescription": "After years of neglect and limited access, a low-cost treatment for sickle cell disease is transforming care for thousands of children in Africa. The results are reshaping the outlook for a disease long considered a death sentence in the region.",
     "slug": "sickle-cell-treatment-success-africa",
      "author":"Michael Y. Gentry",
+"authorslug":"michael-y-gentry",
     "authorImage":"/images/michael-y-gentry.webp",
     "role":"Editor-in-Chief",
     "date": "Sept. 7, 2025",
@@ -295,6 +350,7 @@
     "date": "Sept. 7, 2025",
     "slug": "former-surgeons-general-political-pressure",
      "author":"Michael Y. Gentry",
+"authorslug":"michael-y-gentry",
     "authorImage":"/images/michael-y-gentry.webp",
     "role":"Editor-in-Chief",
     "image": "/images/former-surgeons-general-political-pressure.webp",
@@ -307,6 +363,7 @@
     "slug": "why-we-dont-have-vaccines-for-every-disease",
     "date": "Sept. 7, 2025",
      "author":"Michael Y. Gentry",
+"authorslug":"michael-y-gentry",
     "authorImage":"/images/michael-y-gentry.webp",
     "role":"Editor-in-Chief",
     "image": "/images/why-we-dont-have-vaccines-for-every-disease.webp",
@@ -320,6 +377,7 @@
     "slug": "global-malaria-fight-stalls-amid-drug-resistance-and-climate-crisis",
     "image": "/images/global-malaria-fight-stall.webp",
      "author":"Michael Y. Gentry",
+"authorslug":"michael-y-gentry",
     "authorImage":"/images/michael-y-gentry.webp",
     "role":"Editor-in-Chief",
     "description": "For nearly two decades, the global battle against malaria had been one of public health’s most inspiring success stories. With coordinated international efforts, millions of mosquito nets were distributed, groundbreaking medicines were deployed, and lives were saved on a scale that transformed entire regions. But in recent years, progress has come to a grinding halt.According to the latest reports by the World Health Organization (WHO) and the Global Fund, the number of malaria cases worldwide remains stubbornly high, with over 240 million cases and more than 600,000 deaths annually — figures that have not budged significantly in the last five years. While many countries made impressive strides between 2000 and 2015, the momentum has plateaued since 2017, raising alarms among scientists, policymakers, and humanitarian organizations.Why Is Progress Slowing?There are several compounding factors behind the stagnation.1. Drug Resistance\nResistance to frontline antimalarial drugs, particularly artemisinin-based combination therapies (ACTs), is growing across Southeast Asia and parts of Africa. These medications have been the cornerstone of malaria treatment for the past 15 years. The emergence of resistant strains of *Plasmodium falciparum* — the deadliest malaria parasite — means that existing treatments are becoming less effective, leading to higher morbidity and mortality rates.Dr. Amadou Ba, an infectious disease specialist in Senegal, warns, “We are on the verge of a treatment crisis. If ACTs fail widely, we may lose our most powerful weapon against the parasite.”2. Insecticide Resistance\nIn addition to drug resistance, mosquitoes are becoming increasingly resistant to insecticides used in bed nets and indoor spraying programs. The most common class of insecticides, pyrethroids, is now significantly less effective in many areas due to adaptive resistance in *Anopheles* mosquitoes — the primary vector for malaria transmission.Researchers are developing new insecticides and dual-active ingredient nets, but wide-scale deployment is slow, expensive, and hampered by regulatory hurdles.3. Climate Change\nChanging weather patterns are reshaping the geographical spread and intensity of malaria. Warmer temperatures are expanding the range of malaria-carrying mosquitoes into higher altitudes and previously non-endemic regions. At the same time, extreme weather events like flooding and drought disrupt health infrastructure and fuel mosquito breeding.In East Africa, for example, highland regions that were once malaria-free are now reporting outbreaks. The WHO estimates that climate change could lead to an additional 60 million cases of malaria by 2050 if unchecked.4. COVID-19 Aftershocks\nThe COVID-19 pandemic severely disrupted malaria prevention campaigns. Lockdowns delayed the distribution of mosquito nets, diagnostic tests, and medications. Healthcare resources were diverted to pandemic response, leaving malaria programs underfunded and understaffed.Though countries have resumed many services, the setbacks from 2020–2021 are still being felt, especially in sub-Saharan Africa, which accounts for over 95% of global malaria deaths.5. Funding Gaps and Donor Fatigue\nPerhaps the most persistent challenge is financial. Global malaria funding has stagnated at around $3 billion per year — far below the $7.8 billion annually that the WHO says is needed to reach global targets.The Global Fund to Fight AIDS, Tuberculosis and Malaria reported a shortfall in its most recent replenishment round. Meanwhile, traditional donors like the United States and United Kingdom are scaling back commitments, citing inflation, domestic priorities, and economic pressures.“Donor fatigue is real,” says Dr. Marisol Vega, a program director at Doctors Without Borders. “Malaria is no longer in the headlines, so it’s easy for politicians to overlook. But the human cost is enormous.”The Human Toll\nThe majority of malaria victims are children under five in sub-Saharan Africa. Every minute, a child dies of a disease that is both preventable and treatable.In Nigeria alone, over 30% of global malaria deaths occur. Hospitals in rural areas are overwhelmed, often lacking basic diagnostic tools or antimalarial drugs. Families travel hours for treatment, sometimes too late.“I buried my daughter because there was no medicine,” said Amina Yusuf, a mother in Kano State. “She had a fever, and the clinic had run out of drugs. By the time we found another hospital, she was gone.”New Tools and Innovations\nDespite the grim outlook, there are glimmers of hope. Several new tools have emerged in recent years that could potentially reinvigorate the malaria fight — if deployed effectively.- RTS,S Vaccine: The world’s first malaria vaccine, RTS,S (Mosquirix), has been rolled out in pilot programs in Ghana, Kenya, and Malawi. While only about 30–40% effective, it significantly reduces severe disease and death in children.\n- R21/Matrix-M Vaccine: A new vaccine with higher efficacy (around 75%) is now approved for use in Burkina Faso and other countries. Large-scale deployment is expected to begin soon.\n- Gene Drive Technology: Scientists are exploring gene editing to render mosquito populations sterile or less able to carry parasites. However, these methods raise ethical and ecological questions and are years away from widespread use.\n- Mobile Diagnostics and AI: Advances in digital health are helping with rapid diagnosis, case tracking, and resource allocation, especially in hard-to-reach areas.What Needs to Happen Now\nExperts emphasize that innovation alone isn’t enough. Without coordinated political will, funding, and community engagement, even the most advanced tools will fail to make a dent.The WHO’s Global Technical Strategy for Malaria 2016–2030 calls for reducing malaria case incidence and mortality rates by at least 90% by 2030 — a goal that now seems increasingly out of reach.To regain momentum, experts urge:\n- A massive increase in funding, particularly for bed nets, diagnostics, and frontline treatments.\n- Investment in local health systems, including training and retaining healthcare workers.\n- Accelerated vaccine deployment in high-burden regions.\n- Climate-resilient planning to anticipate shifting malaria patterns.\n- Community-led strategies to build trust and improve adherence to prevention measures.  A Race Against Time\nMalaria has always been a disease of inequality. Its burden falls heaviest on the world’s poorest — those least able to influence global policy or access lifesaving care. What makes the current moment particularly urgent is that we are not losing the fight due to lack of knowledge or tools, but due to a failure of global prioritization.Every delay in funding, every postponed campaign, and every resistant mosquito or parasite puts more lives at risk. Reversing the current stall in progress requires more than business as usual — it demands bold leadership, sustained investment, and the belief that no child should die from a mosquito bite.If the world does not act now, we risk turning a success story into a cautionary tale — one written in needless deaths and squandered potential.\n"
@@ -330,6 +388,7 @@
     "shortdescription": "Australia’s rollout of PrEP, a highly effective HIV prevention drug, has led to a notable decline in new infections—but it’s also been accompanied by a steep drop in condom use, raising concerns about other sexually transmitted infections.",
     "slug": "australia-prep-use-up-condom-use-down",
      "author":"Michael Y. Gentry",
+"authorslug":"michael-y-gentry",
     "authorImage":"/images/michael-y-gentry.webp",
     "role":"Editor-in-Chief",
     "date": "Sept. 7, 2025",
@@ -343,6 +402,7 @@
     "slug": "guinea-worm-infects-dogs-threatens-eradication-efforts",
     "date": "Sept. 7, 2025",
      "author":"Michael Y. Gentry",
+"authorslug":"michael-y-gentry",
     "authorImage":"/images/michael-y-gentry.webp",
     "role":"Editor-in-Chief",
     "image": "/images/guinea-worm-dogs-eradication-risk.webp",
@@ -353,6 +413,7 @@
     "title": "New Ebola Response Strategies Offer Promise — and Potential Pitfalls",
     "date": "Sept. 7, 2025",
      "author":"Michael Y. Gentry",
+"authorslug":"michael-y-gentry",
     "authorImage":"/images/michael-y-gentry.webp",
     "role":"Editor-in-Chief",
     "shortdescription": "Innovative tools like vaccines and mobile diagnostics are transforming Ebola outbreak response, offering fresh hope. But experts warn that inconsistent application and mixed messaging could confuse communities and undermine trust.",

@@ -29,50 +29,50 @@ const roboto = Roboto({
   variable: '--font-roboto',
 });
 
-export const metadata: Metadata = { 
-  metadataBase: new URL("https://www.mirrorstandard.com"), 
-  title: "Mirror Standard - News, Politics & Business Coverage", 
-  description: "Mirror Standard delivers breaking news and analysis on politics, business, tech, and more. Read trusted reporting and expert commentary on the stories that matter.", 
-  keywords: "news, breaking news, politics, business news, world events, technology, health, sports, investigative reporting, Mirror Standard", 
-  
-  openGraph: { 
-    title: "Mirror Standard - Independent News & Analysis", 
-    description: "Breaking news, political coverage, and business insights. Mirror Standard brings you the stories shaping our world.", 
-    url: "https://www.mirrorstandard.com", 
-    siteName: "Mirror Standard", 
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.mirrorstandard.com"),
+  title: "Mirror Standard - News, Politics & Business Coverage",
+  description: "Mirror Standard delivers breaking news and analysis on politics, business, tech, and more. Read trusted reporting and expert commentary on the stories that matter.",
+  keywords: "news, breaking news, politics, business news, world events, technology, health, sports, investigative reporting, Mirror Standard",
+
+  openGraph: {
+    title: "Mirror Standard - Independent News & Analysis",
+    description: "Breaking news, political coverage, and business insights. Mirror Standard brings you the stories shaping our world.",
+    url: "https://www.mirrorstandard.com",
+    siteName: "Mirror Standard",
     locale: "en_US",
-    images: [ 
-      { 
-        url: "https://www.mirrorstandard.com/images/mirrorstandard-logo.webp", 
-        width: 1200, 
-        height: 630, 
-        alt: "Mirror Standard logo", 
-      }, 
-    ], 
-    type: "website", 
-  }, 
- 
-  twitter: { 
-    card: "summary_large_image", 
-    title: "Mirror Standard - Breaking News & Analysis", 
-    description: "Covering politics, business, tech, and world events with depth and clarity.", 
-    images: ["https://www.mirrorstandard.com/images/mirrorstandard-logo.webp"], 
+    images: [
+      {
+        url: "https://www.mirrorstandard.com/images/mirrorstandard-logo.webp",
+        width: 1200,
+        height: 630,
+        alt: "Mirror Standard logo",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Mirror Standard - Breaking News & Analysis",
+    description: "Covering politics, business, tech, and world events with depth and clarity.",
+    images: ["https://www.mirrorstandard.com/images/mirrorstandard-logo.webp"],
     site: "@Mirrorstandard",
     creator: "@Mirrorstandard"
-  }, 
- 
-  alternates: { 
-    canonical: "https://www.mirrorstandard.com", 
-    languages: { 
-      "en-US": "https://www.mirrorstandard.com", 
-      "x-default": "https://www.mirrorstandard.com", 
-    }, 
-  }, 
- 
-  authors: [{ name: "Mirror Standard Staff" }], 
-  
+  },
+
+  alternates: {
+    canonical: "https://www.mirrorstandard.com",
+    languages: {
+      "en-US": "https://www.mirrorstandard.com",
+      "x-default": "https://www.mirrorstandard.com",
+    },
+  },
+
+  authors: [{ name: "Mirror Standard Staff" }],
+
   publisher: "Mirror Standard",
-  
+
   robots: {
     index: true,
     follow: true,
@@ -84,10 +84,10 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
- 
-  icons: { 
+
+  icons: {
     icon: "/favicon.ico"
-  }, 
+  },
 };
 
 export default function RootLayout({

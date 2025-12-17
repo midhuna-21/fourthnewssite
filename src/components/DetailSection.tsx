@@ -20,7 +20,13 @@ interface NewsItem {
   author: string;
   authorImage: string;
   role: string;
-  authorslug: string
+  authorslug: string;
+  twitter: string;
+  facebook: string;
+  instagram: string;
+  medium: string;
+  substack: string;
+
 }
 
 interface Props {
@@ -75,6 +81,12 @@ export default function DetailSection({ article, otherArticles, data }: Props) {
               role={article.role}
               image={article.authorImage}
               slug={article.authorslug}
+              articleTitle={article.title}
+              twitter={article.twitter}
+              facebook={article.facebook}
+              instagram={article.instagram}
+              medium={article.medium}
+              substack={article.substack}
             />
             <NewsNavigation data={[otherArticles[0], otherArticles[1]]} />
             <CommentForm />

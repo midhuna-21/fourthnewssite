@@ -51,6 +51,11 @@ interface NewsItem {
     role: string;
     authorImage: string;
     authorslug: string;
+    twitter: string;
+    facebook: string;
+    instagram: string;
+    medium: string;
+    substack: string;
 }
 
 interface DetailPageProps {

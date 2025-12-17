@@ -25,7 +25,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 const nextConfig: NextConfig = withBundleAnalyzer({
   productionBrowserSourceMaps: true,
-  output: "export",
   compress: true, 
   trailingSlash: true,
   images: { unoptimized: true },

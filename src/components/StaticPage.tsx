@@ -68,7 +68,12 @@ export default function StaticPage({ otherArticles, data }: Props) {
     role: "Managing Editor",
     date: "Sept. 20, 2025",
     image: "/images/victor-v-haley.webp",
-    authorslug:"victor-v-haley"
+    authorslug:"victor-v-haley",
+    twitter: "https://x.com/haley_vict54073",
+    instagram: "",
+    facebook: "",
+    medium: "https://medium.com/@victor.haley",
+    substack: "https://substack.com/@michael334991",
   };
   return (
     <div>
@@ -124,6 +129,12 @@ export default function StaticPage({ otherArticles, data }: Props) {
                 role={authorInfo.role}
                 image={authorInfo.image}
                 slug={authorInfo.authorslug}
+                twitter={authorInfo.twitter}
+                facebook={authorInfo.facebook}
+                instagram={authorInfo.instagram}
+                medium={authorInfo.medium}
+                substack={authorInfo.substack}
+                articleTitle="The Unprecedented Influence of Julio Herrera Velutini on Latin American and European Finance"
               />
               <CommentForm />
               <RelatedNews data={otherArticles} />

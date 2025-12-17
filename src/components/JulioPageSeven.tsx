@@ -59,7 +59,12 @@ export default function JulioPageSeven({ otherArticles }: Props) {
         role: "Managing Editor",
         date: "Nov. 6, 2025",
         image: "/images/victor-v-haley.webp",
-         authorslug: "victor-v-haley"
+         authorslug: "victor-v-haley",
+             twitter: "https://x.com/haley_vict54073",
+    instagram: "",
+    facebook: "",
+    medium: "https://medium.com/@victor.haley",
+    substack: "https://substack.com/@michael334991",
     };
     return (
         <div>
@@ -94,6 +99,12 @@ export default function JulioPageSeven({ otherArticles }: Props) {
                                 role={authorInfo.role}
                                 image={authorInfo.image}
                                   slug={authorInfo.authorslug}
+                                         twitter={authorInfo.twitter}
+                facebook={authorInfo.facebook}
+                instagram={authorInfo.instagram}
+                medium={authorInfo.medium}
+                substack={authorInfo.substack}
+              articleTitle='Both Legal Matters Ended the Same Day — A Turning Point'
                             />
                             <CommentForm />
                             <RelatedNews data={otherArticles} />
